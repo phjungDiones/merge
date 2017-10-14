@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7E4E800-CA9C-4C9E-9BD8-04016E13B11E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TBDB_CTC</RootNamespace>
+    <AssemblyName>TBDB_CTC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_REAL_MC;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GlassButton, Version=1.3.2.12831, Culture=neutral, PublicKeyToken=2e983e6e44d23a4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ACTETHERLib, Version=3.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\TBDB_Handler_170827_0400\TBDB_Handler\bin\Debug\Interop.ACTETHERLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ActUtlTypeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\TBDB_Handler_170827_0400\TBDB_Handler\bin\Debug\Interop.ActUtlTypeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Owf.Controls.A1Panel, Version=1.0.6088.12830, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Owf.Controls.A1Panel.dll</HintPath>
+    </Reference>
+    <Reference Include="Owf.Controls.DigitalDisplayControl, Version=1.0.6088.12830, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Owf.Controls.DigitalDisplayControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Renderers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Renderers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ToggleSwitch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ToggleSwitch.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DATA\Alarm\AlarmList.cs" />
+    <Compile Include="DATA\ConfigData.cs" />
+    <Compile Include="DATA\MainData.cs" />
+    <Compile Include="DATA\Main_Define.cs" />
+    <Compile Include="DATA\UnitInfo\AlignerInfo.cs" />
+    <Compile Include="DATA\UnitInfo\AtmTmInfo.cs" />
+    <Compile Include="DATA\UnitInfo\BaseUnitInfo.cs" />
+    <Compile Include="DATA\UnitInfo\EquipmentInfo.cs" />
+    <Compile Include="DATA\UnitInfo\LaminatorInfo.cs" />
+    <Compile Include="DATA\UnitInfo\LoaderInfo.cs" />
+    <Compile Include="DATA\UnitInfo\LoadlockInfo.cs" />
+    <Compile Include="DATA\UnitInfo\PmcInfo.cs" />
+    <Compile Include="DATA\UnitInfo\PortInfo.cs" />
+    <Compile Include="DATA\UnitInfo\VaccumTmInfo.cs" />
+    <Compile Include="DATA\UnitInfo\WaferAPDInfo.cs" />
+    <Compile Include="DATA\UnitInfo\WaferInfo.cs" />
+    <Compile Include="GLOBAL\CfgManager.cs" />
+    <Compile Include="GLOBAL\FuncManager.cs" />
+    <Compile Include="GLOBAL\GlobalDefine.cs" />
+    <Compile Include="GLOBAL\GlobalFunction.cs" />
+    <Compile Include="GLOBAL\GlobalParam.cs" />
+    <Compile Include="GLOBAL\GlobalVar.cs" />
+    <Compile Include="GLOBAL\GlobalVariable.cs" />
+    <Compile Include="GLOBAL\IOManager.cs" />
+    <Compile Include="GLOBAL\LogManager.cs" />
+    <Compile Include="GLOBAL\ModelManager.cs" />
+    <Compile Include="GLOBAL\PathManager.cs" />
+    <Compile Include="GLOBAL\ProcessInfo.cs" />
+    <Compile Include="GLOBAL\ProcessMgr.cs" />
+    <Compile Include="GLOBAL\Recipe.cs" />
+    <Compile Include="GLOBAL\RecipeMgr.cs" />
+    <Compile Include="GUI\frmAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmAlarm.Designer.cs">
+      <DependentUpon>frmAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmMainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmMainView.Designer.cs">
+      <DependentUpon>frmMainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmHistory.Designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmIO.Designer.cs">
+      <DependentUpon>frmIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLogIn.Designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmMainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmMainFrame.Designer.cs">
+      <DependentUpon>frmMainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmManual.Designer.cs">
+      <DependentUpon>frmManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmRecipe.Designer.cs">
+      <DependentUpon>frmRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmSemiAUto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmSemiAUto.Designer.cs">
+      <DependentUpon>frmSemiAUto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log\CAccDB.cs" />
+    <Compile Include="Log\FileIo.cs" />
+    <Compile Include="Log\iniUtil.cs" />
+    <Compile Include="Log\LogWrite.cs" />
+    <Compile Include="Log\SharedAPI.cs" />
+    <Compile Include="Log\VSLogger.cs" />
+    <Compile Include="MOTION\MotionAlinger.cs" />
+    <Compile Include="MOTION\MotionAtm.cs" />
+    <Compile Include="MOTION\MotionFm.cs" />
+    <Compile Include="MOTION\MotionLaminator.cs" />
+    <Compile Include="MOTION\MotionLoadlock.cs" />
+    <Compile Include="MOTION\MotionLpm.cs" />
+    <Compile Include="MOTION\MotionManager.cs" />
+    <Compile Include="MOTION\MotionPmc.cs" />
+    <Compile Include="MOTION\MotionVtm.cs" />
+    <Compile Include="POPWND\frmSelectItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPWND\frmSelectItem.Designer.cs">
+      <DependentUpon>frmSelectItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POPWND\popAppLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPWND\popAppLoading.designer.cs">
+      <DependentUpon>popAppLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POPWND\popAutoRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPWND\popAutoRun.Designer.cs">
+      <DependentUpon>popAutoRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POPWND\popCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPWND\popCancel.designer.cs">
+      <DependentUpon>popCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POPWND\popConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPWND\popConfirm.designer.cs">
+      <DependentUpon>popConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POPWND\popErrMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPWND\popErrMessage.Designer.cs">
+      <DependentUpon>popErrMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POPWND\popKeyPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPWND\popKeyPad.Designer.cs">
+      <DependentUpon>popKeyPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequence\ProcAligner.cs" />
+    <Compile Include="Sequence\ProcATM.cs" />
+    <Compile Include="Sequence\ProcFM.cs" />
+    <Compile Include="Sequence\ProcLami.cs" />
+    <Compile Include="Sequence\ProcLoadlock.cs" />
+    <Compile Include="Sequence\ProcPmc.cs" />
+    <Compile Include="Sequence\ProcVTM.cs" />
+    <Compile Include="Thread\AutoRun.cs" />
+    <Compile Include="Thread\ManualRun.cs" />
+    <Compile Include="UserCtrl\LedBulb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserCtrl\Component\uctrlPortInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\Component\uctrlPortInfo.Designer.cs">
+      <DependentUpon>uctrlPortInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\Component\uctrlPortSlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\Component\uctrlPortSlot.Designer.cs">
+      <DependentUpon>uctrlPortSlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\Component\uctrlUnitInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\Component\uctrlUnitInfo.Designer.cs">
+      <DependentUpon>uctrlUnitInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ConfigSub\subConfigCTC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ConfigSub\subConfigCTC.Designer.cs">
+      <DependentUpon>subConfigCTC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ConfigSub\subConfigFA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ConfigSub\subConfigFA.Designer.cs">
+      <DependentUpon>subConfigFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ConfigSub\subConfigParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ConfigSub\subConfigParam.Designer.cs">
+      <DependentUpon>subConfigParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ConfigSub\subConfigUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ConfigSub\subConfigUser.Designer.cs">
+      <DependentUpon>subConfigUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\HistorySub\subHistoryLotProc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\HistorySub\subHistoryLotProc.Designer.cs">
+      <DependentUpon>subHistoryLotProc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\HistorySub\subHistoryLotRun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\HistorySub\subHistoryLotRun.Designer.cs">
+      <DependentUpon>subHistoryLotRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\HistorySub\subHistoryWaferProc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\HistorySub\subHistoryWaferProc.Designer.cs">
+      <DependentUpon>subHistoryWaferProc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\HistorySub\subHistoryWaferRun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\HistorySub\subHistoryWaferRun.Designer.cs">
+      <DependentUpon>subHistoryWaferRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\LogSub\subLogEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\LogSub\subLogEvent.Designer.cs">
+      <DependentUpon>subLogEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\LogSub\subLogLogging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\LogSub\subLogLogging.Designer.cs">
+      <DependentUpon>subLogLogging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\LogSub\subLogDebug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\LogSub\subLogDebug.Designer.cs">
+      <DependentUpon>subLogDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\MainSub\subMainScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\MainSub\subMainScreen.Designer.cs">
+      <DependentUpon>subMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\MainSub\subMainStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\MainSub\subMainStatus.Designer.cs">
+      <DependentUpon>subMainStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualAligner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualAligner.Designer.cs">
+      <DependentUpon>subManualAligner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualETC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualETC.Designer.cs">
+      <DependentUpon>subManualETC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualFM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualFM.Designer.cs">
+      <DependentUpon>subManualFM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualLoadlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualLoadlock.Designer.cs">
+      <DependentUpon>subManualLoadlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualLPM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualLPM.Designer.cs">
+      <DependentUpon>subManualLPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualTM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualTM.Designer.cs">
+      <DependentUpon>subManualTM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualVTM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subManualVTM.Designer.cs">
+      <DependentUpon>subManualVTM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subProcBonder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subProcBonder.Designer.cs">
+      <DependentUpon>subProcBonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subProcLami.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\ManualSub\subProcLami.Designer.cs">
+      <DependentUpon>subProcLami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipe.Designer.cs">
+      <DependentUpon>subRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeCluster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeCluster.Designer.cs">
+      <DependentUpon>subRecipeCluster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeLot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeLot.Designer.cs">
+      <DependentUpon>subRecipeLot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeProcAlign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeProcAlign.Designer.cs">
+      <DependentUpon>subRecipeProcAlign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeProcBond.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeProcBond.Designer.cs">
+      <DependentUpon>subRecipeProcBond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeProcess.Designer.cs">
+      <DependentUpon>subRecipeProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeProcLami.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrl\SubForm\RecipeSub\subRecipeProcLami.Designer.cs">
+      <DependentUpon>subRecipeProcLami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UTIL\Util.cs" />
+    <EmbeddedResource Include="GUI\frmAlarm.resx">
+      <DependentUpon>frmAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmMainView.resx">
+      <DependentUpon>frmMainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmHistory.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmIO.resx">
+      <DependentUpon>frmIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmMainFrame.resx">
+      <DependentUpon>frmMainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmManual.resx">
+      <DependentUpon>frmManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmRecipe.resx">
+      <DependentUpon>frmRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmSemiAUto.resx">
+      <DependentUpon>frmSemiAUto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPWND\frmSelectItem.resx">
+      <DependentUpon>frmSelectItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPWND\popAppLoading.resx">
+      <DependentUpon>popAppLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPWND\popAutoRun.resx">
+      <DependentUpon>popAutoRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPWND\popCancel.resx">
+      <DependentUpon>popCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPWND\popConfirm.resx">
+      <DependentUpon>popConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPWND\popErrMessage.resx">
+      <DependentUpon>popErrMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPWND\popKeyPad.resx">
+      <DependentUpon>popKeyPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserCtrl\Component\uctrlPortInfo.resx">
+      <DependentUpon>uctrlPortInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\Component\uctrlPortSlot.resx">
+      <DependentUpon>uctrlPortSlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\Component\uctrlUnitInfo.resx">
+      <DependentUpon>uctrlUnitInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ConfigSub\subConfigCTC.resx">
+      <DependentUpon>subConfigCTC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ConfigSub\subConfigFA.resx">
+      <DependentUpon>subConfigFA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ConfigSub\subConfigParam.resx">
+      <DependentUpon>subConfigParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ConfigSub\subConfigUser.resx">
+      <DependentUpon>subConfigUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\HistorySub\subHistoryLotProc.resx">
+      <DependentUpon>subHistoryLotProc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\HistorySub\subHistoryLotRun.resx">
+      <DependentUpon>subHistoryLotRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\HistorySub\subHistoryWaferProc.resx">
+      <DependentUpon>subHistoryWaferProc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\HistorySub\subHistoryWaferRun.resx">
+      <DependentUpon>subHistoryWaferRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\LogSub\subLogEvent.resx">
+      <DependentUpon>subLogEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\LogSub\subLogLogging.resx">
+      <DependentUpon>subLogLogging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\LogSub\subLogDebug.resx">
+      <DependentUpon>subLogDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\MainSub\subMainScreen.resx">
+      <DependentUpon>subMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\MainSub\subMainStatus.resx">
+      <DependentUpon>subMainStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ManualSub\subManualAligner.resx">
+      <DependentUpon>subManualAligner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ManualSub\subManualETC.resx">
+      <DependentUpon>subManualETC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ManualSub\subManualFM.resx">
+      <DependentUpon>subManualFM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ManualSub\subManualLoadlock.resx">
+      <DependentUpon>subManualLoadlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ManualSub\subManualLPM.resx">
+      <DependentUpon>subManualLPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ManualSub\subManualTM.resx">
+      <DependentUpon>subManualTM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ManualSub\subManualVTM.resx">
+      <DependentUpon>subManualVTM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ManualSub\subProcBonder.resx">
+      <DependentUpon>subProcBonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\ManualSub\subProcLami.resx">
+      <DependentUpon>subProcLami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\RecipeSub\subRecipe.resx">
+      <DependentUpon>subRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\RecipeSub\subRecipeCluster.resx">
+      <DependentUpon>subRecipeCluster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\RecipeSub\subRecipeLot.resx">
+      <DependentUpon>subRecipeLot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\RecipeSub\subRecipeProcAlign.resx">
+      <DependentUpon>subRecipeProcAlign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\RecipeSub\subRecipeProcBond.resx">
+      <DependentUpon>subRecipeProcBond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\RecipeSub\subRecipeProcess.resx">
+      <DependentUpon>subRecipeProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrl\SubForm\RecipeSub\subRecipeProcLami.resx">
+      <DependentUpon>subRecipeProcLami.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CJ_Controls\CJ_Controls.csproj">
+      <Project>{18ad03d1-97f0-451b-b8a6-32a9fb62d223}</Project>
+      <Name>CJ_Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MRG.Controls.UI\MRG.Controls.UI.csproj">
+      <Project>{48e18b56-4c37-4d69-aba7-429c42b45aac}</Project>
+      <Name>MRG.Controls.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chamber_Body.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <nMaxUseSlot>24</nMaxUseSlot>
+  <eRunMode>ONLY_BOND</eRunMode>
+  <strPreAlignCarrier>aaa</strPreAlignCarrier>
+  <strPreAlignDevice>bbb</strPreAlignDevice>
+  <strPostAlignCarrier>ccc</strPostAlignCarrier>
+  <strLamiCondition />
+  <strBondCondition />
+  <dHpTime>0</dHpTime>
+  <bUsePreAlignCarrier>false</bUsePreAlignCarrier>
+  <bUsePreAlignDevice>false</bUsePreAlignDevice>
+  <bUsePostAlignCarrier>false</bUsePostAlignCarrier>
+  <bUseHP>false</bUseHP>
+</Recipe>

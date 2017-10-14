@@ -1,0 +1,5935 @@
+﻿<?xml version="1.0"?>
+<ArrayOfDNet_Adapter_Struct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DNet_Adapter_Struct>
+    <Module_List>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0001</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0002</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0003</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0004</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0005</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0006</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0007</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0008</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0009</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0010</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_0011</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>PM Control Panel _Thermo1 Status</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>TM_AC_Rack_Thermo2_Status</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>Smog Sensor Status</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>GPS Power Status</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>1</Address>
+            <IO_Name>SPARE_01_01_15</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>UPS #1 Main MC On Status</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>UPS #2 Main MC On Status</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>GPS #1 Main MC On Status</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>GPS #2 Main MC On Status</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_0012</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_0013</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_0014</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_0015</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>UPS #1 Safety Relay On Status</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>UPS #2 Safety Relay On Status</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>GPS #1 Safety Relay On Status</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>GPS #2 Safety Relay On Status</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_0016</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_0017</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_0018</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>MPD Rack Auto/Teach Key Switch</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>MPD Rack Front TOP#1 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>MPD Rack Front TOP#2 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>MPD Rack Front BOTTOM#1 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>MPD Rack Front BOTTOM#2 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>MPD Rack Rear TOP#1 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>MPD Rack Rear TOP#2 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>MPD Rack Rear BOTTOM#1 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>MPD Rack Rear BOTTOM#2 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>Control Rack Front TOP#1 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>Control Rack  Front TOP#2 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>Control Rack Front BOTTOM#1 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>Control Rack Front BOTTOM#2 FAN Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>SPARE_01_03_12</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>SPARE_01_03_13</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>SPARE_01_03_14</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>5</Address>
+            <IO_Name>SPARE_01_03_15</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>MPD Rack Front Right Door Open Status</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>MPD Rack Front Left Door Open Status</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>MPD Rack Rear Right Door Open Status</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>MPD Rack Reak Left Door Open Status</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>Control Rack Rear Door Open Status</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>Control Rack Side Door Open Status</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_0020</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_0021</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_0022</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_0023</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_0024</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_0025</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_01_04_12</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_01_04_13</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_01_04_14</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>7</Address>
+            <IO_Name>SPARE_01_04_15</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_0026</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_0027</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_01_05_02</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_01_05_03</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_0028</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_0029</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_0030</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_0031</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_0032</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>MPD Rack Alarm Buzzer #1</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>MPD Rack Warning Buzzer #2</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>MPD Rack END Buzzer #3</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>MPD Rack Signal Tower Red On</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>MPD Rack Signal Tower Yellow On</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>MPD Rack Signal Tower Green On</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>0</Address>
+            <IO_Name>SPARE_01_05_15</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+    </Module_List>
+  </DNet_Adapter_Struct>
+  <DNet_Adapter_Struct>
+    <Module_List>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>9</Address>
+            <IO_Name>N2 Inlet Pressure Switch Status</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>9</Address>
+            <IO_Name>Vac Inlet Pressure Switch Status</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>9</Address>
+            <IO_Name>PCW Flow Switch Status</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>9</Address>
+            <IO_Name>PCW Leaks Sensor Status</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>9</Address>
+            <IO_Name>SPARE_02_01_04</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>9</Address>
+            <IO_Name>Bonder Wafer Presence Status</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>9</Address>
+            <IO_Name>Lami Wafer Presence Status</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>9</Address>
+            <IO_Name>HP Power On Check Status</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>TIC High temp #1</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>TS High Temp #1</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SSR 60℃ Normal #1</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>Over Current #1</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>TS Hight Temp #2</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>TIC High Temp #2</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SSR 60℃ Normal #2</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>Over Current #2</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>11</Address>
+            <IO_Name>HP SSR 80℃ Normal #1</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>11</Address>
+            <IO_Name>HP SSR 80℃ Normal #2</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>11</Address>
+            <IO_Name>Main Door #1 Open </IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>11</Address>
+            <IO_Name>Main Door #2 Open</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>11</Address>
+            <IO_Name>Safety Relay Off</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>11</Address>
+            <IO_Name>Safety Reset Switch</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>11</Address>
+            <IO_Name>Auto/ Teach Mode</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>11</Address>
+            <IO_Name>FFU Alarm</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>CP#1 TM ARM Detect Sensor </IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>CP#2 TM ARM Detect Sensor</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>CP#3 TM ARM Detect Sensor</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>Aligner TM ARM Detect Sensor</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>CP#1 FM ARM Detect Sensor </IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>CP#2 FM ARM Detect Sensor</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>CP#3 FM ARM Detect Sensor</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>Aligner FM ARM Detect Sensor</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+    </Module_List>
+  </DNet_Adapter_Struct>
+  <DNet_Adapter_Struct>
+    <Module_List>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>13</Address>
+            <IO_Name>SPARE_0034</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>13</Address>
+            <IO_Name>SPARE_0035</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>13</Address>
+            <IO_Name>L/L Slot Valve Open Status</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>13</Address>
+            <IO_Name>L/L Slot Valve Close Status</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>13</Address>
+            <IO_Name>Laminator Arm Detect Status</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>13</Address>
+            <IO_Name>Laminator Slot Valve Open Status</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>13</Address>
+            <IO_Name>Laminator Slot Valve Close Status</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>13</Address>
+            <IO_Name>SPARE_0041</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>HP Gate Slot Valve Open Status</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>HP Gate Slot Valve Close Status</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_03_02_02</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_03_02_03</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>Robot ARM Fold Status</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_03_02_05</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_03_02_06</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>Bonder TM ARM Detect Sensor</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>2</Address>
+            <IO_Name>HP Power On</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>2</Address>
+            <IO_Name>LAMP Reset Swtich </IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>2</Address>
+            <IO_Name>PCW Main Valve Open</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>2</Address>
+            <IO_Name>PCW Main Valve Close</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>2</Address>
+            <IO_Name>HP Slot Valve Open </IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>2</Address>
+            <IO_Name>HP Slot Valve Close </IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>2</Address>
+            <IO_Name>SPARE_03_03_06</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>2</Address>
+            <IO_Name>SPARE_03_03_07</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>L/L Gate Slot Valve Open </IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>L/L Gate Slot Valve Close </IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_03_04_02</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_03_04_03</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_03_04_04</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_03_04_05</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_0051</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>3</Address>
+            <IO_Name>SPARE_0052</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+    </Module_List>
+  </DNet_Adapter_Struct>
+  <DNet_Adapter_Struct>
+    <Module_List>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#1_VALID</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#1_CS0</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#1_CS1</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#1_AM_AVBL</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#1_TR_REQ</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#1_BUSY</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#1_COMPT</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#1_CONT</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#2_VALID</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#2_CS0</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#2_CS1</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#2_AM_AVBL</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#2_TR_REQ</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#2_BUSY</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#2_COMPT</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>OHT#2_CONT</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#3_VALID</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#3_CS0</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#3_CS1</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#3_AM_AVBL</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#3_TR_REQ</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#3_BUSY</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#3_COMPT</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#3_CONT</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#4_VALID</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#4_CS0</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#4_CS1</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#4_AM_AVBL</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#4_TR_REQ</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#4_BUSY</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#4_COMPT</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>OHT#4_CONT</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>CDA Utility</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>IONIZER Utility</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>Vacuum Utility</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SP1 Utility</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>Area Sensor </IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>FFU Run Status</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>IONIZER Run Status</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>IONIZER HV Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>IONIZER TC Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0061</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0062</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0063</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0064</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0065</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0066</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0067</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0068</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0069</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0070</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0071</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0072</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0073</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0074</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0075</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0076</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0077</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0078</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0079</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0080</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0081</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0082</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0083</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#1_L-REQ</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#1_U-REQ</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#1_VA</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#1_READ</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#1_VS0</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#1_VS1</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#1_HO_AVBL</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#1_ES</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#2_L-REQ</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#2_U-REQ</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#2_VA</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#2_READ</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#2_VS0</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#2_VS1</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#2_HO_AVBL</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>4</Address>
+            <IO_Name>OHT#2_ES</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#3_L-REQ</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#3_U-REQ</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#3_VA</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#3_READ</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#3_VS0</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#3_VS1</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#3_HO_AVBL</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#3_ES</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#4_L-REQ</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#4_U-REQ</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#4_VA</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#4_READ</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#4_VS0</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#4_VS1</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#4_HO_AVBL</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>6</Address>
+            <IO_Name>OHT#4_ES</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>Alarm Buzzer # 1</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>Alarm Buzzer #2</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>Alarm Buzzer #3</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>Alarm Buzzer #4</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>Signal Tower RED  On</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>Signal Tower Yellow  On</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>Signal Tower Green  On</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>IONIZER Control On</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>Area LAMP On</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>TOUCH Monitor On</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>SPARE_0084</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>SPARE_0085</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>SPARE_0086</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>SPARE_0087</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>SPARE_0088</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>8</Address>
+            <IO_Name>SPARE_0089</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0090</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0091</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0092</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0093</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0094</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0095</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0096</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0097</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0098</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0099</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0100</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0101</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0102</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0103</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0104</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>10</Address>
+            <IO_Name>SPARE_0105</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+    </Module_List>
+  </DNet_Adapter_Struct>
+  <DNet_Adapter_Struct>
+    <Module_List>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>Emergency Off Status</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>MC12 Main Power Stauts</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>MC34 Main Power Off Status</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>Door Interlock Open</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>Auto / Teach Mode</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>Service Mode</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>Service Mode Req</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>Robot Emergency</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0106</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0107</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0108</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0109</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0110</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0111</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0112</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0113</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0114</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0115</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0116</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0117</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0118</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0119</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0120</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0121</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0122</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0123</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0124</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0125</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0126</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0127</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0128</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0129</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0130</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0131</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0132</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0133</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0134</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0135</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0136</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0137</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0138</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0139</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0140</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0141</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0142</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0143</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0144</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0145</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0146</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0147</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0148</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0149</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0150</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0151</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0152</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0153</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0154</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0155</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0156</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0157</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0158</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0159</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0160</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0161</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0162</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0163</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0164</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0165</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0166</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0167</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0168</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0169</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0170</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0171</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0172</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0173</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0174</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0175</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0176</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0177</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0178</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0179</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0180</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0181</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0182</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0183</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0184</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0185</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0186</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0187</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0188</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0189</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0190</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0191</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0192</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0193</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0194</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0195</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0196</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0197</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0198</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0199</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0200</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0201</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0202</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0203</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0204</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0205</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0206</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0207</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0208</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>36</Address>
+            <IO_Name>SPARE_0209</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0210</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0211</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0212</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0213</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0214</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0215</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0216</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0217</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0218</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0219</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0220</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0221</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0222</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0223</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0224</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>38</Address>
+            <IO_Name>SPARE_0225</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0226</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0227</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0228</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0229</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0230</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0231</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0232</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0233</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0234</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0235</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0236</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0237</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0238</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0239</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0240</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>40</Address>
+            <IO_Name>SPARE_0241</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0242</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0243</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0244</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0245</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0246</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0247</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0248</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0249</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0250</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0251</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0252</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0253</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0254</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0255</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0256</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>42</Address>
+            <IO_Name>SPARE_0257</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>Mode Permission</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0259</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0260</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0261</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0262</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0263</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0264</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0265</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0266</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0267</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0268</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0269</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0270</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0271</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0272</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>12</Address>
+            <IO_Name>SPARE_0273</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0274</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0275</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0276</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0277</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0278</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0279</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0280</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0281</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0282</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0283</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0284</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0285</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0286</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0287</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0288</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>14</Address>
+            <IO_Name>SPARE_0289</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0290</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0291</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0292</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0293</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0294</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0295</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0296</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0297</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0298</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0299</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0300</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0301</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0302</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0303</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0304</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>16</Address>
+            <IO_Name>SPARE_0305</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0306</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0307</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0308</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0309</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0310</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0311</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0312</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0313</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0314</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0315</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0316</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0317</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0318</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0319</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0320</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>18</Address>
+            <IO_Name>SPARE_0321</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0322</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0323</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0324</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0325</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0326</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0327</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0328</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0329</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0330</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0331</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0332</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0333</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0334</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0335</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0336</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>20</Address>
+            <IO_Name>SPARE_0337</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0338</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0339</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0340</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0341</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0342</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0343</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0344</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0345</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0346</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0347</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0348</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0349</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0350</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0351</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0352</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>22</Address>
+            <IO_Name>SPARE_0353</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0354</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0355</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0356</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0357</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0358</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0359</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0360</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0361</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0362</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0363</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0364</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0365</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0366</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0367</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0368</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>24</Address>
+            <IO_Name>SPARE_0369</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0370</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0371</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0372</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0373</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0374</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0375</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0376</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0377</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0378</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0379</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0380</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0381</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0382</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0383</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0384</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>26</Address>
+            <IO_Name>SPARE_0385</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0386</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0387</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0388</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0389</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0390</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0391</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0392</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0393</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0394</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0395</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0396</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0397</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0398</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0399</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0400</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>28</Address>
+            <IO_Name>SPARE_0401</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0402</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0403</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0404</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0405</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0406</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0407</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0408</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0409</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0410</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0411</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0412</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0413</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0414</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0415</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0416</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>30</Address>
+            <IO_Name>SPARE_0417</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+    </Module_List>
+  </DNet_Adapter_Struct>
+  <DNet_Adapter_Struct>
+    <Module_List>
+      <DNet_Module_Struct>
+        <IO_Type>A_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>A_INPUT</IO_Type>
+            <Address>44</Address>
+            <IO_Name>Load Lock For Line Converctron</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>A_INPUT</IO_Type>
+            <Address>46</Address>
+            <IO_Name>Load Lock Converctron</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>A_INPUT</IO_Type>
+            <Address>48</Address>
+            <IO_Name>BD For Line Converctron</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>A_INPUT</IO_Type>
+            <Address>50</Address>
+            <IO_Name>Vacuum TM Converctron</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>Bonder  Gate Open Status</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>Bonder Gate Close Status</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>Load lock TM  Gate Open Status</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>Load lock TM  Gate Close Status</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>SPARE_06_02_04</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>SPARE_06_02_05</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>SPARE_0419</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>SPARE_0420</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>SPARE_0421</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>SPARE_0422</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>TM Main PUMP Valve Open</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>TM Main PUMP Valve Close</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>Load Lock Main PUMP Valve Open</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>Load Lock Main PUMP Valve Close</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>EQ Pressure Valve Open</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>52</Address>
+            <IO_Name>EQ Pressure Valve Close</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>진공 척  Pressure Switch  #1</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>진공 척 Pressure Switch  #2</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>진공 파기 Pressure Switch  #1</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>진공 파기 Pressure Switch  #2</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>밸브 구동용 CDA Pressure Switch #1</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>밸브 구동용 CDA Pressure Switch #2</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>SPARE_0423</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>SPARE_0424</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>SPARE_0425</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>SPARE_0426</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>Slow Vent G-N2 Pressure Switch #1</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>Slow Vent G-N2 Pressure Switch #2</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>Fast Vent G-N2 Pressure Switch #1</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>Fast Vent G-N2 Pressure Switch #2</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>DI-18-07</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>54</Address>
+            <IO_Name>DI-18-08</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>Retract - Station #1</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>Retract - Station #2</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>Retract - Station #3</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>Retract - Station #4</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>ARM A Retract </IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>ARM B Retract </IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>TR/MODE (Manual / Auto)</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>Initialize Complete</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>BUSY</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>Alarm</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>T-Axis Position</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>SPARE_0427</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>SPARE_0428</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>SPARE_0429</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>TM Wafer Sensor #1</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>56</Address>
+            <IO_Name>Bonder Wafer Sensor #2</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>L/L Dry Pump Run Status</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>SPARE_06_05_01</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>L/L Dry Pump Warning Status</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>L/L Dry Pump Alarm Status</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>SPARE_06_05_04</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Load Lock ATM Swtich #1</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Load Lock VAC Swtich #2</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Vacuum TM ATM Swtich #1</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Vacuum TM VAC Swtich #2</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>SPARE_0430</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Load Lock Forline Convectron Ry-1</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Load Lock Forline Convectron Ry-2</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Load Lock Convectron Ry-1</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Load Lock Convectron Ry-2</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Vacuum TM Convectron Ry-1</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>58</Address>
+            <IO_Name>Vacuum TM Convectron Ry-2</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_INPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>SPARE_0431</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>SPARE_0432</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>SPARE_0433</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>SPARE_0434</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>Device Load</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>Carrier Load</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>Bonded Unload</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>TM ARM Extend Detection #1</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>TM ARM Extend Detection #2</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>TM ARM Extend Detection #3</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>SPARE_0435</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>Load Lock Top LID Open Status</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>Chamber Top LID Open Status</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>Motor Cover Open Status</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>EMO Switch On Status</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_INPUT</IO_Type>
+            <Address>60</Address>
+            <IO_Name>Main MC On</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>Extend Enable Station #1</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>Extend Enable Station #2</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>Extend Enable Station #3</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>Extend Enable Station #4</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>T-AXIS Motion Enable</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0436</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0437</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_06_07_07</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0438</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0439</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0440</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0441</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>SPARE_0442</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>Load Lock Dry pump On</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>Extend Enable Station #5</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>32</Address>
+            <IO_Name>Main MC On Relay</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+    </Module_List>
+  </DNet_Adapter_Struct>
+  <DNet_Adapter_Struct>
+    <Module_List>
+      <DNet_Module_Struct>
+        <IO_Type>D_OUTPUT</IO_Type>
+        <IO_List>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>BD측 Gate  Valve Open</IO_Name>
+            <Cable />
+            <SubAddr>1</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>BD측 Gate  Valve Close</IO_Name>
+            <Cable />
+            <SubAddr>2</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_07_02</IO_Name>
+            <Cable />
+            <SubAddr>4</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_07_03</IO_Name>
+            <Cable />
+            <SubAddr>8</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>L/L Gate Valve Open</IO_Name>
+            <Cable />
+            <SubAddr>16</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>L/L Gate Valve Close</IO_Name>
+            <Cable />
+            <SubAddr>32</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>L/L Slow Pumping V/V</IO_Name>
+            <Cable />
+            <SubAddr>64</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>L/L Fast Pumping V/V</IO_Name>
+            <Cable />
+            <SubAddr>128</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>L/L Vent V/V</IO_Name>
+            <Cable />
+            <SubAddr>256</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_07_09</IO_Name>
+            <Cable />
+            <SubAddr>512</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>Vacuum TM Slow Pump V/V</IO_Name>
+            <Cable />
+            <SubAddr>1024</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>Vacuum TM Main Pump V/V</IO_Name>
+            <Cable />
+            <SubAddr>2048</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>Vacuum TM Vent V/V</IO_Name>
+            <Cable />
+            <SubAddr>4096</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_07_13</IO_Name>
+            <Cable />
+            <SubAddr>8192</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>Chamber Equal Pressure V/V</IO_Name>
+            <Cable />
+            <SubAddr>16384</SubAddr>
+            <Description />
+          </DeviceNetIO>
+          <DeviceNetIO>
+            <IO_Type>D_OUTPUT</IO_Type>
+            <Address>34</Address>
+            <IO_Name>SPARE_0445</IO_Name>
+            <Cable />
+            <SubAddr>32768</SubAddr>
+            <Description />
+          </DeviceNetIO>
+        </IO_List>
+      </DNet_Module_Struct>
+    </Module_List>
+  </DNet_Adapter_Struct>
+</ArrayOfDNet_Adapter_Struct>
