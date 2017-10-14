@@ -405,5 +405,10 @@ namespace TBDB_CTC.GUI
                 clearAllDGVData();
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            POPWND.Error.Global.GlobalVariable.Instance.addErrors("CyborgRobot_HTR_TM", "1001");
+        }
     }
 }

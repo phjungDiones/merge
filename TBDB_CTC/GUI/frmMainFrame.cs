@@ -27,6 +27,7 @@ namespace TBDB_CTC.GUI
         frmAlarm fAlarm;
         frmHistory fHistory;
         frmRecipe fRcp;
+        popErrMessage ferr;
         //frmLog fLog;
 
         popAutoRun autoRun;
@@ -35,9 +36,14 @@ namespace TBDB_CTC.GUI
         {
             InitializeComponent();
         }
+        public void ErrMessageFormShow()
+        {
+            ferr.Show();
+        }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            TBDB_CTC.POPWND.Error.Global.GlobalVariable.Instance.Click += ErrMessageFormShow;
             popAppLoading popLoading = new popAppLoading();
             DialogResult result = popLoading.ShowDialog();
 
@@ -62,6 +68,7 @@ namespace TBDB_CTC.GUI
             fAlarm = GlobalForm.fAlarm;
             fHistory = GlobalForm.fHistory;
             fRcp = GlobalForm.fRcp;
+            ferr = GlobalForm.fErr;
 
             fLogin.MdiParent = this;
             fLogin.Parent = this.panClientView;
