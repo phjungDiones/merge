@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorkModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <nLoadlockPos>
+    <int>69919</int>
+    <int>-69550</int>
+    <int>-99507</int>
+    <int>0</int>
+    <int>0</int>
+  </nLoadlockPos>
+  <nLLSpeed>51200</nLLSpeed>
+  <nLLAcc>51200</nLLAcc>
+</WorkModel>
