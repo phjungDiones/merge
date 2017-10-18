@@ -1,0 +1,12 @@
+c:\users\jph\documents\visual studio 2017\Projects\ConsoleApp10\ConsoleApp10\bin\Debug\ConsoleApp10.exe.config
+c:\users\jph\documents\visual studio 2017\Projects\ConsoleApp10\ConsoleApp10\bin\Debug\ConsoleApp10.exe
+c:\users\jph\documents\visual studio 2017\Projects\ConsoleApp10\ConsoleApp10\bin\Debug\ConsoleApp10.pdb
+c:\users\jph\documents\visual studio 2017\Projects\ConsoleApp10\ConsoleApp10\obj\Debug\ConsoleApp10.csprojResolveAssemblyReference.cache
+c:\users\jph\documents\visual studio 2017\Projects\ConsoleApp10\ConsoleApp10\obj\Debug\ConsoleApp10.exe
+c:\users\jph\documents\visual studio 2017\Projects\ConsoleApp10\ConsoleApp10\obj\Debug\ConsoleApp10.pdb
+C:\Users\jph\Desktop\오류정리\스트링뽑아내기\ConsoleApp10\bin\Debug\ConsoleApp10.exe.config
+C:\Users\jph\Desktop\오류정리\스트링뽑아내기\ConsoleApp10\bin\Debug\ConsoleApp10.exe
+C:\Users\jph\Desktop\오류정리\스트링뽑아내기\ConsoleApp10\bin\Debug\ConsoleApp10.pdb
+C:\Users\jph\Desktop\오류정리\스트링뽑아내기\ConsoleApp10\obj\Debug\ConsoleApp10.csprojResolveAssemblyReference.cache
+C:\Users\jph\Desktop\오류정리\스트링뽑아내기\ConsoleApp10\obj\Debug\ConsoleApp10.exe
+C:\Users\jph\Desktop\오류정리\스트링뽑아내기\ConsoleApp10\obj\Debug\ConsoleApp10.pdb

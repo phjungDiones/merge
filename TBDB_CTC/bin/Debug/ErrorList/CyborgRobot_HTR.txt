@@ -1,0 +1,75 @@
+﻿00001,*Illegal command,1) 로봇운영프로그램에정의되지않은Command가수신되는경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00002,*Wrong number of stage,1) 입력된Stage Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00003,*Wrong number of arm,1) 입력된Arm Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00004,*Wrong number of slot,1) 입력된Slot Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00005,*Illegal speed range,1) 입력된Speed Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00006,*Wrong number of robot axis*,1) 입력된Axis Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00007,* Invalid value of axis location*,1)입력된절대/상대위치Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00008,*Illegal argument,1) 입력된Argument의개수가해당명령어에올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00010,*Invalid argument type,1) 입력된Argument의Type이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00012,*Invalid value of pitch,1) 입력된Pitch Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00013,*Invalid value of up stroke*,1) 입력된Up Stroke Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00014,*Invalid  value of down stroke*,1) 입력된Down Stroke Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00015,*Invalid value of total number of slot*,1) 입력된Max Slot Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00016,*Invalid value of mapping speed*,1) 입력된Mapping Speed Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00017,*Invalid value of reference thickness!!,1) 입력된Material Thick Argument값이올바르지않은경우발생합니다.,1) 상단의주요조치방법을 참조합니다.
+00018,* Invalid value of thickness margin!!,1) 입력된두께오차허용비율Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00019,*Invalid value of existence,1) 입력된위치오차허용비율Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00027,*Invalid value of On/Off,1) 입력된On/Off Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00028,*Invalid signal number,1) 입력된I/O Number Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00029,*Invalid value of delay time!!,1) 입력된WaitTime Argument값이올바르지않은경우발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00031,*Invalid value of retry count on error*,1) 입력된RetryCount Argument값이올바르지않은경우발생합니다.,1) 상단의주요조치방법을참조합니 다.
+00033,* Invalid value of arm distance*,1) 입력된Arm 상대/절대거리Argument값이올바르지않은경우발생합니다.,1) 상단의주요조치방법을참조 합니다.
+00034,* Invalid value of protruded wafer detect start position*,1) 입력된Material 돌출검사시작거리Argument값이올바르지않은경우발생합니다.,1) 상단의주요 조치방법을참조합니다.
+00035,* Invalid value of protruded wafer detect count!!,1) 입력된Material 돌출검사시작거리Argument값이올바르지않은경우발생합니다.,1) 상단의주요 조치방법을참조합니다.
+00036,* Invalid value of clearance,1) 입력된Clearance Argument값이올바르지않은경우발생합니다.,1) 상단의주요조치방법을참조합 니다.
+00037,* Invalid value of wafer state* ,	5매 로봇 한정 Error 입력된 Wafer State Argument값이 올바르지 않은 경우 발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00041,* Invalid value of aligner argument*,1) 입력된Aligner 관련Argument값이올바르지않은경우발생합니다.,1) 1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00042,*Aligner communication time-out error*,1) Aligner의통신응답이지정한시간(60초)을초과한경우발생합니다.,1)로봇초기화를진행한뒤다시해당 명령을수행해주시기바랍니다.
+00051,* Data Read Busy,1) Flash Memory에Writing 작업중다른Write가시도될경우에발생합니다.,1) 잠시후다시해당명령을수행해주시기바랍니다.
+00052,*Data Write Busy,1) Flash Memory에Writing 작업중다른Write가시도될경우에발생합니다.,1) 잠시후다시해당명령을수행해주시 기바랍니다.
+00053,* Robot Control Busy,1) Flash Memory에Writing 작업중다른Write가시도될경우에발생합니다.,1) 잠시후다시해당명령을수행해주시기바랍니다.
+00054,*Aligner Busy,1) Align Command 실행중다른Align Command가시도조치방법1) 잠시후다시해당명령을수행해주시기바랍니다.
+00180,*File Read Error*,1) 로봇운영프로그램에서파일을읽는중오류발생시발생합니다.,1) 1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00181,*Pattern file load error*,1) 로봇운영프로그램에서Motion Command 설정파일을읽는중오류발생시발생합니다.,1) 상단의주요 조치방법을참조합니다.
+00182,* Profile file load error*,1) 로봇운영프로그램에서Profile Speed 설정파일을읽는중오류발생시발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00184,*Stage info file load error*,1) 로봇운영프로그램에서티칭위치정보파일을읽는중오류발생시발생합니다.,1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00185,* Pattern file load error*,1) 로봇운영프로그램에서로봇설정파일을읽는중오류발생시발생합니다.,1) 1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00186,*Option file load error*,1) 로봇운영프로그램에서옵션설정파일을읽는중오류발생시발생합니다 ,1) 1)올바른Command 보냅니다. 2)통신을 확인합니다. 3)해당파일을 올바르게 수정하거나 존재여부를 확인합니다.
+00201,*Robot is busy*,1) Motion 명령실행중에Motion 명령실행요청이온경우발생합니다. ,1) 현재수행중인Motion 명령이완료된후해당명령을실행합니다.
+00202,"*Servo power is off*,1) 명령실행시점에Servo Off 상태인경우발생합니다.,1) INITIAL /R_RESET/SERVOON 명령을이용해Servo On 이후해당명령을실행합니다.
+00203,"*On E,1) 명령실행시점에E-Stop 상태인경우발생합니다.,1) E-Stop상태를해지하고INITIAL /R_RESET/SERVOON 명령을이용해Servo On 이후해당명령을실행합니다.
+00204,* Robot is paused*,1) 명령실행시점에로봇이일시정지상태인경우발생합니다.,1) R_RESUM 명령으로로봇의일시정지를해지하고이전명령을완료합니다.
+00205,* Robot is not paused*,1) R_RESUM 명령수행시점에Pause 상태가아닌경우발생합니다.,1) R_PAUSE 명령으로Pause 상태인경우에만R_RESUM 명령을실행시켜주시기바랍니다.
+00206,* Robot is not executing command*,1) 로봇이구동중이아닐때R_PAUSE/R_RSTOP/SWESTOP 명령을받으면발생합니다.,1) 해당명령들은로봇 이구동중인경우에만실행시켜주시기바랍니다.
+00207,* Robot is stopped*,1) 외부I/O로로봇이Stop 상태인경우에명령을받을경우발생합니다.,1) 외부I/O의Stop 상태를해지시킨뒤명 령을실행시켜주시기바랍니다.
+00208,"*Robot has an error*,1) Error Reset이필요한Error가발생한상태에서Error Reset이되지않았을때명령을받은경우발생합니다.,1) R_RESET 명령으로 Error를 Reset한뒤 해당 명령을 실행합니다. 2) INITIAL 명령으로 로봇 초기화를 수행한 뒤 해당 명령을 실행합니다.
+00211,*Robot paused by I/O signal*,1) R_PAUSE 대신외부I/O로Pause된상태에서R_RESUM 명령을받을경우발생합니다.,1) 외부I/O의Pause 상태를해지하여실행중인 명령을완료해주시기바랍니다.
+00212,*Robot is using MCP Mode*,1) MCP 사용중명령을받았을때발생합니다.,1) MCP의사용이종료된이후에해당명령을실행시켜주시기 바랍니다.
+00215,* Robot Stopped by Ext-I/O*,1)해당Stage에설정된Gate IO가꺼져있는상태에서ARM을뻗을때발생합니다.,1)해당Stage에설정된Gate IO를키고ARM을뻗습니다.
+00222,"*Error on wafer status before wafer mapping,1) Material Scan 후비정상데이터를감지하였을때발생합니다.,1) Scan 명령을재실행합니다.
+00224,"*Error on wafer status before wafer mapping,1) Material Scan을시작하는시점에Mapping Sensor에신호가감지되었을때발생합니다.,1) 주변환경에센서를감지시킬만한물체에대해확인합니다.
+00232,"*Robot have no map scan data,1) 특정Stage에Mapping Data를요청하였지만해당Stage가아직Scan이수행되지않은경우,해당Stage에Scan을먼저수행한뒤Mapping Data를요청합니다.
+00291,*Need Stage Teaching*,1) Teaching이 이루어지지 않은 상태에서 해당 Stage로 이동명령을 받았 을 때 발생합니다,1) 해당 Stage의 Teaching을 수행하고 해당 명령을 실행시킵니다.
+00292,** Need Stage Parameter Config*,1) Parameter 설정이이루어지지않은상태에서해당Stage에관련된명령을받았을때발생합니다.,1) 해당Stage의Parameter 설정을수행하고해당명령을실행시킵니다.
+00293,* This Stage is Flipped Location,1) Flip된상태로Teaching된위치에Flip 명령을사용하지않았을때발생합니다.,1) /F 가붙은Flip모션전용명령어를사용해주시기바랍니다.
+00294,* This Stage is not Flipped Location,1) Flip되지않은상태로Teaching된위치에Flip 모션명령을사용하였을때발생합니다.,1) /F 가붙지않은일반모션명령어를사용해주시기바랍니다.
+00295,"*Clearance value is set to be wrong*,1) Scara 로봇구동중특정Stage의Clearance 설정값이적절하지않을때발생합니다.,1) Clearance 값을재설정 합니다.
+00301,* Requested arm is handling wafer*,1) Material을가져오는명령을수신하였지만(GETFROM등) 이미해당Arm에Material이존재하는경우발생합니다.,1) Arm에Material이존재하지않는상태에서명령이수행되어야합니다.
+00302,*Requested arm is not handling wafer*,1) Material을투입하라는명령을수신하였지만(PUTINTO등) 해당Arm에Material이존재하지않는경우발생 합니다.,1) Arm에Material이존재하는상태에서명령이수행되어야합니다.
+00303,*Requested arm is not handling wafer*,1) Material을가져오는명령을실행하였지만(GETFROM등) Material을가져오는데실패한경우발생합니다.,1) 지정한위치에Material의유무를확인합니다.
+00304,*Requested arm is handling wafer*,1) Material을투입하라는명령을실행하였지만(PUTINTO등) 해당위치에투입을실패한경우발생합니다.,1) 투 입을시도한Stage를확인합니다.
+00312,* Current robot position is dangerous* ,1) 로봇의다음이동이위험한Motion을수행할것으로판단되는경우에발생합니다.,1) T/P의수동조작 을이용하여로봇을안전한위치로이동시킨뒤INITIAL 명령을수행합니다.
+00701,*Aligner: Busy*,1) Aligner가명령을수행하는상태에서다른명령을받으면발생합니다.,1) 작업완료메시지를받은후에재시도합니다.
+00702,*Aligner: Not Homed*,1) Aligner의최초Power On 시Home를잡지않고다른명령을받으면발생합니다.,1) ALIGNHOME 명령후재시도합니다.
+00703,* Aligner: Start fail Error*,1)Aligner를초기화를하지않은상태에서명령을받게되면발생합니다.,1) ALIGNHOME 명령후재시도합니다.
+00709,* Aligner: Time out*,1) 정해진시간(10초) 내에Align을완료하지못했을때발생합니다.,1) 웨이퍼의상태를확인한후재시도합니다.
+00711,*Aligner: Invalid command*,1) 상위로부터지정되지않은명령을받았을경우발생합니다.,1) 입력한명령을확인후재시도합니다.
+00712,*Aligner: Invalid angle*,1)상위로부터유효하지않은범위의각도값의명령이들어왔을경우발생합니다.,1) 명령의각도값의범위를확인한후재시도합니다.
+00721,*Aligner: No Wafer Error*,1) 웨이퍼가없는상태에서Align 명령을받았을때발생합니다.,1) 웨이퍼의상태를체크한후재시도또는공압시스템을체크후재시도합니다.
+00749,*Aligner: Unexpected Error*,1) 예상하지못한예러가발생하였을경우발생합니다.,1) 해당업체로문의바랍니다.
+00801,*Monitor detected wafer ,1) Arm이Material을들고있는상태에서충돌이나기구적문제, 혹은인위적으로Material이제거될경우발 생합니다.,1) INITIAL 명령이나R_RESET 명령으로Error를Reset합니다.
+00821,*Robot Detect Collision*,1) 로봇구동중충돌이감지되었을때발생합니다. ,감지시로봇은즉시정지하고수행중인명령을종료합니 다.
+00831,* Ext,1)ARM이뻗어있는상태에서Gate IO가꺼지면발생합니다., 위급상황이기때문에SERVO_OFF됩니다.
+00901,* Robot cannot execute,1) 해당로봇이지원하지않는명령을수신할경우발생합니다.,1) 해당로봇이지원가능한명령을이용합니다.
+01001,*Warning:Need Cable,1) 일정횟수이상의Encoder Cable 통신이상이감지되면발생합니다.,1) 해당경고가자주발생하는경우 Cable 상태점검이필요합니다.
