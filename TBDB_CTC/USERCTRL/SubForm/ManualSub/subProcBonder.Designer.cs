@@ -282,9 +282,10 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.a1Panel1);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(2, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(881, 693);
+            this.panel1.Size = new System.Drawing.Size(1101, 866);
             this.panel1.TabIndex = 973;
             // 
             // panel8
@@ -299,9 +300,10 @@
             this.panel8.Controls.Add(this.PmcStatusSig_1);
             this.panel8.Controls.Add(this.label40);
             this.panel8.ForeColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(664, 324);
+            this.panel8.Location = new System.Drawing.Point(830, 405);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(207, 364);
+            this.panel8.Size = new System.Drawing.Size(258, 454);
             this.panel8.TabIndex = 988;
             // 
             // PmcStatusSig_6
@@ -309,9 +311,10 @@
             this.PmcStatusSig_6.BackColor = System.Drawing.Color.Gray;
             this.PmcStatusSig_6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatusSig_6.ForeColor = System.Drawing.Color.White;
-            this.PmcStatusSig_6.Location = new System.Drawing.Point(31, 240);
+            this.PmcStatusSig_6.Location = new System.Drawing.Point(39, 300);
+            this.PmcStatusSig_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatusSig_6.Name = "PmcStatusSig_6";
-            this.PmcStatusSig_6.Size = new System.Drawing.Size(145, 32);
+            this.PmcStatusSig_6.Size = new System.Drawing.Size(181, 40);
             this.PmcStatusSig_6.TabIndex = 1033;
             this.PmcStatusSig_6.Text = "Fast Pump Open";
             this.PmcStatusSig_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -321,9 +324,10 @@
             this.PmcStatusSig_0.BackColor = System.Drawing.Color.Gray;
             this.PmcStatusSig_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatusSig_0.ForeColor = System.Drawing.Color.White;
-            this.PmcStatusSig_0.Location = new System.Drawing.Point(31, 42);
+            this.PmcStatusSig_0.Location = new System.Drawing.Point(39, 52);
+            this.PmcStatusSig_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatusSig_0.Name = "PmcStatusSig_0";
-            this.PmcStatusSig_0.Size = new System.Drawing.Size(145, 32);
+            this.PmcStatusSig_0.Size = new System.Drawing.Size(181, 40);
             this.PmcStatusSig_0.TabIndex = 1032;
             this.PmcStatusSig_0.Text = "Heart Bit";
             this.PmcStatusSig_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -333,9 +337,10 @@
             this.PmcStatusSig_5.BackColor = System.Drawing.Color.Gray;
             this.PmcStatusSig_5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatusSig_5.ForeColor = System.Drawing.Color.White;
-            this.PmcStatusSig_5.Location = new System.Drawing.Point(31, 207);
+            this.PmcStatusSig_5.Location = new System.Drawing.Point(39, 259);
+            this.PmcStatusSig_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatusSig_5.Name = "PmcStatusSig_5";
-            this.PmcStatusSig_5.Size = new System.Drawing.Size(145, 32);
+            this.PmcStatusSig_5.Size = new System.Drawing.Size(181, 40);
             this.PmcStatusSig_5.TabIndex = 1025;
             this.PmcStatusSig_5.Text = "DryPump On";
             this.PmcStatusSig_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -345,9 +350,10 @@
             this.PmcStatusSig_4.BackColor = System.Drawing.Color.Gray;
             this.PmcStatusSig_4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatusSig_4.ForeColor = System.Drawing.Color.White;
-            this.PmcStatusSig_4.Location = new System.Drawing.Point(31, 174);
+            this.PmcStatusSig_4.Location = new System.Drawing.Point(39, 218);
+            this.PmcStatusSig_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatusSig_4.Name = "PmcStatusSig_4";
-            this.PmcStatusSig_4.Size = new System.Drawing.Size(145, 32);
+            this.PmcStatusSig_4.Size = new System.Drawing.Size(181, 40);
             this.PmcStatusSig_4.TabIndex = 1006;
             this.PmcStatusSig_4.Text = "Upper Wafer";
             this.PmcStatusSig_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -357,9 +363,10 @@
             this.PmcStatusSig_3.BackColor = System.Drawing.Color.Gray;
             this.PmcStatusSig_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatusSig_3.ForeColor = System.Drawing.Color.White;
-            this.PmcStatusSig_3.Location = new System.Drawing.Point(31, 141);
+            this.PmcStatusSig_3.Location = new System.Drawing.Point(39, 176);
+            this.PmcStatusSig_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatusSig_3.Name = "PmcStatusSig_3";
-            this.PmcStatusSig_3.Size = new System.Drawing.Size(145, 32);
+            this.PmcStatusSig_3.Size = new System.Drawing.Size(181, 40);
             this.PmcStatusSig_3.TabIndex = 1005;
             this.PmcStatusSig_3.Text = "Low Wafer";
             this.PmcStatusSig_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -369,9 +376,10 @@
             this.PmcStatusSig_2.BackColor = System.Drawing.Color.Gray;
             this.PmcStatusSig_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatusSig_2.ForeColor = System.Drawing.Color.White;
-            this.PmcStatusSig_2.Location = new System.Drawing.Point(31, 108);
+            this.PmcStatusSig_2.Location = new System.Drawing.Point(39, 135);
+            this.PmcStatusSig_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatusSig_2.Name = "PmcStatusSig_2";
-            this.PmcStatusSig_2.Size = new System.Drawing.Size(145, 32);
+            this.PmcStatusSig_2.Size = new System.Drawing.Size(181, 40);
             this.PmcStatusSig_2.TabIndex = 1004;
             this.PmcStatusSig_2.Text = "Standby Status";
             this.PmcStatusSig_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -381,9 +389,10 @@
             this.PmcStatusSig_1.BackColor = System.Drawing.Color.Gray;
             this.PmcStatusSig_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatusSig_1.ForeColor = System.Drawing.Color.White;
-            this.PmcStatusSig_1.Location = new System.Drawing.Point(31, 75);
+            this.PmcStatusSig_1.Location = new System.Drawing.Point(39, 94);
+            this.PmcStatusSig_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatusSig_1.Name = "PmcStatusSig_1";
-            this.PmcStatusSig_1.Size = new System.Drawing.Size(145, 32);
+            this.PmcStatusSig_1.Size = new System.Drawing.Size(181, 40);
             this.PmcStatusSig_1.TabIndex = 1003;
             this.PmcStatusSig_1.Text = "Init Status";
             this.PmcStatusSig_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -394,9 +403,10 @@
             this.label40.BackColor = System.Drawing.Color.Transparent;
             this.label40.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(28, 12);
+            this.label40.Location = new System.Drawing.Point(35, 15);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(80, 17);
+            this.label40.Size = new System.Drawing.Size(104, 23);
             this.label40.TabIndex = 0;
             this.label40.Text = "Status PMC";
             // 
@@ -417,18 +427,20 @@
             this.panel3.Controls.Add(this.CtcInterlock_0);
             this.panel3.Controls.Add(this.label34);
             this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(664, 30);
+            this.panel3.Location = new System.Drawing.Point(830, 38);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(207, 288);
+            this.panel3.Size = new System.Drawing.Size(258, 360);
             this.panel3.TabIndex = 987;
             // 
             // checkBox25
             // 
             this.checkBox25.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox25.ForeColor = System.Drawing.Color.Black;
-            this.checkBox25.Location = new System.Drawing.Point(134, 36);
+            this.checkBox25.Location = new System.Drawing.Point(168, 45);
+            this.checkBox25.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(56, 32);
+            this.checkBox25.Size = new System.Drawing.Size(70, 40);
             this.checkBox25.TabIndex = 1033;
             this.checkBox25.Tag = "200";
             this.checkBox25.Text = "On";
@@ -441,9 +453,10 @@
             this.CtcStatusSig_0.BackColor = System.Drawing.Color.Gray;
             this.CtcStatusSig_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcStatusSig_0.ForeColor = System.Drawing.Color.White;
-            this.CtcStatusSig_0.Location = new System.Drawing.Point(19, 37);
+            this.CtcStatusSig_0.Location = new System.Drawing.Point(24, 46);
+            this.CtcStatusSig_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcStatusSig_0.Name = "CtcStatusSig_0";
-            this.CtcStatusSig_0.Size = new System.Drawing.Size(113, 32);
+            this.CtcStatusSig_0.Size = new System.Drawing.Size(141, 40);
             this.CtcStatusSig_0.TabIndex = 1032;
             this.CtcStatusSig_0.Text = "Heart Bit";
             this.CtcStatusSig_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -452,9 +465,10 @@
             // 
             this.checkBox24.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox24.ForeColor = System.Drawing.Color.Black;
-            this.checkBox24.Location = new System.Drawing.Point(134, 203);
+            this.checkBox24.Location = new System.Drawing.Point(168, 254);
+            this.checkBox24.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(56, 32);
+            this.checkBox24.Size = new System.Drawing.Size(70, 40);
             this.checkBox24.TabIndex = 1030;
             this.checkBox24.Tag = "404";
             this.checkBox24.Text = "On";
@@ -466,9 +480,10 @@
             // 
             this.checkBox23.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox23.ForeColor = System.Drawing.Color.Black;
-            this.checkBox23.Location = new System.Drawing.Point(134, 170);
+            this.checkBox23.Location = new System.Drawing.Point(168, 212);
+            this.checkBox23.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(56, 32);
+            this.checkBox23.Size = new System.Drawing.Size(70, 40);
             this.checkBox23.TabIndex = 1029;
             this.checkBox23.Tag = "403";
             this.checkBox23.Text = "On";
@@ -480,9 +495,10 @@
             // 
             this.checkBox22.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox22.ForeColor = System.Drawing.Color.Black;
-            this.checkBox22.Location = new System.Drawing.Point(134, 137);
+            this.checkBox22.Location = new System.Drawing.Point(168, 171);
+            this.checkBox22.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(56, 32);
+            this.checkBox22.Size = new System.Drawing.Size(70, 40);
             this.checkBox22.TabIndex = 1028;
             this.checkBox22.Tag = "402";
             this.checkBox22.Text = "On";
@@ -494,9 +510,10 @@
             // 
             this.checkBox21.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox21.ForeColor = System.Drawing.Color.Black;
-            this.checkBox21.Location = new System.Drawing.Point(134, 104);
+            this.checkBox21.Location = new System.Drawing.Point(168, 130);
+            this.checkBox21.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(56, 32);
+            this.checkBox21.Size = new System.Drawing.Size(70, 40);
             this.checkBox21.TabIndex = 1027;
             this.checkBox21.Tag = "401";
             this.checkBox21.Text = "On";
@@ -508,9 +525,10 @@
             // 
             this.checkBox20.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox20.ForeColor = System.Drawing.Color.Black;
-            this.checkBox20.Location = new System.Drawing.Point(134, 70);
+            this.checkBox20.Location = new System.Drawing.Point(168, 88);
+            this.checkBox20.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(56, 32);
+            this.checkBox20.Size = new System.Drawing.Size(70, 40);
             this.checkBox20.TabIndex = 1026;
             this.checkBox20.Tag = "400";
             this.checkBox20.Text = "On";
@@ -523,9 +541,10 @@
             this.CtcInterlock_4.BackColor = System.Drawing.Color.Gray;
             this.CtcInterlock_4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcInterlock_4.ForeColor = System.Drawing.Color.White;
-            this.CtcInterlock_4.Location = new System.Drawing.Point(19, 203);
+            this.CtcInterlock_4.Location = new System.Drawing.Point(24, 254);
+            this.CtcInterlock_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcInterlock_4.Name = "CtcInterlock_4";
-            this.CtcInterlock_4.Size = new System.Drawing.Size(113, 32);
+            this.CtcInterlock_4.Size = new System.Drawing.Size(141, 40);
             this.CtcInterlock_4.TabIndex = 1025;
             this.CtcInterlock_4.Text = "DryPump On Req";
             this.CtcInterlock_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -535,9 +554,10 @@
             this.CtcInterlock_3.BackColor = System.Drawing.Color.Gray;
             this.CtcInterlock_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcInterlock_3.ForeColor = System.Drawing.Color.White;
-            this.CtcInterlock_3.Location = new System.Drawing.Point(19, 170);
+            this.CtcInterlock_3.Location = new System.Drawing.Point(24, 212);
+            this.CtcInterlock_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcInterlock_3.Name = "CtcInterlock_3";
-            this.CtcInterlock_3.Size = new System.Drawing.Size(113, 32);
+            this.CtcInterlock_3.Size = new System.Drawing.Size(141, 40);
             this.CtcInterlock_3.TabIndex = 1006;
             this.CtcInterlock_3.Text = "Fast Pump Change";
             this.CtcInterlock_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -547,9 +567,10 @@
             this.CtcInterlock_2.BackColor = System.Drawing.Color.Gray;
             this.CtcInterlock_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcInterlock_2.ForeColor = System.Drawing.Color.White;
-            this.CtcInterlock_2.Location = new System.Drawing.Point(19, 137);
+            this.CtcInterlock_2.Location = new System.Drawing.Point(24, 171);
+            this.CtcInterlock_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcInterlock_2.Name = "CtcInterlock_2";
-            this.CtcInterlock_2.Size = new System.Drawing.Size(113, 32);
+            this.CtcInterlock_2.Size = new System.Drawing.Size(141, 40);
             this.CtcInterlock_2.TabIndex = 1005;
             this.CtcInterlock_2.Text = "Fast Pump Open";
             this.CtcInterlock_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -559,9 +580,10 @@
             this.CtcInterlock_1.BackColor = System.Drawing.Color.Gray;
             this.CtcInterlock_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcInterlock_1.ForeColor = System.Drawing.Color.White;
-            this.CtcInterlock_1.Location = new System.Drawing.Point(19, 104);
+            this.CtcInterlock_1.Location = new System.Drawing.Point(24, 130);
+            this.CtcInterlock_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcInterlock_1.Name = "CtcInterlock_1";
-            this.CtcInterlock_1.Size = new System.Drawing.Size(113, 32);
+            this.CtcInterlock_1.Size = new System.Drawing.Size(141, 40);
             this.CtcInterlock_1.TabIndex = 1004;
             this.CtcInterlock_1.Text = "Shutter Close";
             this.CtcInterlock_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -571,9 +593,10 @@
             this.CtcInterlock_0.BackColor = System.Drawing.Color.Gray;
             this.CtcInterlock_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcInterlock_0.ForeColor = System.Drawing.Color.White;
-            this.CtcInterlock_0.Location = new System.Drawing.Point(19, 71);
+            this.CtcInterlock_0.Location = new System.Drawing.Point(24, 89);
+            this.CtcInterlock_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcInterlock_0.Name = "CtcInterlock_0";
-            this.CtcInterlock_0.Size = new System.Drawing.Size(113, 32);
+            this.CtcInterlock_0.Size = new System.Drawing.Size(141, 40);
             this.CtcInterlock_0.TabIndex = 1003;
             this.CtcInterlock_0.Text = "Shutter Open";
             this.CtcInterlock_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -584,9 +607,10 @@
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(18, 11);
+            this.label34.Location = new System.Drawing.Point(22, 14);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(75, 17);
+            this.label34.Size = new System.Drawing.Size(99, 23);
             this.label34.TabIndex = 0;
             this.label34.Text = "Status CTC";
             // 
@@ -631,18 +655,20 @@
             this.panel2.Controls.Add(this.InitCtc_0);
             this.panel2.Controls.Add(this.label2);
             this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(338, 30);
+            this.panel2.Location = new System.Drawing.Point(422, 38);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 659);
+            this.panel2.Size = new System.Drawing.Size(400, 823);
             this.panel2.TabIndex = 984;
             // 
             // checkBox32
             // 
             this.checkBox32.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox32.ForeColor = System.Drawing.Color.Black;
-            this.checkBox32.Location = new System.Drawing.Point(252, 554);
+            this.checkBox32.Location = new System.Drawing.Point(315, 692);
+            this.checkBox32.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(56, 32);
+            this.checkBox32.Size = new System.Drawing.Size(70, 40);
             this.checkBox32.TabIndex = 992;
             this.checkBox32.Tag = "128";
             this.checkBox32.Text = "On";
@@ -656,9 +682,10 @@
             this.label57.BackColor = System.Drawing.Color.Transparent;
             this.label57.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label57.ForeColor = System.Drawing.Color.White;
-            this.label57.Location = new System.Drawing.Point(148, 462);
+            this.label57.Location = new System.Drawing.Point(185, 578);
+            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(32, 17);
+            this.label57.Size = new System.Drawing.Size(42, 23);
             this.label57.TabIndex = 1025;
             this.label57.Text = "CTC";
             // 
@@ -667,9 +694,10 @@
             this.ProcPmc_3.BackColor = System.Drawing.Color.Gray;
             this.ProcPmc_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProcPmc_3.ForeColor = System.Drawing.Color.White;
-            this.ProcPmc_3.Location = new System.Drawing.Point(11, 587);
+            this.ProcPmc_3.Location = new System.Drawing.Point(14, 734);
+            this.ProcPmc_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProcPmc_3.Name = "ProcPmc_3";
-            this.ProcPmc_3.Size = new System.Drawing.Size(113, 32);
+            this.ProcPmc_3.Size = new System.Drawing.Size(141, 40);
             this.ProcPmc_3.TabIndex = 1024;
             this.ProcPmc_3.Text = "Process Fail";
             this.ProcPmc_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -678,9 +706,10 @@
             // 
             this.checkBox33.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox33.ForeColor = System.Drawing.Color.Black;
-            this.checkBox33.Location = new System.Drawing.Point(252, 521);
+            this.checkBox33.Location = new System.Drawing.Point(315, 651);
+            this.checkBox33.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(56, 32);
+            this.checkBox33.Size = new System.Drawing.Size(70, 40);
             this.checkBox33.TabIndex = 990;
             this.checkBox33.Tag = "127";
             this.checkBox33.Text = "On";
@@ -693,9 +722,10 @@
             this.ProcPmc_2.BackColor = System.Drawing.Color.Gray;
             this.ProcPmc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProcPmc_2.ForeColor = System.Drawing.Color.White;
-            this.ProcPmc_2.Location = new System.Drawing.Point(11, 554);
+            this.ProcPmc_2.Location = new System.Drawing.Point(14, 692);
+            this.ProcPmc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProcPmc_2.Name = "ProcPmc_2";
-            this.ProcPmc_2.Size = new System.Drawing.Size(113, 32);
+            this.ProcPmc_2.Size = new System.Drawing.Size(141, 40);
             this.ProcPmc_2.TabIndex = 1023;
             this.ProcPmc_2.Text = "Process Complete";
             this.ProcPmc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -705,9 +735,10 @@
             this.ProcPmc_1.BackColor = System.Drawing.Color.Gray;
             this.ProcPmc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProcPmc_1.ForeColor = System.Drawing.Color.White;
-            this.ProcPmc_1.Location = new System.Drawing.Point(11, 521);
+            this.ProcPmc_1.Location = new System.Drawing.Point(14, 651);
+            this.ProcPmc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProcPmc_1.Name = "ProcPmc_1";
-            this.ProcPmc_1.Size = new System.Drawing.Size(113, 32);
+            this.ProcPmc_1.Size = new System.Drawing.Size(141, 40);
             this.ProcPmc_1.TabIndex = 1022;
             this.ProcPmc_1.Text = "Process Start";
             this.ProcPmc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -716,9 +747,10 @@
             // 
             this.checkBox34.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox34.ForeColor = System.Drawing.Color.Black;
-            this.checkBox34.Location = new System.Drawing.Point(252, 488);
+            this.checkBox34.Location = new System.Drawing.Point(315, 610);
+            this.checkBox34.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(56, 32);
+            this.checkBox34.Size = new System.Drawing.Size(70, 40);
             this.checkBox34.TabIndex = 988;
             this.checkBox34.Tag = "126";
             this.checkBox34.Text = "On";
@@ -731,9 +763,10 @@
             this.ProcPmc_0.BackColor = System.Drawing.Color.Gray;
             this.ProcPmc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProcPmc_0.ForeColor = System.Drawing.Color.White;
-            this.ProcPmc_0.Location = new System.Drawing.Point(11, 488);
+            this.ProcPmc_0.Location = new System.Drawing.Point(14, 610);
+            this.ProcPmc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProcPmc_0.Name = "ProcPmc_0";
-            this.ProcPmc_0.Size = new System.Drawing.Size(113, 32);
+            this.ProcPmc_0.Size = new System.Drawing.Size(141, 40);
             this.ProcPmc_0.TabIndex = 1021;
             this.ProcPmc_0.Text = "Process Ack";
             this.ProcPmc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -743,9 +776,10 @@
             this.ProcCtc_2.BackColor = System.Drawing.Color.Gray;
             this.ProcCtc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProcCtc_2.ForeColor = System.Drawing.Color.White;
-            this.ProcCtc_2.Location = new System.Drawing.Point(136, 554);
+            this.ProcCtc_2.Location = new System.Drawing.Point(170, 692);
+            this.ProcCtc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProcCtc_2.Name = "ProcCtc_2";
-            this.ProcCtc_2.Size = new System.Drawing.Size(113, 32);
+            this.ProcCtc_2.Size = new System.Drawing.Size(141, 40);
             this.ProcCtc_2.TabIndex = 1020;
             this.ProcCtc_2.Text = "Process Complete Ack";
             this.ProcCtc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -755,9 +789,10 @@
             this.ProcCtc_1.BackColor = System.Drawing.Color.Gray;
             this.ProcCtc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProcCtc_1.ForeColor = System.Drawing.Color.White;
-            this.ProcCtc_1.Location = new System.Drawing.Point(136, 521);
+            this.ProcCtc_1.Location = new System.Drawing.Point(170, 651);
+            this.ProcCtc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProcCtc_1.Name = "ProcCtc_1";
-            this.ProcCtc_1.Size = new System.Drawing.Size(113, 32);
+            this.ProcCtc_1.Size = new System.Drawing.Size(141, 40);
             this.ProcCtc_1.TabIndex = 1019;
             this.ProcCtc_1.Text = "Process Ready";
             this.ProcCtc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -767,9 +802,10 @@
             this.ProcCtc_0.BackColor = System.Drawing.Color.Gray;
             this.ProcCtc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProcCtc_0.ForeColor = System.Drawing.Color.White;
-            this.ProcCtc_0.Location = new System.Drawing.Point(136, 488);
+            this.ProcCtc_0.Location = new System.Drawing.Point(170, 610);
+            this.ProcCtc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProcCtc_0.Name = "ProcCtc_0";
-            this.ProcCtc_0.Size = new System.Drawing.Size(113, 32);
+            this.ProcCtc_0.Size = new System.Drawing.Size(141, 40);
             this.ProcCtc_0.TabIndex = 1018;
             this.ProcCtc_0.Text = "Process Req";
             this.ProcCtc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -780,9 +816,10 @@
             this.label65.BackColor = System.Drawing.Color.Transparent;
             this.label65.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label65.ForeColor = System.Drawing.Color.White;
-            this.label65.Location = new System.Drawing.Point(11, 462);
+            this.label65.Location = new System.Drawing.Point(14, 578);
+            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(88, 17);
+            this.label65.Size = new System.Drawing.Size(114, 23);
             this.label65.TabIndex = 1017;
             this.label65.Text = "Process PMC";
             // 
@@ -792,9 +829,10 @@
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label56.ForeColor = System.Drawing.Color.White;
-            this.label56.Location = new System.Drawing.Point(148, 266);
+            this.label56.Location = new System.Drawing.Point(185, 332);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(32, 17);
+            this.label56.Size = new System.Drawing.Size(42, 23);
             this.label56.TabIndex = 1016;
             this.label56.Text = "CTC";
             // 
@@ -802,9 +840,10 @@
             // 
             this.checkBox26.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox26.ForeColor = System.Drawing.Color.Black;
-            this.checkBox26.Location = new System.Drawing.Point(252, 358);
+            this.checkBox26.Location = new System.Drawing.Point(315, 448);
+            this.checkBox26.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(56, 32);
+            this.checkBox26.Size = new System.Drawing.Size(70, 40);
             this.checkBox26.TabIndex = 992;
             this.checkBox26.Tag = "125";
             this.checkBox26.Text = "On";
@@ -817,9 +856,10 @@
             this.StandPmc_3.BackColor = System.Drawing.Color.Gray;
             this.StandPmc_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StandPmc_3.ForeColor = System.Drawing.Color.White;
-            this.StandPmc_3.Location = new System.Drawing.Point(11, 391);
+            this.StandPmc_3.Location = new System.Drawing.Point(14, 489);
+            this.StandPmc_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StandPmc_3.Name = "StandPmc_3";
-            this.StandPmc_3.Size = new System.Drawing.Size(113, 32);
+            this.StandPmc_3.Size = new System.Drawing.Size(141, 40);
             this.StandPmc_3.TabIndex = 1015;
             this.StandPmc_3.Text = "Standby Fail";
             this.StandPmc_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -829,9 +869,10 @@
             this.StandPmc_2.BackColor = System.Drawing.Color.Gray;
             this.StandPmc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StandPmc_2.ForeColor = System.Drawing.Color.White;
-            this.StandPmc_2.Location = new System.Drawing.Point(11, 358);
+            this.StandPmc_2.Location = new System.Drawing.Point(14, 448);
+            this.StandPmc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StandPmc_2.Name = "StandPmc_2";
-            this.StandPmc_2.Size = new System.Drawing.Size(113, 32);
+            this.StandPmc_2.Size = new System.Drawing.Size(141, 40);
             this.StandPmc_2.TabIndex = 1014;
             this.StandPmc_2.Text = "Standby Complete";
             this.StandPmc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -840,9 +881,10 @@
             // 
             this.checkBox27.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox27.ForeColor = System.Drawing.Color.Black;
-            this.checkBox27.Location = new System.Drawing.Point(252, 325);
+            this.checkBox27.Location = new System.Drawing.Point(315, 406);
+            this.checkBox27.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(56, 32);
+            this.checkBox27.Size = new System.Drawing.Size(70, 40);
             this.checkBox27.TabIndex = 990;
             this.checkBox27.Tag = "124";
             this.checkBox27.Text = "On";
@@ -855,9 +897,10 @@
             this.StandPmc_1.BackColor = System.Drawing.Color.Gray;
             this.StandPmc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StandPmc_1.ForeColor = System.Drawing.Color.White;
-            this.StandPmc_1.Location = new System.Drawing.Point(11, 325);
+            this.StandPmc_1.Location = new System.Drawing.Point(14, 406);
+            this.StandPmc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StandPmc_1.Name = "StandPmc_1";
-            this.StandPmc_1.Size = new System.Drawing.Size(113, 32);
+            this.StandPmc_1.Size = new System.Drawing.Size(141, 40);
             this.StandPmc_1.TabIndex = 1013;
             this.StandPmc_1.Text = "Standby Start";
             this.StandPmc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -867,9 +910,10 @@
             this.StandPmc_0.BackColor = System.Drawing.Color.Gray;
             this.StandPmc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StandPmc_0.ForeColor = System.Drawing.Color.White;
-            this.StandPmc_0.Location = new System.Drawing.Point(11, 292);
+            this.StandPmc_0.Location = new System.Drawing.Point(14, 365);
+            this.StandPmc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StandPmc_0.Name = "StandPmc_0";
-            this.StandPmc_0.Size = new System.Drawing.Size(113, 32);
+            this.StandPmc_0.Size = new System.Drawing.Size(141, 40);
             this.StandPmc_0.TabIndex = 1012;
             this.StandPmc_0.Text = "Standby Ack";
             this.StandPmc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -878,9 +922,10 @@
             // 
             this.checkBox28.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox28.ForeColor = System.Drawing.Color.Black;
-            this.checkBox28.Location = new System.Drawing.Point(252, 292);
+            this.checkBox28.Location = new System.Drawing.Point(315, 365);
+            this.checkBox28.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(56, 32);
+            this.checkBox28.Size = new System.Drawing.Size(70, 40);
             this.checkBox28.TabIndex = 988;
             this.checkBox28.Tag = "123";
             this.checkBox28.Text = "On";
@@ -893,9 +938,10 @@
             this.StandCtc_2.BackColor = System.Drawing.Color.Gray;
             this.StandCtc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StandCtc_2.ForeColor = System.Drawing.Color.White;
-            this.StandCtc_2.Location = new System.Drawing.Point(136, 358);
+            this.StandCtc_2.Location = new System.Drawing.Point(170, 448);
+            this.StandCtc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StandCtc_2.Name = "StandCtc_2";
-            this.StandCtc_2.Size = new System.Drawing.Size(113, 32);
+            this.StandCtc_2.Size = new System.Drawing.Size(141, 40);
             this.StandCtc_2.TabIndex = 1011;
             this.StandCtc_2.Text = "Standby Complete Ack";
             this.StandCtc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -905,9 +951,10 @@
             this.StandCtc_1.BackColor = System.Drawing.Color.Gray;
             this.StandCtc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StandCtc_1.ForeColor = System.Drawing.Color.White;
-            this.StandCtc_1.Location = new System.Drawing.Point(136, 325);
+            this.StandCtc_1.Location = new System.Drawing.Point(170, 406);
+            this.StandCtc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StandCtc_1.Name = "StandCtc_1";
-            this.StandCtc_1.Size = new System.Drawing.Size(113, 32);
+            this.StandCtc_1.Size = new System.Drawing.Size(141, 40);
             this.StandCtc_1.TabIndex = 1010;
             this.StandCtc_1.Text = "Standby Ready";
             this.StandCtc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -917,9 +964,10 @@
             this.StandCtc_0.BackColor = System.Drawing.Color.Gray;
             this.StandCtc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StandCtc_0.ForeColor = System.Drawing.Color.White;
-            this.StandCtc_0.Location = new System.Drawing.Point(136, 292);
+            this.StandCtc_0.Location = new System.Drawing.Point(170, 365);
+            this.StandCtc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StandCtc_0.Name = "StandCtc_0";
-            this.StandCtc_0.Size = new System.Drawing.Size(113, 32);
+            this.StandCtc_0.Size = new System.Drawing.Size(141, 40);
             this.StandCtc_0.TabIndex = 1009;
             this.StandCtc_0.Text = "Standby Req";
             this.StandCtc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -930,9 +978,10 @@
             this.label48.BackColor = System.Drawing.Color.Transparent;
             this.label48.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label48.ForeColor = System.Drawing.Color.White;
-            this.label48.Location = new System.Drawing.Point(11, 266);
+            this.label48.Location = new System.Drawing.Point(14, 332);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(92, 17);
+            this.label48.Size = new System.Drawing.Size(120, 23);
             this.label48.TabIndex = 1008;
             this.label48.Text = "Standby PMC";
             // 
@@ -942,9 +991,10 @@
             this.label47.BackColor = System.Drawing.Color.Transparent;
             this.label47.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label47.ForeColor = System.Drawing.Color.White;
-            this.label47.Location = new System.Drawing.Point(148, 37);
+            this.label47.Location = new System.Drawing.Point(185, 46);
+            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(32, 17);
+            this.label47.Size = new System.Drawing.Size(42, 23);
             this.label47.TabIndex = 1007;
             this.label47.Text = "CTC";
             // 
@@ -952,9 +1002,10 @@
             // 
             this.checkBox19.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox19.ForeColor = System.Drawing.Color.Black;
-            this.checkBox19.Location = new System.Drawing.Point(252, 128);
+            this.checkBox19.Location = new System.Drawing.Point(315, 160);
+            this.checkBox19.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(56, 32);
+            this.checkBox19.Size = new System.Drawing.Size(70, 40);
             this.checkBox19.TabIndex = 992;
             this.checkBox19.Tag = "122";
             this.checkBox19.Text = "On";
@@ -967,9 +1018,10 @@
             this.InitPmc_3.BackColor = System.Drawing.Color.Gray;
             this.InitPmc_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InitPmc_3.ForeColor = System.Drawing.Color.White;
-            this.InitPmc_3.Location = new System.Drawing.Point(11, 161);
+            this.InitPmc_3.Location = new System.Drawing.Point(14, 201);
+            this.InitPmc_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InitPmc_3.Name = "InitPmc_3";
-            this.InitPmc_3.Size = new System.Drawing.Size(113, 32);
+            this.InitPmc_3.Size = new System.Drawing.Size(141, 40);
             this.InitPmc_3.TabIndex = 1006;
             this.InitPmc_3.Text = "Init Fail";
             this.InitPmc_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -979,9 +1031,10 @@
             this.InitPmc_2.BackColor = System.Drawing.Color.Gray;
             this.InitPmc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InitPmc_2.ForeColor = System.Drawing.Color.White;
-            this.InitPmc_2.Location = new System.Drawing.Point(11, 128);
+            this.InitPmc_2.Location = new System.Drawing.Point(14, 160);
+            this.InitPmc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InitPmc_2.Name = "InitPmc_2";
-            this.InitPmc_2.Size = new System.Drawing.Size(113, 32);
+            this.InitPmc_2.Size = new System.Drawing.Size(141, 40);
             this.InitPmc_2.TabIndex = 1005;
             this.InitPmc_2.Text = "Init Complete";
             this.InitPmc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -990,9 +1043,10 @@
             // 
             this.checkBox18.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox18.ForeColor = System.Drawing.Color.Black;
-            this.checkBox18.Location = new System.Drawing.Point(252, 95);
+            this.checkBox18.Location = new System.Drawing.Point(315, 119);
+            this.checkBox18.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(56, 32);
+            this.checkBox18.Size = new System.Drawing.Size(70, 40);
             this.checkBox18.TabIndex = 990;
             this.checkBox18.Tag = "121";
             this.checkBox18.Text = "On";
@@ -1005,9 +1059,10 @@
             this.InitPmc_1.BackColor = System.Drawing.Color.Gray;
             this.InitPmc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InitPmc_1.ForeColor = System.Drawing.Color.White;
-            this.InitPmc_1.Location = new System.Drawing.Point(11, 95);
+            this.InitPmc_1.Location = new System.Drawing.Point(14, 119);
+            this.InitPmc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InitPmc_1.Name = "InitPmc_1";
-            this.InitPmc_1.Size = new System.Drawing.Size(113, 32);
+            this.InitPmc_1.Size = new System.Drawing.Size(141, 40);
             this.InitPmc_1.TabIndex = 1004;
             this.InitPmc_1.Text = "Init Start";
             this.InitPmc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1017,9 +1072,10 @@
             this.InitPmc_0.BackColor = System.Drawing.Color.Gray;
             this.InitPmc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InitPmc_0.ForeColor = System.Drawing.Color.White;
-            this.InitPmc_0.Location = new System.Drawing.Point(11, 62);
+            this.InitPmc_0.Location = new System.Drawing.Point(14, 78);
+            this.InitPmc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InitPmc_0.Name = "InitPmc_0";
-            this.InitPmc_0.Size = new System.Drawing.Size(113, 32);
+            this.InitPmc_0.Size = new System.Drawing.Size(141, 40);
             this.InitPmc_0.TabIndex = 1003;
             this.InitPmc_0.Text = "Init Ack";
             this.InitPmc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1028,9 +1084,10 @@
             // 
             this.checkBox9.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox9.ForeColor = System.Drawing.Color.Black;
-            this.checkBox9.Location = new System.Drawing.Point(252, 62);
+            this.checkBox9.Location = new System.Drawing.Point(315, 78);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(56, 32);
+            this.checkBox9.Size = new System.Drawing.Size(70, 40);
             this.checkBox9.TabIndex = 988;
             this.checkBox9.Tag = "120";
             this.checkBox9.Text = "On";
@@ -1043,9 +1100,10 @@
             this.InitCtc_2.BackColor = System.Drawing.Color.Gray;
             this.InitCtc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InitCtc_2.ForeColor = System.Drawing.Color.White;
-            this.InitCtc_2.Location = new System.Drawing.Point(136, 128);
+            this.InitCtc_2.Location = new System.Drawing.Point(170, 160);
+            this.InitCtc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InitCtc_2.Name = "InitCtc_2";
-            this.InitCtc_2.Size = new System.Drawing.Size(113, 32);
+            this.InitCtc_2.Size = new System.Drawing.Size(141, 40);
             this.InitCtc_2.TabIndex = 1002;
             this.InitCtc_2.Text = "Init Complete Ack";
             this.InitCtc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1055,9 +1113,10 @@
             this.InitCtc_1.BackColor = System.Drawing.Color.Gray;
             this.InitCtc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InitCtc_1.ForeColor = System.Drawing.Color.White;
-            this.InitCtc_1.Location = new System.Drawing.Point(136, 95);
+            this.InitCtc_1.Location = new System.Drawing.Point(170, 119);
+            this.InitCtc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InitCtc_1.Name = "InitCtc_1";
-            this.InitCtc_1.Size = new System.Drawing.Size(113, 32);
+            this.InitCtc_1.Size = new System.Drawing.Size(141, 40);
             this.InitCtc_1.TabIndex = 1001;
             this.InitCtc_1.Text = "Init Ready";
             this.InitCtc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1068,9 +1127,10 @@
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(11, 36);
+            this.label23.Location = new System.Drawing.Point(14, 45);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(95, 17);
+            this.label23.Size = new System.Drawing.Size(121, 23);
             this.label23.TabIndex = 1000;
             this.label23.Text = "Initialize PMC";
             // 
@@ -1079,9 +1139,10 @@
             this.InitCtc_0.BackColor = System.Drawing.Color.Gray;
             this.InitCtc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InitCtc_0.ForeColor = System.Drawing.Color.White;
-            this.InitCtc_0.Location = new System.Drawing.Point(136, 62);
+            this.InitCtc_0.Location = new System.Drawing.Point(170, 78);
+            this.InitCtc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InitCtc_0.Name = "InitCtc_0";
-            this.InitCtc_0.Size = new System.Drawing.Size(113, 32);
+            this.InitCtc_0.Size = new System.Drawing.Size(141, 40);
             this.InitCtc_0.TabIndex = 109;
             this.InitCtc_0.Text = "Init Req";
             this.InitCtc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1092,9 +1153,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 7);
+            this.label2.Location = new System.Drawing.Point(4, 9);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 17);
+            this.label2.Size = new System.Drawing.Size(145, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Manual Interface";
             // 
@@ -1127,18 +1189,20 @@
             this.panel6.Controls.Add(this.UnloadPmc_0);
             this.panel6.Controls.Add(this.label39);
             this.panel6.ForeColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(1, 376);
+            this.panel6.Location = new System.Drawing.Point(1, 470);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(333, 313);
+            this.panel6.Size = new System.Drawing.Size(416, 391);
             this.panel6.TabIndex = 986;
             // 
             // checkBox10
             // 
             this.checkBox10.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox10.ForeColor = System.Drawing.Color.Black;
-            this.checkBox10.Location = new System.Drawing.Point(265, 269);
+            this.checkBox10.Location = new System.Drawing.Point(331, 336);
+            this.checkBox10.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(56, 32);
+            this.checkBox10.Size = new System.Drawing.Size(70, 40);
             this.checkBox10.TabIndex = 997;
             this.checkBox10.Tag = "1104";
             this.checkBox10.Text = "On";
@@ -1152,9 +1216,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(152, 9);
+            this.label3.Location = new System.Drawing.Point(190, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 17);
+            this.label3.Size = new System.Drawing.Size(42, 23);
             this.label3.TabIndex = 999;
             this.label3.Text = "CTC";
             // 
@@ -1162,9 +1227,10 @@
             // 
             this.checkBox15.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox15.ForeColor = System.Drawing.Color.Black;
-            this.checkBox15.Location = new System.Drawing.Point(265, 104);
+            this.checkBox15.Location = new System.Drawing.Point(331, 130);
+            this.checkBox15.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(56, 32);
+            this.checkBox15.Size = new System.Drawing.Size(70, 40);
             this.checkBox15.TabIndex = 981;
             this.checkBox15.Tag = "106";
             this.checkBox15.Text = "On";
@@ -1177,9 +1243,10 @@
             this.UnloadCtc_0.BackColor = System.Drawing.Color.Gray;
             this.UnloadCtc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadCtc_0.ForeColor = System.Drawing.Color.White;
-            this.UnloadCtc_0.Location = new System.Drawing.Point(147, 38);
+            this.UnloadCtc_0.Location = new System.Drawing.Point(184, 48);
+            this.UnloadCtc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadCtc_0.Name = "UnloadCtc_0";
-            this.UnloadCtc_0.Size = new System.Drawing.Size(113, 32);
+            this.UnloadCtc_0.Size = new System.Drawing.Size(141, 40);
             this.UnloadCtc_0.TabIndex = 108;
             this.UnloadCtc_0.Text = "Receive Able";
             this.UnloadCtc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1188,9 +1255,10 @@
             // 
             this.checkBox11.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox11.ForeColor = System.Drawing.Color.Black;
-            this.checkBox11.Location = new System.Drawing.Point(265, 236);
+            this.checkBox11.Location = new System.Drawing.Point(331, 295);
+            this.checkBox11.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(56, 32);
+            this.checkBox11.Size = new System.Drawing.Size(70, 40);
             this.checkBox11.TabIndex = 996;
             this.checkBox11.Tag = "1103";
             this.checkBox11.Text = "On";
@@ -1203,9 +1271,10 @@
             this.UnloadCtc_1.BackColor = System.Drawing.Color.Gray;
             this.UnloadCtc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadCtc_1.ForeColor = System.Drawing.Color.White;
-            this.UnloadCtc_1.Location = new System.Drawing.Point(147, 71);
+            this.UnloadCtc_1.Location = new System.Drawing.Point(184, 89);
+            this.UnloadCtc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadCtc_1.Name = "UnloadCtc_1";
-            this.UnloadCtc_1.Size = new System.Drawing.Size(113, 32);
+            this.UnloadCtc_1.Size = new System.Drawing.Size(141, 40);
             this.UnloadCtc_1.TabIndex = 983;
             this.UnloadCtc_1.Text = "Receive Start";
             this.UnloadCtc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1214,9 +1283,10 @@
             // 
             this.checkBox16.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox16.ForeColor = System.Drawing.Color.Black;
-            this.checkBox16.Location = new System.Drawing.Point(265, 71);
+            this.checkBox16.Location = new System.Drawing.Point(331, 89);
+            this.checkBox16.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(56, 32);
+            this.checkBox16.Size = new System.Drawing.Size(70, 40);
             this.checkBox16.TabIndex = 980;
             this.checkBox16.Tag = "105";
             this.checkBox16.Text = "On";
@@ -1229,9 +1299,10 @@
             this.UnloadPmc_6.BackColor = System.Drawing.Color.Gray;
             this.UnloadPmc_6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadPmc_6.ForeColor = System.Drawing.Color.White;
-            this.UnloadPmc_6.Location = new System.Drawing.Point(12, 236);
+            this.UnloadPmc_6.Location = new System.Drawing.Point(15, 295);
+            this.UnloadPmc_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadPmc_6.Name = "UnloadPmc_6";
-            this.UnloadPmc_6.Size = new System.Drawing.Size(113, 32);
+            this.UnloadPmc_6.Size = new System.Drawing.Size(141, 40);
             this.UnloadPmc_6.TabIndex = 996;
             this.UnloadPmc_6.Text = "Pin Up";
             this.UnloadPmc_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1240,9 +1311,10 @@
             // 
             this.checkBox12.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox12.ForeColor = System.Drawing.Color.Black;
-            this.checkBox12.Location = new System.Drawing.Point(265, 203);
+            this.checkBox12.Location = new System.Drawing.Point(331, 254);
+            this.checkBox12.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(56, 32);
+            this.checkBox12.Size = new System.Drawing.Size(70, 40);
             this.checkBox12.TabIndex = 995;
             this.checkBox12.Tag = "1102";
             this.checkBox12.Text = "On";
@@ -1255,9 +1327,10 @@
             this.UnloadCtc_2.BackColor = System.Drawing.Color.Gray;
             this.UnloadCtc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadCtc_2.ForeColor = System.Drawing.Color.White;
-            this.UnloadCtc_2.Location = new System.Drawing.Point(147, 104);
+            this.UnloadCtc_2.Location = new System.Drawing.Point(184, 130);
+            this.UnloadCtc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadCtc_2.Name = "UnloadCtc_2";
-            this.UnloadCtc_2.Size = new System.Drawing.Size(113, 32);
+            this.UnloadCtc_2.Size = new System.Drawing.Size(141, 40);
             this.UnloadCtc_2.TabIndex = 984;
             this.UnloadCtc_2.Text = "Receive Complete";
             this.UnloadCtc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1266,9 +1339,10 @@
             // 
             this.checkBox17.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox17.ForeColor = System.Drawing.Color.Black;
-            this.checkBox17.Location = new System.Drawing.Point(265, 38);
+            this.checkBox17.Location = new System.Drawing.Point(331, 48);
+            this.checkBox17.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(56, 32);
+            this.checkBox17.Size = new System.Drawing.Size(70, 40);
             this.checkBox17.TabIndex = 979;
             this.checkBox17.Tag = "104";
             this.checkBox17.Text = "On";
@@ -1280,9 +1354,10 @@
             // 
             this.checkBox13.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox13.ForeColor = System.Drawing.Color.Black;
-            this.checkBox13.Location = new System.Drawing.Point(265, 170);
+            this.checkBox13.Location = new System.Drawing.Point(331, 212);
+            this.checkBox13.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(56, 32);
+            this.checkBox13.Size = new System.Drawing.Size(70, 40);
             this.checkBox13.TabIndex = 994;
             this.checkBox13.Tag = "1101";
             this.checkBox13.Text = "On";
@@ -1295,9 +1370,10 @@
             this.UnloadPmc_5.BackColor = System.Drawing.Color.Gray;
             this.UnloadPmc_5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadPmc_5.ForeColor = System.Drawing.Color.White;
-            this.UnloadPmc_5.Location = new System.Drawing.Point(12, 203);
+            this.UnloadPmc_5.Location = new System.Drawing.Point(15, 254);
+            this.UnloadPmc_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadPmc_5.Name = "UnloadPmc_5";
-            this.UnloadPmc_5.Size = new System.Drawing.Size(113, 32);
+            this.UnloadPmc_5.Size = new System.Drawing.Size(141, 40);
             this.UnloadPmc_5.TabIndex = 995;
             this.UnloadPmc_5.Text = "Pin Down";
             this.UnloadPmc_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1307,9 +1383,10 @@
             this.UnloadCtc_3.BackColor = System.Drawing.Color.Gray;
             this.UnloadCtc_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadCtc_3.ForeColor = System.Drawing.Color.White;
-            this.UnloadCtc_3.Location = new System.Drawing.Point(147, 137);
+            this.UnloadCtc_3.Location = new System.Drawing.Point(184, 171);
+            this.UnloadCtc_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadCtc_3.Name = "UnloadCtc_3";
-            this.UnloadCtc_3.Size = new System.Drawing.Size(113, 32);
+            this.UnloadCtc_3.Size = new System.Drawing.Size(141, 40);
             this.UnloadCtc_3.TabIndex = 985;
             this.UnloadCtc_3.Text = "Robot Moving";
             this.UnloadCtc_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1318,9 +1395,10 @@
             // 
             this.checkBox14.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox14.ForeColor = System.Drawing.Color.Black;
-            this.checkBox14.Location = new System.Drawing.Point(265, 137);
+            this.checkBox14.Location = new System.Drawing.Point(331, 171);
+            this.checkBox14.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(56, 32);
+            this.checkBox14.Size = new System.Drawing.Size(70, 40);
             this.checkBox14.TabIndex = 993;
             this.checkBox14.Tag = "1100";
             this.checkBox14.Text = "On";
@@ -1333,9 +1411,10 @@
             this.UnloadPmc_4.BackColor = System.Drawing.Color.Gray;
             this.UnloadPmc_4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadPmc_4.ForeColor = System.Drawing.Color.White;
-            this.UnloadPmc_4.Location = new System.Drawing.Point(12, 170);
+            this.UnloadPmc_4.Location = new System.Drawing.Point(15, 212);
+            this.UnloadPmc_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadPmc_4.Name = "UnloadPmc_4";
-            this.UnloadPmc_4.Size = new System.Drawing.Size(113, 32);
+            this.UnloadPmc_4.Size = new System.Drawing.Size(141, 40);
             this.UnloadPmc_4.TabIndex = 994;
             this.UnloadPmc_4.Text = "MSP Up";
             this.UnloadPmc_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1345,9 +1424,10 @@
             this.UnloadCtc_4.BackColor = System.Drawing.Color.Gray;
             this.UnloadCtc_4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadCtc_4.ForeColor = System.Drawing.Color.White;
-            this.UnloadCtc_4.Location = new System.Drawing.Point(147, 170);
+            this.UnloadCtc_4.Location = new System.Drawing.Point(184, 212);
+            this.UnloadCtc_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadCtc_4.Name = "UnloadCtc_4";
-            this.UnloadCtc_4.Size = new System.Drawing.Size(113, 32);
+            this.UnloadCtc_4.Size = new System.Drawing.Size(141, 40);
             this.UnloadCtc_4.TabIndex = 986;
             this.UnloadCtc_4.Text = "Hand Fold";
             this.UnloadCtc_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1357,9 +1437,10 @@
             this.UnloadPmc_3.BackColor = System.Drawing.Color.Gray;
             this.UnloadPmc_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadPmc_3.ForeColor = System.Drawing.Color.White;
-            this.UnloadPmc_3.Location = new System.Drawing.Point(12, 137);
+            this.UnloadPmc_3.Location = new System.Drawing.Point(15, 171);
+            this.UnloadPmc_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadPmc_3.Name = "UnloadPmc_3";
-            this.UnloadPmc_3.Size = new System.Drawing.Size(113, 32);
+            this.UnloadPmc_3.Size = new System.Drawing.Size(141, 40);
             this.UnloadPmc_3.TabIndex = 993;
             this.UnloadPmc_3.Text = "MSP Down";
             this.UnloadPmc_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1369,9 +1450,10 @@
             this.UnloadCtc_5.BackColor = System.Drawing.Color.Gray;
             this.UnloadCtc_5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadCtc_5.ForeColor = System.Drawing.Color.White;
-            this.UnloadCtc_5.Location = new System.Drawing.Point(147, 203);
+            this.UnloadCtc_5.Location = new System.Drawing.Point(184, 254);
+            this.UnloadCtc_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadCtc_5.Name = "UnloadCtc_5";
-            this.UnloadCtc_5.Size = new System.Drawing.Size(113, 32);
+            this.UnloadCtc_5.Size = new System.Drawing.Size(141, 40);
             this.UnloadCtc_5.TabIndex = 987;
             this.UnloadCtc_5.Text = "Hand Stretch";
             this.UnloadCtc_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1381,9 +1463,10 @@
             this.UnloadPmc_2.BackColor = System.Drawing.Color.Gray;
             this.UnloadPmc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadPmc_2.ForeColor = System.Drawing.Color.White;
-            this.UnloadPmc_2.Location = new System.Drawing.Point(12, 104);
+            this.UnloadPmc_2.Location = new System.Drawing.Point(15, 130);
+            this.UnloadPmc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadPmc_2.Name = "UnloadPmc_2";
-            this.UnloadPmc_2.Size = new System.Drawing.Size(113, 32);
+            this.UnloadPmc_2.Size = new System.Drawing.Size(141, 40);
             this.UnloadPmc_2.TabIndex = 992;
             this.UnloadPmc_2.Text = "Send Complete Ack";
             this.UnloadPmc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1393,9 +1476,10 @@
             this.UnloadCtc_6.BackColor = System.Drawing.Color.Gray;
             this.UnloadCtc_6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadCtc_6.ForeColor = System.Drawing.Color.White;
-            this.UnloadCtc_6.Location = new System.Drawing.Point(147, 236);
+            this.UnloadCtc_6.Location = new System.Drawing.Point(184, 295);
+            this.UnloadCtc_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadCtc_6.Name = "UnloadCtc_6";
-            this.UnloadCtc_6.Size = new System.Drawing.Size(113, 32);
+            this.UnloadCtc_6.Size = new System.Drawing.Size(141, 40);
             this.UnloadCtc_6.TabIndex = 988;
             this.UnloadCtc_6.Text = "Hand Down";
             this.UnloadCtc_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1405,9 +1489,10 @@
             this.UnloadPmc_1.BackColor = System.Drawing.Color.Gray;
             this.UnloadPmc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadPmc_1.ForeColor = System.Drawing.Color.White;
-            this.UnloadPmc_1.Location = new System.Drawing.Point(12, 71);
+            this.UnloadPmc_1.Location = new System.Drawing.Point(15, 89);
+            this.UnloadPmc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadPmc_1.Name = "UnloadPmc_1";
-            this.UnloadPmc_1.Size = new System.Drawing.Size(113, 32);
+            this.UnloadPmc_1.Size = new System.Drawing.Size(141, 40);
             this.UnloadPmc_1.TabIndex = 991;
             this.UnloadPmc_1.Text = "Send Ready";
             this.UnloadPmc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1417,9 +1502,10 @@
             this.UnloadCtc_7.BackColor = System.Drawing.Color.Gray;
             this.UnloadCtc_7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadCtc_7.ForeColor = System.Drawing.Color.White;
-            this.UnloadCtc_7.Location = new System.Drawing.Point(147, 269);
+            this.UnloadCtc_7.Location = new System.Drawing.Point(184, 336);
+            this.UnloadCtc_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadCtc_7.Name = "UnloadCtc_7";
-            this.UnloadCtc_7.Size = new System.Drawing.Size(113, 32);
+            this.UnloadCtc_7.Size = new System.Drawing.Size(141, 40);
             this.UnloadCtc_7.TabIndex = 989;
             this.UnloadCtc_7.Text = "Hand Up";
             this.UnloadCtc_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1429,9 +1515,10 @@
             this.UnloadPmc_0.BackColor = System.Drawing.Color.Gray;
             this.UnloadPmc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UnloadPmc_0.ForeColor = System.Drawing.Color.White;
-            this.UnloadPmc_0.Location = new System.Drawing.Point(12, 38);
+            this.UnloadPmc_0.Location = new System.Drawing.Point(15, 48);
+            this.UnloadPmc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnloadPmc_0.Name = "UnloadPmc_0";
-            this.UnloadPmc_0.Size = new System.Drawing.Size(113, 32);
+            this.UnloadPmc_0.Size = new System.Drawing.Size(141, 40);
             this.UnloadPmc_0.TabIndex = 990;
             this.UnloadPmc_0.Text = "Send Request";
             this.UnloadPmc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1442,9 +1529,10 @@
             this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(17, 9);
+            this.label39.Location = new System.Drawing.Point(21, 11);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(87, 17);
+            this.label39.Size = new System.Drawing.Size(111, 23);
             this.label39.TabIndex = 0;
             this.label39.Text = "Unload PMC";
             // 
@@ -1480,9 +1568,10 @@
             this.panel5.Controls.Add(this.LoadPmc_0);
             this.panel5.Controls.Add(this.label4);
             this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(1, 30);
+            this.panel5.Location = new System.Drawing.Point(1, 38);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(333, 340);
+            this.panel5.Size = new System.Drawing.Size(416, 424);
             this.panel5.TabIndex = 985;
             // 
             // label21
@@ -1491,9 +1580,10 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(152, 5);
+            this.label21.Location = new System.Drawing.Point(190, 6);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(32, 17);
+            this.label21.Size = new System.Drawing.Size(42, 23);
             this.label21.TabIndex = 999;
             this.label21.Text = "CTC";
             // 
@@ -1502,9 +1592,10 @@
             this.LoadCtc_8.BackColor = System.Drawing.Color.Gray;
             this.LoadCtc_8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCtc_8.ForeColor = System.Drawing.Color.White;
-            this.LoadCtc_8.Location = new System.Drawing.Point(147, 293);
+            this.LoadCtc_8.Location = new System.Drawing.Point(184, 366);
+            this.LoadCtc_8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadCtc_8.Name = "LoadCtc_8";
-            this.LoadCtc_8.Size = new System.Drawing.Size(113, 32);
+            this.LoadCtc_8.Size = new System.Drawing.Size(141, 40);
             this.LoadCtc_8.TabIndex = 998;
             this.LoadCtc_8.Text = "Send Fail";
             this.LoadCtc_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1513,9 +1604,10 @@
             // 
             this.checkBox8.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox8.ForeColor = System.Drawing.Color.Black;
-            this.checkBox8.Location = new System.Drawing.Point(265, 293);
+            this.checkBox8.Location = new System.Drawing.Point(331, 366);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(56, 32);
+            this.checkBox8.Size = new System.Drawing.Size(70, 40);
             this.checkBox8.TabIndex = 987;
             this.checkBox8.Tag = "103";
             this.checkBox8.Text = "On";
@@ -1528,9 +1620,10 @@
             this.LoadCtc_7.BackColor = System.Drawing.Color.Gray;
             this.LoadCtc_7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCtc_7.ForeColor = System.Drawing.Color.White;
-            this.LoadCtc_7.Location = new System.Drawing.Point(147, 260);
+            this.LoadCtc_7.Location = new System.Drawing.Point(184, 325);
+            this.LoadCtc_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadCtc_7.Name = "LoadCtc_7";
-            this.LoadCtc_7.Size = new System.Drawing.Size(113, 32);
+            this.LoadCtc_7.Size = new System.Drawing.Size(141, 40);
             this.LoadCtc_7.TabIndex = 997;
             this.LoadCtc_7.Text = "Hand Up";
             this.LoadCtc_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1539,9 +1632,10 @@
             // 
             this.checkBox7.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox7.ForeColor = System.Drawing.Color.Black;
-            this.checkBox7.Location = new System.Drawing.Point(265, 260);
+            this.checkBox7.Location = new System.Drawing.Point(331, 325);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(56, 32);
+            this.checkBox7.Size = new System.Drawing.Size(70, 40);
             this.checkBox7.TabIndex = 986;
             this.checkBox7.Tag = "1104";
             this.checkBox7.Text = "On";
@@ -1554,9 +1648,10 @@
             this.LoadCtc_6.BackColor = System.Drawing.Color.Gray;
             this.LoadCtc_6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCtc_6.ForeColor = System.Drawing.Color.White;
-            this.LoadCtc_6.Location = new System.Drawing.Point(147, 227);
+            this.LoadCtc_6.Location = new System.Drawing.Point(184, 284);
+            this.LoadCtc_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadCtc_6.Name = "LoadCtc_6";
-            this.LoadCtc_6.Size = new System.Drawing.Size(113, 32);
+            this.LoadCtc_6.Size = new System.Drawing.Size(141, 40);
             this.LoadCtc_6.TabIndex = 996;
             this.LoadCtc_6.Text = "Hand Down";
             this.LoadCtc_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1565,9 +1660,10 @@
             // 
             this.checkBox6.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox6.ForeColor = System.Drawing.Color.Black;
-            this.checkBox6.Location = new System.Drawing.Point(265, 227);
+            this.checkBox6.Location = new System.Drawing.Point(331, 284);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(56, 32);
+            this.checkBox6.Size = new System.Drawing.Size(70, 40);
             this.checkBox6.TabIndex = 985;
             this.checkBox6.Tag = "1103";
             this.checkBox6.Text = "On";
@@ -1580,9 +1676,10 @@
             this.LoadCtc_5.BackColor = System.Drawing.Color.Gray;
             this.LoadCtc_5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCtc_5.ForeColor = System.Drawing.Color.White;
-            this.LoadCtc_5.Location = new System.Drawing.Point(147, 194);
+            this.LoadCtc_5.Location = new System.Drawing.Point(184, 242);
+            this.LoadCtc_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadCtc_5.Name = "LoadCtc_5";
-            this.LoadCtc_5.Size = new System.Drawing.Size(113, 32);
+            this.LoadCtc_5.Size = new System.Drawing.Size(141, 40);
             this.LoadCtc_5.TabIndex = 995;
             this.LoadCtc_5.Text = "Hand Stretch";
             this.LoadCtc_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1591,9 +1688,10 @@
             // 
             this.checkBox5.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox5.ForeColor = System.Drawing.Color.Black;
-            this.checkBox5.Location = new System.Drawing.Point(265, 194);
+            this.checkBox5.Location = new System.Drawing.Point(331, 242);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(56, 32);
+            this.checkBox5.Size = new System.Drawing.Size(70, 40);
             this.checkBox5.TabIndex = 984;
             this.checkBox5.Tag = "1102";
             this.checkBox5.Text = "On";
@@ -1606,9 +1704,10 @@
             this.LoadCtc_4.BackColor = System.Drawing.Color.Gray;
             this.LoadCtc_4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCtc_4.ForeColor = System.Drawing.Color.White;
-            this.LoadCtc_4.Location = new System.Drawing.Point(147, 161);
+            this.LoadCtc_4.Location = new System.Drawing.Point(184, 201);
+            this.LoadCtc_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadCtc_4.Name = "LoadCtc_4";
-            this.LoadCtc_4.Size = new System.Drawing.Size(113, 32);
+            this.LoadCtc_4.Size = new System.Drawing.Size(141, 40);
             this.LoadCtc_4.TabIndex = 994;
             this.LoadCtc_4.Text = "Hand Fold";
             this.LoadCtc_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1617,9 +1716,10 @@
             // 
             this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox4.ForeColor = System.Drawing.Color.Black;
-            this.checkBox4.Location = new System.Drawing.Point(265, 161);
+            this.checkBox4.Location = new System.Drawing.Point(331, 201);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(56, 32);
+            this.checkBox4.Size = new System.Drawing.Size(70, 40);
             this.checkBox4.TabIndex = 983;
             this.checkBox4.Tag = "1101";
             this.checkBox4.Text = "On";
@@ -1632,9 +1732,10 @@
             this.LoadCtc_3.BackColor = System.Drawing.Color.Gray;
             this.LoadCtc_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCtc_3.ForeColor = System.Drawing.Color.White;
-            this.LoadCtc_3.Location = new System.Drawing.Point(147, 128);
+            this.LoadCtc_3.Location = new System.Drawing.Point(184, 160);
+            this.LoadCtc_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadCtc_3.Name = "LoadCtc_3";
-            this.LoadCtc_3.Size = new System.Drawing.Size(113, 32);
+            this.LoadCtc_3.Size = new System.Drawing.Size(141, 40);
             this.LoadCtc_3.TabIndex = 993;
             this.LoadCtc_3.Text = "Robot Moving";
             this.LoadCtc_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1643,9 +1744,10 @@
             // 
             this.checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox3.ForeColor = System.Drawing.Color.Black;
-            this.checkBox3.Location = new System.Drawing.Point(265, 128);
+            this.checkBox3.Location = new System.Drawing.Point(331, 160);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(56, 32);
+            this.checkBox3.Size = new System.Drawing.Size(70, 40);
             this.checkBox3.TabIndex = 982;
             this.checkBox3.Tag = "1100";
             this.checkBox3.Text = "On";
@@ -1658,9 +1760,10 @@
             this.LoadCtc_2.BackColor = System.Drawing.Color.Gray;
             this.LoadCtc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCtc_2.ForeColor = System.Drawing.Color.White;
-            this.LoadCtc_2.Location = new System.Drawing.Point(147, 95);
+            this.LoadCtc_2.Location = new System.Drawing.Point(184, 119);
+            this.LoadCtc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadCtc_2.Name = "LoadCtc_2";
-            this.LoadCtc_2.Size = new System.Drawing.Size(113, 32);
+            this.LoadCtc_2.Size = new System.Drawing.Size(141, 40);
             this.LoadCtc_2.TabIndex = 992;
             this.LoadCtc_2.Text = "Send Complete";
             this.LoadCtc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1669,9 +1772,10 @@
             // 
             this.checkBox2.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox2.ForeColor = System.Drawing.Color.Black;
-            this.checkBox2.Location = new System.Drawing.Point(265, 95);
+            this.checkBox2.Location = new System.Drawing.Point(331, 119);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(56, 32);
+            this.checkBox2.Size = new System.Drawing.Size(70, 40);
             this.checkBox2.TabIndex = 981;
             this.checkBox2.Tag = "102";
             this.checkBox2.Text = "On";
@@ -1684,9 +1788,10 @@
             this.LoadCtc_1.BackColor = System.Drawing.Color.Gray;
             this.LoadCtc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCtc_1.ForeColor = System.Drawing.Color.White;
-            this.LoadCtc_1.Location = new System.Drawing.Point(147, 62);
+            this.LoadCtc_1.Location = new System.Drawing.Point(184, 78);
+            this.LoadCtc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadCtc_1.Name = "LoadCtc_1";
-            this.LoadCtc_1.Size = new System.Drawing.Size(113, 32);
+            this.LoadCtc_1.Size = new System.Drawing.Size(141, 40);
             this.LoadCtc_1.TabIndex = 991;
             this.LoadCtc_1.Text = "Send Start";
             this.LoadCtc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1695,9 +1800,10 @@
             // 
             this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(265, 62);
+            this.checkBox1.Location = new System.Drawing.Point(331, 78);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 32);
+            this.checkBox1.Size = new System.Drawing.Size(70, 40);
             this.checkBox1.TabIndex = 980;
             this.checkBox1.Tag = "101";
             this.checkBox1.Text = "On";
@@ -1710,9 +1816,10 @@
             this.LoadCtc_0.BackColor = System.Drawing.Color.Gray;
             this.LoadCtc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCtc_0.ForeColor = System.Drawing.Color.White;
-            this.LoadCtc_0.Location = new System.Drawing.Point(147, 29);
+            this.LoadCtc_0.Location = new System.Drawing.Point(184, 36);
+            this.LoadCtc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadCtc_0.Name = "LoadCtc_0";
-            this.LoadCtc_0.Size = new System.Drawing.Size(113, 32);
+            this.LoadCtc_0.Size = new System.Drawing.Size(141, 40);
             this.LoadCtc_0.TabIndex = 990;
             this.LoadCtc_0.Text = "Send Able";
             this.LoadCtc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1721,9 +1828,10 @@
             // 
             this.CtcOut_0.Appearance = System.Windows.Forms.Appearance.Button;
             this.CtcOut_0.ForeColor = System.Drawing.Color.Black;
-            this.CtcOut_0.Location = new System.Drawing.Point(265, 29);
+            this.CtcOut_0.Location = new System.Drawing.Point(331, 36);
+            this.CtcOut_0.Margin = new System.Windows.Forms.Padding(4);
             this.CtcOut_0.Name = "CtcOut_0";
-            this.CtcOut_0.Size = new System.Drawing.Size(56, 32);
+            this.CtcOut_0.Size = new System.Drawing.Size(70, 40);
             this.CtcOut_0.TabIndex = 979;
             this.CtcOut_0.Tag = "100";
             this.CtcOut_0.Text = "On";
@@ -1736,9 +1844,10 @@
             this.LoadPmc_7.BackColor = System.Drawing.Color.Gray;
             this.LoadPmc_7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadPmc_7.ForeColor = System.Drawing.Color.White;
-            this.LoadPmc_7.Location = new System.Drawing.Point(12, 260);
+            this.LoadPmc_7.Location = new System.Drawing.Point(15, 325);
+            this.LoadPmc_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadPmc_7.Name = "LoadPmc_7";
-            this.LoadPmc_7.Size = new System.Drawing.Size(113, 32);
+            this.LoadPmc_7.Size = new System.Drawing.Size(141, 40);
             this.LoadPmc_7.TabIndex = 989;
             this.LoadPmc_7.Text = "Receive Fail";
             this.LoadPmc_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1748,9 +1857,10 @@
             this.LoadPmc_6.BackColor = System.Drawing.Color.Gray;
             this.LoadPmc_6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadPmc_6.ForeColor = System.Drawing.Color.White;
-            this.LoadPmc_6.Location = new System.Drawing.Point(12, 227);
+            this.LoadPmc_6.Location = new System.Drawing.Point(15, 284);
+            this.LoadPmc_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadPmc_6.Name = "LoadPmc_6";
-            this.LoadPmc_6.Size = new System.Drawing.Size(113, 32);
+            this.LoadPmc_6.Size = new System.Drawing.Size(141, 40);
             this.LoadPmc_6.TabIndex = 988;
             this.LoadPmc_6.Text = "Pin Up";
             this.LoadPmc_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1760,9 +1870,10 @@
             this.LoadPmc_5.BackColor = System.Drawing.Color.Gray;
             this.LoadPmc_5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadPmc_5.ForeColor = System.Drawing.Color.White;
-            this.LoadPmc_5.Location = new System.Drawing.Point(12, 194);
+            this.LoadPmc_5.Location = new System.Drawing.Point(15, 242);
+            this.LoadPmc_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadPmc_5.Name = "LoadPmc_5";
-            this.LoadPmc_5.Size = new System.Drawing.Size(113, 32);
+            this.LoadPmc_5.Size = new System.Drawing.Size(141, 40);
             this.LoadPmc_5.TabIndex = 987;
             this.LoadPmc_5.Text = "Pin Down";
             this.LoadPmc_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1772,9 +1883,10 @@
             this.LoadPmc_4.BackColor = System.Drawing.Color.Gray;
             this.LoadPmc_4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadPmc_4.ForeColor = System.Drawing.Color.White;
-            this.LoadPmc_4.Location = new System.Drawing.Point(12, 161);
+            this.LoadPmc_4.Location = new System.Drawing.Point(15, 201);
+            this.LoadPmc_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadPmc_4.Name = "LoadPmc_4";
-            this.LoadPmc_4.Size = new System.Drawing.Size(113, 32);
+            this.LoadPmc_4.Size = new System.Drawing.Size(141, 40);
             this.LoadPmc_4.TabIndex = 986;
             this.LoadPmc_4.Text = "MSP Up";
             this.LoadPmc_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1784,9 +1896,10 @@
             this.LoadPmc_3.BackColor = System.Drawing.Color.Gray;
             this.LoadPmc_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadPmc_3.ForeColor = System.Drawing.Color.White;
-            this.LoadPmc_3.Location = new System.Drawing.Point(12, 128);
+            this.LoadPmc_3.Location = new System.Drawing.Point(15, 160);
+            this.LoadPmc_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadPmc_3.Name = "LoadPmc_3";
-            this.LoadPmc_3.Size = new System.Drawing.Size(113, 32);
+            this.LoadPmc_3.Size = new System.Drawing.Size(141, 40);
             this.LoadPmc_3.TabIndex = 985;
             this.LoadPmc_3.Text = "MSP Down";
             this.LoadPmc_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1796,9 +1909,10 @@
             this.LoadPmc_2.BackColor = System.Drawing.Color.Gray;
             this.LoadPmc_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadPmc_2.ForeColor = System.Drawing.Color.White;
-            this.LoadPmc_2.Location = new System.Drawing.Point(12, 95);
+            this.LoadPmc_2.Location = new System.Drawing.Point(15, 119);
+            this.LoadPmc_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadPmc_2.Name = "LoadPmc_2";
-            this.LoadPmc_2.Size = new System.Drawing.Size(113, 32);
+            this.LoadPmc_2.Size = new System.Drawing.Size(141, 40);
             this.LoadPmc_2.TabIndex = 984;
             this.LoadPmc_2.Text = "Receive Complete Ack";
             this.LoadPmc_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1808,9 +1922,10 @@
             this.LoadPmc_1.BackColor = System.Drawing.Color.Gray;
             this.LoadPmc_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadPmc_1.ForeColor = System.Drawing.Color.White;
-            this.LoadPmc_1.Location = new System.Drawing.Point(12, 62);
+            this.LoadPmc_1.Location = new System.Drawing.Point(15, 78);
+            this.LoadPmc_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadPmc_1.Name = "LoadPmc_1";
-            this.LoadPmc_1.Size = new System.Drawing.Size(113, 32);
+            this.LoadPmc_1.Size = new System.Drawing.Size(141, 40);
             this.LoadPmc_1.TabIndex = 983;
             this.LoadPmc_1.Text = "Receive Ready";
             this.LoadPmc_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1820,9 +1935,10 @@
             this.LoadPmc_0.BackColor = System.Drawing.Color.Gray;
             this.LoadPmc_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadPmc_0.ForeColor = System.Drawing.Color.White;
-            this.LoadPmc_0.Location = new System.Drawing.Point(12, 29);
+            this.LoadPmc_0.Location = new System.Drawing.Point(15, 36);
+            this.LoadPmc_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoadPmc_0.Name = "LoadPmc_0";
-            this.LoadPmc_0.Size = new System.Drawing.Size(113, 32);
+            this.LoadPmc_0.Size = new System.Drawing.Size(141, 40);
             this.LoadPmc_0.TabIndex = 108;
             this.LoadPmc_0.Text = "Receive Req";
             this.LoadPmc_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1833,9 +1949,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(17, 5);
+            this.label4.Location = new System.Drawing.Point(21, 6);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 17);
+            this.label4.Size = new System.Drawing.Size(93, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "Load PMC";
             // 
@@ -1850,9 +1967,10 @@
             this.a1Panel1.Image = null;
             this.a1Panel1.ImageLocation = new System.Drawing.Point(4, 4);
             this.a1Panel1.Location = new System.Drawing.Point(0, 0);
+            this.a1Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.a1Panel1.Name = "a1Panel1";
             this.a1Panel1.ShadowOffSet = 2;
-            this.a1Panel1.Size = new System.Drawing.Size(879, 31);
+            this.a1Panel1.Size = new System.Drawing.Size(1099, 39);
             this.a1Panel1.TabIndex = 38;
             // 
             // label1
@@ -1861,9 +1979,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(34, 4);
+            this.label1.Location = new System.Drawing.Point(42, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 21);
+            this.label1.Size = new System.Drawing.Size(87, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "STATUS";
             // 
@@ -1874,11 +1993,12 @@
             this.glassButton76.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.glassButton76.GlowColor = System.Drawing.Color.White;
             this.glassButton76.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.glassButton76.Location = new System.Drawing.Point(20, 421);
+            this.glassButton76.Location = new System.Drawing.Point(25, 526);
+            this.glassButton76.Margin = new System.Windows.Forms.Padding(4);
             this.glassButton76.Name = "glassButton76";
             this.glassButton76.OuterBorderColor = System.Drawing.Color.Transparent;
             this.glassButton76.ShineColor = System.Drawing.Color.DarkGray;
-            this.glassButton76.Size = new System.Drawing.Size(79, 51);
+            this.glassButton76.Size = new System.Drawing.Size(99, 64);
             this.glassButton76.TabIndex = 49;
             this.glassButton76.Tag = "3";
             this.glassButton76.Text = "update";
@@ -1899,9 +2019,10 @@
             this.lb45.Controls.Add(this.a1Panel40);
             this.lb45.Controls.Add(this.glassButton76);
             this.lb45.ForeColor = System.Drawing.Color.White;
-            this.lb45.Location = new System.Drawing.Point(941, 54);
+            this.lb45.Location = new System.Drawing.Point(1176, 68);
+            this.lb45.Margin = new System.Windows.Forms.Padding(4);
             this.lb45.Name = "lb45";
-            this.lb45.Size = new System.Drawing.Size(175, 699);
+            this.lb45.Size = new System.Drawing.Size(218, 873);
             this.lb45.TabIndex = 974;
             // 
             // glassButton40
@@ -1911,11 +2032,12 @@
             this.glassButton40.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.glassButton40.GlowColor = System.Drawing.Color.White;
             this.glassButton40.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.glassButton40.Location = new System.Drawing.Point(20, 592);
+            this.glassButton40.Location = new System.Drawing.Point(25, 740);
+            this.glassButton40.Margin = new System.Windows.Forms.Padding(4);
             this.glassButton40.Name = "glassButton40";
             this.glassButton40.OuterBorderColor = System.Drawing.Color.Transparent;
             this.glassButton40.ShineColor = System.Drawing.Color.DarkGray;
-            this.glassButton40.Size = new System.Drawing.Size(121, 51);
+            this.glassButton40.Size = new System.Drawing.Size(151, 64);
             this.glassButton40.TabIndex = 52;
             this.glassButton40.Tag = "3";
             this.glassButton40.Text = "테스트";
@@ -1930,11 +2052,12 @@
             this.glassButton39.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.glassButton39.GlowColor = System.Drawing.Color.White;
             this.glassButton39.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.glassButton39.Location = new System.Drawing.Point(20, 508);
+            this.glassButton39.Location = new System.Drawing.Point(25, 635);
+            this.glassButton39.Margin = new System.Windows.Forms.Padding(4);
             this.glassButton39.Name = "glassButton39";
             this.glassButton39.OuterBorderColor = System.Drawing.Color.Transparent;
             this.glassButton39.ShineColor = System.Drawing.Color.DarkGray;
-            this.glassButton39.Size = new System.Drawing.Size(121, 51);
+            this.glassButton39.Size = new System.Drawing.Size(151, 64);
             this.glassButton39.TabIndex = 50;
             this.glassButton39.Tag = "3";
             this.glassButton39.Text = "테스트";
@@ -1949,15 +2072,17 @@
             this.glassButton1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.glassButton1.GlowColor = System.Drawing.Color.White;
             this.glassButton1.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.glassButton1.Location = new System.Drawing.Point(20, 216);
+            this.glassButton1.Location = new System.Drawing.Point(25, 270);
+            this.glassButton1.Margin = new System.Windows.Forms.Padding(4);
             this.glassButton1.Name = "glassButton1";
             this.glassButton1.OuterBorderColor = System.Drawing.Color.Transparent;
             this.glassButton1.ShineColor = System.Drawing.Color.DarkGray;
-            this.glassButton1.Size = new System.Drawing.Size(121, 51);
+            this.glassButton1.Size = new System.Drawing.Size(151, 64);
             this.glassButton1.TabIndex = 48;
             this.glassButton1.Tag = "3";
             this.glassButton1.Text = "ABORT";
             this.glassButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.glassButton1.Click += new System.EventHandler(this.glassButton1_Click);
             // 
             // btnUnload
             // 
@@ -1966,16 +2091,18 @@
             this.btnUnload.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnUnload.GlowColor = System.Drawing.Color.White;
             this.btnUnload.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnUnload.Location = new System.Drawing.Point(20, 296);
+            this.btnUnload.Location = new System.Drawing.Point(25, 370);
+            this.btnUnload.Margin = new System.Windows.Forms.Padding(4);
             this.btnUnload.Name = "btnUnload";
             this.btnUnload.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnUnload.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnUnload.Size = new System.Drawing.Size(121, 51);
+            this.btnUnload.Size = new System.Drawing.Size(151, 64);
             this.btnUnload.TabIndex = 47;
             this.btnUnload.Tag = "3";
             this.btnUnload.Text = "UNLOAD";
             this.btnUnload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnUnload.Visible = false;
+            this.btnUnload.Click += new System.EventHandler(this.btnUnload_Click);
             // 
             // btnLoad
             // 
@@ -1984,16 +2111,18 @@
             this.btnLoad.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLoad.GlowColor = System.Drawing.Color.White;
             this.btnLoad.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnLoad.Location = new System.Drawing.Point(20, 354);
+            this.btnLoad.Location = new System.Drawing.Point(25, 442);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnLoad.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnLoad.Size = new System.Drawing.Size(121, 51);
+            this.btnLoad.Size = new System.Drawing.Size(151, 64);
             this.btnLoad.TabIndex = 46;
             this.btnLoad.Tag = "3";
             this.btnLoad.Text = "CTC";
             this.btnLoad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnLoad.Visible = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnStart
             // 
@@ -2002,11 +2131,12 @@
             this.btnStart.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnStart.GlowColor = System.Drawing.Color.White;
             this.btnStart.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnStart.Location = new System.Drawing.Point(20, 159);
+            this.btnStart.Location = new System.Drawing.Point(25, 199);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             this.btnStart.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnStart.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnStart.Size = new System.Drawing.Size(121, 51);
+            this.btnStart.Size = new System.Drawing.Size(151, 64);
             this.btnStart.TabIndex = 45;
             this.btnStart.Tag = "3";
             this.btnStart.Text = "PROCESS";
@@ -2020,11 +2150,12 @@
             this.btnStandby.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnStandby.GlowColor = System.Drawing.Color.White;
             this.btnStandby.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnStandby.Location = new System.Drawing.Point(20, 102);
+            this.btnStandby.Location = new System.Drawing.Point(25, 128);
+            this.btnStandby.Margin = new System.Windows.Forms.Padding(4);
             this.btnStandby.Name = "btnStandby";
             this.btnStandby.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnStandby.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnStandby.Size = new System.Drawing.Size(121, 51);
+            this.btnStandby.Size = new System.Drawing.Size(151, 64);
             this.btnStandby.TabIndex = 44;
             this.btnStandby.Tag = "3";
             this.btnStandby.Text = "STANDBY";
@@ -2038,11 +2169,12 @@
             this.btnInit.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnInit.GlowColor = System.Drawing.Color.White;
             this.btnInit.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnInit.Location = new System.Drawing.Point(20, 45);
+            this.btnInit.Location = new System.Drawing.Point(25, 56);
+            this.btnInit.Margin = new System.Windows.Forms.Padding(4);
             this.btnInit.Name = "btnInit";
             this.btnInit.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnInit.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnInit.Size = new System.Drawing.Size(121, 51);
+            this.btnInit.Size = new System.Drawing.Size(151, 64);
             this.btnInit.TabIndex = 43;
             this.btnInit.Tag = "3";
             this.btnInit.Text = "INITIALIZE";
@@ -2060,9 +2192,10 @@
             this.a1Panel40.Image = null;
             this.a1Panel40.ImageLocation = new System.Drawing.Point(4, 4);
             this.a1Panel40.Location = new System.Drawing.Point(0, 0);
+            this.a1Panel40.Margin = new System.Windows.Forms.Padding(4);
             this.a1Panel40.Name = "a1Panel40";
             this.a1Panel40.ShadowOffSet = 2;
-            this.a1Panel40.Size = new System.Drawing.Size(173, 31);
+            this.a1Panel40.Size = new System.Drawing.Size(216, 39);
             this.a1Panel40.TabIndex = 38;
             // 
             // label42
@@ -2071,9 +2204,10 @@
             this.label42.BackColor = System.Drawing.Color.Transparent;
             this.label42.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(34, 4);
+            this.label42.Location = new System.Drawing.Point(42, 5);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(70, 21);
+            this.label42.Size = new System.Drawing.Size(89, 28);
             this.label42.TabIndex = 0;
             this.label42.Text = "ACTION";
             // 
@@ -2087,10 +2221,11 @@
             this.tabStatus.Controls.Add(this.tabPage1);
             this.tabStatus.Controls.Add(this.tabPage2);
             this.tabStatus.ItemSize = new System.Drawing.Size(200, 50);
-            this.tabStatus.Location = new System.Drawing.Point(3, 3);
+            this.tabStatus.Location = new System.Drawing.Point(4, 4);
+            this.tabStatus.Margin = new System.Windows.Forms.Padding(4);
             this.tabStatus.Name = "tabStatus";
             this.tabStatus.SelectedIndex = 0;
-            this.tabStatus.Size = new System.Drawing.Size(895, 779);
+            this.tabStatus.Size = new System.Drawing.Size(1119, 974);
             this.tabStatus.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabStatus.TabIndex = 975;
             // 
@@ -2099,9 +2234,10 @@
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 54);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(887, 721);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Size = new System.Drawing.Size(1111, 916);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Interface Status";
             // 
@@ -2110,9 +2246,10 @@
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.tabPage2.Controls.Add(this.panel4);
             this.tabPage2.Location = new System.Drawing.Point(4, 54);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(887, 721);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(1111, 916);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Value Status";
             // 
@@ -2125,9 +2262,10 @@
             this.panel4.Controls.Add(this.panel10);
             this.panel4.Controls.Add(this.a1Panel2);
             this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(3, 14);
+            this.panel4.Location = new System.Drawing.Point(4, 18);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(881, 693);
+            this.panel4.Size = new System.Drawing.Size(1101, 866);
             this.panel4.TabIndex = 974;
             // 
             // panel11
@@ -2166,9 +2304,10 @@
             this.panel11.Controls.Add(this.lb33);
             this.panel11.Controls.Add(this.label64);
             this.panel11.ForeColor = System.Drawing.Color.White;
-            this.panel11.Location = new System.Drawing.Point(240, 372);
+            this.panel11.Location = new System.Drawing.Point(300, 465);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(636, 309);
+            this.panel11.Size = new System.Drawing.Size(794, 386);
             this.panel11.TabIndex = 988;
             // 
             // label92
@@ -2177,9 +2316,10 @@
             this.label92.BackColor = System.Drawing.Color.Transparent;
             this.label92.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label92.ForeColor = System.Drawing.Color.White;
-            this.label92.Location = new System.Drawing.Point(335, 10);
+            this.label92.Location = new System.Drawing.Point(419, 12);
+            this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(125, 17);
+            this.label92.Size = new System.Drawing.Size(164, 23);
             this.label92.TabIndex = 1045;
             this.label92.Text = "Current Motor Pos";
             // 
@@ -2188,9 +2328,10 @@
             this.PmcMotor_6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcMotor_6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcMotor_6.ForeColor = System.Drawing.Color.Black;
-            this.PmcMotor_6.Location = new System.Drawing.Point(449, 217);
+            this.PmcMotor_6.Location = new System.Drawing.Point(561, 271);
+            this.PmcMotor_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcMotor_6.Name = "PmcMotor_6";
-            this.PmcMotor_6.Size = new System.Drawing.Size(159, 27);
+            this.PmcMotor_6.Size = new System.Drawing.Size(199, 34);
             this.PmcMotor_6.TabIndex = 1043;
             this.PmcMotor_6.Text = "0";
             this.PmcMotor_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2200,9 +2341,10 @@
             this.PmcMotor_5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcMotor_5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcMotor_5.ForeColor = System.Drawing.Color.Black;
-            this.PmcMotor_5.Location = new System.Drawing.Point(449, 188);
+            this.PmcMotor_5.Location = new System.Drawing.Point(561, 235);
+            this.PmcMotor_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcMotor_5.Name = "PmcMotor_5";
-            this.PmcMotor_5.Size = new System.Drawing.Size(159, 27);
+            this.PmcMotor_5.Size = new System.Drawing.Size(199, 34);
             this.PmcMotor_5.TabIndex = 1042;
             this.PmcMotor_5.Text = "0";
             this.PmcMotor_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2212,9 +2354,10 @@
             this.PmcMotor_4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcMotor_4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcMotor_4.ForeColor = System.Drawing.Color.Black;
-            this.PmcMotor_4.Location = new System.Drawing.Point(449, 159);
+            this.PmcMotor_4.Location = new System.Drawing.Point(561, 199);
+            this.PmcMotor_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcMotor_4.Name = "PmcMotor_4";
-            this.PmcMotor_4.Size = new System.Drawing.Size(159, 27);
+            this.PmcMotor_4.Size = new System.Drawing.Size(199, 34);
             this.PmcMotor_4.TabIndex = 1041;
             this.PmcMotor_4.Text = "0";
             this.PmcMotor_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2224,9 +2367,10 @@
             this.PmcMotor_3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcMotor_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcMotor_3.ForeColor = System.Drawing.Color.Black;
-            this.PmcMotor_3.Location = new System.Drawing.Point(449, 130);
+            this.PmcMotor_3.Location = new System.Drawing.Point(561, 162);
+            this.PmcMotor_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcMotor_3.Name = "PmcMotor_3";
-            this.PmcMotor_3.Size = new System.Drawing.Size(159, 27);
+            this.PmcMotor_3.Size = new System.Drawing.Size(199, 34);
             this.PmcMotor_3.TabIndex = 1040;
             this.PmcMotor_3.Text = "0";
             this.PmcMotor_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2236,9 +2380,10 @@
             this.PmcMotor_2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcMotor_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcMotor_2.ForeColor = System.Drawing.Color.Black;
-            this.PmcMotor_2.Location = new System.Drawing.Point(449, 101);
+            this.PmcMotor_2.Location = new System.Drawing.Point(561, 126);
+            this.PmcMotor_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcMotor_2.Name = "PmcMotor_2";
-            this.PmcMotor_2.Size = new System.Drawing.Size(159, 27);
+            this.PmcMotor_2.Size = new System.Drawing.Size(199, 34);
             this.PmcMotor_2.TabIndex = 1039;
             this.PmcMotor_2.Text = "0";
             this.PmcMotor_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2248,9 +2393,10 @@
             this.PmcMotor_1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcMotor_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcMotor_1.ForeColor = System.Drawing.Color.Black;
-            this.PmcMotor_1.Location = new System.Drawing.Point(449, 72);
+            this.PmcMotor_1.Location = new System.Drawing.Point(561, 90);
+            this.PmcMotor_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcMotor_1.Name = "PmcMotor_1";
-            this.PmcMotor_1.Size = new System.Drawing.Size(159, 27);
+            this.PmcMotor_1.Size = new System.Drawing.Size(199, 34);
             this.PmcMotor_1.TabIndex = 1038;
             this.PmcMotor_1.Text = "0";
             this.PmcMotor_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2260,9 +2406,10 @@
             this.PmcMotor_0.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcMotor_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcMotor_0.ForeColor = System.Drawing.Color.Black;
-            this.PmcMotor_0.Location = new System.Drawing.Point(449, 43);
+            this.PmcMotor_0.Location = new System.Drawing.Point(561, 54);
+            this.PmcMotor_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcMotor_0.Name = "PmcMotor_0";
-            this.PmcMotor_0.Size = new System.Drawing.Size(159, 27);
+            this.PmcMotor_0.Size = new System.Drawing.Size(199, 34);
             this.PmcMotor_0.TabIndex = 1037;
             this.PmcMotor_0.Text = "0";
             this.PmcMotor_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2273,9 +2420,10 @@
             this.label84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label84.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label84.ForeColor = System.Drawing.Color.White;
-            this.label84.Location = new System.Drawing.Point(329, 217);
+            this.label84.Location = new System.Drawing.Point(411, 271);
+            this.label84.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(118, 27);
+            this.label84.Size = new System.Drawing.Size(147, 33);
             this.label84.TabIndex = 1035;
             this.label84.Text = "T Axis";
             this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2286,9 +2434,10 @@
             this.label85.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label85.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label85.ForeColor = System.Drawing.Color.White;
-            this.label85.Location = new System.Drawing.Point(329, 188);
+            this.label85.Location = new System.Drawing.Point(411, 235);
+            this.label85.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(118, 27);
+            this.label85.Size = new System.Drawing.Size(147, 33);
             this.label85.TabIndex = 1034;
             this.label85.Text = "Y Axis";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2299,9 +2448,10 @@
             this.label86.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label86.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label86.ForeColor = System.Drawing.Color.White;
-            this.label86.Location = new System.Drawing.Point(329, 159);
+            this.label86.Location = new System.Drawing.Point(411, 199);
+            this.label86.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(118, 27);
+            this.label86.Size = new System.Drawing.Size(147, 33);
             this.label86.TabIndex = 1033;
             this.label86.Text = "X Axis";
             this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2312,9 +2462,10 @@
             this.label87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label87.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label87.ForeColor = System.Drawing.Color.White;
-            this.label87.Location = new System.Drawing.Point(329, 130);
+            this.label87.Location = new System.Drawing.Point(411, 162);
+            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(118, 27);
+            this.label87.Size = new System.Drawing.Size(147, 33);
             this.label87.TabIndex = 1032;
             this.label87.Text = "Pin2 Motor";
             this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2325,9 +2476,10 @@
             this.label88.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label88.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label88.ForeColor = System.Drawing.Color.White;
-            this.label88.Location = new System.Drawing.Point(329, 101);
+            this.label88.Location = new System.Drawing.Point(411, 126);
+            this.label88.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(118, 27);
+            this.label88.Size = new System.Drawing.Size(147, 33);
             this.label88.TabIndex = 1031;
             this.label88.Text = "Pin1 Motor";
             this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2338,9 +2490,10 @@
             this.label89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label89.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label89.ForeColor = System.Drawing.Color.White;
-            this.label89.Location = new System.Drawing.Point(329, 72);
+            this.label89.Location = new System.Drawing.Point(411, 90);
+            this.label89.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(118, 27);
+            this.label89.Size = new System.Drawing.Size(147, 33);
             this.label89.TabIndex = 1030;
             this.label89.Text = "MSP Motor";
             this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2351,9 +2504,10 @@
             this.label91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label91.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label91.ForeColor = System.Drawing.Color.White;
-            this.label91.Location = new System.Drawing.Point(329, 43);
+            this.label91.Location = new System.Drawing.Point(411, 54);
+            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(118, 27);
+            this.label91.Size = new System.Drawing.Size(147, 33);
             this.label91.TabIndex = 1029;
             this.label91.Text = "DD Motor";
             this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2363,9 +2517,10 @@
             this.PmcProcData_7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcProcData_7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcProcData_7.ForeColor = System.Drawing.Color.Black;
-            this.PmcProcData_7.Location = new System.Drawing.Point(127, 246);
+            this.PmcProcData_7.Location = new System.Drawing.Point(159, 308);
+            this.PmcProcData_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcProcData_7.Name = "PmcProcData_7";
-            this.PmcProcData_7.Size = new System.Drawing.Size(159, 27);
+            this.PmcProcData_7.Size = new System.Drawing.Size(199, 34);
             this.PmcProcData_7.TabIndex = 1028;
             this.PmcProcData_7.Text = "0";
             this.PmcProcData_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2375,9 +2530,10 @@
             this.PmcProcData_6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcProcData_6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcProcData_6.ForeColor = System.Drawing.Color.Black;
-            this.PmcProcData_6.Location = new System.Drawing.Point(127, 217);
+            this.PmcProcData_6.Location = new System.Drawing.Point(159, 271);
+            this.PmcProcData_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcProcData_6.Name = "PmcProcData_6";
-            this.PmcProcData_6.Size = new System.Drawing.Size(159, 27);
+            this.PmcProcData_6.Size = new System.Drawing.Size(199, 34);
             this.PmcProcData_6.TabIndex = 1027;
             this.PmcProcData_6.Text = "0";
             this.PmcProcData_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2387,9 +2543,10 @@
             this.PmcProcData_5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcProcData_5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcProcData_5.ForeColor = System.Drawing.Color.Black;
-            this.PmcProcData_5.Location = new System.Drawing.Point(127, 188);
+            this.PmcProcData_5.Location = new System.Drawing.Point(159, 235);
+            this.PmcProcData_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcProcData_5.Name = "PmcProcData_5";
-            this.PmcProcData_5.Size = new System.Drawing.Size(159, 27);
+            this.PmcProcData_5.Size = new System.Drawing.Size(199, 34);
             this.PmcProcData_5.TabIndex = 1026;
             this.PmcProcData_5.Text = "0";
             this.PmcProcData_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2399,9 +2556,10 @@
             this.PmcProcData_4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcProcData_4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcProcData_4.ForeColor = System.Drawing.Color.Black;
-            this.PmcProcData_4.Location = new System.Drawing.Point(127, 159);
+            this.PmcProcData_4.Location = new System.Drawing.Point(159, 199);
+            this.PmcProcData_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcProcData_4.Name = "PmcProcData_4";
-            this.PmcProcData_4.Size = new System.Drawing.Size(159, 27);
+            this.PmcProcData_4.Size = new System.Drawing.Size(199, 34);
             this.PmcProcData_4.TabIndex = 1025;
             this.PmcProcData_4.Text = "0";
             this.PmcProcData_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2411,9 +2569,10 @@
             this.PmcProcData_3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcProcData_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcProcData_3.ForeColor = System.Drawing.Color.Black;
-            this.PmcProcData_3.Location = new System.Drawing.Point(127, 130);
+            this.PmcProcData_3.Location = new System.Drawing.Point(159, 162);
+            this.PmcProcData_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcProcData_3.Name = "PmcProcData_3";
-            this.PmcProcData_3.Size = new System.Drawing.Size(159, 27);
+            this.PmcProcData_3.Size = new System.Drawing.Size(199, 34);
             this.PmcProcData_3.TabIndex = 1024;
             this.PmcProcData_3.Text = "0";
             this.PmcProcData_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2423,9 +2582,10 @@
             this.PmcProcData_2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcProcData_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcProcData_2.ForeColor = System.Drawing.Color.Black;
-            this.PmcProcData_2.Location = new System.Drawing.Point(127, 101);
+            this.PmcProcData_2.Location = new System.Drawing.Point(159, 126);
+            this.PmcProcData_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcProcData_2.Name = "PmcProcData_2";
-            this.PmcProcData_2.Size = new System.Drawing.Size(159, 27);
+            this.PmcProcData_2.Size = new System.Drawing.Size(199, 34);
             this.PmcProcData_2.TabIndex = 1023;
             this.PmcProcData_2.Text = "0";
             this.PmcProcData_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2435,9 +2595,10 @@
             this.PmcProcData_1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcProcData_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcProcData_1.ForeColor = System.Drawing.Color.Black;
-            this.PmcProcData_1.Location = new System.Drawing.Point(127, 72);
+            this.PmcProcData_1.Location = new System.Drawing.Point(159, 90);
+            this.PmcProcData_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcProcData_1.Name = "PmcProcData_1";
-            this.PmcProcData_1.Size = new System.Drawing.Size(159, 27);
+            this.PmcProcData_1.Size = new System.Drawing.Size(199, 34);
             this.PmcProcData_1.TabIndex = 1022;
             this.PmcProcData_1.Text = "0";
             this.PmcProcData_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2447,9 +2608,10 @@
             this.PmcProcData_0.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcProcData_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcProcData_0.ForeColor = System.Drawing.Color.Black;
-            this.PmcProcData_0.Location = new System.Drawing.Point(127, 43);
+            this.PmcProcData_0.Location = new System.Drawing.Point(159, 54);
+            this.PmcProcData_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcProcData_0.Name = "PmcProcData_0";
-            this.PmcProcData_0.Size = new System.Drawing.Size(159, 27);
+            this.PmcProcData_0.Size = new System.Drawing.Size(199, 34);
             this.PmcProcData_0.TabIndex = 1021;
             this.PmcProcData_0.Text = "0";
             this.PmcProcData_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2460,9 +2622,10 @@
             this.lb50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb50.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb50.ForeColor = System.Drawing.Color.White;
-            this.lb50.Location = new System.Drawing.Point(7, 246);
+            this.lb50.Location = new System.Drawing.Point(9, 308);
+            this.lb50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb50.Name = "lb50";
-            this.lb50.Size = new System.Drawing.Size(118, 27);
+            this.lb50.Size = new System.Drawing.Size(147, 33);
             this.lb50.TabIndex = 1017;
             this.lb50.Text = "Probe 3";
             this.lb50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2473,9 +2636,10 @@
             this.lb49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb49.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb49.ForeColor = System.Drawing.Color.White;
-            this.lb49.Location = new System.Drawing.Point(7, 217);
+            this.lb49.Location = new System.Drawing.Point(9, 271);
+            this.lb49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb49.Name = "lb49";
-            this.lb49.Size = new System.Drawing.Size(118, 27);
+            this.lb49.Size = new System.Drawing.Size(147, 33);
             this.lb49.TabIndex = 1016;
             this.lb49.Text = "Probe 2";
             this.lb49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2486,9 +2650,10 @@
             this.lb48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb48.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb48.ForeColor = System.Drawing.Color.White;
-            this.lb48.Location = new System.Drawing.Point(7, 188);
+            this.lb48.Location = new System.Drawing.Point(9, 235);
+            this.lb48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb48.Name = "lb48";
-            this.lb48.Size = new System.Drawing.Size(118, 27);
+            this.lb48.Size = new System.Drawing.Size(147, 33);
             this.lb48.TabIndex = 1015;
             this.lb48.Text = "Probe 1";
             this.lb48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2499,9 +2664,10 @@
             this.lb47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb47.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb47.ForeColor = System.Drawing.Color.White;
-            this.lb47.Location = new System.Drawing.Point(7, 159);
+            this.lb47.Location = new System.Drawing.Point(9, 199);
+            this.lb47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb47.Name = "lb47";
-            this.lb47.Size = new System.Drawing.Size(118, 27);
+            this.lb47.Size = new System.Drawing.Size(147, 33);
             this.lb47.TabIndex = 1014;
             this.lb47.Text = "Pressure";
             this.lb47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2512,9 +2678,10 @@
             this.lb46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb46.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb46.ForeColor = System.Drawing.Color.White;
-            this.lb46.Location = new System.Drawing.Point(7, 130);
+            this.lb46.Location = new System.Drawing.Point(9, 162);
+            this.lb46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb46.Name = "lb46";
-            this.lb46.Size = new System.Drawing.Size(118, 27);
+            this.lb46.Size = new System.Drawing.Size(147, 33);
             this.lb46.TabIndex = 1013;
             this.lb46.Text = "In Lower Temp";
             this.lb46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2525,9 +2692,10 @@
             this.lb77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb77.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb77.ForeColor = System.Drawing.Color.White;
-            this.lb77.Location = new System.Drawing.Point(7, 101);
+            this.lb77.Location = new System.Drawing.Point(9, 126);
+            this.lb77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb77.Name = "lb77";
-            this.lb77.Size = new System.Drawing.Size(118, 27);
+            this.lb77.Size = new System.Drawing.Size(147, 33);
             this.lb77.TabIndex = 1012;
             this.lb77.Text = "Out Lower Temp";
             this.lb77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2538,9 +2706,10 @@
             this.lb44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb44.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb44.ForeColor = System.Drawing.Color.White;
-            this.lb44.Location = new System.Drawing.Point(7, 72);
+            this.lb44.Location = new System.Drawing.Point(9, 90);
+            this.lb44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb44.Name = "lb44";
-            this.lb44.Size = new System.Drawing.Size(118, 27);
+            this.lb44.Size = new System.Drawing.Size(147, 33);
             this.lb44.TabIndex = 1011;
             this.lb44.Text = "In Upper Temp";
             this.lb44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2551,9 +2720,10 @@
             this.lb33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb33.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb33.ForeColor = System.Drawing.Color.White;
-            this.lb33.Location = new System.Drawing.Point(7, 43);
+            this.lb33.Location = new System.Drawing.Point(9, 54);
+            this.lb33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb33.Name = "lb33";
-            this.lb33.Size = new System.Drawing.Size(118, 27);
+            this.lb33.Size = new System.Drawing.Size(147, 33);
             this.lb33.TabIndex = 1001;
             this.lb33.Text = "Out Upper Temp";
             this.lb33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2564,9 +2734,10 @@
             this.label64.BackColor = System.Drawing.Color.Transparent;
             this.label64.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label64.ForeColor = System.Drawing.Color.White;
-            this.label64.Location = new System.Drawing.Point(12, 10);
+            this.label64.Location = new System.Drawing.Point(15, 12);
+            this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(139, 17);
+            this.label64.Size = new System.Drawing.Size(182, 23);
             this.label64.TabIndex = 999;
             this.label64.Text = "Current Process Data";
             // 
@@ -2583,9 +2754,10 @@
             this.panel9.Controls.Add(this.label50);
             this.panel9.Controls.Add(this.label51);
             this.panel9.ForeColor = System.Drawing.Color.White;
-            this.panel9.Location = new System.Drawing.Point(1, 372);
+            this.panel9.Location = new System.Drawing.Point(1, 465);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(233, 309);
+            this.panel9.Size = new System.Drawing.Size(291, 386);
             this.panel9.TabIndex = 987;
             // 
             // PmcStatus_3
@@ -2593,9 +2765,10 @@
             this.PmcStatus_3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcStatus_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatus_3.ForeColor = System.Drawing.Color.Black;
-            this.PmcStatus_3.Location = new System.Drawing.Point(105, 133);
+            this.PmcStatus_3.Location = new System.Drawing.Point(131, 166);
+            this.PmcStatus_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatus_3.Name = "PmcStatus_3";
-            this.PmcStatus_3.Size = new System.Drawing.Size(114, 27);
+            this.PmcStatus_3.Size = new System.Drawing.Size(142, 34);
             this.PmcStatus_3.TabIndex = 1010;
             this.PmcStatus_3.Text = "ATM Mode";
             this.PmcStatus_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2606,9 +2779,10 @@
             this.label53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label53.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.ForeColor = System.Drawing.Color.White;
-            this.label53.Location = new System.Drawing.Point(7, 133);
+            this.label53.Location = new System.Drawing.Point(9, 166);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(97, 27);
+            this.label53.Size = new System.Drawing.Size(121, 33);
             this.label53.TabIndex = 1009;
             this.label53.Text = "RunMode";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2618,9 +2792,10 @@
             this.PmcStatus_2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcStatus_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatus_2.ForeColor = System.Drawing.Color.Black;
-            this.PmcStatus_2.Location = new System.Drawing.Point(105, 103);
+            this.PmcStatus_2.Location = new System.Drawing.Point(131, 129);
+            this.PmcStatus_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatus_2.Name = "PmcStatus_2";
-            this.PmcStatus_2.Size = new System.Drawing.Size(114, 27);
+            this.PmcStatus_2.Size = new System.Drawing.Size(142, 34);
             this.PmcStatus_2.TabIndex = 1008;
             this.PmcStatus_2.Text = "IDLE";
             this.PmcStatus_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2631,9 +2806,10 @@
             this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label44.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(7, 103);
+            this.label44.Location = new System.Drawing.Point(9, 129);
+            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(97, 27);
+            this.label44.Size = new System.Drawing.Size(121, 33);
             this.label44.TabIndex = 1007;
             this.label44.Text = "Process";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2643,9 +2819,10 @@
             this.PmcStatus_1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcStatus_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatus_1.ForeColor = System.Drawing.Color.Black;
-            this.PmcStatus_1.Location = new System.Drawing.Point(105, 73);
+            this.PmcStatus_1.Location = new System.Drawing.Point(131, 91);
+            this.PmcStatus_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatus_1.Name = "PmcStatus_1";
-            this.PmcStatus_1.Size = new System.Drawing.Size(114, 27);
+            this.PmcStatus_1.Size = new System.Drawing.Size(142, 34);
             this.PmcStatus_1.TabIndex = 1006;
             this.PmcStatus_1.Text = "ATM";
             this.PmcStatus_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2656,9 +2833,10 @@
             this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label46.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(7, 73);
+            this.label46.Location = new System.Drawing.Point(9, 91);
+            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(97, 27);
+            this.label46.Size = new System.Drawing.Size(121, 33);
             this.label46.TabIndex = 1005;
             this.label46.Text = "Vacuum";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2668,9 +2846,10 @@
             this.PmcStatus_0.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PmcStatus_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PmcStatus_0.ForeColor = System.Drawing.Color.Black;
-            this.PmcStatus_0.Location = new System.Drawing.Point(105, 43);
+            this.PmcStatus_0.Location = new System.Drawing.Point(131, 54);
+            this.PmcStatus_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PmcStatus_0.Name = "PmcStatus_0";
-            this.PmcStatus_0.Size = new System.Drawing.Size(114, 27);
+            this.PmcStatus_0.Size = new System.Drawing.Size(142, 34);
             this.PmcStatus_0.TabIndex = 1004;
             this.PmcStatus_0.Text = "IDLE";
             this.PmcStatus_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2681,9 +2860,10 @@
             this.label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label50.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.ForeColor = System.Drawing.Color.White;
-            this.label50.Location = new System.Drawing.Point(7, 43);
+            this.label50.Location = new System.Drawing.Point(9, 54);
+            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(97, 27);
+            this.label50.Size = new System.Drawing.Size(121, 33);
             this.label50.TabIndex = 1001;
             this.label50.Text = "PMC";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2694,9 +2874,10 @@
             this.label51.BackColor = System.Drawing.Color.Transparent;
             this.label51.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label51.ForeColor = System.Drawing.Color.White;
-            this.label51.Location = new System.Drawing.Point(12, 10);
+            this.label51.Location = new System.Drawing.Point(15, 12);
+            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(80, 17);
+            this.label51.Size = new System.Drawing.Size(104, 23);
             this.label51.TabIndex = 999;
             this.label51.Text = "Status PMC";
             // 
@@ -2737,89 +2918,99 @@
             this.panel7.Controls.Add(this.label15);
             this.panel7.Controls.Add(this.label16);
             this.panel7.ForeColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(240, 30);
+            this.panel7.Location = new System.Drawing.Point(300, 38);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(636, 340);
+            this.panel7.Size = new System.Drawing.Size(794, 424);
             this.panel7.TabIndex = 986;
             // 
             // tb_CtcRecipe_8
             // 
             this.tb_CtcRecipe_8.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_CtcRecipe_8.Location = new System.Drawing.Point(317, 300);
+            this.tb_CtcRecipe_8.Location = new System.Drawing.Point(396, 375);
+            this.tb_CtcRecipe_8.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CtcRecipe_8.Name = "tb_CtcRecipe_8";
-            this.tb_CtcRecipe_8.Size = new System.Drawing.Size(185, 26);
+            this.tb_CtcRecipe_8.Size = new System.Drawing.Size(230, 30);
             this.tb_CtcRecipe_8.TabIndex = 1034;
             this.tb_CtcRecipe_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_CtcRecipe_7
             // 
             this.tb_CtcRecipe_7.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_CtcRecipe_7.Location = new System.Drawing.Point(317, 270);
+            this.tb_CtcRecipe_7.Location = new System.Drawing.Point(396, 338);
+            this.tb_CtcRecipe_7.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CtcRecipe_7.Name = "tb_CtcRecipe_7";
-            this.tb_CtcRecipe_7.Size = new System.Drawing.Size(185, 26);
+            this.tb_CtcRecipe_7.Size = new System.Drawing.Size(230, 30);
             this.tb_CtcRecipe_7.TabIndex = 1033;
             this.tb_CtcRecipe_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_CtcRecipe_6
             // 
             this.tb_CtcRecipe_6.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_CtcRecipe_6.Location = new System.Drawing.Point(317, 240);
+            this.tb_CtcRecipe_6.Location = new System.Drawing.Point(396, 300);
+            this.tb_CtcRecipe_6.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CtcRecipe_6.Name = "tb_CtcRecipe_6";
-            this.tb_CtcRecipe_6.Size = new System.Drawing.Size(185, 26);
+            this.tb_CtcRecipe_6.Size = new System.Drawing.Size(230, 30);
             this.tb_CtcRecipe_6.TabIndex = 1032;
             this.tb_CtcRecipe_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_CtcRecipe_5
             // 
             this.tb_CtcRecipe_5.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_CtcRecipe_5.Location = new System.Drawing.Point(317, 210);
+            this.tb_CtcRecipe_5.Location = new System.Drawing.Point(396, 262);
+            this.tb_CtcRecipe_5.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CtcRecipe_5.Name = "tb_CtcRecipe_5";
-            this.tb_CtcRecipe_5.Size = new System.Drawing.Size(185, 26);
+            this.tb_CtcRecipe_5.Size = new System.Drawing.Size(230, 30);
             this.tb_CtcRecipe_5.TabIndex = 1031;
             this.tb_CtcRecipe_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_CtcRecipe_4
             // 
             this.tb_CtcRecipe_4.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_CtcRecipe_4.Location = new System.Drawing.Point(317, 180);
+            this.tb_CtcRecipe_4.Location = new System.Drawing.Point(396, 225);
+            this.tb_CtcRecipe_4.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CtcRecipe_4.Name = "tb_CtcRecipe_4";
-            this.tb_CtcRecipe_4.Size = new System.Drawing.Size(185, 26);
+            this.tb_CtcRecipe_4.Size = new System.Drawing.Size(230, 30);
             this.tb_CtcRecipe_4.TabIndex = 1030;
             this.tb_CtcRecipe_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_CtcRecipe_3
             // 
             this.tb_CtcRecipe_3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_CtcRecipe_3.Location = new System.Drawing.Point(317, 150);
+            this.tb_CtcRecipe_3.Location = new System.Drawing.Point(396, 188);
+            this.tb_CtcRecipe_3.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CtcRecipe_3.Name = "tb_CtcRecipe_3";
-            this.tb_CtcRecipe_3.Size = new System.Drawing.Size(185, 26);
+            this.tb_CtcRecipe_3.Size = new System.Drawing.Size(230, 30);
             this.tb_CtcRecipe_3.TabIndex = 1029;
             this.tb_CtcRecipe_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_CtcRecipe_2
             // 
             this.tb_CtcRecipe_2.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_CtcRecipe_2.Location = new System.Drawing.Point(317, 120);
+            this.tb_CtcRecipe_2.Location = new System.Drawing.Point(396, 150);
+            this.tb_CtcRecipe_2.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CtcRecipe_2.Name = "tb_CtcRecipe_2";
-            this.tb_CtcRecipe_2.Size = new System.Drawing.Size(185, 26);
+            this.tb_CtcRecipe_2.Size = new System.Drawing.Size(230, 30);
             this.tb_CtcRecipe_2.TabIndex = 1028;
             this.tb_CtcRecipe_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_CtcRecipe_1
             // 
             this.tb_CtcRecipe_1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_CtcRecipe_1.Location = new System.Drawing.Point(317, 90);
+            this.tb_CtcRecipe_1.Location = new System.Drawing.Point(396, 112);
+            this.tb_CtcRecipe_1.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CtcRecipe_1.Name = "tb_CtcRecipe_1";
-            this.tb_CtcRecipe_1.Size = new System.Drawing.Size(185, 26);
+            this.tb_CtcRecipe_1.Size = new System.Drawing.Size(230, 30);
             this.tb_CtcRecipe_1.TabIndex = 1027;
             this.tb_CtcRecipe_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tb_CtcRecipe_0
             // 
             this.tb_CtcRecipe_0.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tb_CtcRecipe_0.Location = new System.Drawing.Point(317, 60);
+            this.tb_CtcRecipe_0.Location = new System.Drawing.Point(396, 75);
+            this.tb_CtcRecipe_0.Margin = new System.Windows.Forms.Padding(4);
             this.tb_CtcRecipe_0.Name = "tb_CtcRecipe_0";
-            this.tb_CtcRecipe_0.Size = new System.Drawing.Size(185, 26);
+            this.tb_CtcRecipe_0.Size = new System.Drawing.Size(230, 30);
             this.tb_CtcRecipe_0.TabIndex = 1026;
             this.tb_CtcRecipe_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2830,11 +3021,12 @@
             this.btnSetRcp.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnSetRcp.GlowColor = System.Drawing.Color.White;
             this.btnSetRcp.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnSetRcp.Location = new System.Drawing.Point(508, 150);
+            this.btnSetRcp.Location = new System.Drawing.Point(635, 188);
+            this.btnSetRcp.Margin = new System.Windows.Forms.Padding(4);
             this.btnSetRcp.Name = "btnSetRcp";
             this.btnSetRcp.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnSetRcp.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnSetRcp.Size = new System.Drawing.Size(123, 57);
+            this.btnSetRcp.Size = new System.Drawing.Size(154, 71);
             this.btnSetRcp.TabIndex = 1025;
             this.btnSetRcp.Tag = "3";
             this.btnSetRcp.Text = "Set Recipe";
@@ -2848,11 +3040,12 @@
             this.btnSetRcpName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnSetRcpName.GlowColor = System.Drawing.Color.White;
             this.btnSetRcpName.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnSetRcpName.Location = new System.Drawing.Point(508, 30);
+            this.btnSetRcpName.Location = new System.Drawing.Point(635, 38);
+            this.btnSetRcpName.Margin = new System.Windows.Forms.Padding(4);
             this.btnSetRcpName.Name = "btnSetRcpName";
             this.btnSetRcpName.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnSetRcpName.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnSetRcpName.Size = new System.Drawing.Size(123, 56);
+            this.btnSetRcpName.Size = new System.Drawing.Size(154, 70);
             this.btnSetRcpName.TabIndex = 1024;
             this.btnSetRcpName.Tag = "3";
             this.btnSetRcpName.Text = "Set Recipe Name";
@@ -2862,9 +3055,10 @@
             // tbRcpName
             // 
             this.tbRcpName.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.tbRcpName.Location = new System.Drawing.Point(317, 30);
+            this.tbRcpName.Location = new System.Drawing.Point(396, 38);
+            this.tbRcpName.Margin = new System.Windows.Forms.Padding(4);
             this.tbRcpName.Name = "tbRcpName";
-            this.tbRcpName.Size = new System.Drawing.Size(185, 26);
+            this.tbRcpName.Size = new System.Drawing.Size(230, 30);
             this.tbRcpName.TabIndex = 1023;
             this.tbRcpName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2873,9 +3067,10 @@
             this.CtcRecipeName.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipeName.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipeName.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipeName.Location = new System.Drawing.Point(127, 30);
+            this.CtcRecipeName.Location = new System.Drawing.Point(159, 38);
+            this.CtcRecipeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipeName.Name = "CtcRecipeName";
-            this.CtcRecipeName.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipeName.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipeName.TabIndex = 1022;
             this.CtcRecipeName.Text = "0";
             this.CtcRecipeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2886,9 +3081,10 @@
             this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label33.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(7, 30);
+            this.label33.Location = new System.Drawing.Point(9, 38);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(118, 27);
+            this.label33.Size = new System.Drawing.Size(147, 33);
             this.label33.TabIndex = 1021;
             this.label33.Text = "Recipe Name";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2898,9 +3094,10 @@
             this.CtcRecipe_8.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipe_8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipe_8.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipe_8.Location = new System.Drawing.Point(127, 300);
+            this.CtcRecipe_8.Location = new System.Drawing.Point(159, 375);
+            this.CtcRecipe_8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipe_8.Name = "CtcRecipe_8";
-            this.CtcRecipe_8.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipe_8.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipe_8.TabIndex = 1020;
             this.CtcRecipe_8.Text = "0";
             this.CtcRecipe_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2911,9 +3108,10 @@
             this.label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label30.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(7, 300);
+            this.label30.Location = new System.Drawing.Point(9, 375);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(118, 27);
+            this.label30.Size = new System.Drawing.Size(147, 33);
             this.label30.TabIndex = 1019;
             this.label30.Text = "CH3";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2923,9 +3121,10 @@
             this.CtcRecipe_7.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipe_7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipe_7.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipe_7.Location = new System.Drawing.Point(127, 270);
+            this.CtcRecipe_7.Location = new System.Drawing.Point(159, 338);
+            this.CtcRecipe_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipe_7.Name = "CtcRecipe_7";
-            this.CtcRecipe_7.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipe_7.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipe_7.TabIndex = 1018;
             this.CtcRecipe_7.Text = "0";
             this.CtcRecipe_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2936,9 +3135,10 @@
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label28.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(7, 270);
+            this.label28.Location = new System.Drawing.Point(9, 338);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(118, 27);
+            this.label28.Size = new System.Drawing.Size(147, 33);
             this.label28.TabIndex = 1017;
             this.label28.Text = "CH2";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2948,9 +3148,10 @@
             this.CtcRecipe_6.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipe_6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipe_6.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipe_6.Location = new System.Drawing.Point(127, 240);
+            this.CtcRecipe_6.Location = new System.Drawing.Point(159, 300);
+            this.CtcRecipe_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipe_6.Name = "CtcRecipe_6";
-            this.CtcRecipe_6.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipe_6.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipe_6.TabIndex = 1016;
             this.CtcRecipe_6.Text = "0";
             this.CtcRecipe_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2961,9 +3162,10 @@
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label26.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(7, 240);
+            this.label26.Location = new System.Drawing.Point(9, 300);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(118, 27);
+            this.label26.Size = new System.Drawing.Size(147, 33);
             this.label26.TabIndex = 1015;
             this.label26.Text = "CH1";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2973,9 +3175,10 @@
             this.CtcRecipe_5.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipe_5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipe_5.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipe_5.Location = new System.Drawing.Point(127, 210);
+            this.CtcRecipe_5.Location = new System.Drawing.Point(159, 262);
+            this.CtcRecipe_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipe_5.Name = "CtcRecipe_5";
-            this.CtcRecipe_5.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipe_5.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipe_5.TabIndex = 1014;
             this.CtcRecipe_5.Text = "0";
             this.CtcRecipe_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2986,9 +3189,10 @@
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label24.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(7, 210);
+            this.label24.Location = new System.Drawing.Point(9, 262);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(118, 27);
+            this.label24.Size = new System.Drawing.Size(147, 33);
             this.label24.TabIndex = 1013;
             this.label24.Text = "APC Pos";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2998,9 +3202,10 @@
             this.CtcRecipe_4.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipe_4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipe_4.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipe_4.Location = new System.Drawing.Point(127, 180);
+            this.CtcRecipe_4.Location = new System.Drawing.Point(159, 225);
+            this.CtcRecipe_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipe_4.Name = "CtcRecipe_4";
-            this.CtcRecipe_4.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipe_4.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipe_4.TabIndex = 1012;
             this.CtcRecipe_4.Text = "0";
             this.CtcRecipe_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3011,9 +3216,10 @@
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label20.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(7, 180);
+            this.label20.Location = new System.Drawing.Point(9, 225);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(118, 27);
+            this.label20.Size = new System.Drawing.Size(147, 33);
             this.label20.TabIndex = 1011;
             this.label20.Text = "Lower Temp";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3023,9 +3229,10 @@
             this.CtcRecipe_3.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipe_3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipe_3.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipe_3.Location = new System.Drawing.Point(127, 150);
+            this.CtcRecipe_3.Location = new System.Drawing.Point(159, 188);
+            this.CtcRecipe_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipe_3.Name = "CtcRecipe_3";
-            this.CtcRecipe_3.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipe_3.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipe_3.TabIndex = 1010;
             this.CtcRecipe_3.Text = "0";
             this.CtcRecipe_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3036,9 +3243,10 @@
             this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label18.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(7, 150);
+            this.label18.Location = new System.Drawing.Point(9, 188);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(118, 27);
+            this.label18.Size = new System.Drawing.Size(147, 33);
             this.label18.TabIndex = 1009;
             this.label18.Text = "Upper Temp";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3048,9 +3256,10 @@
             this.CtcRecipe_2.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipe_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipe_2.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipe_2.Location = new System.Drawing.Point(127, 120);
+            this.CtcRecipe_2.Location = new System.Drawing.Point(159, 150);
+            this.CtcRecipe_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipe_2.Name = "CtcRecipe_2";
-            this.CtcRecipe_2.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipe_2.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipe_2.TabIndex = 1008;
             this.CtcRecipe_2.Text = "0";
             this.CtcRecipe_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3061,9 +3270,10 @@
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(7, 120);
+            this.label11.Location = new System.Drawing.Point(9, 150);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 27);
+            this.label11.Size = new System.Drawing.Size(147, 33);
             this.label11.TabIndex = 1007;
             this.label11.Text = "Pressing Time";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3073,9 +3283,10 @@
             this.CtcRecipe_1.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipe_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipe_1.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipe_1.Location = new System.Drawing.Point(127, 90);
+            this.CtcRecipe_1.Location = new System.Drawing.Point(159, 112);
+            this.CtcRecipe_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipe_1.Name = "CtcRecipe_1";
-            this.CtcRecipe_1.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipe_1.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipe_1.TabIndex = 1006;
             this.CtcRecipe_1.Text = "0";
             this.CtcRecipe_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3086,9 +3297,10 @@
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label13.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(7, 90);
+            this.label13.Location = new System.Drawing.Point(9, 112);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(118, 27);
+            this.label13.Size = new System.Drawing.Size(147, 33);
             this.label13.TabIndex = 1005;
             this.label13.Text = "Pressure";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3098,9 +3310,10 @@
             this.CtcRecipe_0.BackColor = System.Drawing.Color.LightGray;
             this.CtcRecipe_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcRecipe_0.ForeColor = System.Drawing.Color.Black;
-            this.CtcRecipe_0.Location = new System.Drawing.Point(127, 60);
+            this.CtcRecipe_0.Location = new System.Drawing.Point(159, 75);
+            this.CtcRecipe_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcRecipe_0.Name = "CtcRecipe_0";
-            this.CtcRecipe_0.Size = new System.Drawing.Size(185, 27);
+            this.CtcRecipe_0.Size = new System.Drawing.Size(231, 34);
             this.CtcRecipe_0.TabIndex = 1004;
             this.CtcRecipe_0.Text = "0";
             this.CtcRecipe_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3111,9 +3324,10 @@
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(7, 60);
+            this.label15.Location = new System.Drawing.Point(9, 75);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(118, 27);
+            this.label15.Size = new System.Drawing.Size(147, 33);
             this.label15.TabIndex = 1001;
             this.label15.Text = "Vision Used";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3124,9 +3338,10 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(12, 3);
+            this.label16.Location = new System.Drawing.Point(15, 4);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 17);
+            this.label16.Size = new System.Drawing.Size(63, 23);
             this.label16.TabIndex = 999;
             this.label16.Text = "Recipe";
             // 
@@ -3141,9 +3356,10 @@
             this.panel10.Controls.Add(this.lb22);
             this.panel10.Controls.Add(this.label71);
             this.panel10.ForeColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(1, 30);
+            this.panel10.Location = new System.Drawing.Point(1, 38);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(233, 340);
+            this.panel10.Size = new System.Drawing.Size(291, 424);
             this.panel10.TabIndex = 985;
             // 
             // CtcStatus_2
@@ -3151,9 +3367,10 @@
             this.CtcStatus_2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CtcStatus_2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcStatus_2.ForeColor = System.Drawing.Color.Black;
-            this.CtcStatus_2.Location = new System.Drawing.Point(105, 90);
+            this.CtcStatus_2.Location = new System.Drawing.Point(131, 112);
+            this.CtcStatus_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcStatus_2.Name = "CtcStatus_2";
-            this.CtcStatus_2.Size = new System.Drawing.Size(114, 27);
+            this.CtcStatus_2.Size = new System.Drawing.Size(142, 34);
             this.CtcStatus_2.TabIndex = 1008;
             this.CtcStatus_2.Text = "ATM Mode";
             this.CtcStatus_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3164,9 +3381,10 @@
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(7, 90);
+            this.label9.Location = new System.Drawing.Point(9, 112);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 27);
+            this.label9.Size = new System.Drawing.Size(121, 33);
             this.label9.TabIndex = 1007;
             this.label9.Text = "Run Mode";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3176,9 +3394,10 @@
             this.CtcStatus_1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CtcStatus_1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcStatus_1.ForeColor = System.Drawing.Color.Black;
-            this.CtcStatus_1.Location = new System.Drawing.Point(105, 60);
+            this.CtcStatus_1.Location = new System.Drawing.Point(131, 75);
+            this.CtcStatus_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcStatus_1.Name = "CtcStatus_1";
-            this.CtcStatus_1.Size = new System.Drawing.Size(114, 27);
+            this.CtcStatus_1.Size = new System.Drawing.Size(142, 34);
             this.CtcStatus_1.TabIndex = 1006;
             this.CtcStatus_1.Text = "ATM";
             this.CtcStatus_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3189,9 +3408,10 @@
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(7, 60);
+            this.label7.Location = new System.Drawing.Point(9, 75);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 27);
+            this.label7.Size = new System.Drawing.Size(121, 33);
             this.label7.TabIndex = 1005;
             this.label7.Text = "VTM Vacuum";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3201,9 +3421,10 @@
             this.CtcStatus_0.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CtcStatus_0.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CtcStatus_0.ForeColor = System.Drawing.Color.Black;
-            this.CtcStatus_0.Location = new System.Drawing.Point(105, 30);
+            this.CtcStatus_0.Location = new System.Drawing.Point(131, 38);
+            this.CtcStatus_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CtcStatus_0.Name = "CtcStatus_0";
-            this.CtcStatus_0.Size = new System.Drawing.Size(114, 27);
+            this.CtcStatus_0.Size = new System.Drawing.Size(142, 34);
             this.CtcStatus_0.TabIndex = 1004;
             this.CtcStatus_0.Text = "IDLE";
             this.CtcStatus_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3214,9 +3435,10 @@
             this.lb22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb22.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb22.ForeColor = System.Drawing.Color.White;
-            this.lb22.Location = new System.Drawing.Point(7, 30);
+            this.lb22.Location = new System.Drawing.Point(9, 38);
+            this.lb22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb22.Name = "lb22";
-            this.lb22.Size = new System.Drawing.Size(97, 27);
+            this.lb22.Size = new System.Drawing.Size(121, 33);
             this.lb22.TabIndex = 1001;
             this.lb22.Text = "CTC";
             this.lb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3227,9 +3449,10 @@
             this.label71.BackColor = System.Drawing.Color.Transparent;
             this.label71.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label71.ForeColor = System.Drawing.Color.White;
-            this.label71.Location = new System.Drawing.Point(12, 3);
+            this.label71.Location = new System.Drawing.Point(15, 4);
+            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(75, 17);
+            this.label71.Size = new System.Drawing.Size(99, 23);
             this.label71.TabIndex = 999;
             this.label71.Text = "Status CTC";
             // 
@@ -3244,9 +3467,10 @@
             this.a1Panel2.Image = null;
             this.a1Panel2.ImageLocation = new System.Drawing.Point(4, 4);
             this.a1Panel2.Location = new System.Drawing.Point(0, 0);
+            this.a1Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.a1Panel2.Name = "a1Panel2";
             this.a1Panel2.ShadowOffSet = 2;
-            this.a1Panel2.Size = new System.Drawing.Size(879, 31);
+            this.a1Panel2.Size = new System.Drawing.Size(1099, 39);
             this.a1Panel2.TabIndex = 38;
             // 
             // label90
@@ -3255,21 +3479,23 @@
             this.label90.BackColor = System.Drawing.Color.Transparent;
             this.label90.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label90.ForeColor = System.Drawing.Color.Black;
-            this.label90.Location = new System.Drawing.Point(34, 4);
+            this.label90.Location = new System.Drawing.Point(42, 5);
+            this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(69, 21);
+            this.label90.Size = new System.Drawing.Size(87, 28);
             this.label90.TabIndex = 0;
             this.label90.Text = "STATUS";
             // 
             // subProcBonder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.Controls.Add(this.tabStatus);
             this.Controls.Add(this.lb45);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "subProcBonder";
-            this.Size = new System.Drawing.Size(1145, 787);
+            this.Size = new System.Drawing.Size(1431, 984);
             this.Load += new System.EventHandler(this.subProcBonder_Load);
             this.panel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);

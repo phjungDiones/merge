@@ -40,6 +40,23 @@ namespace TBDB_CTC.GUI
 
     public partial class frmSemiAUto : Form
     {
+        POPWND.popConfirm popConfirm = new POPWND.popConfirm();
+        POPWND.popCancel popCancel = new POPWND.popCancel();
+
+        private bool ShowDialog()
+        {
+            bool flag = false;
+            popConfirm.ShowDialog();
+            if (popConfirm.DialogResult == DialogResult.OK)
+            {
+                flag = true;
+            }
+            else
+            {
+                //popCancel.ShowDialog();
+            }
+            return flag;
+        }
 
         private int m_nWorkingStage = 0;
         private int m_nFmRobotSlotNo = 0;
@@ -82,6 +99,7 @@ namespace TBDB_CTC.GUI
 
         private void btnLoadLami_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.ATMRobot_Load_Lami;
 
             GlobalSeq.manualRun.StartManualSeq(Manul_Seq);
@@ -89,6 +107,7 @@ namespace TBDB_CTC.GUI
 
         private void btnUnloadLami_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.ATMRobot_Unload_Lami;
 
             GlobalVariable.manualInfo.SelArmATM = (HAND)cbAtmRobotArm.SelectedIndex + 1;
@@ -98,6 +117,7 @@ namespace TBDB_CTC.GUI
 
         private void btnProcLami_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.ATMRobot_ProcStart_Lami;
 
             GlobalVariable.manualInfo.SelArmATM = (HAND)cbAtmRobotArm.SelectedIndex + 1;
@@ -107,6 +127,7 @@ namespace TBDB_CTC.GUI
 
         private void btnAtmLoadLL_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.ATMRobot_Place_Loadlock;
 
             GlobalVariable.manualInfo.SelArmATM = (HAND)cbAtmRobotArm.SelectedIndex + 1;
@@ -116,6 +137,7 @@ namespace TBDB_CTC.GUI
 
         private void btnUnloadLL_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.ATMRobot_Pickup_Loadlock;
 
             GlobalVariable.manualInfo.SelArmATM = (HAND)cbAtmRobotArm.SelectedIndex + 1;
@@ -125,6 +147,7 @@ namespace TBDB_CTC.GUI
 
         private void btnVtmLoadLL1_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.VTMRobot_Pickup_Loadlock;
 
             GlobalVariable.manualInfo.SelArmVTM = (HAND)cbVtmRobotArm.SelectedIndex + 1;
@@ -134,6 +157,7 @@ namespace TBDB_CTC.GUI
 
         private void btnVtmLoadLL2_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.VTMRobot_Pickup_Loadlock;
 
             GlobalVariable.manualInfo.SelArmVTM = (HAND)cbVtmRobotArm.SelectedIndex + 1;
@@ -144,6 +168,7 @@ namespace TBDB_CTC.GUI
 
         private void btnVtmUnloadBD_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.VTMRobot_Place_Loadlock;
 
             GlobalVariable.manualInfo.SelArmVTM = (HAND)cbVtmRobotArm.SelectedIndex + 1;
@@ -153,6 +178,7 @@ namespace TBDB_CTC.GUI
 
         private void btnVtmProcPMC_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.VTMRobot_Process_PMC;
 
             GlobalVariable.manualInfo.SelArmVTM = (HAND)cbVtmRobotArm.SelectedIndex + 1;
@@ -167,16 +193,18 @@ namespace TBDB_CTC.GUI
 
         private void btnAtmStop_Click(object sender, EventArgs e)
         {
-
+            if (!ShowDialog()) return;
         }
 
         private void btnVtmStop_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
 
         }
 
         private void btnSetRcp_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.ATMRobot_RcpChange_Lami;
 
 
@@ -185,6 +213,7 @@ namespace TBDB_CTC.GUI
 
         private void btnVtmLoadPmc_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.VTMRobot_Load_PMC;
 
             GlobalVariable.manualInfo.SelArmVTM = (HAND)cbVtmRobotArm.SelectedIndex + 1;
@@ -194,6 +223,7 @@ namespace TBDB_CTC.GUI
 
         private void btnVtmUnloadPmc_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.VTMRobot_Unload_PMC;
 
             GlobalVariable.manualInfo.SelArmVTM = (HAND)cbVtmRobotArm.SelectedIndex + 1;
@@ -514,6 +544,7 @@ namespace TBDB_CTC.GUI
 
         private void btnPickup_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             if (cbUnitSel.SelectedIndex < 0 || m_nSelectSource < 0) return;
 
             bool bFail = false;
@@ -631,16 +662,17 @@ namespace TBDB_CTC.GUI
 
         private void btnPlace_Click(object sender, EventArgs e)
         {
-
+            if (!ShowDialog()) return;
         }
 
         private void btnCycleMove_Click(object sender, EventArgs e)
         {
-
+            if (!ShowDialog()) return;
         }
 
         private void btnPmcSetRecipe_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.VTMRobot_SetRecipe_PMC;
 
             GlobalVariable.manualInfo.SelArmVTM = (HAND)cbVtmRobotArm.SelectedIndex + 1;

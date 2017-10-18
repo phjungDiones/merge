@@ -14,6 +14,7 @@ using TBDB_CTC.Comm.Lami_PLC;
 
 namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 {
+
     public partial class subProcLami : UserControl
     {
         POPWND.popConfirm popConfirm = new POPWND.popConfirm();

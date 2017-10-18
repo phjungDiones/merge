@@ -51,6 +51,8 @@
             this.cbUpdown = new System.Windows.Forms.ComboBox();
             this.cbExRe = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbSlot = new System.Windows.Forms.ComboBox();
+            this.cbStage = new System.Windows.Forms.ComboBox();
             this.a1Panel1 = new Owf.Controls.A1Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -65,8 +67,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnGateClose = new Glass.GlassButton();
             this.btnGateOpen = new Glass.GlassButton();
-            this.cbStage = new System.Windows.Forms.ComboBox();
-            this.cbSlot = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.a1Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -81,11 +81,12 @@
             this.glassButton1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.glassButton1.GlowColor = System.Drawing.Color.White;
             this.glassButton1.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.glassButton1.Location = new System.Drawing.Point(74, 594);
+            this.glassButton1.Location = new System.Drawing.Point(92, 742);
+            this.glassButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.glassButton1.Name = "glassButton1";
             this.glassButton1.OuterBorderColor = System.Drawing.Color.Transparent;
             this.glassButton1.ShineColor = System.Drawing.Color.DarkGray;
-            this.glassButton1.Size = new System.Drawing.Size(50, 49);
+            this.glassButton1.Size = new System.Drawing.Size(62, 61);
             this.glassButton1.TabIndex = 83;
             this.glassButton1.Text = "PING";
             this.glassButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -97,9 +98,10 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(14, 179);
+            this.label5.Location = new System.Drawing.Point(18, 224);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 28);
+            this.label5.Size = new System.Drawing.Size(175, 35);
             this.label5.TabIndex = 82;
             this.label5.Text = "EXTEND / RETRACT";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -110,9 +112,10 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(14, 148);
+            this.label4.Location = new System.Drawing.Point(18, 185);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 28);
+            this.label4.Size = new System.Drawing.Size(175, 35);
             this.label4.TabIndex = 81;
             this.label4.Text = "UP / DOWN";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,11 +127,12 @@
             this.btnZDown.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnZDown.GlowColor = System.Drawing.Color.White;
             this.btnZDown.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnZDown.Location = new System.Drawing.Point(144, 452);
+            this.btnZDown.Location = new System.Drawing.Point(180, 565);
+            this.btnZDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZDown.Name = "btnZDown";
             this.btnZDown.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnZDown.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnZDown.Size = new System.Drawing.Size(121, 49);
+            this.btnZDown.Size = new System.Drawing.Size(151, 61);
             this.btnZDown.TabIndex = 80;
             this.btnZDown.Text = "Z AXIS DOWN";
             this.btnZDown.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -141,11 +145,12 @@
             this.btnArmRetract.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnArmRetract.GlowColor = System.Drawing.Color.White;
             this.btnArmRetract.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnArmRetract.Location = new System.Drawing.Point(144, 507);
+            this.btnArmRetract.Location = new System.Drawing.Point(180, 634);
+            this.btnArmRetract.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnArmRetract.Name = "btnArmRetract";
             this.btnArmRetract.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnArmRetract.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnArmRetract.Size = new System.Drawing.Size(121, 49);
+            this.btnArmRetract.Size = new System.Drawing.Size(151, 61);
             this.btnArmRetract.TabIndex = 79;
             this.btnArmRetract.Text = "ARM RETRACT";
             this.btnArmRetract.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -158,11 +163,12 @@
             this.btnArmExt.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnArmExt.GlowColor = System.Drawing.Color.White;
             this.btnArmExt.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnArmExt.Location = new System.Drawing.Point(17, 507);
+            this.btnArmExt.Location = new System.Drawing.Point(21, 634);
+            this.btnArmExt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnArmExt.Name = "btnArmExt";
             this.btnArmExt.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnArmExt.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnArmExt.Size = new System.Drawing.Size(121, 49);
+            this.btnArmExt.Size = new System.Drawing.Size(151, 61);
             this.btnArmExt.TabIndex = 78;
             this.btnArmExt.Text = "ARM EXTEND";
             this.btnArmExt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -175,11 +181,12 @@
             this.btnUpZ.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnUpZ.GlowColor = System.Drawing.Color.White;
             this.btnUpZ.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnUpZ.Location = new System.Drawing.Point(17, 452);
+            this.btnUpZ.Location = new System.Drawing.Point(21, 565);
+            this.btnUpZ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpZ.Name = "btnUpZ";
             this.btnUpZ.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnUpZ.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnUpZ.Size = new System.Drawing.Size(121, 49);
+            this.btnUpZ.Size = new System.Drawing.Size(151, 61);
             this.btnUpZ.TabIndex = 77;
             this.btnUpZ.Text = "Z AXIS UP";
             this.btnUpZ.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -192,14 +199,16 @@
             this.btnStop.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnStop.GlowColor = System.Drawing.Color.White;
             this.btnStop.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnStop.Location = new System.Drawing.Point(144, 342);
+            this.btnStop.Location = new System.Drawing.Point(180, 428);
+            this.btnStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStop.Name = "btnStop";
             this.btnStop.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnStop.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnStop.Size = new System.Drawing.Size(121, 49);
+            this.btnStop.Size = new System.Drawing.Size(151, 61);
             this.btnStop.TabIndex = 76;
             this.btnStop.Text = "STOP";
             this.btnStop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // label3
             // 
@@ -207,9 +216,10 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(14, 117);
+            this.label3.Location = new System.Drawing.Point(18, 146);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 28);
+            this.label3.Size = new System.Drawing.Size(175, 35);
             this.label3.TabIndex = 75;
             this.label3.Text = "ARM";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -220,9 +230,10 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(14, 86);
+            this.label2.Location = new System.Drawing.Point(18, 108);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 28);
+            this.label2.Size = new System.Drawing.Size(175, 35);
             this.label2.TabIndex = 74;
             this.label2.Text = "SLOT";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -233,9 +244,10 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 55);
+            this.label1.Location = new System.Drawing.Point(18, 69);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 28);
+            this.label1.Size = new System.Drawing.Size(175, 35);
             this.label1.TabIndex = 66;
             this.label1.Text = "STAGE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -247,11 +259,12 @@
             this.btnServoOff.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnServoOff.GlowColor = System.Drawing.Color.White;
             this.btnServoOff.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnServoOff.Location = new System.Drawing.Point(144, 287);
+            this.btnServoOff.Location = new System.Drawing.Point(180, 359);
+            this.btnServoOff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnServoOff.Name = "btnServoOff";
             this.btnServoOff.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnServoOff.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnServoOff.Size = new System.Drawing.Size(121, 49);
+            this.btnServoOff.Size = new System.Drawing.Size(151, 61);
             this.btnServoOff.TabIndex = 73;
             this.btnServoOff.Text = "SERVO OFF";
             this.btnServoOff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -264,11 +277,12 @@
             this.btnServoOn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnServoOn.GlowColor = System.Drawing.Color.White;
             this.btnServoOn.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnServoOn.Location = new System.Drawing.Point(17, 287);
+            this.btnServoOn.Location = new System.Drawing.Point(21, 359);
+            this.btnServoOn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnServoOn.Name = "btnServoOn";
             this.btnServoOn.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnServoOn.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnServoOn.Size = new System.Drawing.Size(121, 49);
+            this.btnServoOn.Size = new System.Drawing.Size(151, 61);
             this.btnServoOn.TabIndex = 72;
             this.btnServoOn.Text = "SERVO ON";
             this.btnServoOn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -281,11 +295,12 @@
             this.btnReset.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnReset.GlowColor = System.Drawing.Color.White;
             this.btnReset.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnReset.Location = new System.Drawing.Point(144, 232);
+            this.btnReset.Location = new System.Drawing.Point(180, 290);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
             this.btnReset.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnReset.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnReset.Size = new System.Drawing.Size(121, 49);
+            this.btnReset.Size = new System.Drawing.Size(151, 61);
             this.btnReset.TabIndex = 71;
             this.btnReset.Text = "RESET";
             this.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -298,11 +313,12 @@
             this.btnInit.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnInit.GlowColor = System.Drawing.Color.White;
             this.btnInit.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnInit.Location = new System.Drawing.Point(17, 232);
+            this.btnInit.Location = new System.Drawing.Point(21, 290);
+            this.btnInit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInit.Name = "btnInit";
             this.btnInit.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnInit.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnInit.Size = new System.Drawing.Size(121, 49);
+            this.btnInit.Size = new System.Drawing.Size(151, 61);
             this.btnInit.TabIndex = 70;
             this.btnInit.Text = "INIT";
             this.btnInit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -315,11 +331,12 @@
             this.btnPutinto.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnPutinto.GlowColor = System.Drawing.Color.White;
             this.btnPutinto.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnPutinto.Location = new System.Drawing.Point(144, 397);
+            this.btnPutinto.Location = new System.Drawing.Point(180, 496);
+            this.btnPutinto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPutinto.Name = "btnPutinto";
             this.btnPutinto.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnPutinto.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnPutinto.Size = new System.Drawing.Size(121, 49);
+            this.btnPutinto.Size = new System.Drawing.Size(151, 61);
             this.btnPutinto.TabIndex = 69;
             this.btnPutinto.Text = "PLACE";
             this.btnPutinto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -332,11 +349,12 @@
             this.btnGetfrom.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnGetfrom.GlowColor = System.Drawing.Color.White;
             this.btnGetfrom.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnGetfrom.Location = new System.Drawing.Point(17, 397);
+            this.btnGetfrom.Location = new System.Drawing.Point(21, 496);
+            this.btnGetfrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGetfrom.Name = "btnGetfrom";
             this.btnGetfrom.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnGetfrom.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnGetfrom.Size = new System.Drawing.Size(121, 49);
+            this.btnGetfrom.Size = new System.Drawing.Size(151, 61);
             this.btnGetfrom.TabIndex = 68;
             this.btnGetfrom.Text = "PICK UP";
             this.btnGetfrom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -349,11 +367,12 @@
             this.btnGoto.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnGoto.GlowColor = System.Drawing.Color.White;
             this.btnGoto.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnGoto.Location = new System.Drawing.Point(17, 342);
+            this.btnGoto.Location = new System.Drawing.Point(21, 428);
+            this.btnGoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGoto.Name = "btnGoto";
             this.btnGoto.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnGoto.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnGoto.Size = new System.Drawing.Size(121, 49);
+            this.btnGoto.Size = new System.Drawing.Size(151, 61);
             this.btnGoto.TabIndex = 67;
             this.btnGoto.Text = "GO TO";
             this.btnGoto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -366,9 +385,10 @@
             this.cbArm.Items.AddRange(new object[] {
             "LOWER",
             "UPPER"});
-            this.cbArm.Location = new System.Drawing.Point(157, 119);
+            this.cbArm.Location = new System.Drawing.Point(196, 149);
+            this.cbArm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbArm.Name = "cbArm";
-            this.cbArm.Size = new System.Drawing.Size(131, 23);
+            this.cbArm.Size = new System.Drawing.Size(163, 27);
             this.cbArm.TabIndex = 86;
             // 
             // cbUpdown
@@ -378,9 +398,10 @@
             this.cbUpdown.Items.AddRange(new object[] {
             "UP",
             "DOWN"});
-            this.cbUpdown.Location = new System.Drawing.Point(157, 151);
+            this.cbUpdown.Location = new System.Drawing.Point(196, 189);
+            this.cbUpdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbUpdown.Name = "cbUpdown";
-            this.cbUpdown.Size = new System.Drawing.Size(131, 23);
+            this.cbUpdown.Size = new System.Drawing.Size(163, 27);
             this.cbUpdown.TabIndex = 87;
             // 
             // cbExRe
@@ -390,9 +411,10 @@
             this.cbExRe.Items.AddRange(new object[] {
             "EXTEND",
             "RETRACT"});
-            this.cbExRe.Location = new System.Drawing.Point(157, 182);
+            this.cbExRe.Location = new System.Drawing.Point(196, 228);
+            this.cbExRe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbExRe.Name = "cbExRe";
-            this.cbExRe.Size = new System.Drawing.Size(131, 23);
+            this.cbExRe.Size = new System.Drawing.Size(163, 27);
             this.cbExRe.TabIndex = 88;
             // 
             // panel1
@@ -423,10 +445,31 @@
             this.panel1.Controls.Add(this.btnStop);
             this.panel1.Controls.Add(this.btnUpZ);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(299, 2);
+            this.panel1.Location = new System.Drawing.Point(374, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(317, 724);
+            this.panel1.Size = new System.Drawing.Size(396, 904);
             this.panel1.TabIndex = 976;
+            // 
+            // cbSlot
+            // 
+            this.cbSlot.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cbSlot.FormattingEnabled = true;
+            this.cbSlot.Location = new System.Drawing.Point(196, 110);
+            this.cbSlot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbSlot.Name = "cbSlot";
+            this.cbSlot.Size = new System.Drawing.Size(163, 27);
+            this.cbSlot.TabIndex = 103;
+            // 
+            // cbStage
+            // 
+            this.cbStage.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cbStage.FormattingEnabled = true;
+            this.cbStage.Location = new System.Drawing.Point(196, 71);
+            this.cbStage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbStage.Name = "cbStage";
+            this.cbStage.Size = new System.Drawing.Size(163, 27);
+            this.cbStage.TabIndex = 89;
             // 
             // a1Panel1
             // 
@@ -439,9 +482,10 @@
             this.a1Panel1.Image = null;
             this.a1Panel1.ImageLocation = new System.Drawing.Point(4, 4);
             this.a1Panel1.Location = new System.Drawing.Point(0, 0);
+            this.a1Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.a1Panel1.Name = "a1Panel1";
             this.a1Panel1.ShadowOffSet = 2;
-            this.a1Panel1.Size = new System.Drawing.Size(315, 31);
+            this.a1Panel1.Size = new System.Drawing.Size(394, 39);
             this.a1Panel1.TabIndex = 38;
             // 
             // label6
@@ -450,9 +494,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(14, 6);
+            this.label6.Location = new System.Drawing.Point(18, 8);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 17);
+            this.label6.Size = new System.Drawing.Size(75, 23);
             this.label6.TabIndex = 0;
             this.label6.Text = "ACTION";
             // 
@@ -466,9 +511,10 @@
             this.panel2.Controls.Add(this.lbMoving);
             this.panel2.Controls.Add(this.a1Panel2);
             this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(291, 391);
+            this.panel2.Size = new System.Drawing.Size(363, 488);
             this.panel2.TabIndex = 977;
             // 
             // lbReady
@@ -476,9 +522,10 @@
             this.lbReady.BackColor = System.Drawing.Color.Gray;
             this.lbReady.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbReady.ForeColor = System.Drawing.Color.White;
-            this.lbReady.Location = new System.Drawing.Point(27, 91);
+            this.lbReady.Location = new System.Drawing.Point(34, 114);
+            this.lbReady.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbReady.Name = "lbReady";
-            this.lbReady.Size = new System.Drawing.Size(150, 35);
+            this.lbReady.Size = new System.Drawing.Size(188, 44);
             this.lbReady.TabIndex = 109;
             this.lbReady.Text = "Ready";
             this.lbReady.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -488,9 +535,10 @@
             this.lbWaferB.BackColor = System.Drawing.Color.Gray;
             this.lbWaferB.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWaferB.ForeColor = System.Drawing.Color.White;
-            this.lbWaferB.Location = new System.Drawing.Point(27, 219);
+            this.lbWaferB.Location = new System.Drawing.Point(34, 274);
+            this.lbWaferB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbWaferB.Name = "lbWaferB";
-            this.lbWaferB.Size = new System.Drawing.Size(150, 35);
+            this.lbWaferB.Size = new System.Drawing.Size(188, 44);
             this.lbWaferB.TabIndex = 106;
             this.lbWaferB.Text = "Wafer B";
             this.lbWaferB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -500,9 +548,10 @@
             this.lbWaferA.BackColor = System.Drawing.Color.Gray;
             this.lbWaferA.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWaferA.ForeColor = System.Drawing.Color.White;
-            this.lbWaferA.Location = new System.Drawing.Point(27, 182);
+            this.lbWaferA.Location = new System.Drawing.Point(34, 228);
+            this.lbWaferA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbWaferA.Name = "lbWaferA";
-            this.lbWaferA.Size = new System.Drawing.Size(150, 35);
+            this.lbWaferA.Size = new System.Drawing.Size(188, 44);
             this.lbWaferA.TabIndex = 105;
             this.lbWaferA.Text = "Wafer A";
             this.lbWaferA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -512,9 +561,10 @@
             this.lbError.BackColor = System.Drawing.Color.Gray;
             this.lbError.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbError.ForeColor = System.Drawing.Color.White;
-            this.lbError.Location = new System.Drawing.Point(27, 127);
+            this.lbError.Location = new System.Drawing.Point(34, 159);
+            this.lbError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbError.Name = "lbError";
-            this.lbError.Size = new System.Drawing.Size(150, 35);
+            this.lbError.Size = new System.Drawing.Size(188, 44);
             this.lbError.TabIndex = 104;
             this.lbError.Text = "Error";
             this.lbError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -524,9 +574,10 @@
             this.lbMoving.BackColor = System.Drawing.Color.Gray;
             this.lbMoving.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMoving.ForeColor = System.Drawing.Color.White;
-            this.lbMoving.Location = new System.Drawing.Point(27, 54);
+            this.lbMoving.Location = new System.Drawing.Point(34, 68);
+            this.lbMoving.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMoving.Name = "lbMoving";
-            this.lbMoving.Size = new System.Drawing.Size(150, 35);
+            this.lbMoving.Size = new System.Drawing.Size(188, 44);
             this.lbMoving.TabIndex = 103;
             this.lbMoving.Text = "Moving";
             this.lbMoving.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -542,9 +593,10 @@
             this.a1Panel2.Image = null;
             this.a1Panel2.ImageLocation = new System.Drawing.Point(4, 4);
             this.a1Panel2.Location = new System.Drawing.Point(0, 0);
+            this.a1Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.a1Panel2.Name = "a1Panel2";
             this.a1Panel2.ShadowOffSet = 2;
-            this.a1Panel2.Size = new System.Drawing.Size(289, 31);
+            this.a1Panel2.Size = new System.Drawing.Size(361, 39);
             this.a1Panel2.TabIndex = 38;
             // 
             // label7
@@ -553,9 +605,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(14, 6);
+            this.label7.Location = new System.Drawing.Point(18, 8);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 17);
+            this.label7.Size = new System.Drawing.Size(74, 23);
             this.label7.TabIndex = 0;
             this.label7.Text = "STATUS";
             // 
@@ -570,9 +623,10 @@
             this.panel3.Controls.Add(this.btnGateClose);
             this.panel3.Controls.Add(this.btnGateOpen);
             this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(3, 398);
+            this.panel3.Location = new System.Drawing.Point(4, 498);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(291, 328);
+            this.panel3.Size = new System.Drawing.Size(363, 410);
             this.panel3.TabIndex = 978;
             this.panel3.Visible = false;
             // 
@@ -583,11 +637,12 @@
             this.btnGateClose.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnGateClose.GlowColor = System.Drawing.Color.White;
             this.btnGateClose.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnGateClose.Location = new System.Drawing.Point(149, 102);
+            this.btnGateClose.Location = new System.Drawing.Point(186, 128);
+            this.btnGateClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGateClose.Name = "btnGateClose";
             this.btnGateClose.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnGateClose.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnGateClose.Size = new System.Drawing.Size(121, 49);
+            this.btnGateClose.Size = new System.Drawing.Size(151, 61);
             this.btnGateClose.TabIndex = 81;
             this.btnGateClose.Text = "BD Gate Close";
             this.btnGateClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -600,45 +655,29 @@
             this.btnGateOpen.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnGateOpen.GlowColor = System.Drawing.Color.White;
             this.btnGateOpen.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnGateOpen.Location = new System.Drawing.Point(22, 102);
+            this.btnGateOpen.Location = new System.Drawing.Point(28, 128);
+            this.btnGateOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGateOpen.Name = "btnGateOpen";
             this.btnGateOpen.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnGateOpen.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnGateOpen.Size = new System.Drawing.Size(121, 49);
+            this.btnGateOpen.Size = new System.Drawing.Size(151, 61);
             this.btnGateOpen.TabIndex = 80;
             this.btnGateOpen.Text = "BD Gate Open";
             this.btnGateOpen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnGateOpen.Click += new System.EventHandler(this.btnGateOpen_Click);
             // 
-            // cbStage
-            // 
-            this.cbStage.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.cbStage.FormattingEnabled = true;
-            this.cbStage.Location = new System.Drawing.Point(157, 57);
-            this.cbStage.Name = "cbStage";
-            this.cbStage.Size = new System.Drawing.Size(131, 23);
-            this.cbStage.TabIndex = 89;
-            // 
-            // cbSlot
-            // 
-            this.cbSlot.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.cbSlot.FormattingEnabled = true;
-            this.cbSlot.Location = new System.Drawing.Point(157, 88);
-            this.cbSlot.Name = "cbSlot";
-            this.cbSlot.Size = new System.Drawing.Size(131, 23);
-            this.cbSlot.TabIndex = 103;
-            // 
             // subManualVTM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "subManualVTM";
-            this.Size = new System.Drawing.Size(619, 731);
+            this.Size = new System.Drawing.Size(774, 914);
             this.Load += new System.EventHandler(this.subManualVTM_Load);
             this.panel1.ResumeLayout(false);
             this.a1Panel1.ResumeLayout(false);

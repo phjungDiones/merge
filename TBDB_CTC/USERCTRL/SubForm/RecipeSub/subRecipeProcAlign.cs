@@ -92,5 +92,27 @@ namespace TBDB_CTC.UserCtrl.SubForm.RecipeSub
 
             RefreshUI();
         }
+        private bool ShowDialog_popkey()
+        {
+            bool flag = false;
+            TBDB_Handler.GLOBAL.GlobalForm._popKeyPad.ShowDialog();
+            if (TBDB_Handler.GLOBAL.GlobalForm._popKeyPad.DialogResult == DialogResult.OK)
+            {
+                flag = true;
+            }
+            else
+            {
+
+            }
+            return flag;
+        }
+        private void tbAlngeOffset_Click(object sender, EventArgs e)
+        {
+            TextBox tb = ((TextBox)sender);
+            if (ShowDialog_popkey())
+            {
+                tb.Text = ReturnNumber.retNum.ToString();
+            }
+        }
     }
 }

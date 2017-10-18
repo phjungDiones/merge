@@ -28,19 +28,19 @@ namespace TBDB_CTC.GUI
             switch ((int)comboBox1.SelectedValue)
             {
                 case 0:
-                    GlobalFunction.Instance.GetErrNumber_0(textBox1.Text, (GlobalDefine.Eidentify_error)(int)comboBox1.SelectedValue);
+                    GlobalFunction.Instance.SetErr(textBox1.Text, (GlobalDefine.Eidentify_error)(int)comboBox1.SelectedValue);
                     break;
                 case 1:
                     MessageBox.Show("1");
-                    GlobalFunction.Instance.GetErrNumber_1(textBox1.Text, (GlobalDefine.Eidentify_error)(int)comboBox1.SelectedValue);
+                    GlobalFunction.Instance.SetErr(textBox1.Text, (GlobalDefine.Eidentify_error)(int)comboBox1.SelectedValue);
                     break;
                 case 2:
                     MessageBox.Show("2");
-                    GlobalFunction.Instance.GetErrNumber_2(textBox1.Text, (GlobalDefine.Eidentify_error)(int)comboBox1.SelectedValue);
+                    GlobalFunction.Instance.SetErr(textBox1.Text, (GlobalDefine.Eidentify_error)(int)comboBox1.SelectedValue);
                     break;
                 case 3:
                     MessageBox.Show("3");
-                    GlobalFunction.Instance.GetErrNumber_3(textBox1.Text, (GlobalDefine.Eidentify_error)(int)comboBox1.SelectedValue);
+                    GlobalFunction.Instance.SetErr(textBox1.Text, (GlobalDefine.Eidentify_error)(int)comboBox1.SelectedValue);
                     break;
 
             }

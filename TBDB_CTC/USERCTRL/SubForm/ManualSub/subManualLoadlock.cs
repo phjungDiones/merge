@@ -22,6 +22,24 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 {
     public partial class subManualLoadlock : UserControl
     {
+
+        POPWND.popConfirm popConfirm = new POPWND.popConfirm();
+        POPWND.popCancel popCancel = new POPWND.popCancel();
+        private bool ShowDialog()
+        {
+            bool flag = false;
+            popConfirm.ShowDialog();
+            if (popConfirm.DialogResult == DialogResult.OK)
+            {
+                flag = true;
+            }
+            else
+            {
+                //popCancel.ShowDialog();
+            }
+            return flag;
+        }
+
         MotionLoadlock Loadlock = new MotionLoadlock();
 
 
@@ -173,6 +191,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             bStatusFlag = true;
             int nHomeSpeed = int.Parse(tbSpeed.Text) / 2;
             Loadlock.SetHomeRef(HomeRefMode.HomeRef_8);
@@ -184,12 +203,14 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void buttonStop_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             int Speed = int.Parse(tbSpeed.Text);
             Loadlock.MoveStop(Speed);
         }
 
         private void buttonSetCoord1_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             nTargetPos1 = nEncPos;
             tbPos1.Text = nTargetPos1.ToString();
             GlobalVariable.model.nLoadlockPos[0] = nTargetPos1;
@@ -197,6 +218,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void buttonSetCoord2_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             nTargetPos2 = nEncPos;
             tbPos2.Text = nTargetPos2.ToString();
             GlobalVariable.model.nLoadlockPos[1] = nTargetPos2;
@@ -204,6 +226,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void buttonResCoord1_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             bStatusFlag = true;
             int Pos = int.Parse(tbPos1.Text);
             int Speed = int.Parse(tbSpeed.Text);
@@ -214,6 +237,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void buttonResCoord2_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             bStatusFlag = true;
             int Pos = int.Parse(tbPos2.Text);
             int Speed = int.Parse(tbSpeed.Text);
@@ -223,6 +247,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnMove_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             int Pos = int.Parse(tbRelPos.Text);
             int Speed = int.Parse(tbSpeed.Text);
             Loadlock.MoveStart(Pos, Speed, MoveMode.REL_MODE);
@@ -304,6 +329,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnHomeStop_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             Loadlock.HomeStop(nModuleID);
         }
 
@@ -314,6 +340,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnAlarmReset_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             Loadlock.AlarmReset();
         }
 
@@ -334,6 +361,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void buttonUp_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             int Acc = int.Parse(tbAcc.Text);
             int Speed = int.Parse(tbSpeed.Text);
 
@@ -342,6 +370,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void buttonBottom_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             int Acc = int.Parse(tbAcc.Text);
             int Speed = int.Parse(tbSpeed.Text);
 
@@ -351,12 +380,14 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void glassButton3_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             int Speed = int.Parse(tbSpeed.Text);
             Loadlock.MoveStop(Speed);
         }
 
         private void btnSetZero_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             Loadlock.SetZero();
         }
 
@@ -375,6 +406,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void glassButton1_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             nTargetPos3 = nEncPos;
             tbPos3.Text = nTargetPos3.ToString();
             GlobalVariable.model.nLoadlockPos[2] = nTargetPos3;
@@ -382,12 +414,14 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnStop2_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             int Speed = int.Parse(tbSpeed.Text);
             Loadlock.MoveStop(Speed);
         }
 
         private void btnAbsMove_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             int Pos = int.Parse(lbAbsPos.Text);
             int Speed = int.Parse(tbSpeed.Text);
             Loadlock.MoveStart(Pos, Speed, MoveMode.ABS_MODE);
@@ -395,6 +429,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnSetRes_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             if (tbRes.Text == "" || tbRes.Text == null)
             {
                 return;
@@ -402,8 +437,38 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
             Loadlock.SetResolution(Convert.ToInt32(tbRes.Text));
         }
 
+        private void tbRelPos_Click(object sender, EventArgs e)
+        {
+            TextBox tb = ((TextBox)sender);
+            if (ShowDialog_popkey())
+            {
+                tb.Text = ReturnNumber.retNum.ToString();
+            }
+        }
+
+        private bool ShowDialog_popkey()
+        {
+            bool flag = false;
+            GlobalForm._popKeyPad.ShowDialog();
+            if (GlobalForm._popKeyPad.DialogResult == DialogResult.OK)
+            {
+                flag = true;
+            }
+            else
+            {
+
+            }
+            return flag;
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void glassButton2_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             bStatusFlag = true;
             int Pos = int.Parse(tbPos3.Text);
             int Speed = int.Parse(tbSpeed.Text);

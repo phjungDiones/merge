@@ -73,11 +73,12 @@
             this.btnRotateWafer.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnRotateWafer.GlowColor = System.Drawing.Color.White;
             this.btnRotateWafer.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnRotateWafer.Location = new System.Drawing.Point(162, 161);
+            this.btnRotateWafer.Location = new System.Drawing.Point(202, 201);
+            this.btnRotateWafer.Margin = new System.Windows.Forms.Padding(4);
             this.btnRotateWafer.Name = "btnRotateWafer";
             this.btnRotateWafer.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnRotateWafer.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnRotateWafer.Size = new System.Drawing.Size(129, 50);
+            this.btnRotateWafer.Size = new System.Drawing.Size(161, 62);
             this.btnRotateWafer.TabIndex = 75;
             this.btnRotateWafer.Text = "ROTATE WAFER";
             this.btnRotateWafer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -90,11 +91,12 @@
             this.btnStartAl.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnStartAl.GlowColor = System.Drawing.Color.White;
             this.btnStartAl.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnStartAl.Location = new System.Drawing.Point(162, 106);
+            this.btnStartAl.Location = new System.Drawing.Point(202, 132);
+            this.btnStartAl.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartAl.Name = "btnStartAl";
             this.btnStartAl.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnStartAl.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnStartAl.Size = new System.Drawing.Size(129, 50);
+            this.btnStartAl.Size = new System.Drawing.Size(161, 62);
             this.btnStartAl.TabIndex = 74;
             this.btnStartAl.Text = "START ALIGNMENT";
             this.btnStartAl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -107,11 +109,12 @@
             this.btnSetAlignOffset.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnSetAlignOffset.GlowColor = System.Drawing.Color.White;
             this.btnSetAlignOffset.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnSetAlignOffset.Location = new System.Drawing.Point(162, 51);
+            this.btnSetAlignOffset.Location = new System.Drawing.Point(202, 64);
+            this.btnSetAlignOffset.Margin = new System.Windows.Forms.Padding(4);
             this.btnSetAlignOffset.Name = "btnSetAlignOffset";
             this.btnSetAlignOffset.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnSetAlignOffset.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnSetAlignOffset.Size = new System.Drawing.Size(129, 50);
+            this.btnSetAlignOffset.Size = new System.Drawing.Size(161, 62);
             this.btnSetAlignOffset.TabIndex = 73;
             this.btnSetAlignOffset.Text = "SET ALIGN OFFSET";
             this.btnSetAlignOffset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -124,11 +127,12 @@
             this.btnClear.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnClear.GlowColor = System.Drawing.Color.White;
             this.btnClear.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnClear.Location = new System.Drawing.Point(152, 326);
+            this.btnClear.Location = new System.Drawing.Point(190, 408);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnClear.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnClear.Size = new System.Drawing.Size(121, 49);
+            this.btnClear.Size = new System.Drawing.Size(151, 61);
             this.btnClear.TabIndex = 72;
             this.btnClear.Text = "CLEAR";
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -140,9 +144,10 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(17, 159);
+            this.label3.Location = new System.Drawing.Point(21, 199);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 28);
+            this.label3.Size = new System.Drawing.Size(175, 35);
             this.label3.TabIndex = 71;
             this.label3.Text = "ROTATE WAFER";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -153,9 +158,10 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 104);
+            this.label2.Location = new System.Drawing.Point(21, 130);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 28);
+            this.label2.Size = new System.Drawing.Size(175, 35);
             this.label2.TabIndex = 70;
             this.label2.Text = "START ALIGN";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -166,9 +172,10 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 51);
+            this.label1.Location = new System.Drawing.Point(21, 64);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 28);
+            this.label1.Size = new System.Drawing.Size(175, 35);
             this.label1.TabIndex = 62;
             this.label1.Text = "ALIGN OFFSET";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -180,11 +187,12 @@
             this.btnVacOff.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnVacOff.GlowColor = System.Drawing.Color.White;
             this.btnVacOff.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnVacOff.Location = new System.Drawing.Point(152, 436);
+            this.btnVacOff.Location = new System.Drawing.Point(190, 545);
+            this.btnVacOff.Margin = new System.Windows.Forms.Padding(4);
             this.btnVacOff.Name = "btnVacOff";
             this.btnVacOff.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnVacOff.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnVacOff.Size = new System.Drawing.Size(121, 49);
+            this.btnVacOff.Size = new System.Drawing.Size(151, 61);
             this.btnVacOff.TabIndex = 69;
             this.btnVacOff.Text = "VACUUM OFF";
             this.btnVacOff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -197,11 +205,12 @@
             this.btnVacOn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnVacOn.GlowColor = System.Drawing.Color.White;
             this.btnVacOn.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnVacOn.Location = new System.Drawing.Point(25, 436);
+            this.btnVacOn.Location = new System.Drawing.Point(31, 545);
+            this.btnVacOn.Margin = new System.Windows.Forms.Padding(4);
             this.btnVacOn.Name = "btnVacOn";
             this.btnVacOn.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnVacOn.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnVacOn.Size = new System.Drawing.Size(121, 49);
+            this.btnVacOn.Size = new System.Drawing.Size(151, 61);
             this.btnVacOn.TabIndex = 68;
             this.btnVacOn.Text = "VACUUM ON";
             this.btnVacOn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -214,11 +223,12 @@
             this.btnChuckDown.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnChuckDown.GlowColor = System.Drawing.Color.White;
             this.btnChuckDown.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnChuckDown.Location = new System.Drawing.Point(152, 381);
+            this.btnChuckDown.Location = new System.Drawing.Point(190, 476);
+            this.btnChuckDown.Margin = new System.Windows.Forms.Padding(4);
             this.btnChuckDown.Name = "btnChuckDown";
             this.btnChuckDown.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnChuckDown.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnChuckDown.Size = new System.Drawing.Size(121, 49);
+            this.btnChuckDown.Size = new System.Drawing.Size(151, 61);
             this.btnChuckDown.TabIndex = 67;
             this.btnChuckDown.Text = "CHUCK DOWN";
             this.btnChuckDown.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -231,11 +241,12 @@
             this.btnChuckUp.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnChuckUp.GlowColor = System.Drawing.Color.White;
             this.btnChuckUp.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnChuckUp.Location = new System.Drawing.Point(25, 381);
+            this.btnChuckUp.Location = new System.Drawing.Point(31, 476);
+            this.btnChuckUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnChuckUp.Name = "btnChuckUp";
             this.btnChuckUp.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnChuckUp.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnChuckUp.Size = new System.Drawing.Size(121, 49);
+            this.btnChuckUp.Size = new System.Drawing.Size(151, 61);
             this.btnChuckUp.TabIndex = 66;
             this.btnChuckUp.Text = "CHUCK UP";
             this.btnChuckUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -248,11 +259,12 @@
             this.btnReset.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnReset.GlowColor = System.Drawing.Color.White;
             this.btnReset.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnReset.Location = new System.Drawing.Point(152, 271);
+            this.btnReset.Location = new System.Drawing.Point(190, 339);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
             this.btnReset.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnReset.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnReset.Size = new System.Drawing.Size(121, 49);
+            this.btnReset.Size = new System.Drawing.Size(151, 61);
             this.btnReset.TabIndex = 65;
             this.btnReset.Text = "RESET";
             this.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -265,11 +277,12 @@
             this.btnInit.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnInit.GlowColor = System.Drawing.Color.White;
             this.btnInit.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnInit.Location = new System.Drawing.Point(25, 271);
+            this.btnInit.Location = new System.Drawing.Point(31, 339);
+            this.btnInit.Margin = new System.Windows.Forms.Padding(4);
             this.btnInit.Name = "btnInit";
             this.btnInit.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnInit.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnInit.Size = new System.Drawing.Size(121, 49);
+            this.btnInit.Size = new System.Drawing.Size(151, 61);
             this.btnInit.TabIndex = 64;
             this.btnInit.Text = "INIT";
             this.btnInit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -277,30 +290,37 @@
             // 
             // tbAlngeOffset
             // 
-            this.tbAlngeOffset.Location = new System.Drawing.Point(17, 80);
+            this.tbAlngeOffset.Location = new System.Drawing.Point(21, 100);
+            this.tbAlngeOffset.Margin = new System.Windows.Forms.Padding(4);
             this.tbAlngeOffset.Name = "tbAlngeOffset";
-            this.tbAlngeOffset.Size = new System.Drawing.Size(140, 21);
+            this.tbAlngeOffset.Size = new System.Drawing.Size(174, 25);
             this.tbAlngeOffset.TabIndex = 76;
             this.tbAlngeOffset.Text = "0";
             this.tbAlngeOffset.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbAlngeOffset.Click += new System.EventHandler(this.tbAlngeOffset_Click);
+            this.tbAlngeOffset.TextChanged += new System.EventHandler(this.tbAlngeOffset_TextChanged);
             // 
             // tbStartAlign
             // 
-            this.tbStartAlign.Location = new System.Drawing.Point(17, 135);
+            this.tbStartAlign.Location = new System.Drawing.Point(21, 169);
+            this.tbStartAlign.Margin = new System.Windows.Forms.Padding(4);
             this.tbStartAlign.Name = "tbStartAlign";
-            this.tbStartAlign.Size = new System.Drawing.Size(140, 21);
+            this.tbStartAlign.Size = new System.Drawing.Size(174, 25);
             this.tbStartAlign.TabIndex = 77;
             this.tbStartAlign.Text = "0";
             this.tbStartAlign.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbStartAlign.Click += new System.EventHandler(this.tbAlngeOffset_Click);
             // 
             // tbRotateVal
             // 
-            this.tbRotateVal.Location = new System.Drawing.Point(17, 190);
+            this.tbRotateVal.Location = new System.Drawing.Point(21, 238);
+            this.tbRotateVal.Margin = new System.Windows.Forms.Padding(4);
             this.tbRotateVal.Name = "tbRotateVal";
-            this.tbRotateVal.Size = new System.Drawing.Size(140, 21);
+            this.tbRotateVal.Size = new System.Drawing.Size(174, 25);
             this.tbRotateVal.TabIndex = 78;
             this.tbRotateVal.Text = "0";
             this.tbRotateVal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbRotateVal.Click += new System.EventHandler(this.tbAlngeOffset_Click);
             // 
             // panel1
             // 
@@ -323,9 +343,10 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(303, 3);
+            this.panel1.Location = new System.Drawing.Point(379, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(313, 763);
+            this.panel1.Size = new System.Drawing.Size(391, 953);
             this.panel1.TabIndex = 974;
             // 
             // a1Panel1
@@ -339,9 +360,10 @@
             this.a1Panel1.Image = null;
             this.a1Panel1.ImageLocation = new System.Drawing.Point(4, 4);
             this.a1Panel1.Location = new System.Drawing.Point(0, 0);
+            this.a1Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.a1Panel1.Name = "a1Panel1";
             this.a1Panel1.ShadowOffSet = 2;
-            this.a1Panel1.Size = new System.Drawing.Size(311, 31);
+            this.a1Panel1.Size = new System.Drawing.Size(389, 39);
             this.a1Panel1.TabIndex = 38;
             // 
             // label4
@@ -350,9 +372,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(34, 4);
+            this.label4.Location = new System.Drawing.Point(42, 5);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 21);
+            this.label4.Size = new System.Drawing.Size(89, 28);
             this.label4.TabIndex = 0;
             this.label4.Text = "ACTION";
             // 
@@ -369,9 +392,10 @@
             this.panel2.Controls.Add(this.lbStatus);
             this.panel2.Controls.Add(this.a1Panel2);
             this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(5, 3);
+            this.panel2.Location = new System.Drawing.Point(6, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(292, 763);
+            this.panel2.Size = new System.Drawing.Size(364, 953);
             this.panel2.TabIndex = 975;
             // 
             // label9
@@ -380,9 +404,10 @@
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(9, 209);
+            this.label9.Location = new System.Drawing.Point(11, 261);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 35);
+            this.label9.Size = new System.Drawing.Size(138, 43);
             this.label9.TabIndex = 108;
             this.label9.Text = "Current Angle";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -393,9 +418,10 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(9, 159);
+            this.label8.Location = new System.Drawing.Point(11, 199);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 35);
+            this.label8.Size = new System.Drawing.Size(138, 43);
             this.label8.TabIndex = 107;
             this.label8.Text = "Vacuum";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -406,9 +432,10 @@
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(9, 108);
+            this.label7.Location = new System.Drawing.Point(11, 135);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 35);
+            this.label7.Size = new System.Drawing.Size(138, 43);
             this.label7.TabIndex = 106;
             this.label7.Text = "Chuck Pos";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -419,9 +446,10 @@
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(9, 59);
+            this.label6.Location = new System.Drawing.Point(11, 74);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 35);
+            this.label6.Size = new System.Drawing.Size(138, 43);
             this.label6.TabIndex = 105;
             this.label6.Text = "Stauts";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -431,9 +459,10 @@
             this.lbCurAngle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbCurAngle.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCurAngle.ForeColor = System.Drawing.Color.Black;
-            this.lbCurAngle.Location = new System.Drawing.Point(126, 209);
+            this.lbCurAngle.Location = new System.Drawing.Point(158, 261);
+            this.lbCurAngle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCurAngle.Name = "lbCurAngle";
-            this.lbCurAngle.Size = new System.Drawing.Size(149, 35);
+            this.lbCurAngle.Size = new System.Drawing.Size(186, 44);
             this.lbCurAngle.TabIndex = 104;
             this.lbCurAngle.Text = "Current Angle";
             this.lbCurAngle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -443,9 +472,10 @@
             this.lbVacStatus.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbVacStatus.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVacStatus.ForeColor = System.Drawing.Color.Black;
-            this.lbVacStatus.Location = new System.Drawing.Point(126, 159);
+            this.lbVacStatus.Location = new System.Drawing.Point(158, 199);
+            this.lbVacStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbVacStatus.Name = "lbVacStatus";
-            this.lbVacStatus.Size = new System.Drawing.Size(149, 35);
+            this.lbVacStatus.Size = new System.Drawing.Size(186, 44);
             this.lbVacStatus.TabIndex = 103;
             this.lbVacStatus.Text = "Vacuum";
             this.lbVacStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -455,9 +485,10 @@
             this.lbChuckPos.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbChuckPos.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbChuckPos.ForeColor = System.Drawing.Color.Black;
-            this.lbChuckPos.Location = new System.Drawing.Point(126, 109);
+            this.lbChuckPos.Location = new System.Drawing.Point(158, 136);
+            this.lbChuckPos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbChuckPos.Name = "lbChuckPos";
-            this.lbChuckPos.Size = new System.Drawing.Size(149, 35);
+            this.lbChuckPos.Size = new System.Drawing.Size(186, 44);
             this.lbChuckPos.TabIndex = 102;
             this.lbChuckPos.Text = "Chuck Pos";
             this.lbChuckPos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -467,9 +498,10 @@
             this.lbStatus.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbStatus.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbStatus.ForeColor = System.Drawing.Color.Black;
-            this.lbStatus.Location = new System.Drawing.Point(126, 59);
+            this.lbStatus.Location = new System.Drawing.Point(158, 74);
+            this.lbStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbStatus.Name = "lbStatus";
-            this.lbStatus.Size = new System.Drawing.Size(149, 35);
+            this.lbStatus.Size = new System.Drawing.Size(186, 44);
             this.lbStatus.TabIndex = 101;
             this.lbStatus.Text = "Stauts";
             this.lbStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -485,9 +517,10 @@
             this.a1Panel2.Image = null;
             this.a1Panel2.ImageLocation = new System.Drawing.Point(4, 4);
             this.a1Panel2.Location = new System.Drawing.Point(0, 0);
+            this.a1Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.a1Panel2.Name = "a1Panel2";
             this.a1Panel2.ShadowOffSet = 2;
-            this.a1Panel2.Size = new System.Drawing.Size(290, 31);
+            this.a1Panel2.Size = new System.Drawing.Size(362, 39);
             this.a1Panel2.TabIndex = 38;
             // 
             // label5
@@ -496,9 +529,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(33, 4);
+            this.label5.Location = new System.Drawing.Point(41, 5);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 21);
+            this.label5.Size = new System.Drawing.Size(87, 28);
             this.label5.TabIndex = 0;
             this.label5.Text = "STATUS";
             // 
@@ -509,14 +543,15 @@
             // 
             // subManualAligner
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "subManualAligner";
-            this.Size = new System.Drawing.Size(619, 731);
+            this.Size = new System.Drawing.Size(774, 914);
             this.Load += new System.EventHandler(this.subManualAligner_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

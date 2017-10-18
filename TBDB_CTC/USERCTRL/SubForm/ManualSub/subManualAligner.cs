@@ -17,7 +17,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
     {
         POPWND.popConfirm popConfirm = new POPWND.popConfirm();
         POPWND.popCancel popCancel = new POPWND.popCancel();
-
+        POPWND.popKeyPad _popKeyPad = TBDB_Handler.GLOBAL.GlobalForm._popKeyPad;
         MainData _Main = null;
         int nTmrStatus = 0;
 
@@ -41,7 +41,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
             return flag;
         }
 
-
+       
         private void subManualAligner_Load(object sender, EventArgs e)
         {
             _Main = MainData.Instance;
@@ -71,17 +71,19 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnRotateWafer_Click(object sender, EventArgs e)
         {
-
+            if (!ShowDialog()) return;
         }
 
         private void btnStartAl_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             double dVal = Convert.ToDouble(tbStartAlign.Text);
             _Main.GetLoaderData().Aligner.Cmd_Send_STAL((float)dVal);
         }
 
         private void btnSetAlignOffset_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             double dVal = Convert.ToDouble(tbAlngeOffset.Text);
             _Main.GetLoaderData().Aligner.Cmd_Send_ANOF((float)dVal);
         }
@@ -154,6 +156,33 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
             }
 
           
+        }
+        private bool ShowDialog_popkey()
+        {
+            bool flag = false;
+            _popKeyPad.ShowDialog();
+            if (_popKeyPad.DialogResult == DialogResult.OK)
+            {
+                flag = true;
+            }
+            else
+            {
+
+            }
+            return flag;
+        }
+        private void tbAlngeOffset_Click(object sender, EventArgs e)
+        {
+            TextBox tb = ((TextBox)sender);
+            if (ShowDialog_popkey())
+            {
+                tb.Text = ReturnNumber.retNum.ToString();
+            }
+        }
+
+        private void tbAlngeOffset_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

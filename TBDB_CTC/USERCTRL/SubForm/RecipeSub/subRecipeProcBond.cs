@@ -117,5 +117,27 @@ namespace TBDB_CTC.UserCtrl.SubForm.RecipeSub
             txtBackLight2.Text = data.dBacklightCH2.ToString();
             txtBackLight3.Text = data.dBacklightCH3.ToString();
         }
+        private bool ShowDialog_popkey()
+        {
+            bool flag = false;
+            TBDB_Handler.GLOBAL.GlobalForm._popKeyPad.ShowDialog();
+            if (TBDB_Handler.GLOBAL.GlobalForm._popKeyPad.DialogResult == DialogResult.OK)
+            {
+                flag = true;
+            }
+            else
+            {
+
+            }
+            return flag;
+        }
+        private void tbAlngeOffset_Click(object sender, EventArgs e)
+        {
+            TextBox tb = ((TextBox)sender);
+            if (ShowDialog_popkey())
+            {
+                tb.Text = ReturnNumber.retNum.ToString();
+            }
+        }
     }
 }

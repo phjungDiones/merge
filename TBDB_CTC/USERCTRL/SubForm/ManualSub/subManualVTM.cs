@@ -255,5 +255,9 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
             if (!ShowDialog()) return;
         }
 
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            if (!ShowDialog()) return;
+        }
     }
 }

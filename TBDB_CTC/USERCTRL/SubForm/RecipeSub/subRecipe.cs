@@ -183,8 +183,31 @@ namespace TBDB_CTC.UserCtrl.SubForm.RecipeSub
                     break;
             }
         }
+        private bool ShowDialog_popkey()
+        {
+            bool flag = false;
+            TBDB_Handler.GLOBAL.GlobalForm._popKeyPad.ShowDialog();
+            if (TBDB_Handler.GLOBAL.GlobalForm._popKeyPad.DialogResult == DialogResult.OK)
+            {
+                flag = true;
+            }
+            else
+            {
 
-        private void txtHpTime_TextChanged(object sender, EventArgs e)
+            }
+            return flag;
+        }
+        private void tbAlngeOffset_Click(object sender, EventArgs e)
+        {
+            TextBox tb = ((TextBox)sender);
+            if (ShowDialog_popkey())
+            {
+                tb.Text = ReturnNumber.retNum.ToString();
+            }
+            txtHpTime_TextChanged();
+        }
+
+        private void txtHpTime_TextChanged()
         {
             if (isUpdate) return;
 
@@ -192,11 +215,6 @@ namespace TBDB_CTC.UserCtrl.SubForm.RecipeSub
             double.TryParse(txtHpTime.Text, out dTemp);
 
             RecipeMgr.Inst.TempRcp.dHpTime = dTemp;
-        }
-
-        private void listRecipe_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnModelNew_Click(object sender, EventArgs e)

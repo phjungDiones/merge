@@ -44,11 +44,13 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnGateOpen_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             //GlobalVariable.io.Open_ChamberBDGateValve();
         }
 
         private void btnGateClose_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             //GlobalVariable.io.Close_ChamberBDGateValve();
         }
 
@@ -138,6 +140,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnVtmPump_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.VTM_Pumping;
 
             GlobalSeq.manualRun.StartManualSeq(Manul_Seq);
@@ -145,6 +148,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnVtmVent_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.VTM_Venting;
 
             GlobalSeq.manualRun.StartManualSeq(Manul_Seq);
@@ -152,6 +156,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnLoadlockPump_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.Loadlock_Pumping;
 
             GlobalSeq.manualRun.StartManualSeq(Manul_Seq);
@@ -159,6 +164,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
 
         private void btnLoadlockVent_Click(object sender, EventArgs e)
         {
+            if (!ShowDialog()) return;
             ManualRun.MANUAL_SEQ Manul_Seq = ManualRun.MANUAL_SEQ.Loadlock_Venting;
 
             GlobalSeq.manualRun.StartManualSeq(Manul_Seq);

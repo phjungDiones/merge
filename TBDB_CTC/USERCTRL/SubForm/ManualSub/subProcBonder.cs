@@ -513,6 +513,21 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
             GlobalSeq.autoRun.prcVTM.Pmc.SetRecipe(CTC_RECIPE.CH2Backlight, rcpData[i++]);
             GlobalSeq.autoRun.prcVTM.Pmc.SetRecipe(CTC_RECIPE.CH3Backlight, rcpData[i++]);
         }
+
+        private void glassButton1_Click(object sender, EventArgs e)
+        {
+            if (!ShowDialog()) return;
+        }
+
+        private void btnUnload_Click(object sender, EventArgs e)
+        {
+            if (!ShowDialog()) return;
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            if (!ShowDialog()) return;
+        }
     }
 
     class jph_class

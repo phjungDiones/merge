@@ -34,9 +34,13 @@
             this.a1Panel4 = new Owf.Controls.A1Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.ledBulb3 = new Bulb.LedBulb();
             this.label10 = new System.Windows.Forms.Label();
+            this.ledBulb4 = new Bulb.LedBulb();
             this.label8 = new System.Windows.Forms.Label();
+            this.ledBulb2 = new Bulb.LedBulb();
             this.label7 = new System.Windows.Forms.Label();
+            this.ledBulb1 = new Bulb.LedBulb();
             this.a1Panel3 = new Owf.Controls.A1Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -54,7 +58,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panClientView = new System.Windows.Forms.Panel();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panMainToolBar = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnToolHistory = new System.Windows.Forms.Button();
@@ -66,20 +70,16 @@
             this.btnToolAuto = new System.Windows.Forms.Button();
             this.btnToolMain = new System.Windows.Forms.Button();
             this.tmrRefresh = new System.Windows.Forms.Timer(this.components);
-            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.btnAutoRun = new System.Windows.Forms.Button();
-            this.ledBulb3 = new Bulb.LedBulb();
-            this.ledBulb4 = new Bulb.LedBulb();
-            this.ledBulb2 = new Bulb.LedBulb();
-            this.ledBulb1 = new Bulb.LedBulb();
+            this.panClientView = new System.Windows.Forms.Panel();
             this.panTitleBar.SuspendLayout();
             this.a1Panel4.SuspendLayout();
             this.a1Panel3.SuspendLayout();
             this.a1Panel1.SuspendLayout();
             this.a1Panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panMainToolBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
+            this.panMainToolBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panTitleBar
@@ -104,7 +104,7 @@
             this.panTitleBar.Location = new System.Drawing.Point(0, 0);
             this.panTitleBar.Margin = new System.Windows.Forms.Padding(2);
             this.panTitleBar.Name = "panTitleBar";
-            this.panTitleBar.Size = new System.Drawing.Size(1264, 86);
+            this.panTitleBar.Size = new System.Drawing.Size(1580, 108);
             this.panTitleBar.TabIndex = 1;
             // 
             // a1Panel4
@@ -116,12 +116,12 @@
             this.a1Panel4.GradientStartColor = System.Drawing.Color.Black;
             this.a1Panel4.Image = null;
             this.a1Panel4.ImageLocation = new System.Drawing.Point(4, 4);
-            this.a1Panel4.Location = new System.Drawing.Point(877, 5);
+            this.a1Panel4.Location = new System.Drawing.Point(1096, 6);
             this.a1Panel4.Margin = new System.Windows.Forms.Padding(2);
             this.a1Panel4.Name = "a1Panel4";
             this.a1Panel4.RoundCornerRadius = 2;
             this.a1Panel4.ShadowOffSet = 0;
-            this.a1Panel4.Size = new System.Drawing.Size(258, 38);
+            this.a1Panel4.Size = new System.Drawing.Size(322, 48);
             this.a1Panel4.TabIndex = 932;
             // 
             // label11
@@ -129,10 +129,10 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("맑은 고딕", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(69, 10);
+            this.label11.Location = new System.Drawing.Point(86, 12);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(125, 13);
+            this.label11.Size = new System.Drawing.Size(161, 19);
             this.label11.TabIndex = 923;
             this.label11.Text = "Communication status";
             // 
@@ -141,48 +141,96 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("맑은 고딕", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(1113, 56);
+            this.label9.Location = new System.Drawing.Point(1391, 70);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(22, 13);
+            this.label9.Size = new System.Drawing.Size(29, 19);
             this.label9.TabIndex = 931;
             this.label9.Text = "HP";
+            // 
+            // ledBulb3
+            // 
+            this.ledBulb3.DarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.ledBulb3.DarkDarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ledBulb3.Location = new System.Drawing.Point(1368, 69);
+            this.ledBulb3.Margin = new System.Windows.Forms.Padding(2);
+            this.ledBulb3.Name = "ledBulb3";
+            this.ledBulb3.On = true;
+            this.ledBulb3.Size = new System.Drawing.Size(29, 19);
+            this.ledBulb3.TabIndex = 930;
+            this.ledBulb3.Text = "ledBulb3";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("맑은 고딕", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(1035, 57);
+            this.label10.Location = new System.Drawing.Point(1294, 71);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 13);
+            this.label10.Size = new System.Drawing.Size(68, 19);
             this.label10.TabIndex = 929;
             this.label10.Text = "ALIGNER";
+            // 
+            // ledBulb4
+            // 
+            this.ledBulb4.DarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.ledBulb4.DarkDarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ledBulb4.Location = new System.Drawing.Point(1270, 69);
+            this.ledBulb4.Margin = new System.Windows.Forms.Padding(2);
+            this.ledBulb4.Name = "ledBulb4";
+            this.ledBulb4.On = true;
+            this.ledBulb4.Size = new System.Drawing.Size(29, 19);
+            this.ledBulb4.TabIndex = 928;
+            this.ledBulb4.Text = "ledBulb4";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("맑은 고딕", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(974, 57);
+            this.label8.Location = new System.Drawing.Point(1218, 71);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(44, 19);
             this.label8.TabIndex = 927;
             this.label8.Text = "LAMI";
+            // 
+            // ledBulb2
+            // 
+            this.ledBulb2.DarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.ledBulb2.DarkDarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ledBulb2.Location = new System.Drawing.Point(1194, 69);
+            this.ledBulb2.Margin = new System.Windows.Forms.Padding(2);
+            this.ledBulb2.Name = "ledBulb2";
+            this.ledBulb2.On = true;
+            this.ledBulb2.Size = new System.Drawing.Size(29, 19);
+            this.ledBulb2.TabIndex = 926;
+            this.ledBulb2.Text = "ledBulb2";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("맑은 고딕", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(896, 57);
+            this.label7.Location = new System.Drawing.Point(1120, 71);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 13);
+            this.label7.Size = new System.Drawing.Size(67, 19);
             this.label7.TabIndex = 925;
             this.label7.Text = "BONDER";
+            // 
+            // ledBulb1
+            // 
+            this.ledBulb1.DarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.ledBulb1.DarkDarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ledBulb1.Location = new System.Drawing.Point(1096, 69);
+            this.ledBulb1.Margin = new System.Windows.Forms.Padding(2);
+            this.ledBulb1.Name = "ledBulb1";
+            this.ledBulb1.On = true;
+            this.ledBulb1.Size = new System.Drawing.Size(29, 19);
+            this.ledBulb1.TabIndex = 924;
+            this.ledBulb1.Text = "ledBulb1";
             // 
             // a1Panel3
             // 
@@ -194,22 +242,22 @@
             this.a1Panel3.GradientStartColor = System.Drawing.Color.Black;
             this.a1Panel3.Image = null;
             this.a1Panel3.ImageLocation = new System.Drawing.Point(4, 4);
-            this.a1Panel3.Location = new System.Drawing.Point(398, 5);
+            this.a1Panel3.Location = new System.Drawing.Point(498, 6);
             this.a1Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.a1Panel3.Name = "a1Panel3";
             this.a1Panel3.RoundCornerRadius = 24;
             this.a1Panel3.ShadowOffSet = 0;
-            this.a1Panel3.Size = new System.Drawing.Size(354, 75);
+            this.a1Panel3.Size = new System.Drawing.Size(442, 94);
             this.a1Panel3.TabIndex = 923;
             // 
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(27, 37);
+            this.label15.Location = new System.Drawing.Point(34, 46);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(310, 25);
+            this.label15.Size = new System.Drawing.Size(388, 31);
             this.label15.TabIndex = 924;
             this.label15.Text = "NOTESTAB EQ-OFFL";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,10 +266,10 @@
             // 
             this.label14.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(11, 13);
+            this.label14.Location = new System.Drawing.Point(14, 16);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(326, 25);
+            this.label14.Size = new System.Drawing.Size(408, 31);
             this.label14.TabIndex = 923;
             this.label14.Text = "host communication";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -237,22 +285,22 @@
             this.a1Panel1.GradientStartColor = System.Drawing.Color.Black;
             this.a1Panel1.Image = null;
             this.a1Panel1.ImageLocation = new System.Drawing.Point(4, 4);
-            this.a1Panel1.Location = new System.Drawing.Point(755, 5);
+            this.a1Panel1.Location = new System.Drawing.Point(944, 6);
             this.a1Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.a1Panel1.Name = "a1Panel1";
             this.a1Panel1.RoundCornerRadius = 24;
             this.a1Panel1.ShadowOffSet = 0;
-            this.a1Panel1.Size = new System.Drawing.Size(113, 75);
+            this.a1Panel1.Size = new System.Drawing.Size(141, 94);
             this.a1Panel1.TabIndex = 922;
             // 
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(8, 50);
+            this.label13.Location = new System.Drawing.Point(10, 62);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 15);
+            this.label13.Size = new System.Drawing.Size(125, 19);
             this.label13.TabIndex = 924;
             this.label13.Text = "BONDER";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -261,10 +309,10 @@
             // 
             this.label12.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(8, 25);
+            this.label12.Location = new System.Drawing.Point(10, 31);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(100, 23);
+            this.label12.Size = new System.Drawing.Size(125, 29);
             this.label12.TabIndex = 923;
             this.label12.Text = "+";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -273,10 +321,10 @@
             // 
             this.label6.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(8, 10);
+            this.label6.Location = new System.Drawing.Point(10, 12);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 16);
+            this.label6.Size = new System.Drawing.Size(125, 20);
             this.label6.TabIndex = 922;
             this.label6.Text = "LAMI";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,11 +338,11 @@
             this.a1Panel2.GradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.a1Panel2.Image = null;
             this.a1Panel2.ImageLocation = new System.Drawing.Point(4, 4);
-            this.a1Panel2.Location = new System.Drawing.Point(1150, 5);
+            this.a1Panel2.Location = new System.Drawing.Point(1438, 6);
             this.a1Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.a1Panel2.Name = "a1Panel2";
             this.a1Panel2.ShadowOffSet = 2;
-            this.a1Panel2.Size = new System.Drawing.Size(109, 75);
+            this.a1Panel2.Size = new System.Drawing.Size(136, 94);
             this.a1Panel2.TabIndex = 921;
             // 
             // dtxTime
@@ -303,9 +351,10 @@
             this.dtxTime.DigitColor = System.Drawing.Color.White;
             this.dtxTime.DigitText = "00:00:00";
             this.dtxTime.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dtxTime.Location = new System.Drawing.Point(7, 50);
+            this.dtxTime.Location = new System.Drawing.Point(9, 62);
+            this.dtxTime.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dtxTime.Name = "dtxTime";
-            this.dtxTime.Size = new System.Drawing.Size(91, 15);
+            this.dtxTime.Size = new System.Drawing.Size(114, 19);
             this.dtxTime.TabIndex = 892;
             // 
             // dtxDay
@@ -314,9 +363,10 @@
             this.dtxDay.DigitColor = System.Drawing.Color.White;
             this.dtxDay.DigitText = "0000-00-00";
             this.dtxDay.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dtxDay.Location = new System.Drawing.Point(8, 11);
+            this.dtxDay.Location = new System.Drawing.Point(10, 14);
+            this.dtxDay.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dtxDay.Name = "dtxDay";
-            this.dtxDay.Size = new System.Drawing.Size(91, 15);
+            this.dtxDay.Size = new System.Drawing.Size(114, 19);
             this.dtxDay.TabIndex = 891;
             // 
             // btnLogin
@@ -326,14 +376,16 @@
             this.btnLogin.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.GlowColor = System.Drawing.Color.White;
             this.btnLogin.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnLogin.Location = new System.Drawing.Point(302, 5);
+            this.btnLogin.Location = new System.Drawing.Point(378, 6);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.OuterBorderColor = System.Drawing.Color.Transparent;
             this.btnLogin.ShineColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.Size = new System.Drawing.Size(91, 77);
+            this.btnLogin.Size = new System.Drawing.Size(114, 96);
             this.btnLogin.TabIndex = 920;
             this.btnLogin.Text = "LOG-IN";
             this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // groupBox1
             // 
@@ -342,11 +394,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(106, -1);
+            this.groupBox1.Location = new System.Drawing.Point(132, -1);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(194, 81);
+            this.groupBox1.Size = new System.Drawing.Size(242, 101);
             this.groupBox1.TabIndex = 919;
             this.groupBox1.TabStop = false;
             // 
@@ -355,34 +407,34 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(121, 50);
+            this.label4.Location = new System.Drawing.Point(151, 62);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.Size = new System.Drawing.Size(14, 19);
             this.label4.TabIndex = 925;
-            this.label4.Text = "OPERATOR";
+            this.label4.Text = " ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("맑은 고딕", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(121, 19);
+            this.label5.Location = new System.Drawing.Point(151, 24);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.Size = new System.Drawing.Size(14, 19);
             this.label5.TabIndex = 924;
-            this.label5.Text = "012345678";
+            this.label5.Text = " ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(71, 50);
+            this.label3.Location = new System.Drawing.Point(89, 62);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.Size = new System.Drawing.Size(59, 19);
             this.label3.TabIndex = 923;
             this.label3.Text = "LEVEL : ";
             // 
@@ -391,10 +443,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(71, 19);
+            this.label2.Location = new System.Drawing.Point(89, 24);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.Size = new System.Drawing.Size(36, 19);
             this.label2.TabIndex = 922;
             this.label2.Text = "ID : ";
             // 
@@ -403,21 +455,24 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 16);
+            this.label1.Location = new System.Drawing.Point(11, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 19);
+            this.label1.Size = new System.Drawing.Size(56, 23);
             this.label1.TabIndex = 921;
             this.label1.Text = "Login";
             // 
-            // panClientView
+            // pbLogo
             // 
-            this.panClientView.BackColor = System.Drawing.Color.Black;
-            this.panClientView.Location = new System.Drawing.Point(0, 86);
-            this.panClientView.Margin = new System.Windows.Forms.Padding(2);
-            this.panClientView.Name = "panClientView";
-            this.panClientView.Size = new System.Drawing.Size(1264, 819);
-            this.panClientView.TabIndex = 2;
+            this.pbLogo.BackColor = System.Drawing.Color.Black;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.Location = new System.Drawing.Point(4, 2);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(122, 101);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbLogo.TabIndex = 918;
+            this.pbLogo.TabStop = false;
             // 
             // panMainToolBar
             // 
@@ -432,10 +487,10 @@
             this.panMainToolBar.Controls.Add(this.btnToolAuto);
             this.panMainToolBar.Controls.Add(this.btnToolMain);
             this.panMainToolBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panMainToolBar.Location = new System.Drawing.Point(0, 905);
+            this.panMainToolBar.Location = new System.Drawing.Point(0, 945);
             this.panMainToolBar.Margin = new System.Windows.Forms.Padding(2);
             this.panMainToolBar.Name = "panMainToolBar";
-            this.panMainToolBar.Size = new System.Drawing.Size(1264, 80);
+            this.panMainToolBar.Size = new System.Drawing.Size(1580, 100);
             this.panMainToolBar.TabIndex = 3;
             // 
             // btnExit
@@ -444,10 +499,10 @@
             this.btnExit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(1137, 11);
+            this.btnExit.Location = new System.Drawing.Point(1421, 14);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(122, 62);
+            this.btnExit.Size = new System.Drawing.Size(152, 78);
             this.btnExit.TabIndex = 884;
             this.btnExit.Tag = "1";
             this.btnExit.Text = "EXIT";
@@ -460,10 +515,10 @@
             this.btnToolHistory.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolHistory.ForeColor = System.Drawing.Color.White;
             this.btnToolHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolHistory.Location = new System.Drawing.Point(739, 11);
+            this.btnToolHistory.Location = new System.Drawing.Point(924, 14);
             this.btnToolHistory.Margin = new System.Windows.Forms.Padding(2);
             this.btnToolHistory.Name = "btnToolHistory";
-            this.btnToolHistory.Size = new System.Drawing.Size(101, 62);
+            this.btnToolHistory.Size = new System.Drawing.Size(126, 78);
             this.btnToolHistory.TabIndex = 883;
             this.btnToolHistory.Tag = "8";
             this.btnToolHistory.Text = "History";
@@ -476,10 +531,10 @@
             this.btnToolAlarm.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolAlarm.ForeColor = System.Drawing.Color.White;
             this.btnToolAlarm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolAlarm.Location = new System.Drawing.Point(634, 11);
+            this.btnToolAlarm.Location = new System.Drawing.Point(792, 14);
             this.btnToolAlarm.Margin = new System.Windows.Forms.Padding(2);
             this.btnToolAlarm.Name = "btnToolAlarm";
-            this.btnToolAlarm.Size = new System.Drawing.Size(101, 62);
+            this.btnToolAlarm.Size = new System.Drawing.Size(126, 78);
             this.btnToolAlarm.TabIndex = 882;
             this.btnToolAlarm.Tag = "7";
             this.btnToolAlarm.Text = "Alarm";
@@ -492,10 +547,10 @@
             this.btnToolIO.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolIO.ForeColor = System.Drawing.Color.White;
             this.btnToolIO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolIO.Location = new System.Drawing.Point(530, 11);
+            this.btnToolIO.Location = new System.Drawing.Point(662, 14);
             this.btnToolIO.Margin = new System.Windows.Forms.Padding(2);
             this.btnToolIO.Name = "btnToolIO";
-            this.btnToolIO.Size = new System.Drawing.Size(101, 62);
+            this.btnToolIO.Size = new System.Drawing.Size(126, 78);
             this.btnToolIO.TabIndex = 881;
             this.btnToolIO.Tag = "6";
             this.btnToolIO.Text = "I/O";
@@ -508,10 +563,10 @@
             this.btnToolConfig.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolConfig.ForeColor = System.Drawing.Color.White;
             this.btnToolConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolConfig.Location = new System.Drawing.Point(425, 11);
+            this.btnToolConfig.Location = new System.Drawing.Point(531, 14);
             this.btnToolConfig.Margin = new System.Windows.Forms.Padding(2);
             this.btnToolConfig.Name = "btnToolConfig";
-            this.btnToolConfig.Size = new System.Drawing.Size(101, 62);
+            this.btnToolConfig.Size = new System.Drawing.Size(126, 78);
             this.btnToolConfig.TabIndex = 880;
             this.btnToolConfig.Tag = "5";
             this.btnToolConfig.Text = "Config";
@@ -524,10 +579,10 @@
             this.btnToolManual.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolManual.ForeColor = System.Drawing.Color.White;
             this.btnToolManual.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolManual.Location = new System.Drawing.Point(321, 11);
+            this.btnToolManual.Location = new System.Drawing.Point(401, 14);
             this.btnToolManual.Margin = new System.Windows.Forms.Padding(2);
             this.btnToolManual.Name = "btnToolManual";
-            this.btnToolManual.Size = new System.Drawing.Size(101, 62);
+            this.btnToolManual.Size = new System.Drawing.Size(126, 78);
             this.btnToolManual.TabIndex = 879;
             this.btnToolManual.Tag = "4";
             this.btnToolManual.Text = "Manual";
@@ -540,10 +595,10 @@
             this.btnToolRecipe.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolRecipe.ForeColor = System.Drawing.Color.White;
             this.btnToolRecipe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolRecipe.Location = new System.Drawing.Point(216, 11);
+            this.btnToolRecipe.Location = new System.Drawing.Point(270, 14);
             this.btnToolRecipe.Margin = new System.Windows.Forms.Padding(2);
             this.btnToolRecipe.Name = "btnToolRecipe";
-            this.btnToolRecipe.Size = new System.Drawing.Size(101, 62);
+            this.btnToolRecipe.Size = new System.Drawing.Size(126, 78);
             this.btnToolRecipe.TabIndex = 878;
             this.btnToolRecipe.Tag = "3";
             this.btnToolRecipe.Text = "Recipe";
@@ -556,10 +611,10 @@
             this.btnToolAuto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolAuto.ForeColor = System.Drawing.Color.White;
             this.btnToolAuto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolAuto.Location = new System.Drawing.Point(111, 11);
+            this.btnToolAuto.Location = new System.Drawing.Point(139, 14);
             this.btnToolAuto.Margin = new System.Windows.Forms.Padding(2);
             this.btnToolAuto.Name = "btnToolAuto";
-            this.btnToolAuto.Size = new System.Drawing.Size(101, 62);
+            this.btnToolAuto.Size = new System.Drawing.Size(126, 78);
             this.btnToolAuto.TabIndex = 877;
             this.btnToolAuto.Tag = "2";
             this.btnToolAuto.Text = "Semi Auto";
@@ -572,10 +627,10 @@
             this.btnToolMain.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolMain.ForeColor = System.Drawing.Color.White;
             this.btnToolMain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolMain.Location = new System.Drawing.Point(7, 11);
+            this.btnToolMain.Location = new System.Drawing.Point(9, 14);
             this.btnToolMain.Margin = new System.Windows.Forms.Padding(2);
             this.btnToolMain.Name = "btnToolMain";
-            this.btnToolMain.Size = new System.Drawing.Size(101, 62);
+            this.btnToolMain.Size = new System.Drawing.Size(126, 78);
             this.btnToolMain.TabIndex = 876;
             this.btnToolMain.Tag = "1";
             this.btnToolMain.Text = "Main";
@@ -586,86 +641,36 @@
             // 
             this.tmrRefresh.Tick += new System.EventHandler(this.tmrRefresh_Tick);
             // 
-            // pbLogo
-            // 
-            this.pbLogo.BackColor = System.Drawing.Color.Black;
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.Location = new System.Drawing.Point(3, 2);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(98, 81);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbLogo.TabIndex = 918;
-            this.pbLogo.TabStop = false;
-            // 
             // btnAutoRun
             // 
             this.btnAutoRun.BackColor = System.Drawing.Color.Black;
             this.btnAutoRun.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAutoRun.ForeColor = System.Drawing.Color.White;
             this.btnAutoRun.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAutoRun.Location = new System.Drawing.Point(938, 916);
+            this.btnAutoRun.Location = new System.Drawing.Point(1172, 1145);
             this.btnAutoRun.Margin = new System.Windows.Forms.Padding(2);
             this.btnAutoRun.Name = "btnAutoRun";
-            this.btnAutoRun.Size = new System.Drawing.Size(101, 62);
+            this.btnAutoRun.Size = new System.Drawing.Size(126, 78);
             this.btnAutoRun.TabIndex = 885;
             this.btnAutoRun.Tag = "8";
             this.btnAutoRun.Text = "AutoRun";
             this.btnAutoRun.UseVisualStyleBackColor = false;
             this.btnAutoRun.Click += new System.EventHandler(this.btnAutoRun_Click);
             // 
-            // ledBulb3
+            // panClientView
             // 
-            this.ledBulb3.DarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.ledBulb3.DarkDarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ledBulb3.Location = new System.Drawing.Point(1094, 55);
-            this.ledBulb3.Margin = new System.Windows.Forms.Padding(2);
-            this.ledBulb3.Name = "ledBulb3";
-            this.ledBulb3.On = true;
-            this.ledBulb3.Size = new System.Drawing.Size(23, 15);
-            this.ledBulb3.TabIndex = 930;
-            this.ledBulb3.Text = "ledBulb3";
-            // 
-            // ledBulb4
-            // 
-            this.ledBulb4.DarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.ledBulb4.DarkDarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ledBulb4.Location = new System.Drawing.Point(1016, 55);
-            this.ledBulb4.Margin = new System.Windows.Forms.Padding(2);
-            this.ledBulb4.Name = "ledBulb4";
-            this.ledBulb4.On = true;
-            this.ledBulb4.Size = new System.Drawing.Size(23, 15);
-            this.ledBulb4.TabIndex = 928;
-            this.ledBulb4.Text = "ledBulb4";
-            // 
-            // ledBulb2
-            // 
-            this.ledBulb2.DarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.ledBulb2.DarkDarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ledBulb2.Location = new System.Drawing.Point(955, 55);
-            this.ledBulb2.Margin = new System.Windows.Forms.Padding(2);
-            this.ledBulb2.Name = "ledBulb2";
-            this.ledBulb2.On = true;
-            this.ledBulb2.Size = new System.Drawing.Size(23, 15);
-            this.ledBulb2.TabIndex = 926;
-            this.ledBulb2.Text = "ledBulb2";
-            // 
-            // ledBulb1
-            // 
-            this.ledBulb1.DarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.ledBulb1.DarkDarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ledBulb1.Location = new System.Drawing.Point(877, 55);
-            this.ledBulb1.Margin = new System.Windows.Forms.Padding(2);
-            this.ledBulb1.Name = "ledBulb1";
-            this.ledBulb1.On = true;
-            this.ledBulb1.Size = new System.Drawing.Size(23, 15);
-            this.ledBulb1.TabIndex = 924;
-            this.ledBulb1.Text = "ledBulb1";
+            this.panClientView.BackColor = System.Drawing.Color.Black;
+            this.panClientView.Location = new System.Drawing.Point(0, 108);
+            this.panClientView.Margin = new System.Windows.Forms.Padding(2);
+            this.panClientView.Name = "panClientView";
+            this.panClientView.Size = new System.Drawing.Size(1580, 1024);
+            this.panClientView.TabIndex = 2;
             // 
             // frmMainFrame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1264, 985);
+            this.ClientSize = new System.Drawing.Size(1580, 1045);
             this.Controls.Add(this.btnAutoRun);
             this.Controls.Add(this.panMainToolBar);
             this.Controls.Add(this.panClientView);
@@ -674,7 +679,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximizeBox = false;
             this.Name = "frmMainFrame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TBDB_CTC";
@@ -689,8 +693,8 @@
             this.a1Panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panMainToolBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
+            this.panMainToolBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -698,7 +702,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panTitleBar;
-        private System.Windows.Forms.Panel panClientView;
         private System.Windows.Forms.Panel panMainToolBar;
         private System.Windows.Forms.Button btnToolMain;
         private System.Windows.Forms.Button btnExit;
@@ -739,6 +742,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Timer tmrRefresh;
         private System.Windows.Forms.Button btnAutoRun;
+        private System.Windows.Forms.Panel panClientView;
     }
 }
 

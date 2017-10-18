@@ -53,6 +53,7 @@ namespace TBDB_CTC.POPWND.Error.Global
            
 
             DataRow newDr;
+            MessageBox.Show(temp.mErrorCauseTime.ToString());
            
             newDr = GlobalDataSet.dataset2.Tables[0].NewRow();
 

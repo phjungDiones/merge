@@ -41,7 +41,8 @@ namespace TBDB_CTC.POPWND.Error
                 mErrorTarget = e.ToString();
                 mbClearError = false;
                 mErrorCount = Global.GlobalVariable.Instance.ErrorCount;
-                mErrorCauseTime = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
+                
+                mErrorCauseTime = DateTime.Now.ToString("yyyy-MM-dd")+ " "+DateTime.Now.ToString("HH:mm:ss");
                 mErrorNumber = ErrorNumber;
 
                 Global.ErrorPopUpmaMassage.Instance.mErrorNumber = ErrorNumber;
@@ -167,7 +168,7 @@ namespace TBDB_CTC.POPWND.Error
             mbClearError = false;
             mErrorNumber = errorNumber;
             mErrorCount = Global.GlobalVariable.Instance.ErrorCount;
-            mErrorCauseTime = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
+            mErrorCauseTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
 
 
@@ -193,7 +194,7 @@ namespace TBDB_CTC.POPWND.Error
         public void ResetError()
         {
             mbClearError = true;
-            mErrorEndTime = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
+            mErrorEndTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
     }
 
