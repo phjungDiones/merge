@@ -12,12 +12,15 @@ using TBDB_CTC.GLOBAL;
 using TBDB_CTC.UserCtrl.SubForm;
 using TBDB_CTC.UserCtrl.SubForm.MainSub;
 using TBDB_Handler.GLOBAL;
+using TBDB_Handler.MOTION;
 
 namespace TBDB_CTC.GUI
 {
     public partial class frmMainView : Form
     {
         public UserControl[] wndMainSubMenu = new UserControl[2];
+
+        short status = 0;
 
         public frmMainView()
         {
@@ -32,12 +35,26 @@ namespace TBDB_CTC.GUI
 
         private void frmMainView_Load(object sender, EventArgs e)
         {
-            SubScreenChange(0);        
+            SubScreenChange(0);
+
+            cbRunMode.SelectedIndex = 0;
+            SetCtcRunMode();
         }
 
-        private void btnTest_Click(object sender, EventArgs e)
+        private void SetCtcRunMode()
         {
-            //AddProcMessage(0, 1, "AAAA");
+            if (cbRunMode.SelectedIndex == 1)
+            {
+                lbCtcRunMode.Text = "RunMode : VTM";
+                lbCtcRunMode.ForeColor = Color.LimeGreen;
+                GlobalSeq.autoRun.prcVTM.Pmc.SetStatus(CTC_STATUS.CTCRunMode, (short)CTC_RUN_MODE_VALUE.VTM_MODE);
+            }
+            else
+            {
+                lbCtcRunMode.Text = "RunMode : ATM";
+                lbCtcRunMode.ForeColor = Color.White;
+                GlobalSeq.autoRun.prcVTM.Pmc.SetStatus(CTC_STATUS.CTCRunMode, (short)CTC_RUN_MODE_VALUE.ATM_MODE);
+            }
         }
 
         private void OnManualSubMenuButtonClick(object sender, EventArgs e)
@@ -103,5 +120,38 @@ namespace TBDB_CTC.GUI
             }
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (!this.Visible) return;
+
+            GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(CTC_STATUS.CTCRunMode, ref status);
+
+            if(status == (short)CTC_RUN_MODE_VALUE.ATM_MODE)
+            {
+                ledCtcModeATM.Color = Color.LightBlue;
+                ledCtcModeVTM.Color = Color.LightSlateGray;
+            }
+            else
+            {
+                ledCtcModeATM.Color = Color.LightSlateGray;
+                ledCtcModeVTM.Color = Color.LightBlue;
+            }
+            
+        }
+
+        private void cbRunMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SetCtcRunMode();
+
+//             DialogResult result = MessageBox.Show("모드를 변경 하시겠습니까?", "Confirm!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+//             if (result == DialogResult.Yes)
+//             {
+//                 SetCtcRunMode();
+//             }
+//             else
+//             {
+//                 return;
+//             }
+        }
     }
 }

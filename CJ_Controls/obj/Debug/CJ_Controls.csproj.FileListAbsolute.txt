@@ -1826,356 +1826,537 @@ D:\LJH\Source\TBDB_CTC_171012_1615\CJ_Controls\obj\Debug\CJ_Controls.WinControls
 D:\LJH\Source\TBDB_CTC_171012_1615\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
 D:\LJH\Source\TBDB_CTC_171012_1615\CJ_Controls\obj\Debug\CJ_Controls.dll
 D:\LJH\Source\TBDB_CTC_171012_1615\CJ_Controls\obj\Debug\CJ_Controls.pdb
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\bin\Debug\CJ_Controls.dll
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\bin\Debug\CJ_Controls.pdb
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\bin\Debug\EraeMotionApi.dll
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\Interop.ADODB.dll
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\Interop.JRO.dll
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.csproj.CoreCompileInputs.cache
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.dll
-D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.pdb
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\bin\Debug\CJ_Controls.dll
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\bin\Debug\CJ_Controls.pdb
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\bin\Debug\EraeMotionApi.dll
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\Interop.ADODB.dll
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\Interop.JRO.dll
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.dll
-C:\Users\jph\Desktop\새 폴더 (7)\TBDB_CTC_171012_1945\CJ_Controls\obj\Debug\CJ_Controls.pdb
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\Interop.ADODB.dll
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\Interop.JRO.dll
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.dll
-C:\Users\jph\Desktop\github\merge\CJ_Controls\obj\Debug\CJ_Controls.pdb
-C:\Users\jph\Desktop\github\merge\CJ_Controls\bin\Debug\CJ_Controls.dll
-C:\Users\jph\Desktop\github\merge\CJ_Controls\bin\Debug\CJ_Controls.pdb
-C:\Users\jph\Desktop\github\merge\CJ_Controls\bin\Debug\EraeMotionApi.dll
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\bin\Debug\CJ_Controls.dll
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\bin\Debug\CJ_Controls.pdb
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\bin\Debug\EraeMotionApi.dll
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\Interop.ADODB.dll
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\Interop.JRO.dll
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.dll
-C:\Users\jph\Desktop\github\merge\jph\CJ_Controls\obj\Debug\CJ_Controls.pdb
-F:\jph\CJ_Controls\bin\Debug\CJ_Controls.dll
-F:\jph\CJ_Controls\bin\Debug\CJ_Controls.pdb
-F:\jph\CJ_Controls\bin\Debug\EraeMotionApi.dll
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
-F:\jph\CJ_Controls\obj\Debug\Interop.ADODB.dll
-F:\jph\CJ_Controls\obj\Debug\Interop.JRO.dll
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.dll
-F:\jph\CJ_Controls\obj\Debug\CJ_Controls.pdb
-E:\jph\CJ_Controls\bin\Debug\CJ_Controls.dll
-E:\jph\CJ_Controls\bin\Debug\CJ_Controls.pdb
-E:\jph\CJ_Controls\bin\Debug\EraeMotionApi.dll
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
-E:\jph\CJ_Controls\obj\Debug\Interop.ADODB.dll
-E:\jph\CJ_Controls\obj\Debug\Interop.JRO.dll
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.dll
-E:\jph\CJ_Controls\obj\Debug\CJ_Controls.pdb
-F:\jph (2)\CJ_Controls\bin\Debug\CJ_Controls.dll
-F:\jph (2)\CJ_Controls\bin\Debug\CJ_Controls.pdb
-F:\jph (2)\CJ_Controls\bin\Debug\EraeMotionApi.dll
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
-F:\jph (2)\CJ_Controls\obj\Debug\Interop.ADODB.dll
-F:\jph (2)\CJ_Controls\obj\Debug\Interop.JRO.dll
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.dll
-F:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.pdb
-E:\jph (2)\CJ_Controls\bin\Debug\CJ_Controls.dll
-E:\jph (2)\CJ_Controls\bin\Debug\CJ_Controls.pdb
-E:\jph (2)\CJ_Controls\bin\Debug\EraeMotionApi.dll
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
-E:\jph (2)\CJ_Controls\obj\Debug\Interop.ADODB.dll
-E:\jph (2)\CJ_Controls\obj\Debug\Interop.JRO.dll
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.dll
-E:\jph (2)\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.csproj.CoreCompileInputs.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_0030\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171013_1530\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.csproj.CoreCompileInputs.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.csproj.CoreCompileInputs.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_2210\TBDB_CTC_171013_1920\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.csproj.CoreCompileInputs.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_1715\TBDB_CTC_171014_1300\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.csproj.CoreCompileInputs.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171014_2150_Last\TBDB_CTC_171014_1955\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\Source\TBDB_CTC_171017_1540\CJ_Controls\obj\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\bin\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\bin\Debug\CJ_Controls.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\bin\Debug\EraeMotionApi.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\Interop.ADODB.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\Interop.JRO.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.csproj.CoreCompileInputs.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.pdb
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.csprojResolveAssemblyReference.cache
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\Interop.ADODB.dll
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\Interop.JRO.dll
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.csproj.ResolveComReference.cache
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Etc.RobotControl.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Io_List.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.Form_Engr_Servo_Config.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.PmacLib.IoViewControl.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Ctrl_SRZ_IO_View.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_IO_Maker.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Communication.SRZ.Form_SRZ_Output_Control.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Ctrl_DNet_IO_List_View.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.DeviceNet.Form_IO_List_Maker.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Etc.LogoControl.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.SystemMonitor.Ctrl_ResourceMonitor.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Form_TraceOneLog.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Ctrl_LogFileView.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Log_View.Form_LogView.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Log_Trace.Ctrl_Log_Trace.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Properties.Resources.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Splash_Screen.Form_Splash.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Etc.Ctrl_Digital_Clock.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.Aligner.PCam.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.Display.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.Viewer.View.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.Button.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.frmInput.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XButton.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Vision.GUI.XSheet0.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.Windows.Config.Ctrl_Set_Boolean.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_ComboBox.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_Number.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_String.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_H_TouchInput.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Config.Ctrl_Set_V_TouchInput.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_Keyboard.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.WinControls.Virtual_Key.Form_Virtual_KeyPad.resources
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.csproj.GenerateResource.Cache
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.dll
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\obj\Debug\CJ_Controls.pdb
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\bin\Debug\CJ_Controls.dll
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\bin\Debug\CJ_Controls.pdb
+C:\Users\jph\Desktop\새 폴더 (8)\TBDB_CTC_171017_1730\CJ_Controls\bin\Debug\EraeMotionApi.dll

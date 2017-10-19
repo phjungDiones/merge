@@ -13,6 +13,16 @@ namespace TBDB_CTC.POPWND
 {
     public partial class popAutoRun : Form
     {
+
+        //Start, Stop Event
+        public delegate void startStopDelegate(int nState);
+        public event startStopDelegate RunStopEvent;
+
+        //Reset Event
+        public delegate void resetDelegate();
+        public event resetDelegate ResetEvent = null;
+
+
         public popAutoRun()
         {
             InitializeComponent();
@@ -25,13 +35,16 @@ namespace TBDB_CTC.POPWND
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            GlobalVariable.mcState.isRdy = true;
-            GlobalVariable.mcState.isRun = true;             
+            if (RunStopEvent != null) RunStopEvent(MCDF.CMD_RUN);
+
+            //GlobalVariable.mcState.isRdy = true;
+            //GlobalVariable.mcState.isRun = true;             
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            GlobalVariable.mcState.isRun = false;   
+            if (RunStopEvent != null) RunStopEvent(MCDF.CMD_STOP);
+            //GlobalVariable.mcState.isRun = false;   
         }
 
         private void btnPause_Click(object sender, EventArgs e)
@@ -43,6 +56,8 @@ namespace TBDB_CTC.POPWND
         {
             GlobalVariable.mcState.isRun = false;   
         }
+
+
     }
 }
     

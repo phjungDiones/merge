@@ -156,8 +156,18 @@ namespace TBDB_CTC.GUI
         }
         private void win_GlassButton3_Click(object sender, EventArgs e)
         {
-            if (GlobalDataSet.dataset3.Tables[0].Rows.Count == 0) return;
+            if (!(GlobalDataSet.dataset3.Tables.Count == 0)) return;
+            try
+            {
 
+
+                if (GlobalDataSet.dataset3.Tables[0].Rows.Count == 0) return;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return;
+            }
 
 
             //MessageBox.Show(GlobalDataSet.dataset2.Tables[0].Rows[0]["Model"].ToString());
@@ -191,23 +201,31 @@ namespace TBDB_CTC.GUI
 
         private void win_GlassButton1_Click(object sender, EventArgs e)
         {
-            GlobalError.nIndex = 0;
-            int count = GlobalDataSet.dataset3.Tables[0].Rows.Count;
-            for (int i=0;i< count; i++)
+            if (!(GlobalDataSet.dataset3.Tables.Count == 0)) return;
+            try
             {
-                GlobalDataSet.dataset3.Tables[0].Rows[0].Delete();
+                GlobalError.nIndex = 0;
+                int count = GlobalDataSet.dataset3.Tables[0].Rows.Count;
+                for (int i = 0; i < count; i++)
+                {
+                    GlobalDataSet.dataset3.Tables[0].Rows[0].Delete();
+                }
+                resetindex();
+                Svaexml();
+                sendRestCommand(1);
+                sendRestCommand(2);
+                sendRestCommand(3);
+                sendRestCommand(4);
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return;
             }
-            resetindex();
-            Svaexml();
-            sendRestCommand(1);
-            sendRestCommand(2);
-            sendRestCommand(3);
-            sendRestCommand(4);
-            
         }
 
         private void win_GlassButton2_Click(object sender, EventArgs e)
         {
+            if (!(GlobalDataSet.dataset3.Tables.Count == 0)) return;
             //리셋동작
             GlobalDataSet.dataset2.WriteXml("AllErrorTables.xml");
             GlobalDataSet.dataset3.WriteXml("AllErrorTables_clone.xml");
@@ -215,12 +233,18 @@ namespace TBDB_CTC.GUI
             GlobalDataSet.dataset3.Clear();
             GlobalDataSet.dataset3 = GlobalDataSet.dataset2.Clone();
             GlobalDataSet.dataset3 = GlobalDataSet.dataset2.Copy();
+            try
+            {
+                gridLog_alarm.DataSource = GlobalDataSet.dataset3;
 
-            gridLog_alarm.DataSource = GlobalDataSet.dataset3;
+                gridLog_alarm.DataMember = "default";
 
-            gridLog_alarm.DataMember = "default";
-
-            resetindex();
+                resetindex();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+           
         }
 
         private void removeAllGrid()
@@ -233,12 +257,21 @@ namespace TBDB_CTC.GUI
         }
 
         public void resetindex()
+
         {
-            for (int i = 0; i < GlobalDataSet.dataset3.Tables[0].Rows.Count; i++)
+            if (!(GlobalDataSet.dataset3.Tables.Count ==0)) return;
+            try
             {
-                GlobalDataSet.dataset3.Tables[0].Rows[i]["index"] = i.ToString();
+                for (int i = 0; i < GlobalDataSet.dataset3.Tables[0].Rows.Count; i++)
+                {
+                    GlobalDataSet.dataset3.Tables[0].Rows[i]["index"] = i.ToString();
+                }
+                Svaexml();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return;
             }
-            Svaexml();
         }
     }
 }

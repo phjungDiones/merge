@@ -26,7 +26,7 @@ namespace TBDB_CTC.GUI
             _Main = MainData.Instance;
 
             wndCfgSubMenu[0] = new subConfigParam();
-            wndCfgSubMenu[1] = new SubAlarm();
+            wndCfgSubMenu[1] = new subConfigCTC();
             wndCfgSubMenu[2] = new subConfigUser();
             wndCfgSubMenu[3] = new subConfigFA();
 
@@ -98,11 +98,11 @@ namespace TBDB_CTC.GUI
 
             //Alinger
             _Main.GetLoaderData().Aligner.Open(_Main.ConfigMgr.Aligner_Com.Comport, _Main.ConfigMgr.Aligner_Com.Baudrate);
-            
+
             //Loadlock
             //_Main.GetLoadlockData().Loadlock.OpenComm(_Main.ConfigMgr.Loadlock_Com.Comport, _Main.ConfigMgr.Loadlock_Com.Baudrate);
-            bRet = GlobalSeq.autoRun.procLoadlock.Loadlock.ComOpen(_Main.ConfigMgr.Loadlock_Com.Comport, _Main.ConfigMgr.Loadlock_Com.Baudrate);
-            if( !bRet)
+            GlobalVariable.LoadlockMotor.bIsOpen = GlobalSeq.autoRun.procLoadlock.Loadlock.ComOpen(_Main.ConfigMgr.Loadlock_Com.Comport, _Main.ConfigMgr.Loadlock_Com.Baudrate);
+            if (GlobalVariable.LoadlockMotor.bIsOpen == false)
             {
                 MessageBox.Show("Loadlock Open Fail..");
             }

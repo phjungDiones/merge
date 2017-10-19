@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.IO;
 using TBDB_Handler.SEQ;
+using System.Diagnostics;
 using TBDB_CTC.GUI;
-
 namespace TBDB_Handler.GLOBAL
 {
-    
+
 
     public enum Eidentify
     {
@@ -35,7 +35,7 @@ namespace TBDB_Handler.GLOBAL
 
     public enum UNIT
     {
-        LPM,
+        LPM = 0,
         FM_ROBOT,
         ALINGER,
         ATM_ROBOT,
@@ -44,6 +44,8 @@ namespace TBDB_Handler.GLOBAL
         VTM_ROBOT,
         PMC,
         HP,
+        CP,
+        MAX,
     }
 
     public enum fn : int
@@ -58,7 +60,6 @@ namespace TBDB_Handler.GLOBAL
         LOWER = 1,
         UPPER = 2,
     }
-
 
     public enum LPM_Wafer
     {
@@ -88,22 +89,6 @@ namespace TBDB_Handler.GLOBAL
     {
     }
 
-
-
-    public class MCDF
-    {
-        public const int LEVEL_NOT_LOGIN = -1;
-        public const int LEVEL_OP = 0;
-        public const int LEVEL_ENG = 1;
-        public const int LEVEL_MAK = 2;
-
-
-        public const int MAX_SLOT_COUNT = 25;
-        public const int MAX_SLOT_CP = 3;
-        public const int MAX_SLOT_LOADLOCK = 3;
-        public const int MAX_ARM_COUNT = 3;
-    }
-
     [Serializable]
     public enum RUN_MODE
     {
@@ -112,14 +97,124 @@ namespace TBDB_Handler.GLOBAL
         ONLY_BOND,
     }
 
-    
+    //PMC Interface Status 
 
-  
-    public static class GlobalError
+    public enum CTC_STATUS_VALUE
     {
-        public static int nIndex = 0;
+        IDLE = 0,
+        RUN,
+        STOP,
+        PM,
     }
 
+    public enum VTM_VACUUM_STATUS_VALUE
+    {
+        ATM = 0,
+        VENTING,
+        VTM,
+        PUMPING,
+    }
+
+    public enum CTC_RUN_MODE_VALUE
+    {
+        ATM_MODE = 0,
+        VTM_MODE,
+    }
+
+
+    public class MCDF
+    {
+public const int LEVEL_NOT_LOGIN = -1;
+        public const int LEVEL_OP = 0;
+        public const int LEVEL_ENG = 1;
+        public const int LEVEL_MAK = 2;
+
+        public const int MAX_SLOT_COUNT = 25;
+        public const int MAX_SLOT_CP = 3;
+        public const int MAX_SLOT_LOADLOCK = 3;
+        public const int MAX_ARM_COUNT = 3;
+
+    
+        //설비상태
+        public const int MC_IDLE = 0; //프로그램 구동후 초기화 전
+        public const int MC_INITIALIZING = 1; //초기화 중일때
+        public const int MC_STOP = 2; //초기화 된 상태로 정지
+        public const int MC_ERR_STOP = 3; //에러로 정지된 상태
+        public const int MC_RUN = 4; //RUN
+
+        //Run Event
+        public const int CMD_STOP = 0;
+        public const int CMD_RUN = 1;
+
+        //Log 종류
+        public const int EVENT_LOG = 0;
+        public const int ERROR_LOG = 1;
+        public const int RUN_LOG = 2;
+        public const int COMM_LOG = 3; // 통신로그
+
+
+        //Safty
+        public const int SAFETY_OK = 0;
+    }
+
+
+    public static class ERDF
+    {
+        public const int ERR_CNT = 1000;
+
+        public const int EMO_STOP = 1;
+        public const int EMO_FRONT = 2;
+        public const int EMO_REAR = 3;
+        public const int EMO_LEFT = 4;
+        public const int EMO_RIGHT = 5;
+
+        public const int DOOR_OPEN = 10;
+        public const int DOOR_FRONT = 11;
+        public const int DOOR_REAR = 12;
+        public const int DOOR_LEFT = 13;
+        public const int DOOR_RIGHT = 14;
+
+        public const int MAIN_AIR_LOW = 20;
+        public const int MAIN_VAC_LOW = 21;
+
+        public const int E_TRSF_VAC_1 = 50;
+        public const int E_TRSF_VAC_2 = 51;
+        public const int E_TRSF_PCB_NOT_DETECT = 55;
+
+        public const int E_STAGE_VAC_1 = 60;
+        public const int E_STAGE_VAC_2 = 61;
+        public const int E_STAGE_VAC_3 = 62;
+
+        public const int E_CM_NOT_FOUND_PATTERN_ALIGN_FIRST = 100;
+        public const int E_CM_NOT_FOUND_PATTERN_ALIGN_SECOND = 101;
+        public const int E_DSPS_SETUP_ERR = 102;
+        public const int E_MEASURE_DISP_ERR = 103;                      // 변위센서 측정 에러
+        public const int E_READ_BARCODE_ERR = 104;                      // 바코드 읽기 실패
+        public const int E_CM_NOT_HORIZONTAL = 105;                     // ALIGN 시 수평이 안될 때
+        public const int E_CM_FAIL_INSPECTION = 106;                    // INSPECTION 실패
+
+        public const int E_CYL_MOVE = 150;
+        public const int E_SV_INVALID_VEL = 200;
+
+        public const int E_SV_MOVE = 500;
+        public const int E_SV_AMP = 520;
+        public const int E_SV_NOT_HOME = 540;
+
+        public const int E_SV_INTERLOCK_0 = 600;
+
+        //Error Script
+        public static string[] sErrNo = new string[1000];
+        public static string[] sErrTitle = new string[1000];
+        public static string[] sErrCause = new string[1000];
+        public static string[] sErrAction = new string[1000];
+        public static string[] sErrAction2 = new string[1000];
+
+        public static int[] nErrHistCnt = new int[1000];
+        public static string[] strErrHistLastTime = new string[1000];
+    }
+public static class GlobalError{
+public static int nIndex = 0;
+}
 
     [Serializable]
     public class ProcInfoBase
@@ -180,9 +275,49 @@ namespace TBDB_Handler.GLOBAL
         public int nSlot;
         public bool bIsPreAlign;
         public bool bIsPostAlign;
-        public bool bIsLami;
-        public bool bIsBond;
-        public bool bIsHP;
+
+        public bool bIsLami;        //완료여부
+        public bool bIsBond;        //완료여부
+        public bool bIsHP;          //
+                                    //2017-1014
+
+
+        //시간 측정 변수
+        public string strTotalTime;
+        public string strTotalSt;         // 작업 시작시간 - 매거진 아웃풋
+        public string strTotalEnd;        // 작업 완료시간 - 매거진 인풋
+
+
+        public string strAlignTime;
+        public string strLaminateTime;
+        public string strBondingTime;
+
+
+        //LpmIndex
+        //SlotIndex
+        //WaferType
+
+        private bool bHasWafer;         // 유무
+        //private bool bReqHeatPlate;     // 히팅 작업 진행해야함
+        //private bool bReqCoolPlate;     // 쿨링해야함
+        //private bool bReqLami;          // 라미 필요함
+        private bool bWrokAligned;      // 작업 진행완료여부
+        private bool bWorkLamided;      // 라미 작업 완료여부
+        private bool bWorkBonded;       // 본드 작업 완료 여부
+        private bool bResAlignFail;     // 얼라인 완료후 결과
+        private bool bResLamiFail;      // 라미 완료후 결과
+        private bool bResBondFail;      // 본드 완료후 결과
+
+        private int TimeWorkSt;         // 작업 시작시간 - 매거진 아웃풋
+        private int TimeWorkEnd;        // 작업 완료시간 - 매거진 인풋
+        private int TimeLamiSt;         // 라미시작 - 로딩 완료시점
+        private int TimeLamiEnd;        // 라미완료 - 언로딩 완료 시점
+        private int TimeBondingSt;      // 본딩시작 - 로딩완료시점
+        private int TimeBondingEnd;     // 본딩 완료 - 언로딩 완료 시점
+        private int TimeHeatingSt;      // 히팅 시작
+        private int TimeHeatingEnd;     // 히팅 끝 
+        private int TimeCoolingSt;       // 쿨링 시작
+        private int TimeCoolingEnd;      // 쿨링 끝
 
         public WaferData()
         {
@@ -241,27 +376,27 @@ namespace TBDB_Handler.GLOBAL
         }
 
         //동작 완료 확인용
-        public bool Check_PreAlign()
+        public bool Finish_PreAlign()
         {
             return bIsPreAlign;
         }
 
-        public bool Check_PostAlign()
+        public bool Finish_PostAlign()
         {
             return bIsPostAlign;
         }
 
-        public bool Check_Laminate()
+        public bool Finish_Laminate()
         {
             return bIsLami;
         }
 
-        public bool Check_Bonding()
+        public bool Finish_Bonding()
         {
             return bIsBond;
         }
 
-        public bool Check_HotPlate()
+        public bool Finish_HotPlate()
         {
             return bIsHP;
         }
@@ -281,19 +416,21 @@ namespace TBDB_Handler.GLOBAL
         public WaferData[] carrierArray2 = new WaferData[MCDF.MAX_SLOT_COUNT];
         public WaferData[] deviceArray2 = new WaferData[MCDF.MAX_SLOT_COUNT];
 
-        public WaferData[] robotFM = new WaferData[MCDF.MAX_ARM_COUNT];
+        //0 : 사용안함, 1: LowHand, 2: UpperHand
+        public WaferData[] robotFM = new WaferData[MCDF.MAX_ARM_COUNT]; 
         public WaferData[] robotATM = new WaferData[MCDF.MAX_ARM_COUNT];
         public WaferData[] robotVTM = new WaferData[MCDF.MAX_ARM_COUNT];
 
-        //         public WaferData[] robotFM = null;
-        //         public WaferData[] robotATM = null;
-        //         public WaferData[] robotVTM = null;
+
         public WaferData aligner = null;
-        public WaferData lami = null;
+        public WaferData[] lami = new WaferData[2];
         public WaferData bonder = null;
         public WaferData hp = null;
         public WaferData[] CP = new WaferData[MCDF.MAX_SLOT_CP];
         public WaferData[] loadlock = new WaferData[MCDF.MAX_SLOT_LOADLOCK];
+
+        //
+        public Stopwatch[] stopWatch = new Stopwatch[(int)UNIT.MAX];
 
         #region Serialization
         public bool Save()
@@ -342,7 +479,7 @@ namespace TBDB_Handler.GLOBAL
             }
 
             return inst;
-        } 
+        }
         #endregion
 
         /// <summary>
@@ -374,7 +511,8 @@ namespace TBDB_Handler.GLOBAL
             }
 
             aligner = null;
-            lami = null;
+            lami[0] = null;
+            lami[1] = null;
             bonder = null;
             hp = null;
 
@@ -394,6 +532,13 @@ namespace TBDB_Handler.GLOBAL
             {
                 loadlock[nSlot] = null;
             }
+
+            //TactTime Check용 Stopwatch 생성
+            for (int i = 0; i < (int)UNIT.MAX; i++)
+            {
+                stopWatch[i] = new Stopwatch();
+            }
+
 
             Save();
         }
@@ -509,9 +654,9 @@ namespace TBDB_Handler.GLOBAL
         /// 라미에 Wafer가 있는지
         /// </summary>
         /// <returns></returns>
-        public bool IsInLami()
+        public bool IsInLami(int nLami)
         {
-            if (lami == null)
+            if (lami[nLami] == null)
                 return false;
 
             return true;
@@ -628,12 +773,12 @@ namespace TBDB_Handler.GLOBAL
         /// ATM에서 LAMI로 이동
         /// </summary>
         /// <returns></returns>
-        public bool LoadingAtmToLami(HAND arm)
+        public bool LoadingAtmToLami(HAND arm, int nlami)
         {
-            if (robotATM[(int)arm] == null || lami != null)
+            if (robotATM[(int)arm] == null || lami[nlami] != null)
                 return false;
 
-            lami = robotATM[(int)arm];
+            lami[nlami] = robotATM[(int)arm];
             robotATM[(int)arm] = null;
 
             Save();
@@ -645,13 +790,13 @@ namespace TBDB_Handler.GLOBAL
         /// LAMI에서 ATM으로 이동
         /// </summary>
         /// <returns></returns>
-        public bool LoadingLamiToAtm(HAND arm)
+        public bool LoadingLamiToAtm(HAND arm, int nlami)
         {
-            if (lami == null || robotATM[(int)arm] != null)
+            if (lami[nlami] == null || robotATM[(int)arm] != null)
                 return false;
 
-            robotATM[(int)arm] = lami;
-            lami = null;
+            robotATM[(int)arm] = lami[nlami];
+            lami[nlami] = null;
 
             Save();
 
@@ -990,12 +1135,12 @@ namespace TBDB_Handler.GLOBAL
         /// 라미 끝남
         /// </summary>
         /// <returns></returns>
-        public bool Laminate()
+        public bool Laminate(int nlami)
         {
-            if (lami == null)
+            if (lami[nlami] == null)
                 return false;
 
-            lami.Laminate();
+            lami[nlami].Laminate();
             Save();
 
             return true;
@@ -1144,13 +1289,27 @@ namespace TBDB_Handler.GLOBAL
         public int nModule;
         public int nSpeed;
         public int nAcc;
-        
+
+        public int nActPos;
+        public int nEncPos;
+        public bool bMoving;
+        public bool bInpos;
+        public bool bLimitP;
+        public bool bLmitN;
+        public bool bHome;
+        public bool bAlarm;
+        public bool bServo;
+        public int nHomeStatus;
+        public bool bIsOpen;
     }
 
     public struct Interlock
     {
+        public bool bLLUsed_ATM;
+        public bool bLLUsed_VTM;
         public bool bLLMoving; //동시동작 시 확인필요 ATM,VTM
         public bool bAlignMoving;
+        public bool bBondingProcess;
     }
 
     public struct WaferInfo
@@ -1158,40 +1317,24 @@ namespace TBDB_Handler.GLOBAL
         //public WaferType bWaferTypeAL;
         //public WaferType bWaferTypeLL;
 
+        //Slot에 Mapping Data 연결 변수
         public bool[,] bWaferUnloadExist;
         public int[] nWaferLoadSlot;
         public int[] nWaferUnloadSlot;
 
-        //         public bool bWaferLL1;
-        //         public bool bWaferLL2;
-        //         public bool bWaferBD;
-        //         public bool bWaferLami;
-        //         public bool bWaferCP1;
-        //         public bool bWaferCP2;
-        //         public bool bWaferCP3;
-        //         public bool bWaferAL;
-        //         public bool bWaferPmc;
-        // 
-        //         public bool bWaferFmUp;
-        //         public bool bWaferFmLow;
-        //         public bool bWaferAtmUp;
-        //         public bool bWaferAtmLow;
-        //         public bool bWaferVtmUp;
-        //         public bool bWaferVtmLow;
-        // 
-        //         public bool bLamiLoad;
-        //         public bool bLamiUnload;
-        // 
-        //         public bool bPmcLoad;
-        //         public bool bPmcUnload;
-
-
-        //Simul
+        //Simul용 변수
          public bool bLamiLoad;
-         public bool bLamiUnload;
-         
+         public bool bLamiUnload;         
          public bool bPmcLoad;
          public bool bPmcUnload;
-
     }
+
+    public struct STATUS_INTERFACE
+    {
+        public CTC_STATUS_VALUE CtcStatus;
+        public VTM_VACUUM_STATUS_VALUE VacuumVtmStatus;
+        public CTC_RUN_MODE_VALUE CtcRunMode;
+    }
+
+
 }

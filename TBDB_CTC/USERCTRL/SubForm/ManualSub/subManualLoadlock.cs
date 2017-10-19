@@ -330,7 +330,7 @@ namespace TBDB_CTC.UserCtrl.SubForm.ManualSub
         private void btnHomeStop_Click(object sender, EventArgs e)
         {
             if (!ShowDialog()) return;
-            Loadlock.HomeStop(nModuleID);
+           // Loadlock.HomeStop(nModuleID);
         }
 
         private void subManualLoadlock_Leave(object sender, EventArgs e)

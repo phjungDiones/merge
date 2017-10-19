@@ -1,6 +1,7 @@
 ﻿using CJ_Controls.Communication.QuadraVTM4;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -25,7 +26,11 @@ namespace TBDB_Handler.SEQ
         Compl_LL_Move_Pickup,
 
         Start_VTM_Pickup_LL,
+        Set_Pumping_Pickup_LL,
+        Door_Open_Pickup_LL,
+        Check_Open_Pickup_LL,
         Move_VTM_Pickup_LL,
+        Move_VTM_Pickup_LL_Check,
         Move_VTM_Pickup_LL_Stretch,
         Move_VTM_Pickup_LL_Stretch_Check,
         Move_VTM_Pickup_LL_HandUp,
@@ -33,12 +38,19 @@ namespace TBDB_Handler.SEQ
         Move_VTM_Pickup_LL_Fold,
         Move_VTM_Pickup_LL_Fold_Check,
         Compl_VTM_Pickup_LL,
+        Door_Close_Pickup_LL,
+        Check_Close_Pickup_LL,
         End_VTM_Pickup_LL,
 
         //VTM Load -> PMC
         Start_VTM_Load_PMC,
+        Set_Pumping_Load_PMC,
+        Door_Open_Load_PMC,
+        Check_Open_Load_PMC,
         Move_VTM_Load_PMC,
         Compl_VTM_Load_PMC,
+        Door_Close_Load_PMC,
+        Check_Close_Load_PMC,
         End_VTM_Load_PMC,
 
         //Set Process
@@ -47,8 +59,13 @@ namespace TBDB_Handler.SEQ
 
         //VTM Unload -> PMC
         Start_VTM_Unload_PMC,
+        Set_Pumping_Unload_PMC,
+        Door_Open_Unload_PMC,
+        Check_Open_Unload_PMC,
         Move_VTM_Unload_PMC,
         Compl_VTM_Unload_PMC,
+        Door_Close_Unload_PMC,
+        Check_Close_Unload_PMC,
         End_VTM_Unload_PMC,
 
         //Unload LL
@@ -57,7 +74,11 @@ namespace TBDB_Handler.SEQ
         Compl_LL_Move_Place,
 
         Start_VTM_Place_LL,
+        Set_Pumping_Place_LL,
+        Door_Open_Place_LL,
+        Check_Open_Place_LL,
         Move_VTM_Place_LL,
+        Move_VTM_Place_LL_Check,
         Move_VTM_Place_LL_Stretch,
         Move_VTM_Place_LL_Stretch_Check,
         Move_VTM_Place_LL_HandDown,
@@ -65,6 +86,8 @@ namespace TBDB_Handler.SEQ
         Move_VTM_Place_LL_Fold,
         Move_VTM_Place_LL_Fold_Check,
         Compl_VTM_Place_LL,
+        Door_Close_Place_LL,
+        Check_Close_Place_LL,
         End_VTM_Place_LL,
     }
 
@@ -102,7 +125,8 @@ namespace TBDB_Handler.SEQ
         LOAD_PMC,
         UNLOAD_PMC,
         EXCHANGE_PMC,
-        LOADLOCK_LOAD,        
+        LOADLOCK_LOAD,   
+        UNLOAD_BONDED,
         MAX,
     }
 
@@ -130,7 +154,7 @@ namespace TBDB_Handler.SEQ
         public delegate void procVTMErrorStopEvent(int nErrSafty);
         public event procVTMErrorStopEvent errSaftyStopEvent;
 
-        public PMC_RECIPE pmc_Rcp = new PMC_RECIPE(); //레시피 연결하자
+
 
         int nSeq = (int)UNIT.VTM_ROBOT;
         //매뉴얼 Seq Case
@@ -140,22 +164,15 @@ namespace TBDB_Handler.SEQ
         ARM Working_Arm = ARM.UPPER;
 
         string strLog = "";
-
         ReqStatus_VTM ReqStatus = ReqStatus_VTM.NONE;
         ArmLoad ArmStatus = ArmLoad.NONE;
-        ProcInfoBond PmcInfo;
+
+        fn fRet = fn.busy;
+        short status = 0;
 
         public ProcVTM()
         {
-            pmc_Rcp.bUseVision = true;
-            pmc_Rcp.dPressure = 400;
-            pmc_Rcp.dPressingTime = 1000;
-            pmc_Rcp.dUpperTemp = 1700;
-            pmc_Rcp.dLowerTemp = 1000;
-            pmc_Rcp.dAPC_Pos = 1000;
-            pmc_Rcp.dCh_1 = 640;
-            pmc_Rcp.dCh_2 = 560;
-            pmc_Rcp.dCh_3 = 800;
+
         }
 
 
@@ -224,6 +241,14 @@ namespace TBDB_Handler.SEQ
 
             alwaysCheck();
 
+            RUN_MODE RunMode = RecipeMgr.Inst.TempRcp.eRunMode; //현재 레시피 
+            if (RunMode == RUN_MODE.ONLY_LAMI)
+            {
+                //현재 진행 모드가 라미 모드일 경우 진행하지 않기 위함
+                return;
+            }
+
+
             switch (seqCase)
             {
                 case CaseVTM.Initialze:
@@ -233,7 +258,7 @@ namespace TBDB_Handler.SEQ
                     break;
 
                 case CaseVTM.Check_Status:
-                    
+
                     //웨이퍼 로딩 상태 확인
                     ReqStatus = CheckStatusReqeust();
                     if(ReqStatus == ReqStatus_VTM.LOADLOCK_LOAD)
@@ -253,6 +278,12 @@ namespace TBDB_Handler.SEQ
                         //Unload Seq
                         Working_Arm = ARM.LOWER;
                         nextSeq(CaseVTM.Start_VTM_Unload_PMC);
+                    }
+                    else if (ReqStatus == ReqStatus_VTM.UNLOAD_BONDED)
+                    {
+                        Working_Arm = ARM.LOWER;
+                       
+                        nextSeq(CaseVTM.Check_LL_Place);
                     }
                     else
                     {
@@ -276,14 +307,16 @@ namespace TBDB_Handler.SEQ
 
                 case CaseVTM.Move_LL_Move_Pickup:
                     //Pickup LL
-                    GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos3);
+                    //GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos3);
+                    GlobalSeq.autoRun.procLoadlock.MoveExit((int)MotionPos.Pos3);
 
                     strLog = string.Format("Loadlock VTM Pickup Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
                     break;
 
                 case CaseVTM.Compl_LL_Move_Pickup:
-                    if (GlobalSeq.autoRun.procLoadlock.CheckComplete() != fn.success) return;
+                    if ( GlobalSeq.autoRun.procLoadlock.CheckMoveDone((int)MotionPos.Pos3) == false) return;
+
 
                     strLog = string.Format("Loadlock VTM Pickup Move End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
@@ -291,7 +324,40 @@ namespace TBDB_Handler.SEQ
 
 
                 case CaseVTM.Start_VTM_Pickup_LL:
+
                     break;
+
+                case CaseVTM.Set_Pumping_Pickup_LL:
+
+                    GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(CTC_STATUS.CTCRunMode, ref status);
+                    if (status == (short)CTC_RunMode.ModeAtm) break;
+
+                    //Loadlock Pumping 상태로 만든다.
+                    fRet = GlobalSeq.autoRun.procLoadlock.Loadlock_Pumping();
+                    if (fRet == fn.success) break;
+                    else if (fRet == fn.busy) return;
+                    else
+                    {
+                        //Error
+                        return;
+                    }
+
+                case CaseVTM.Door_Open_Pickup_LL:
+
+                    //VTM Door Open
+                    GlobalVariable.io.VTM_Door_Open();
+                    break;
+
+                case CaseVTM.Check_Open_Pickup_LL:
+
+                    //VTM Door Open Check
+                    if(GlobalVariable.io.Check_VTM_Door_Open() == false )
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
+                    break;
+
 
                 case CaseVTM.Move_VTM_Pickup_LL:
 
@@ -299,13 +365,21 @@ namespace TBDB_Handler.SEQ
                     Working_Arm = ARM.UPPER;
 
                     //VTM Pickup/Place 시 부분동작으로 변경 함 
+
+                    if (GlobalSeq.autoRun.procLoadlock.SetBlock() == false) return;
                     MoveRobot(Working_Stage, Working_Arm, true); //Arm Fold 이동
-                    
+                    //MoveRobot(Working_Stage, Working_Arm, false); //Arm Fold 이동
+
                     strLog = string.Format("VTM Robot Pickup Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
                     break;
-                  
+
+                case CaseVTM.Move_VTM_Pickup_LL_Check:
+                    if (CheckComplete() != fn.success) return;
+                    break;
+
                 case CaseVTM.Move_VTM_Pickup_LL_Stretch:
+                    //if (CheckComplete() != fn.success) return;
                     MoveRobot_Stretch(Working_Stage, Working_Arm, UPDOWN_POS.DOWN);
                     break;
 
@@ -327,6 +401,7 @@ namespace TBDB_Handler.SEQ
 
                 case CaseVTM.Move_VTM_Pickup_LL_Fold_Check:
                     if (CheckComplete() != fn.success) return;
+                    GlobalSeq.autoRun.procLoadlock.UnBlock();
                     break;
         
                 case CaseVTM.Compl_VTM_Pickup_LL:
@@ -335,10 +410,29 @@ namespace TBDB_Handler.SEQ
                     AddMessage(strLog);
                     break;
 
+                case CaseVTM.Door_Close_Pickup_LL:
+
+                    //VTM Door Close
+                    GlobalVariable.io.VTM_Door_Close();
+
+                    break;
+
+                case CaseVTM.Check_Close_Pickup_LL:
+
+                    //VTM Door Close Check
+                    if (GlobalVariable.io.Check_VTM_Door_Close() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
+                    break;
+
                 case CaseVTM.End_VTM_Pickup_LL:               
-                    GlobalVariable.interlock.bLLMoving = false;
                     GlobalVariable.seqShared.LoadingLoadLockToVtm(WaferType.CARRIER, (HAND)Working_Arm);
                     //GlobalVariable.seqShared.LoadingLoadLockToVtm(WaferType.DEVICE, (HAND)Working_Arm);
+
+                    GlobalVariable.interlock.bLLMoving = false;
+                    GlobalVariable.interlock.bLLUsed_VTM = false; //Loadlock 사용 해제 Flag
 
                     //Loadlock 픽업 후 리턴
                     nextSeq(CaseVTM.Check_Interlock);
@@ -348,6 +442,54 @@ namespace TBDB_Handler.SEQ
                 //VTM Load PMC
                 /////////////////////////////////
                 case CaseVTM.Start_VTM_Load_PMC:
+
+                    strLog = string.Format("VTM PMC Load Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
+                    AddMessage(strLog);
+
+                    break;
+
+                case CaseVTM.Set_Pumping_Load_PMC:
+
+                    GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(CTC_STATUS.CTCRunMode, ref status);
+                    if (status == (short)CTC_RunMode.ModeAtm) break;
+
+                    //PMC에 Vacuum 상태를 확인한다.
+                    fRet = GlobalSeq.autoRun.procLoadlock.VTM_Pumping();
+                    if (fRet == fn.success) break;
+                    else if (fRet == fn.busy) return;
+                    else
+                    {
+                        //Error
+                        return;
+                    }
+
+                ////Convectron Sensor On Check
+                //if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_1) == true
+                //    && GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_2) == true)
+                //{
+                //    //조건이 맞으면 다음 케이스로 넘긴다
+                //    break;
+                //}
+                //else
+                //{
+                //    //Error
+                //    return;
+                //}
+
+                case CaseVTM.Door_Open_Load_PMC:
+
+                    //PMC Door Open 
+                    GlobalVariable.io.BD_Door_Open();
+                    break;
+
+                case CaseVTM.Check_Open_Load_PMC:
+
+                    //PMC Door Open Check 
+                    if (GlobalVariable.io.Check_BD_Door_Open() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
                     break;
 
                 case CaseVTM.Move_VTM_Load_PMC:
@@ -357,22 +499,40 @@ namespace TBDB_Handler.SEQ
                 case CaseVTM.Compl_VTM_Load_PMC:
                     break;
 
+                case CaseVTM.Door_Close_Load_PMC:
+
+                    //PMC Door Close
+                    GlobalVariable.io.BD_Door_Close();
+
+                    break;
+
+                case CaseVTM.Check_Close_Load_PMC:
+
+                    //PMC Door Close Check
+                    if (GlobalVariable.io.Check_BD_Door_Close() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
+                    break;
+
                 case CaseVTM.End_VTM_Load_PMC:
                     GlobalVariable.seqShared.LoadingVtmToBonder((HAND)Working_Arm);
+
+                    strLog = string.Format("VTM PMC Load Move End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
+                    AddMessage(strLog);
                     break;
 
                 case CaseVTM.Set_Recipe:
 
-                    if (SetRecipe(pmc_Rcp) != fn.success) return;
-
-                    strLog = string.Format("PMC Set Recipe -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
-                    AddMessage(strLog);
                     break;
 
                 case CaseVTM.Start_Process:
-                    if (Process_PMC() != fn.success) return;
 
-                    strLog = string.Format("PMC Process End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
+                    //Set Process Start
+                    GlobalVariable.interlock.bBondingProcess = true;
+
+                    strLog = string.Format("Pmc Process On -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
 
                     nextSeq(CaseVTM.Check_Interlock);
@@ -388,6 +548,38 @@ namespace TBDB_Handler.SEQ
                     AddMessage(strLog);
                     break;
 
+                case CaseVTM.Set_Pumping_Unload_PMC:
+
+                    GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(CTC_STATUS.CTCRunMode, ref status);
+                    if (status == (short)CTC_RunMode.ModeAtm) break;
+
+                    //PMC에 Vacuum 상태를 확인한다.
+                    fRet = GlobalSeq.autoRun.procLoadlock.VTM_Pumping();
+                    if (fRet == fn.success) break;
+                    else if (fRet == fn.busy) return;
+                    else
+                    {
+                        //Error
+                        return;
+                    }
+
+                case CaseVTM.Door_Open_Unload_PMC:
+
+                    //PMC Door Open
+                    GlobalVariable.io.BD_Door_Open();
+
+                    break;
+
+                case CaseVTM.Check_Open_Unload_PMC:
+
+                    //PMC Door Open Check
+                    if (GlobalVariable.io.Check_BD_Door_Open() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
+                    break;
+
                 case CaseVTM.Move_VTM_Unload_PMC:
                     Working_Arm = ARM.LOWER; //언로드 시 Lower Hand
                     if (Unload_PMC(Working_Arm) != fn.success) return;
@@ -399,35 +591,50 @@ namespace TBDB_Handler.SEQ
                 case CaseVTM.Compl_VTM_Unload_PMC:
                     break;
 
+                case CaseVTM.Door_Close_Unload_PMC:
+
+                    //Door Close
+                    GlobalVariable.io.BD_Door_Close();
+                    break;
+
+                case CaseVTM.Check_Close_Unload_PMC:
+
+                    //Door Close Check
+                    if (GlobalVariable.io.Check_BD_Door_Close() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
+                    break;
+           
                 case CaseVTM.End_VTM_Unload_PMC:
                     
                     //데이터 이동
                     GlobalVariable.seqShared.LoadingBonderToVtm((HAND)Working_Arm);
 
-                    if (ReqStatus == ReqStatus_VTM.EXCHANGE_PMC)
-                    {
-                        //웨이퍼 교체일 경우 언로드 후 다시 PMC로드 케이스로 보낸다.
-                        nextSeq(CaseVTM.Start_VTM_Load_PMC);
-                        return;
-                    }
-                    break;
+                    nextSeq(CaseVTM.Check_Interlock);
+                    return;
 
                 case CaseVTM.Check_LL_Place:
                     //Loadlock이 동작 중인지 확인
                     if (GlobalVariable.interlock.bLLMoving) return;
                     GlobalVariable.interlock.bLLMoving = true;
+                    GlobalVariable.interlock.bLLUsed_VTM = true; //Loadlock 사용 Flag 
+
                     break;
 
                 case CaseVTM.Move_LL_Move_Place:
                     //BD Place -> Unload
-                    GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos1);
+                    //GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos1);
+                    GlobalSeq.autoRun.procLoadlock.MoveExit((int)MotionPos.Pos1);
 
                     strLog = string.Format("Loadlock VTM Place Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
                     break;
 
                 case CaseVTM.Compl_LL_Move_Place:
-                    if (GlobalSeq.autoRun.procLoadlock.CheckComplete() != fn.success) return;
+                    // if (GlobalSeq.autoRun.procLoadlock.CheckComplete() != fn.success) return;
+                    if (GlobalSeq.autoRun.procLoadlock.CheckMoveDone((int)MotionPos.Pos1) == false) return;
 
                     strLog = string.Format("Loadlock VTM Place Move End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
@@ -441,16 +648,55 @@ namespace TBDB_Handler.SEQ
                     }
                     break;
 
+                case CaseVTM.Set_Pumping_Place_LL:
+
+                    GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(CTC_STATUS.CTCRunMode, ref status);
+                    if (status == (short)CTC_RunMode.ModeAtm) break;
+
+                    //Loadlock Pumping 상태로 만든다.
+                    fRet = GlobalSeq.autoRun.procLoadlock.Loadlock_Pumping();
+                    if (fRet == fn.success) break;
+                    else if (fRet == fn.busy) return;
+                    else
+                    {
+                        //Error
+                        return;
+                    }
+
+                case CaseVTM.Door_Open_Place_LL:
+
+                    //VTM Door Open
+                    GlobalVariable.io.VTM_Door_Open();
+
+                    break;
+
+                case CaseVTM.Check_Open_Place_LL:
+
+                    //VTM Door Open Check 
+                    if (GlobalVariable.io.Check_VTM_Door_Open() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
+                    break;
+
                 case CaseVTM.Move_VTM_Place_LL:
                     Working_Stage = VtmStage.Bonded;
+                    if (GlobalSeq.autoRun.procLoadlock.SetBlock() == false) return;
+                    //MoveRobot(Working_Stage, Working_Arm, false); 
+
                     MoveRobot(Working_Stage, Working_Arm, true); //Hand Fold 이동
 
                     strLog = string.Format("VTM Robot Place Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
                     break;
 
+                case CaseVTM.Move_VTM_Place_LL_Check:
+                    if (CheckComplete() != fn.success) return;
+                    break;
+
                 case CaseVTM.Move_VTM_Place_LL_Stretch:
-                    MoveRobot_Stretch(Working_Stage, Working_Arm, UPDOWN_POS.UP);
+                    MoveRobot_Stretch(Working_Stage, Working_Arm, UPDOWN_POS.UP);                  
                     break;
 
                 case CaseVTM.Move_VTM_Place_LL_Stretch_Check:
@@ -471,6 +717,7 @@ namespace TBDB_Handler.SEQ
 
                 case CaseVTM.Move_VTM_Place_LL_Fold_Check:
                     if (CheckComplete() != fn.success) return;
+                    GlobalSeq.autoRun.procLoadlock.UnBlock();
                     break;
 
                 case CaseVTM.Compl_VTM_Place_LL:                   
@@ -478,16 +725,55 @@ namespace TBDB_Handler.SEQ
                     AddMessage(strLog);
                     break;
 
+                case CaseVTM.Door_Close_Place_LL:
+
+                    //VTM Door Close
+                    GlobalVariable.io.VTM_Door_Close();
+                    break;
+
+                case CaseVTM.Check_Close_Place_LL:
+
+                    //VTM Door Close Check
+                    if (GlobalVariable.io.Check_VTM_Door_Close() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
+                    break;
+
+
                 case CaseVTM.End_VTM_Place_LL:
                     //데이터 이동
                     GlobalVariable.seqShared.LoadingVtmToLoadlock(WaferType.BONDED, (HAND)Working_Arm);
                     GlobalVariable.interlock.bLLMoving = false;
-                    nextSeq(CaseVTM.Check_Interlock);
+
+                    //본딩 완료 된 웨이퍼 LL에 언로딩 하고
+                    //LL에 투입된 웨이퍼 있는지 확인 
+                    //있으면 Pickup 하자, Exchange
+
+                    if (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.DEVICE) == true
+                        && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.CARRIER) == true
+                        && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == false)
+                    {
+                        //Pickup Loadlock
+                        Working_Arm = ARM.UPPER;
+                        nextSeq(CaseVTM.Check_LL_Pickup);
+                        return;
+                    }
+                    else
+                    {
+                        //Loadlock 사용 해제
+                        GlobalVariable.interlock.bLLUsed_VTM = false;
+                        nextSeq(CaseVTM.Check_Interlock);
+                        return;
+                    }
                     return;
             }
             nSeqNo++;
         }
 
+
+        #region MoveFunc
 
         public void MoveRobot(VtmStage stage, ARM _Arm, bool bHandFold = false)
         {
@@ -506,6 +792,7 @@ namespace TBDB_Handler.SEQ
                 else
                 {
                     VtmRobot.MovePlace((int)stage, nSlot, _Arm);
+                    Debug.WriteLine("ProcVTM.cs MoveRobot Stage=" + stage.ToString() + ", nSlot=" + nSlot.ToString() + ", arm=" + _Arm.ToString());
                 }    
             }   
         }
@@ -534,7 +821,6 @@ namespace TBDB_Handler.SEQ
             VtmRobot.MoveZAxisDown((int)stage, nSlot, _Arm);
         }
 
-
         public fn CheckComplete()
         {
             if( VtmRobot.CheckComplete() )
@@ -561,26 +847,37 @@ namespace TBDB_Handler.SEQ
 
             if (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.DEVICE) == true
                 && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.CARRIER) == true
-                && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == false)
+                && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == false
+                && GlobalVariable.seqShared.IsInVTM(HAND.LOWER) == false
+                && GlobalVariable.interlock.bLLUsed_ATM == false)
             {
                 //Upper Arm에 웨이퍼가 없고 loadlock에 웨이퍼 로드 상태일 경우 
                 //Loadlock Pickup
                 Status = ReqStatus_VTM.LOADLOCK_LOAD;
             }
-            else if (GlobalVariable.WaferInfo.bPmcUnload
+            else if (GlobalVariable.WaferInfo.bPmcUnload == true
                 && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == false
                 && GlobalVariable.seqShared.IsInBonder() == true
-                && GlobalVariable.seqShared.IsInVTM(HAND.LOWER) == false)
+                && GlobalVariable.seqShared.IsInVTM(HAND.LOWER) == false
+                && GlobalVariable.interlock.bBondingProcess == false)
             {
                 //Wafer Unload Req
                 Status = ReqStatus_VTM.UNLOAD_PMC;
             }
-            else if (GlobalVariable.WaferInfo.bPmcLoad
+            else if (GlobalVariable.WaferInfo.bPmcLoad == false
                 && GlobalVariable.seqShared.IsInBonder() == false
-                && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == true)
+                && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == true
+                && GlobalVariable.interlock.bBondingProcess == false)
             {
                 //Upper Arm에 웨이퍼 로드 상태일경우 
                 Status = ReqStatus_VTM.LOAD_PMC;
+            }
+            else if (GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == false
+                && GlobalVariable.seqShared.IsInVTM(HAND.LOWER) == true
+                && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == false
+                && GlobalVariable.interlock.bLLUsed_ATM == false)
+            {
+                Status = ReqStatus_VTM.UNLOAD_BONDED;
             }
             else
             {
@@ -593,7 +890,9 @@ namespace TBDB_Handler.SEQ
 
             if(GlobalVariable.seqShared.IsInLoadLock((int)WaferType.DEVICE) == true
                 && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.CARRIER) == true
-                && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == false)
+                && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == false
+                && GlobalVariable.seqShared.IsInVTM(HAND.LOWER) == false
+                && GlobalVariable.interlock.bLLUsed_ATM == false)
             {
                 //Upper Arm에 웨이퍼가 없고 loadlock에 웨이퍼 로드 상태일 경우 
                 //Loadlock Pickup
@@ -602,17 +901,26 @@ namespace TBDB_Handler.SEQ
             else if (Pmc.GetPIO(PMC_PIO.SendReq) == 1 
                 && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == false
                 && GlobalVariable.seqShared.IsInBonder() == true
-                && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == false)
+                && GlobalVariable.seqShared.IsInVTM(HAND.LOWER) == false
+                && GlobalVariable.interlock.bBondingProcess == false)
             {
                 //Wafer Unload Req
                 Status = ReqStatus_VTM.UNLOAD_PMC;
             }
             else if(Pmc.GetPIO(PMC_PIO.RecvReq) == 1
                 && GlobalVariable.seqShared.IsInBonder() == false
-                && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == true)
+                && GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == true
+                && GlobalVariable.interlock.bBondingProcess == false)
             {
                 //Upper Arm에 웨이퍼 로드 상태일경우 
                 Status = ReqStatus_VTM.LOAD_PMC;
+            }
+            else if (GlobalVariable.seqShared.IsInVTM(HAND.UPPER) == false
+                && GlobalVariable.seqShared.IsInVTM(HAND.LOWER) == true
+                && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == false
+                && GlobalVariable.interlock.bLLUsed_ATM == false)
+            {
+                Status = ReqStatus_VTM.UNLOAD_BONDED;
             }
             else
             {
@@ -622,55 +930,7 @@ namespace TBDB_Handler.SEQ
 
             return Status;
         }
-
-        //기존 시퀀스
-        //        public ReqStatus_VTM CheckStatusReqeust()
-        //        {
-        //            ReqStatus_VTM Status;
-
-        //#if !_REAL_MC
-
-        //            if (GlobalVariable.WaferInfo.bPmcLoad
-        //                && GlobalVariable.WaferInfo.bWaferLL1 == true
-        //                && GlobalVariable.WaferInfo.bWaferLL2 == true
-        //                && GlobalVariable.WaferInfo.bWaferPmc == false)
-        //            {
-        //                Status = ReqStatus_VTM.LOAD_PMC;
-        //            }
-        //            else if (GlobalVariable.WaferInfo.bPmcUnload
-        //                && GlobalVariable.WaferInfo.bWaferBD == false
-        //                && GlobalVariable.WaferInfo.bWaferPmc == true)
-        //            {
-        //                Status = ReqStatus_VTM.UNLOAD_PMC;
-        //            }
-        //            else
-        //            {
-        //                Status = ReqStatus_VTM.NONE;
-        //            }
-
-        //            return Status;
-        //#endif
-
-        //            if (Pmc.GetPIO(PMC_PIO.RecvReq) == 1
-        //                && GlobalVariable.WaferInfo.bWaferLL1 == true
-        //                && GlobalVariable.WaferInfo.bWaferLL2 == true)
-        //            {
-        //                Wafer Load Seq
-        //                Status = ReqStatus_VTM.LOAD_PMC;
-        //            }
-        //            else if (Pmc.GetPIO(PMC_PIO.SendReq) == 1 && GlobalVariable.WaferInfo.bWaferBD == false)
-        //            {
-        //                Wafer Unload Req
-        //                Status = ReqStatus_VTM.UNLOAD_PMC;
-        //            }
-        //            else
-        //            {
-        //                요청이 없을 경우
-        //                Status = ReqStatus_VTM.NONE;
-        //            }
-
-        //            return Status;
-        //        }
+        #endregion
 
 
         #region Interface_Load
@@ -970,6 +1230,7 @@ namespace TBDB_Handler.SEQ
                     Pmc.SetVTMRobot(CTC_VTM_ROBOT.RobotMoving, false);
 
                     Pmc.SetPIO(CTC_PIO.RecvStart, false);
+                    Pmc.SetPIO(CTC_PIO.RecvAble, false); //Recive Able On
                     Pmc.SetPIO(CTC_PIO.SendComplete, false);
                     Pmc.SetPIO(CTC_PIO.RecvComplete, true); //Recive Compl On
                     break;
@@ -989,6 +1250,7 @@ namespace TBDB_Handler.SEQ
                 case 120:
                     if (Pmc.GetPIO(PMC_PIO.SendComplAck) == 0)
                     {
+                        Pmc.SetPIO(CTC_PIO.RecvStart, false);
                         break;
                     }
                     else
@@ -1005,289 +1267,6 @@ namespace TBDB_Handler.SEQ
 
             nSeq_PMC[nSeq]++;
             return fn.busy;
-        }
-
-        #endregion
-
-        #region Interface_Manual
-
-        public fn Init_PMC()
-        {
-            int nSeq = (int)Seq_PMC.PMC_Init;
-
-            switch (nSeq_PMC[nSeq])
-            {
-                case 0:
-                    break;
-
-                case 10:
-                    Pmc.SetManualCmd(CTC_MANUAL.InitReady, false);
-                    Pmc.SetManualCmd(CTC_MANUAL.InitCompleteAck, false);
-                    Pmc.SetManualCmd(CTC_MANUAL.InitReq, true); //Init Req On
-                    return fn.busy;
-
-                case 20:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.InitAck) == 1)
-                    {
-                        Pmc.SetManualCmd(CTC_MANUAL.InitReady, true); //Ready On
-                        break;
-                    }
-                    else
-                    {
-                        //타임 아웃 체크
-                    }
-                    return fn.busy;
-
-                case 30:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.InitStart) == 1)
-                    {
-                        break;
-                    }
-                    else
-                    { 
-                        //타임 아웃 체크
-                    }
-                    return fn.busy;
-
-                case 40:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.InitCompl) == 1
-                        && Pmc.GetManualCmd(PMC_MANUAL.InitAck) == 0
-                        && Pmc.GetManualCmd(PMC_MANUAL.InitStart) == 0 )
-                    {
-                        Pmc.SetManualCmd(CTC_MANUAL.InitReq, false); //Init Req Off
-                        Pmc.SetManualCmd(CTC_MANUAL.InitReady, false); //Ready Off
-                        Pmc.SetManualCmd(CTC_MANUAL.InitCompleteAck, true); //Compl Ack On
-                        break;
-                    }
-                    else
-                    {
-
-                    }
-                    return fn.busy;
-
-                case 50:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.InitCompl) == 0)
-                    {
-                        Pmc.SetManualCmd(CTC_MANUAL.InitCompleteAck, false); //Compl Ack Off
-                        break;
-                    }
-                    else
-                    {
-
-                    }
-                    return fn.busy;
-
-                case 60:
-                    break;
-
-
-                case 70:
-                    //동작 완료
-                    return fn.success;
-            }
-
-            nSeq_PMC[nSeq]++;
-            return fn.busy;
-        }
-        
-        public fn Standby_PMC()
-        {
-            int nSeq = (int)Seq_PMC.PMC_Standby;
-
-            switch (nSeq_PMC[nSeq])
-            {
-                case 0:
-                    break;
-
-                case 10:
-                    Pmc.SetManualCmd(CTC_MANUAL.StandbyReady, false);
-                    Pmc.SetManualCmd(CTC_MANUAL.StandbyCompleteAck, false);
-                    Pmc.SetManualCmd(CTC_MANUAL.StandbyReq, true);
-                    return fn.busy;
-
-                case 20:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.StandbyAck) == 1)
-                    {
-                        Pmc.SetManualCmd(CTC_MANUAL.StandbyReady, true); 
-                        break;
-                    }
-                    else
-                    {
-                        //타임 아웃 체크
-                    }
-                    return fn.busy;
-
-                case 30:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.StandbyStart) == 1)
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        //타임 아웃 체크
-                    }
-                    return fn.busy;
-
-                case 40:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.StandbyCompl) == 1
-                        && Pmc.GetManualCmd(PMC_MANUAL.StandbyAck) == 0
-                        && Pmc.GetManualCmd(PMC_MANUAL.StandbyStart) == 0)
-                    {
-                        Pmc.SetManualCmd(CTC_MANUAL.StandbyReq, false); 
-                        Pmc.SetManualCmd(CTC_MANUAL.StandbyReady, false); //Ready Off
-                        Pmc.SetManualCmd(CTC_MANUAL.StandbyCompleteAck, true); //Compl Ack On
-                        break;
-                    }
-                    else
-                    {
-
-                    }
-                    return fn.busy;
-
-                case 50:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.StandbyCompl) == 0)
-                    {
-                        Pmc.SetManualCmd(CTC_MANUAL.StandbyCompleteAck, false); //Compl Ack Off
-                        break;
-                    }
-                    else
-                    {
-
-                    }
-                    return fn.busy;
-
-                case 60:
-                    break;
-
-
-                case 70:
-                    //동작 완료
-                    return fn.success;
-            }
-
-            nSeq_PMC[nSeq]++;
-            return fn.busy;
-        }
-
-
-        public fn Process_PMC()
-        {
-#if !_REAL_MC
-            return fn.success;
-#endif
-
-            int nSeq = (int)Seq_PMC.PMC_Process;
-
-            switch (nSeq_PMC[nSeq])
-            {
-                case 0:
-                    break;
-
-                case 10:
-                    Pmc.SetManualCmd(CTC_MANUAL.ProcessReady, false);
-                    Pmc.SetManualCmd(CTC_MANUAL.ProcessCompleteAck, false);
-                    Pmc.SetManualCmd(CTC_MANUAL.ProcessReq, true);
-                    return fn.busy;
-
-                case 20:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.ProcAck) == 1)
-                    {
-                        Pmc.SetManualCmd(CTC_MANUAL.ProcessReady, true);
-                        break;
-                    }
-                    else
-                    {
-                        //타임 아웃 체크
-                    }
-                    return fn.busy;
-
-                case 30:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.ProcStart) == 1)
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        //타임 아웃 체크
-                    }
-                    return fn.busy;
-
-                case 40:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.ProcCompl) == 1
-                        && Pmc.GetManualCmd(PMC_MANUAL.ProcAck) == 0
-                        && Pmc.GetManualCmd(PMC_MANUAL.ProcStart) == 0)
-                    {
-                        Pmc.SetManualCmd(CTC_MANUAL.ProcessReq, false);
-                        Pmc.SetManualCmd(CTC_MANUAL.ProcessReady, false); //Ready Off
-                        Pmc.SetManualCmd(CTC_MANUAL.ProcessCompleteAck, true); //Compl Ack On
-                        break;
-                    }
-                    else
-                    {
-
-                    }
-                    return fn.busy;
-
-                case 50:
-                    if (Pmc.GetManualCmd(PMC_MANUAL.ProcCompl) == 0)
-                    {
-                        Pmc.SetManualCmd(CTC_MANUAL.ProcessCompleteAck, false); //Compl Ack Off
-                        break;
-                    }
-                    else
-                    {
-
-                    }
-                    return fn.busy;
-
-                case 60:
-                    break;
-
-
-                case 70:
-                    //동작 완료
-                    return fn.success;
-            }
-
-            nSeq_PMC[nSeq]++;
-            return fn.busy;
-        }
-
-        public fn SetRecipe(PMC_RECIPE pmc_Rcp)
-        {
-            //레시피 데이터 연결
-            PmcInfo = ProcessMgr.Inst.TempPinfo.listProcBond.Single<ProcInfoBond>(p => p.strProcName == RecipeMgr.Inst.TempRcp.strBondCondition);
-            if (PmcInfo == null) return fn.err;
-
-            Pmc.SetRecipe(CTC_RECIPE.VisionUsed, Convert.ToInt16(PmcInfo.bVisionUse));
-            Pmc.SetRecipe(CTC_RECIPE.Pressure, Convert.ToInt16(PmcInfo.dPressure));
-            Pmc.SetRecipe(CTC_RECIPE.PressingTime, Convert.ToInt16(PmcInfo.dPressTimeSec));
-            Pmc.SetRecipe(CTC_RECIPE.UpperTemp, Convert.ToInt16(PmcInfo.dUpperTemp));
-            Pmc.SetRecipe(CTC_RECIPE.LowerTemp, Convert.ToInt16(PmcInfo.dLowerTemp));
-            Pmc.SetRecipe(CTC_RECIPE.APCPosition, Convert.ToInt16(PmcInfo.dAPCPos));
-            Pmc.SetRecipe(CTC_RECIPE.CH1Backlight, Convert.ToInt16(PmcInfo.dBacklightCH1));
-            Pmc.SetRecipe(CTC_RECIPE.CH2Backlight, Convert.ToInt16(PmcInfo.dBacklightCH2));
-            Pmc.SetRecipe(CTC_RECIPE.CH3Backlight, Convert.ToInt16(PmcInfo.dBacklightCH3));
-
-            //Pmc.SetRecipe(CTC_RECIPE.VisionUsed, Convert.ToInt16(pmc_Rcp.bUseVision));
-            //Pmc.SetRecipe(CTC_RECIPE.Pressure, Convert.ToInt16(pmc_Rcp.dPressure));
-            //Pmc.SetRecipe(CTC_RECIPE.PressingTime, Convert.ToInt16(pmc_Rcp.dPressingTime));
-            //Pmc.SetRecipe(CTC_RECIPE.UpperTemp, Convert.ToInt16(pmc_Rcp.dUpperTemp));
-            //Pmc.SetRecipe(CTC_RECIPE.LowerTemp, Convert.ToInt16(pmc_Rcp.dLowerTemp));
-            //Pmc.SetRecipe(CTC_RECIPE.APCPosition, Convert.ToInt16(pmc_Rcp.dAPC_Pos));
-            //Pmc.SetRecipe(CTC_RECIPE.CH1Backlight, Convert.ToInt16(pmc_Rcp.dCh_1));
-            //Pmc.SetRecipe(CTC_RECIPE.CH2Backlight, Convert.ToInt16(pmc_Rcp.dCh_2));
-            //Pmc.SetRecipe(CTC_RECIPE.CH3Backlight, Convert.ToInt16(pmc_Rcp.dCh_3));
-
-            return fn.success;
-        }
-
-        public fn SetRecipe_Standby(PMC_RECIPE pmc_Rcp)
-        {
-            //Pmc.SetRecipe(CTC_STANDBY.LowerTemp, Convert.ToInt16(pmc_Rcp.dStandby_LowTemp));
-            //Pmc.SetRecipe(CTC_STANDBY.UpperTemp, Convert.ToInt16(pmc_Rcp.dStandby_UpTemp));
-
-            return fn.success;
         }
 
         #endregion

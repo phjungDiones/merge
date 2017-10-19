@@ -7,19 +7,17 @@ using TBDB_CTC.GLOBAL;
 using TBDB_CTC.GUI;
 using TBDB_Handler.THREAD;
 using TBDB_CTC.POPWND;
+using TBDB_Handler.THREAD;
 using System.Data;
-
 namespace TBDB_Handler.GLOBAL
 {
-    
     public static class GlobalVariable
     {
-        
         public static McStage mcState = new McStage();
         public static ManualInfo manualInfo = new ManualInfo();
 
         //Loadlock 모터설정
-        public static LoadlockMotor Loadlock = new LoadlockMotor();
+        public static LoadlockMotor LoadlockMotor = new LoadlockMotor();
         public static WorkModel model = new WorkModel();
         public static WaferInfo WaferInfo = new WaferInfo();
         public static IOManager io = new IOManager();
@@ -29,11 +27,14 @@ namespace TBDB_Handler.GLOBAL
         public static PMC_RECIPE pmc_Rcp = new PMC_RECIPE();
         public static LAMI_RECIPE lami_Rcp = new LAMI_RECIPE();
         public static ALIGNER_RECIPE aligner_Rcp = new ALIGNER_RECIPE();
+
         //Config Data
         public static Config cfg = new Config();
 
         public static SeqShared seqShared = new SeqShared();
 
+        //Pmc Status Interface
+        public static STATUS_INTERFACE Status_Inter = new STATUS_INTERFACE();
 
 
         public static LoginInfo Login = new LoginInfo();
@@ -63,8 +64,9 @@ namespace TBDB_Handler.GLOBAL
         public static frmAlarm fAlarm = null;
         public static frmHistory fHistory = null;
         public static frmRecipe fRcp = null;
-        public static popErrMessage fErr = null;
-        public static frmTestForm fTest = null;
+        public static popErrMessage fErrorPop = null;//밑에랑중복됨
+        public static popErrMessage fErr = null;//위에랑중복됨
+        //public static frmTestForm fTest = null;
         public static frmAlarm fmAlarm = null;
         public static popKeyPad _popKeyPad = null;
     }

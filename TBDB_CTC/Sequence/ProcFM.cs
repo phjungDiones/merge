@@ -226,8 +226,8 @@ namespace TBDB_Handler.SEQ
 
                     //임시 테스트, 웨이퍼 2장만 진행하기 위함
                     //if (nWaferCount >= 2) return;
-                    strLog = seqCase.ToString();
-                    AddMessage(strLog);
+                    //strLog = seqCase.ToString();
+                    //AddMessage(strLog);
                     break;
 
                 case CaseFM.Start_LPM_Load:
@@ -283,9 +283,11 @@ namespace TBDB_Handler.SEQ
 
                 case CaseFM.End_Status_Load_A:
 
+#if _REAL_MC
                     //LPM Load 후 Mapping Flag가 변경되면 완료
                     if (LpmRoot.GetMappingComplete(EFEM.LPMA) == false) return;
                     if (LpmRoot.GetMappingComplete(EFEM.LPMC) == false) return;
+#endif
 
                     bLPM_Load[(int)EFEM.LPMA] = true;
                     bLPM_Load[(int)EFEM.LPMC] = true;
@@ -333,6 +335,25 @@ namespace TBDB_Handler.SEQ
                 case CaseFM.Start_FM_Pickup_LPM:
                     //FM 로봇 상태 확인
                     //FM 로봇 웨이퍼 상태 확인
+                    
+                    //웨이퍼 택타임 측정 시작 시간
+                    if(Working_LPM == EFEM.LPMA)
+                    {
+                        GlobalVariable.seqShared.carrierArray1[GlobalVariable.WaferInfo.nWaferLoadSlot[(int)Working_LPM]].strTotalSt = DateTime.Now.ToString("hh:mm:ss.fff");
+                    }
+                    else if(Working_LPM == EFEM.LPMB)
+                    {
+                        GlobalVariable.seqShared.carrierArray2[GlobalVariable.WaferInfo.nWaferLoadSlot[(int)Working_LPM]].strTotalSt = DateTime.Now.ToString("hh:mm:ss.fff");
+                    }
+                    else if (Working_LPM == EFEM.LPMC)
+                    {
+                        GlobalVariable.seqShared.deviceArray1[GlobalVariable.WaferInfo.nWaferLoadSlot[(int)Working_LPM]].strTotalSt = DateTime.Now.ToString("hh:mm:ss.fff");
+                    }
+                    else if (Working_LPM == EFEM.LPMD)
+                    {
+                        GlobalVariable.seqShared.deviceArray2[GlobalVariable.WaferInfo.nWaferLoadSlot[(int)Working_LPM]].strTotalSt = DateTime.Now.ToString("hh:mm:ss.fff");
+                    }
+
                     break;
 
                 case CaseFM.Move_FM_Pickup_LPM:
@@ -359,7 +380,7 @@ namespace TBDB_Handler.SEQ
 
                 case CaseFM.End_FM_Pickup_LPM:
                     GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(Working_LPM, nWorking_Slot-1, false); //웨이퍼 맵핑 데이터 갱신
-                    GlobalVariable.seqShared.LoadingEfemToFm(efemType, nWorking_Slot, (HAND)Working_Arm);
+                    GlobalVariable.seqShared.LoadingEfemToFm(efemType, nWorking_Slot-1, (HAND)Working_Arm);
 
                     nWaferCount++;
                     break;
@@ -481,10 +502,30 @@ namespace TBDB_Handler.SEQ
 
                 case CaseFM.End_FM_Place_LPM:
 
-                    GlobalVariable.seqShared.LoadingFmToEfem(EFEM_TYPE.A_CARRIER, nWorking_Slot, (HAND)Working_Arm);
+                    GlobalVariable.seqShared.LoadingFmToEfem(EFEM_TYPE.A_CARRIER, nWorking_Slot-1, (HAND)Working_Arm);
 
                     //Wafer Unload 후 Data 변경
                     GlobalSeq.autoRun.prcFM.LpmRoot.SetUnloadSlot(Working_LPM, nWorking_Slot-1, true);
+
+
+
+                    if (Working_LPM == EFEM.LPMA)
+                    {
+                        GlobalVariable.seqShared.carrierArray1[GlobalVariable.WaferInfo.nWaferUnloadSlot[(int)Working_LPM]].strTotalEnd = DateTime.Now.ToString("hh:mm:ss.fff");
+                    }
+                    else if (Working_LPM == EFEM.LPMB)
+                    {
+                        GlobalVariable.seqShared.carrierArray2[GlobalVariable.WaferInfo.nWaferUnloadSlot[(int)Working_LPM]].strTotalEnd = DateTime.Now.ToString("hh:mm:ss.fff");
+                    }
+                    else if (Working_LPM == EFEM.LPMC)
+                    {
+                        GlobalVariable.seqShared.deviceArray1[GlobalVariable.WaferInfo.nWaferUnloadSlot[(int)Working_LPM]].strTotalEnd = DateTime.Now.ToString("hh:mm:ss.fff");
+                    }
+                    else if (Working_LPM == EFEM.LPMD)
+                    {
+                        GlobalVariable.seqShared.deviceArray2[GlobalVariable.WaferInfo.nWaferUnloadSlot[(int)Working_LPM]].strTotalEnd = DateTime.Now.ToString("hh:mm:ss.fff");
+                    }
+
                     nextSeq((int)CaseFM.Initialze);
                     return;
 

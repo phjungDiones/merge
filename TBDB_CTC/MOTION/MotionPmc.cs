@@ -12,6 +12,7 @@ namespace TBDB_Handler.MOTION
     public enum CTC_StatusSig
     {
         HeartBit = 0x0200,
+        FastPumpStatus,
     }
 
     public enum CTC_PIO : short
@@ -147,6 +148,8 @@ namespace TBDB_Handler.MOTION
         UppWaferExist,
         DryPumpOnOffStatus,
         FastPumpStatus,
+        ForeLineConvecSW1Status,
+        ForeLineConvecSW2Status,
     }
 
     public enum PMC_PIO
@@ -167,6 +170,13 @@ namespace TBDB_Handler.MOTION
         MSPUp,
         PinDown,
         PinUp,
+    }
+
+    //PMC Interlock 추가
+    public enum PMC_INTERLOCK
+    {
+        FastPumpOpenClose = 0x830,
+        FastPumpChangeReq,
     }
 
     public enum PMC_MANUAL
@@ -446,6 +456,17 @@ namespace TBDB_Handler.MOTION
         }
 
         public int GetMotor(PMC_MOTOR PMCtoCTC)
+        {
+            int nRet = 0;
+            nRet = GetBit((short)PMCtoCTC);
+            if (nRet < 0)
+            {
+                //Error 
+            }
+            return nRet;
+        }
+
+        public int GetInterlock(PMC_INTERLOCK PMCtoCTC)
         {
             int nRet = 0;
             nRet = GetBit((short)PMCtoCTC);

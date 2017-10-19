@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using TBDB_Handler;
 using TBDB_Handler.GLOBAL;
@@ -107,6 +108,11 @@ namespace TBDB_CTC.Sequence
 
                 case 10:
                     //웨이퍼 확인                  
+                    GlobalVariable.seqShared.stopWatch[(int)UNIT.ALINGER].Restart(); //시간 측정 시작
+
+#if !_REAL_MC
+                    Thread.Sleep(2000);
+#endif
                     break;
 
                 case 15:
@@ -117,11 +123,16 @@ namespace TBDB_CTC.Sequence
                         AlignInfo = ProcessMgr.Inst.TempPinfo.listProcAlign.Single<ProcInfoAlign>(p => p.strProcName == RecipeMgr.Inst.TempRcp.strPreAlignCarrier);                       
                         m_AlignAngle = AlignInfo.dAngle; 
                     }
-                    else
+                    else if(GlobalVariable.seqShared.aligner.waferType == WaferType.DEVICE)
                     {
                         //Device
                         AlignInfo = ProcessMgr.Inst.TempPinfo.listProcAlign.Single<ProcInfoAlign>(p => p.strProcName == RecipeMgr.Inst.TempRcp.strPreAlignDevice);
                         m_AlignAngle = AlignInfo.dAngle;
+                    }
+                    else
+                    {
+                        //Type Error
+                        return;
                     }
 
                     MoveAlign(m_AlignAngle);
@@ -139,11 +150,15 @@ namespace TBDB_CTC.Sequence
 
                 case 30:
                     if (CheckCompl_Align() != fn.success) return;
+
+                    //시간측정 종료
+                    GlobalVariable.seqShared.stopWatch[(int)UNIT.ALINGER].Stop();
+                    GlobalVariable.seqShared.aligner.strAlignTime = GlobalVariable.seqShared.stopWatch[(int)UNIT.ALINGER].Elapsed.ToString(@"hh\:mm\:ss");
                     break;
 
                 case 35:                 
                     //얼라인 완료
-                    GlobalVariable.seqShared.PreAlign();
+                    
                     GlobalVariable.interlock.bAlignMoving = false; //완료
                     nextSeq(0);
                     return;

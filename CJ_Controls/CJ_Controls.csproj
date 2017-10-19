@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;_REAL_MC;</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;_nREAL_MC;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -71,15 +71,15 @@
     </Compile>
     <Compile Include="Communication\EDB2000\Edb2000.cs" />
     <Compile Include="Communication\EDB2000\EraeMotionApi.cs" />
-    <Compile Include="Communication\Global\GlobalDefine.cs" />
-    <Compile Include="Communication\Global\GlobalEvent.cs" />
-    <Compile Include="Communication\Global\GlobalFunction.cs" />
     <Compile Include="Communication\GT2\DL_RS1A_GT2.cs" />
     <Compile Include="Communication\Nano300\Nano300.cs" />
     <Compile Include="Communication\PA300C\Aligner_PA300C.cs" />
     <Compile Include="Communication\QuadraVTM4\CyMechsRobot.cs" />
     <Compile Include="Communication\Sigma_V\Sigma_V.cs" />
     <Compile Include="Communication\TCP_IP_Socket\TCP_IP_Socket.cs" />
+    <Compile Include="Communication\test\GlobalDefine.cs" />
+    <Compile Include="Communication\test\GlobalEvent.cs" />
+    <Compile Include="Communication\test\GlobalFunction.cs" />
     <Compile Include="Communication\Yamatake_SDC15\Yamatake_SDC15.cs" />
     <Compile Include="Communication\YaskawaLoader\COM_Loader_Core.cs">
       <SubType>Component</SubType>

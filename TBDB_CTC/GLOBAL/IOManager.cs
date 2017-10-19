@@ -1,6 +1,7 @@
 ﻿using CJ_Controls;
 using CJ_Controls.DeviceNet;
 using System.Threading;
+using TBDB_Handler.GLOBAL;
 
 namespace TBDB_CTC.GLOBAL
 {
@@ -65,61 +66,68 @@ namespace TBDB_CTC.GLOBAL
         //Pumping,Venting 관련 Input
         public string I_VacuumTm_ConvectronRy_1 = "Vacuum TM Convectron Ry-1";
         public string I_VacuumTm_ConvectronRy_2 = "Vacuum TM Convectron Ry-2";
-
-        public string I_TmMainPump_ValueOpen = "TM Main PUMP Valve Open";
-        public string I_TmMainPump_ValueClose = "TM Main PUMP Valve Close";
-
-        public string I_BonderGate_OpenStatus = "Bonder  Gate Open Status";
-        public string I_BonderGate_CloseStatus = "Bonder Gate Close Status";
-
-        public string I_LoadlockTmGate_OpenStatus = "Load lock TM  Gate Open Status";
-        public string I_LoadlockTmGate_CloseStatus = "Load lock TM  Gate Close Status";
-
         public string I_ChamberTopLID_OpenStatus = "Chamber Top LID Open Status";
         public string I_VacuumTm_AtmSwitch = "Vacuum TM ATM Swtich #1";
 
-        public string I_TMMainPUMP_ValveOpen = "TM Main PUMP Valve Open";
-        public string I_TMMainPUMP_ValveClose = "TM Main PUMP Valve Close";
+        public string I_TM_MainPump_ValueOpen = "TM Main PUMP Valve Open";
+        public string I_TM_MainPump_ValueClose = "TM Main PUMP Valve Close";
 
         public string I_VacuumTM_ATMSwtich1 = "Vacuum TM ATM Swtich #1";
-
-        public string I_VacuumTMConvectron_Ry1 = "Vacuum TM Convectron Ry-1";
-        public string I_VacuumTMConvectrion_Ry2 = "Vacuum TM Convectron Ry-2";
+        public string I_VacuumTM_Convectron_Ry1 = "Vacuum TM Convectron Ry-1";
+        public string I_VacuumTM_Convectron_Ry2 = "Vacuum TM Convectron Ry-2";
 
         public string I_SlowVentGN2_PressureSwitch_1 = "Slow Vent G-N2 Pressure Switch #1";
 
-        public string I_LoadLockConvectronRy_1 = "Load Lock Convectron Ry-1";
-        public string I_LoadLockConvectrionRy_2 = "Load Lock Convectron Ry-2";
-
-        public string I_LoadLockSlotValve_OpenStatus = "L/L Slot Valve Open Status";
-        public string I_LoadLockSlotValve_CloseStatus = "L/L Slot Valve Close Status";
-
-        public string I_LoadLockTopLID_OpenStatus = "Load Lock Top LID Open Status";
-
+        public string I_LoadLock_ConvectronRy_1 = "Load Lock Convectron Ry-1";
+        public string I_LoadLock_ConvectronRy_2 = "Load Lock Convectron Ry-2";
+        public string I_LoadLock_TopLID_OpenStatus = "Load Lock Top LID Open Status";
         public string I_LoadLock_ATMSwtich_1 = "Load Lock ATM Swtich #1";
 
-        public string I_LoadLockDryPump_AlarmStatus = "L/L Dry Pump Alarm Status";
-        public string I_LoadLockDryPump_RunStatus = "L/L Dry Pump Run Status";
+        public string I_LoadLock_DryPump_AlarmStatus = "L/L Dry Pump Alarm Status";
+        public string I_LoadLock_DryPump_RunStatus = "L/L Dry Pump Run Status";
 
+        public string I_LoadLock_MainPump_ValveOpen = "Load Lock Main PUMP Valve Open";
+        public string I_LoadLock_MainPump_ValveClose = "Load Lock Main PUMP Valve Close";
 
-        public string I_LoadLockMainPUMP_ValveOpen = "Load Lock Main PUMP Valve Open";
-        public string I_LoadLockMainPUMP_ValveClose = "Load Lock Main PUMP Valve Close";
 
         //Pumping,Venting 관련 Output
-        public string O_ChamberEqualPressure_VV = "Chamber Equal Pressure V/V";
-        public string O_VacuumTMSlowPump_VV = "Vacuum TM Slow Pump V/V";
-        public string O_VacuumTmmainPump_VV = "Vacuum TM Main Pump V/V";
-        public string O_LoadLockVent_VV = "L/L Vent V/V";
-        public string O_LoadLockDry_pumpOn = "Load Lock Dry pump On";
-        public string O_LoadLockSlowPumping_VV = "L/L Slow Pumping V/V";
-        public string O_LoadLockFastPumping_VV = "L/L Fast Pumping V/V";
+        public string O_Chamber_EqualPressure_VV = "Chamber Equal Pressure V/V";
+        public string O_VacuumTM_SlowPump_VV = "Vacuum TM Slow Pump V/V";
+        public string O_VacuumTM_MainPump_VV = "Vacuum TM Main Pump V/V";
+        public string O_LoadLock_Vent_VV = "L/L Vent V/V";
+        public string O_LoadLock_DryPump_On = "Load Lock Dry pump On";
+        public string O_LoadLock_SlowPumping_VV = "L/L Slow Pumping V/V";
+        public string O_LoadLock_FastPumping_VV = "L/L Fast Pumping V/V";
         public string O_VacuumTmVent_VV = "Vacuum TM Vent V/V";
+
+        //Door IO 관련
+
+        //Bonder Gate
+        public string I_BonderGate_OpenStatus = "Bonder Gate Open Status";
+        public string I_BonderGate_CloseStatus = "Bonder Gate Close Status";
+        public string O_DB_Gate_Open = "BD측 Gate Valve Open";
+        public string O_DB_Gate_Close = "BD측 Gate Valve Open";
+
+        //Loadlock <-> Vtm Gate
+        public string I_Loadlock_VtmGate_OpenStatus = "Load lock TM Gate Open Status";
+        public string I_Loadlock_VtmGate_CloseStatus = "Load lock TM Gate Close Status";
+        public string O_Loadlock_VtmGate_Open = "L/L Gate Valve Open";
+        public string O_Loadlock_VtmGate_Close = "L/L Gate Valve Close";
+
+
+        //Loadlock <-> Atm Gate
+        public string I_LoadLock_AtmGate_OpenStatus = "L/L Slot Valve Open Status";
+        public string I_LoadLock_AtmGate_CloseStatus = "L/L Slot Valve Close Status";
+        public string O_Loadlock_AtmGate_Open = "L/L Gate Slot Valve Open";
+        public string O_Loadlock_AtmGate_Close = "L/L Gate Slot Valve Close";
 
 
         public string O_VtmArmExt_1 = "Extend Enable Station #1";
         public string O_VtmArmExt_2 = "Extend Enable Station #2";
         public string O_VtmArmExt_3 = "Extend Enable Station #3";
         public string O_VtmArmExt_4 = "Extend Enable Station #4";
+        public string O_VtmArmExt_5 = "Extend Enable Station #5";
+
 
 
 
@@ -137,7 +145,7 @@ namespace TBDB_CTC.GLOBAL
 
         public void StartReadIO(Ctrl_DNet_IO_List_View Iolist)
         {
-            cOM_DeviceNet.DNet_IO_List = cOM_DeviceNet_IO_List;            
+            cOM_DeviceNet.DNet_IO_List = cOM_DeviceNet_IO_List;
             cOM_DeviceNet.Open();
 
             //IO_List_View.SetDeviceNet(cOM_DeviceNet);
@@ -210,31 +218,142 @@ namespace TBDB_CTC.GLOBAL
         }
 
 
-        public int VtmArmExt(int nStation, bool bOn)
-        {
-            int nRet = 0;
-            if (nStation == 0)
-                nRet = Write(O_VtmArmExt_1, DNET_IO_TYPE.D_OUTPUT, bOn);
-            else if (nStation == 1)
-                nRet = Write(O_VtmArmExt_2, DNET_IO_TYPE.D_OUTPUT, bOn);
-            else if (nStation == 2)
-                nRet = Write(O_VtmArmExt_3, DNET_IO_TYPE.D_OUTPUT, bOn);
-            else if (nStation == 3)
-                nRet = Write(O_VtmArmExt_4, DNET_IO_TYPE.D_OUTPUT, bOn);
-            else
-                return nRet = - 1;
+        //Door 전용 함수
 
-            return nRet;
+        //Bonder Door
+        public void BD_Door_Open()
+        {
+            WriteOutput(O_DB_Gate_Close, false);
+            WriteOutput(O_DB_Gate_Open, true);
         }
+
+        public void BD_Door_Close()
+        {
+            WriteOutput(O_DB_Gate_Open, false);
+            WriteOutput(O_DB_Gate_Close, true);
+        }
+
+        public bool Check_BD_Door_Open()
+        {
+#if !_REAL_MC
+            return true;
+#endif
+
+            bool bRet = false;
+            if( ReadInput(I_BonderGate_OpenStatus) == true
+                && ReadInput(I_BonderGate_CloseStatus) == false )
+            {
+                bRet = true;
+            }
+            return bRet;
+        }
+
+        public bool Check_BD_Door_Close()
+        {
+#if !_REAL_MC
+            return true;
+#endif
+
+            bool bRet = false;
+            if (ReadInput(I_BonderGate_OpenStatus) == false
+                && ReadInput(I_BonderGate_CloseStatus) == true)
+            {
+                bRet = true;
+            }
+            return bRet;
+        }
+
+
+        //VTM <-> Loadlock Door
+        public void VTM_Door_Open()
+        {
+            WriteOutput(O_Loadlock_VtmGate_Close, false);
+            WriteOutput(O_Loadlock_VtmGate_Open, true);
+        }
+
+        public void VTM_Door_Close()
+        {
+            WriteOutput(O_Loadlock_VtmGate_Open, false);
+            WriteOutput(O_Loadlock_VtmGate_Close, true);
+        }
+
+        public bool Check_VTM_Door_Close()
+        {
+#if !_REAL_MC
+            return true;
+#endif
+
+            bool bRet = false;
+            if (ReadInput(I_Loadlock_VtmGate_CloseStatus) == true
+                && ReadInput(I_Loadlock_VtmGate_OpenStatus) == false)
+            {
+                bRet = true;
+            }
+            return bRet;
+        }
+
+        public bool Check_VTM_Door_Open()
+        {
+#if !_REAL_MC
+            return true;
+#endif
+
+            bool bRet = false;
+            if (ReadInput(I_Loadlock_VtmGate_CloseStatus) == false
+                && ReadInput(I_Loadlock_VtmGate_OpenStatus) == true)
+            {
+                bRet = true;
+            }
+            return bRet;
+        }
+
+        //ATM <-> Loadlock Door
+        public void ATM_Door_Open()
+        {
+            WriteOutput(O_Loadlock_AtmGate_Close, false);
+            WriteOutput(O_Loadlock_AtmGate_Open, true);
+        }
+
+        public void ATM_Door_Close()
+        {
+            WriteOutput(O_Loadlock_AtmGate_Open, false);
+            WriteOutput(O_Loadlock_AtmGate_Close, true);
+        }
+
+        public bool Check_ATM_Door_Close()
+        {
+#if !_REAL_MC
+            return true;
+#endif
+
+            bool bRet = false;
+            if (ReadInput(I_LoadLock_AtmGate_CloseStatus) == true
+                && ReadInput(I_LoadLock_AtmGate_OpenStatus) == false)
+            {
+                bRet = true;
+            }
+            return bRet;
+        }
+
+        public bool Check_ATM_Door_Open()
+        {
+#if !_REAL_MC
+            return true;
+#endif
+
+            bool bRet = false;
+            if (ReadInput(I_LoadLock_AtmGate_CloseStatus) == false
+                && ReadInput(I_LoadLock_AtmGate_OpenStatus) == true)
+            {
+                bRet = true;
+            }
+            return bRet;
+        }
+
 
         public bool ReadFlagTest()
         {
             return cOM_DeviceNet.bTestFalg;
         }
-
-
-
-
-
     }
 }

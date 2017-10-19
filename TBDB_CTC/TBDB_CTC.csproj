@@ -18,7 +18,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;_REAL_MC;</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;_nREAL_MC;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -109,12 +109,6 @@
     <Compile Include="GLOBAL\ProcessMgr.cs" />
     <Compile Include="GLOBAL\Recipe.cs" />
     <Compile Include="GLOBAL\RecipeMgr.cs" />
-    <Compile Include="GUI\frmAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmAccount.Designer.cs">
-      <DependentUpon>frmAccount.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\frmAlarm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,12 +169,6 @@
     <Compile Include="GUI\frmSemiAUto.Designer.cs">
       <DependentUpon>frmSemiAUto.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmTestForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTestForm.Designer.cs">
-      <DependentUpon>frmTestForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Log\CAccDB.cs" />
     <Compile Include="Log\FileIo.cs" />
     <Compile Include="Log\iniUtil.cs" />
@@ -198,9 +186,9 @@
     <Compile Include="MOTION\MotionVtm.cs" />
     <Compile Include="POPWND\Error\ErrorMessageStruct.cs" />
     <Compile Include="POPWND\Error\ff.cs" />
-    <Compile Include="POPWND\Error\Global\Cause_action.cs" />
-    <Compile Include="POPWND\Error\Global\ErrorPopUpmaMassage.cs" />
-    <Compile Include="POPWND\Error\Global\GlobalVariable.cs" />
+    <Compile Include="POPWND\Error\test\Cause_action.cs" />
+    <Compile Include="POPWND\Error\test\ErrorPopUpmaMassage.cs" />
+    <Compile Include="POPWND\Error\test\GlobalVariable.cs" />
     <Compile Include="POPWND\frmSelectItem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +237,7 @@
     <Compile Include="Sequence\ProcLami.cs" />
     <Compile Include="Sequence\ProcLoadlock.cs" />
     <Compile Include="Sequence\ProcPmc.cs" />
+    <Compile Include="Sequence\ProcStatus.cs" />
     <Compile Include="Sequence\ProcVTM.cs" />
     <Compile Include="Thread\AutoRun.cs" />
     <Compile Include="Thread\ManualRun.cs" />
@@ -456,9 +445,6 @@
       <DependentUpon>subRecipeProcLami.cs</DependentUpon>
     </Compile>
     <Compile Include="UTIL\Util.cs" />
-    <EmbeddedResource Include="GUI\frmAccount.resx">
-      <DependentUpon>frmAccount.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmAlarm.resx">
       <DependentUpon>frmAlarm.cs</DependentUpon>
     </EmbeddedResource>
@@ -488,9 +474,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmSemiAUto.resx">
       <DependentUpon>frmSemiAUto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTestForm.resx">
-      <DependentUpon>frmTestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POPWND\frmSelectItem.resx">
       <DependentUpon>frmSelectItem.cs</DependentUpon>
@@ -647,59 +630,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Chamber_Body.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="POPWND\Resources\0.png" />
-    <Content Include="POPWND\Resources\103149-3d-glossy-green-orb-icon-arrows-arrow-circle-refresh.png" />
-    <Content Include="POPWND\Resources\103209-3d-glossy-green-orb-icon-arrows-arrows-rotated.png" />
-    <Content Include="POPWND\Resources\126442-simple-black-square-icon-arrows-arrow-curvy-down.png" />
-    <Content Include="POPWND\Resources\126528-simple-black-square-icon-arrows-hand-pointer1.png" />
-    <Content Include="POPWND\Resources\163_p4.bmp" />
-    <Content Include="POPWND\Resources\1_p1.bmp" />
-    <Content Include="POPWND\Resources\269_p3.bmp" />
-    <Content Include="POPWND\Resources\90.png" />
-    <Content Include="POPWND\Resources\button03.png" />
-    <Content Include="POPWND\Resources\ChangeModel_Down.png" />
-    <Content Include="POPWND\Resources\ChangeModel_Normal.png" />
-    <Content Include="POPWND\Resources\ChangeModel_Over.png" />
-    <Content Include="POPWND\Resources\CopyModel_Down.png" />
-    <Content Include="POPWND\Resources\CopyModel_Normal.png" />
-    <Content Include="POPWND\Resources\CopyModel_Over.png" />
-    <Content Include="POPWND\Resources\CreateModel_Down.png" />
-    <Content Include="POPWND\Resources\CreateModel_Normal.png" />
-    <Content Include="POPWND\Resources\CreateModel_Over.png" />
-    <Content Include="POPWND\Resources\DeleteModel_Down.png" />
-    <Content Include="POPWND\Resources\DeleteModel_Normal.png" />
-    <Content Include="POPWND\Resources\DeleteModel_Over.png" />
-    <Content Include="POPWND\Resources\EmptyMainBackGroundAfterLogin_1200_800.jpg" />
-    <Content Include="POPWND\Resources\EmptyRightBarAfterLogin_BackGround_87_886.jpg" />
-    <Content Include="POPWND\Resources\fdas.png" />
-    <Content Include="POPWND\Resources\gear.bmp" />
-    <Content Include="POPWND\Resources\images.png" />
-    <Content Include="POPWND\Resources\images1.png" />
-    <Content Include="POPWND\Resources\Laser.png" />
-    <Content Include="POPWND\Resources\navigate_left.bmp" />
-    <Content Include="POPWND\Resources\Rotate Stage.png" />
-    <Content Include="POPWND\Resources\Rotate Stage1.png" />
-    <Content Include="POPWND\Resources\SaveModel_Down.png" />
-    <Content Include="POPWND\Resources\SaveModel_Normal.png" />
-    <Content Include="POPWND\Resources\SaveModel_Normal1.png" />
-    <Content Include="POPWND\Resources\SaveModel_Over.png" />
-    <Content Include="POPWND\Resources\SensorMz_w.bmp" />
-    <Content Include="POPWND\Resources\TopBarBackGround_1707_82.jpg" />
-    <Content Include="POPWND\Resources\Transfer.png" />
-    <Content Include="POPWND\Resources\Z-axis Robot.bmp" />
-    <Content Include="POPWND\Resources\Z-axis Robot_bg_clear.bmp" />
-    <Content Include="POPWND\Resources\_EmptyMainBackGroundAfterLogin_1280_900.jpg" />
-    <Content Include="POPWND\Resources\다운로드 %281%29.png" />
-    <Content Include="POPWND\Resources\크기변환_다운로드 %281%29.png" />
-    <Content Include="POPWND\Resources\크기변환_포맷변환_126497-simple-black-square-icon-arrows-arrowhead-solid-left.bmp" />
-    <Content Include="POPWND\Resources\크기변환_포맷변환_126498-simple-black-square-icon-arrows-arrowhead-solid-right.bmp" />
-    <Content Include="POPWND\Resources\크기변환_포맷변환_126501-simple-black-square-icon-arrows-arrows-rotated.bmp" />
-    <Content Include="POPWND\Resources\포맷변환_126528-simple-black-square-icon-arrows-hand-pointer1.bmp" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

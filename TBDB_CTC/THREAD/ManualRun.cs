@@ -1039,11 +1039,13 @@ namespace TBDB_Handler.THREAD
                 case 0:
                     break;
                 case 10:
-                    GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos3);
+                    //GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos3);
+                    GlobalSeq.autoRun.procLoadlock.MoveExit((int)MotionPos.Pos3);
                     break;
 
                 case 15:
-                    if (GlobalSeq.autoRun.procLoadlock.CheckComplete() != fn.success) return fn.busy;
+                    //if (GlobalSeq.autoRun.procLoadlock.CheckComplete() != fn.success) return fn.busy;
+                    if (GlobalSeq.autoRun.procLoadlock.CheckMoveDone((int)MotionPos.Pos3) == false) return fn.busy;
                     break;
 
                 case 20:
@@ -1093,11 +1095,13 @@ namespace TBDB_Handler.THREAD
                     break;
                 case 10:
                     //BD Place -> Unload
-                    GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos1);
+                    //GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos1);
+                    GlobalSeq.autoRun.procLoadlock.MoveExit((int)MotionPos.Pos1);
                     break;
 
                 case 15:
-                    if (GlobalSeq.autoRun.procLoadlock.CheckComplete() != fn.success) return fn.busy;
+                    //if (GlobalSeq.autoRun.procLoadlock.CheckComplete() != fn.success) return fn.busy;
+                    if (GlobalSeq.autoRun.procLoadlock.CheckMoveDone((int)MotionPos.Pos1) == false) return fn.busy;
                     break;
 
                 case 20:
@@ -1215,7 +1219,7 @@ namespace TBDB_Handler.THREAD
                     break;
 
                 case 20:
-                    if (GlobalSeq.autoRun.prcVTM.Init_PMC() != fn.success) return fn.busy;
+                    if (GlobalSeq.autoRun.procPMC.Init_PMC() != fn.success) return fn.busy;
                     break;
 
                 case 50:
@@ -1245,7 +1249,7 @@ namespace TBDB_Handler.THREAD
                     break;
 
                 case 20:
-                    if (GlobalSeq.autoRun.prcVTM.Standby_PMC() != fn.success) return fn.busy;
+                    if (GlobalSeq.autoRun.procPMC.Standby_PMC() != fn.success) return fn.busy;
                     break;
 
                 case 50:
@@ -1275,7 +1279,7 @@ namespace TBDB_Handler.THREAD
                     break;
 
                 case 20:
-                    if (GlobalSeq.autoRun.prcVTM.Process_PMC() != fn.success) return fn.busy;
+                    if (GlobalSeq.autoRun.procPMC.Process_PMC() != fn.success) return fn.busy;
                     break;
 
                 case 50:
@@ -1305,7 +1309,7 @@ namespace TBDB_Handler.THREAD
                     break;
 
                 case 20:
-                    if (GlobalSeq.autoRun.prcVTM.SetRecipe(GlobalSeq.autoRun.prcVTM.pmc_Rcp) != fn.success) return fn.busy;
+                    if (GlobalSeq.autoRun.procPMC.SetRecipe(GlobalSeq.autoRun.procPMC.pmc_Rcp) != fn.success) return fn.busy;
                     break;
 
                 case 50:

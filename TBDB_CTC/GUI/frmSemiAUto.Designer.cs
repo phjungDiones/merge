@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.a1Panel4 = new Owf.Controls.A1Panel();
+            this.btnPmcSetRecipe = new Glass.GlassButton();
             this.btnVtmUnloadPmc = new Glass.GlassButton();
             this.btnVtmLoadPmc = new Glass.GlassButton();
             this.btnVtmStop = new Glass.GlassButton();
@@ -111,7 +112,6 @@
             this.uctrlPortSlot3 = new TBDB_CTC.UserCtrl.uctrlPortSlot();
             this.uctrlPortSlot2 = new TBDB_CTC.UserCtrl.uctrlPortSlot();
             this.uctrlPortSlot1 = new TBDB_CTC.UserCtrl.uctrlPortSlot();
-            this.btnPmcSetRecipe = new Glass.GlassButton();
             this.a1Panel4.SuspendLayout();
             this.a1Panel5.SuspendLayout();
             this.a1Panel2.SuspendLayout();
@@ -147,6 +147,22 @@
             this.a1Panel4.ShadowOffSet = 2;
             this.a1Panel4.Size = new System.Drawing.Size(625, 218);
             this.a1Panel4.TabIndex = 984;
+            // 
+            // btnPmcSetRecipe
+            // 
+            this.btnPmcSetRecipe.BackColor = System.Drawing.Color.White;
+            this.btnPmcSetRecipe.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPmcSetRecipe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnPmcSetRecipe.GlowColor = System.Drawing.Color.Black;
+            this.btnPmcSetRecipe.InnerBorderColor = System.Drawing.Color.Transparent;
+            this.btnPmcSetRecipe.Location = new System.Drawing.Point(271, 162);
+            this.btnPmcSetRecipe.Name = "btnPmcSetRecipe";
+            this.btnPmcSetRecipe.OuterBorderColor = System.Drawing.Color.Transparent;
+            this.btnPmcSetRecipe.Size = new System.Drawing.Size(128, 51);
+            this.btnPmcSetRecipe.TabIndex = 1008;
+            this.btnPmcSetRecipe.Tag = "0";
+            this.btnPmcSetRecipe.Text = "Set Recipe";
+            this.btnPmcSetRecipe.Click += new System.EventHandler(this.btnPmcSetRecipe_Click);
             // 
             // btnVtmUnloadPmc
             // 
@@ -311,7 +327,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(22, 3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 17);
+            this.label9.Size = new System.Drawing.Size(81, 17);
             this.label9.TabIndex = 980;
             this.label9.Text = "VTM Robot";
             // 
@@ -524,7 +540,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(22, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 17);
+            this.label5.Size = new System.Drawing.Size(81, 17);
             this.label5.TabIndex = 980;
             this.label5.Text = "ATM Robot";
             // 
@@ -1338,6 +1354,7 @@
             this.uctrlPortSlot4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.uctrlPortSlot4.bStatus = false;
             this.uctrlPortSlot4.Location = new System.Drawing.Point(1042, 469);
+            this.uctrlPortSlot4.LpmWaferStatus = TBDB_Handler.GLOBAL.LPM_Wafer.Exist;
             this.uctrlPortSlot4.Name = "uctrlPortSlot4";
             this.uctrlPortSlot4.Size = new System.Drawing.Size(110, 283);
             this.uctrlPortSlot4.Slot = 0;
@@ -1348,6 +1365,7 @@
             this.uctrlPortSlot3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.uctrlPortSlot3.bStatus = false;
             this.uctrlPortSlot3.Location = new System.Drawing.Point(917, 469);
+            this.uctrlPortSlot3.LpmWaferStatus = TBDB_Handler.GLOBAL.LPM_Wafer.Exist;
             this.uctrlPortSlot3.Name = "uctrlPortSlot3";
             this.uctrlPortSlot3.Size = new System.Drawing.Size(110, 283);
             this.uctrlPortSlot3.Slot = 0;
@@ -1358,6 +1376,7 @@
             this.uctrlPortSlot2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.uctrlPortSlot2.bStatus = false;
             this.uctrlPortSlot2.Location = new System.Drawing.Point(790, 469);
+            this.uctrlPortSlot2.LpmWaferStatus = TBDB_Handler.GLOBAL.LPM_Wafer.Exist;
             this.uctrlPortSlot2.Name = "uctrlPortSlot2";
             this.uctrlPortSlot2.Size = new System.Drawing.Size(110, 283);
             this.uctrlPortSlot2.Slot = 0;
@@ -1368,26 +1387,11 @@
             this.uctrlPortSlot1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.uctrlPortSlot1.bStatus = false;
             this.uctrlPortSlot1.Location = new System.Drawing.Point(665, 469);
+            this.uctrlPortSlot1.LpmWaferStatus = TBDB_Handler.GLOBAL.LPM_Wafer.Exist;
             this.uctrlPortSlot1.Name = "uctrlPortSlot1";
             this.uctrlPortSlot1.Size = new System.Drawing.Size(110, 283);
             this.uctrlPortSlot1.Slot = 0;
             this.uctrlPortSlot1.TabIndex = 994;
-            // 
-            // btnPmcSetRecipe
-            // 
-            this.btnPmcSetRecipe.BackColor = System.Drawing.Color.White;
-            this.btnPmcSetRecipe.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnPmcSetRecipe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnPmcSetRecipe.GlowColor = System.Drawing.Color.Black;
-            this.btnPmcSetRecipe.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnPmcSetRecipe.Location = new System.Drawing.Point(271, 162);
-            this.btnPmcSetRecipe.Name = "btnPmcSetRecipe";
-            this.btnPmcSetRecipe.OuterBorderColor = System.Drawing.Color.Transparent;
-            this.btnPmcSetRecipe.Size = new System.Drawing.Size(128, 51);
-            this.btnPmcSetRecipe.TabIndex = 1008;
-            this.btnPmcSetRecipe.Tag = "0";
-            this.btnPmcSetRecipe.Text = "PROCESS";
-            this.btnPmcSetRecipe.Click += new System.EventHandler(this.btnPmcSetRecipe_Click);
             // 
             // frmSemiAUto
             // 

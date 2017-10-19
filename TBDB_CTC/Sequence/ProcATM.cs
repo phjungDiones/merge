@@ -97,18 +97,11 @@ namespace TBDB_Handler.SEQ
         End_TM_Load_Lami,
 
 
-
         //TM -> Lami Unload
         Start_TM_Unload_Lami,
         Move_TM_Unload_Lami,
         Compl_TM_Unload_Lami,
         End_TM_Unload_Lami,
-
-        Check_Exchange_Lami,
-        Start_Exchange_Lami,
-        Move_Exchange_Lami,
-        Compl_Exchange_Lami,
-        End_Exchange_Lami,
 
 
         //LL Move
@@ -118,8 +111,13 @@ namespace TBDB_Handler.SEQ
 
         //TM Place -> LL
         Start_TM_Place_LL,
+        Set_Venting_Place_LL,
+        Door_Open_Place_LL,
+        Check_Open_Place_LL,
         Move_TM_Place_LL,
         Compl_TM_Place_LL,
+        Door_Close_Place_LL,
+        Check_Close_Place_LL,
         End_TM_Place_LL,
 
         //LL Move
@@ -129,8 +127,13 @@ namespace TBDB_Handler.SEQ
 
         //TM Pickup -> LL
         Start_TM_Pickup_LL,
+        Set_Venting_Pickup_LL,
+        Door_Open_Pickup_LL,
+        Check_Open_Pickup_LL,
         Move_TM_Pickup_LL,
         Compl_TM_Pickup_LL,
+        Door_Close_Pickup_LL,
+        Check_Close_Pickup_LL,
         End_TM_Pickup_LL,
 
         //TM Place -> CP
@@ -180,17 +183,14 @@ namespace TBDB_Handler.SEQ
     public enum ReqStatus_ATM
     {
         NONE = 0,
-        LOAD_LAMI,
-        LOAD_LL1_DIV,
-        UNLOAD_LAMI_LL2_CARR,
+        LOAD_AL_CARRIER,
+        LOAD_AL_DEVICE,
         UNLOAD_CP,
-
-        //Only Bond
-        LOAD_LL2_CARR,
-
-        //Only Lami
-        UNLOAD_LAMI_CP,
-
+        LOAD_LAMI,
+        UNLOAD_LAMI,
+        LOAD_LL1_DEVICE,
+        LOAD_LL2_CARRIER,
+        UNLOAD_LL_BONDED,
     }
 
 
@@ -227,7 +227,10 @@ namespace TBDB_Handler.SEQ
         //Data 레시피랑 연결하자
         ProcInfoLami LamiInfo;
 
-        fn fnRet = fn.busy;
+        fn fRet = fn.busy;
+        short status = 0;
+
+        int nCurLamiCount = 0;
 
         void AddMessage(string msg)
         {
@@ -285,15 +288,13 @@ namespace TBDB_Handler.SEQ
 
         public void Run()
         {
-            if (!isAcceptRun()) { return; }
+             if (!isAcceptRun()) { return; }
             if (nSeqNo != nPreSeqNo) { resetCmd(); }
             nPreSeqNo = nSeqNo;
 
             CaseATM seqCase = (CaseATM)nSeqNo;
 
-
             alwaysCheck();
-
 
             switch (seqCase)
             {
@@ -308,44 +309,57 @@ namespace TBDB_Handler.SEQ
                 case CaseATM.Check_Status:
 
                     //현재 상태를 확인하자
-                    ReqStatus = CheckReqStatus();
-                    if (ReqStatus == ReqStatus_ATM.LOAD_LAMI)
+                    ReqStatus = CheckReqStatus();                   
+                    if (ReqStatus == ReqStatus_ATM.LOAD_AL_CARRIER)
                     {
-                        //Load AL -> Load Lami
+                        //Upper Arm -> AL Carrier
                         Working_Arm = ARM.UPPER;
                         nextSeq(CaseATM.Move_TM_Pickup_AL);
                     }
-                    else if (ReqStatus == ReqStatus_ATM.UNLOAD_LAMI_LL2_CARR)
+                    if (ReqStatus == ReqStatus_ATM.LOAD_AL_DEVICE)
                     {
-                        //Unload Lami -> Load LL2 ( Carr )
-                        //Working_Arm = ARM.UPPER;
+                        //Low Arm -> AL Device
                         Working_Arm = ARM.LOWER;
+                        nextSeq(CaseATM.Move_TM_Pickup_AL);
+                    }
+                    if (ReqStatus == ReqStatus_ATM.LOAD_LAMI)
+                    {
+                        //Upper Arm -> Lami
+                        Working_Arm = ARM.UPPER;
+                        nextSeq(CaseATM.Start_TM_Load_Lami);
+                    }
+                    if (ReqStatus == ReqStatus_ATM.UNLOAD_LAMI)
+                    {
+                        //Lami -> Upper Arm
+                        Working_Arm = ARM.UPPER;
                         nextSeq(CaseATM.Start_TM_Unload_Lami);
                     }
-                    else if (ReqStatus == ReqStatus_ATM.LOAD_LL1_DIV)
+                    if (ReqStatus == ReqStatus_ATM.LOAD_LL2_CARRIER)
                     {
-                        //Load AL -> Load LL1 ( DEVI )
-                        Working_Arm = ARM.LOWER;
-                        nextSeq(CaseATM.Start_TM_Pickup_AL);
+                        //Upper Arm -> Loadlock2 Carrier
+                        Working_Stage = AtmStage.LL2;
+                        Working_Arm = ARM.UPPER;
+                        nextSeq(CaseATM.Check_LL_Place);
                     }
-                    else if (ReqStatus == ReqStatus_ATM.UNLOAD_CP)
+                    if (ReqStatus == ReqStatus_ATM.LOAD_LL1_DEVICE)
                     {
-                        //Load BD -> Unload CP
+                        //Low Arm -> Loadlock1 Device
+                        Working_Stage = AtmStage.LL1;
+                        Working_Arm = ARM.LOWER ;
+                        nextSeq(CaseATM.Check_LL_Place);
+                    }
+                    if (ReqStatus == ReqStatus_ATM.UNLOAD_LL_BONDED)
+                    {
+                        //Upper Arm -> Loadlock1 Device
+                        Working_Stage = AtmStage.BD;
+                        Working_Arm = ARM.UPPER;
                         nextSeq(CaseATM.Check_LL_Pickup);
                     }
-                    else if (ReqStatus == ReqStatus_ATM.LOAD_LL2_CARR)
+                    if (ReqStatus == ReqStatus_ATM.UNLOAD_CP)
                     {
-                        //Only Bond 시퀀스
-                        //Load AL -> LL2 Carr
+                        //Upper Arm -> CP
                         Working_Arm = ARM.UPPER;
-                        nextSeq(CaseATM.Start_TM_Pickup_AL);
-                    }
-                    else if (ReqStatus == ReqStatus_ATM.UNLOAD_LAMI_CP)
-                    {
-                        //Only Lami 시퀀스
-                        //Unload Lami -> CP
-                        Working_Arm = ARM.LOWER;
-                        nextSeq(CaseATM.Start_TM_Unload_Lami);
+                        nextSeq(CaseATM.Start_TM_Place_CP);
                     }
                     else
                     {
@@ -384,14 +398,7 @@ namespace TBDB_Handler.SEQ
                     break;
 
                 case CaseATM.Compl_TM_Pickup_AL:
-                    //if (CheckComplete() != fn.success) return;
-
-                    fnRet = CheckComplete();
-                    if (fnRet == fn.busy) return;
-                    else if (fnRet == fn.err)
-                    {
-                        return;
-                    }
+                    if (CheckComplete() != fn.success) return;
 
                     strLog = string.Format("ATM Robot Pickup Move End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
@@ -399,39 +406,14 @@ namespace TBDB_Handler.SEQ
 
                 case CaseATM.End_TM_Pickup_AL:
                     //데이터 이동
+                    GlobalVariable.seqShared.PreAlign();
                     GlobalVariable.seqShared.LoadingAlignerToAtm((HAND)Working_Arm);
-                    break;
+
+                    nextSeq(CaseATM.Initialze);
+                    return;
 
                 case CaseATM.Check_Deicve:
 
-                    //현재 웨이퍼가 Carrier일 경우 -> Laminator
-                    //Device일 경우 Loadlock으로 이동하자                   
-                    if (GlobalVariable.seqShared.robotATM[(int)Working_Arm].waferType == WaferType.DEVICE)
-                    {
-                        //Device -> Loadlock
-                        Working_Arm = ARM.LOWER;
-                        Working_Stage = AtmStage.LL1;
-                        nextSeq(CaseATM.Check_LL_Place);
-                        return;
-                    }
-                    else
-                    {
-                        if (ReqStatus == ReqStatus_ATM.LOAD_LL2_CARR)
-                        {
-                            //Only Bond 모드일 경우
-                            Working_Arm = ARM.UPPER;
-                            Working_Stage = AtmStage.LL2;
-                            nextSeq(CaseATM.Check_LL_Place);
-                            return;
-                        }
-                        else
-                        {
-                            //Carrier -> Lami
-                            //임시 스킵
-                            nextSeq(CaseATM.Start_TM_Load_Lami);
-                            return;
-                        }
-                    }
                     break;
 
                 /////////////////////////////////
@@ -459,12 +441,13 @@ namespace TBDB_Handler.SEQ
 
                 case CaseATM.Compl_TM_Load_Lami:
                     //라미 프로세스 
-                    if (Process_Start() != fn.success) return;                  
+                    if (Process_Start() != fn.success) return;
                     break;
 
                 case CaseATM.End_TM_Load_Lami:
                     //데이터 이동
-                    GlobalVariable.seqShared.LoadingAtmToLami((HAND)Working_Arm);
+                    GlobalVariable.seqShared.LoadingAtmToLami((HAND)Working_Arm, nCurLamiCount);
+                    nCurLamiCount++;
                     nextSeq((int)CaseATM.Initialze);
                     return;
 
@@ -477,100 +460,42 @@ namespace TBDB_Handler.SEQ
                 case CaseATM.Move_TM_Unload_Lami:
                     //임시 스킵
                     if (Unload_Lami(Working_Arm) != fn.success) return;
+
+                    nCurLamiCount--;
+                    GlobalVariable.seqShared.Laminate(nCurLamiCount); //라미 완료 정보
+                    GlobalVariable.seqShared.LoadingLamiToAtm((HAND)Working_Arm, nCurLamiCount);
+                    
                     break;
 
                 case CaseATM.Compl_TM_Unload_Lami:
                     break;
 
                 case CaseATM.End_TM_Unload_Lami:
-                    //데이터 이동
-                    GlobalVariable.seqShared.LoadingLamiToAtm((HAND)Working_Arm);
-                    if (ReqStatus == ReqStatus_ATM.UNLOAD_LAMI_CP)
-                    {
-                        //Only Lami 모드일 경우 
-                        //라미 언로드 후 CP로 언로딩
-                        nextSeq(CaseATM.Start_TM_Place_CP);
-                        return;
-                    }
-                    else
-                    {
-                        //언로드 후 LL2으로 Stage변경
-                        Working_Stage = AtmStage.LL2;
-                    }
-                    break;
 
-                /////////////////////////////////
-                //TM Exchange Lami
-                /////////////////////////////////
-                case CaseATM.Check_Exchange_Lami:
-
-                    //현재 ARM에 웨이퍼가 있다면 라미 상태 확인 후 로딩 해주자
-                    if (GlobalVariable.seqShared.IsInATM(HAND.UPPER) == true
-                        && GlobalVariable.seqShared.robotATM[(int)ARM.UPPER].waferType == WaferType.CARRIER)
-                    {
-                        //로딩 할 웨이퍼가 있다
-                        if (CheckReqStatus_Lami() == ReqStatus_Lami.LOAD)
-                        {
-                            Working_Arm = ARM.UPPER;
-                            break;
-                        }
-                        else
-                        {
-                            //로드 완료까지 대기
-                            return; 
-                        }
-                    }
-                    else
-                    {
-                        //들고 있는 웨이퍼가 없다
-                        nextSeq(CaseATM.Check_LL_Place);
-                        return;
-                    }
-                    break;
-
-                case CaseATM.Start_Exchange_Lami:
-                    //Set Rcp
-                    if (RcpChange_Lami() != fn.success) return;
-                    break;
-
-                case CaseATM.Move_Exchange_Lami:
-                    if (Load_Lami(Working_Arm) != fn.success) return;
-
-                    strLog = string.Format("ATM Robot Lami Load End-> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
-                    AddMessage(strLog);
-                    break;
-
-                case CaseATM.Compl_Exchange_Lami:
-                    //라미 프로세스 
-                    if (Process_Start() != fn.success) return;
-                    break;
-
-                case CaseATM.End_Exchange_Lami:
-                    GlobalVariable.seqShared.LoadingAtmToLami((HAND)Working_Arm);
-                    break;
+                    nextSeq(CaseATM.Initialze);
+                    return;
 
                 case CaseATM.Check_LL_Place:
                     //Loadlock이 동작 중인지 확인
                     if (GlobalVariable.interlock.bLLMoving) return;
                     GlobalVariable.interlock.bLLMoving = true;
+                    GlobalVariable.interlock.bLLUsed_ATM = true;
+
                     break;
 
                 case CaseATM.Move_LL_Move_Place:
-                    GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos2);
-
+                    //GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos2);
+                    
+                    GlobalSeq.autoRun.procLoadlock.MoveExit((int)MotionPos.Pos2);
+                   
                     strLog = string.Format("Loadlock ATM Place Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
                     break;
 
                 case CaseATM.Compl_LL_Move_Place:
                     //if (GlobalSeq.autoRun.procLoadlock.CheckComplete() != fn.success) return;
-
-                    fnRet = GlobalSeq.autoRun.procLoadlock.CheckComplete();
-                    if (fnRet == fn.busy) return;
-                    else if (fnRet == fn.err)
-                    {
-                        return;
-                    }
+                    if (GlobalSeq.autoRun.procLoadlock.CheckMoveDone((int)MotionPos.Pos2) == false) return;
+                    
 
                     strLog = string.Format("Loadlock ATM Place Move End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
@@ -582,25 +507,74 @@ namespace TBDB_Handler.SEQ
                 case CaseATM.Start_TM_Place_LL:
                     break;
 
-                case CaseATM.Move_TM_Place_LL:
-                    MoveRobot(Working_Stage, Working_Arm);
+                case CaseATM.Set_Venting_Place_LL:
 
+                    GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(CTC_STATUS.CTCRunMode, ref status);
+                    if (status == (short)CTC_RunMode.ModeAtm) break;
+
+                    //Loadlock Pumping 상태로 만든다.
+                    fRet = GlobalSeq.autoRun.procLoadlock.Loadlock_Venting();
+                    if (fRet == fn.success) break;
+                    else if (fRet == fn.busy) return;
+                    else
+                    {
+                        //Error
+                        return;
+                    }
+
+                    break;
+
+
+                case CaseATM.Door_Open_Place_LL:
+
+                    //ATM Door Open
+                    GlobalVariable.io.ATM_Door_Open();
+                    break;
+
+                case CaseATM.Check_Open_Place_LL:
+
+                    //ATM Door Open Check
+                    if (GlobalVariable.io.Check_ATM_Door_Open() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
+
+                    break;
+
+                   
+
+                case CaseATM.Move_TM_Place_LL:
+
+                    if (GlobalSeq.autoRun.procLoadlock.SetBlock() == false) return;
+                    MoveRobot(Working_Stage, Working_Arm);
+                    
                     strLog = string.Format("ATM Robot Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
                     break;
 
                 case CaseATM.Compl_TM_Place_LL:
-                    //if (CheckComplete() != fn.success) return;
-
-                    fnRet = CheckComplete();
-                    if (fnRet == fn.busy) return;
-                    else if (fnRet == fn.err)
-                    {
-                        return;
-                    }
+                    if (CheckComplete() != fn.success) return;
+                    GlobalSeq.autoRun.procLoadlock.UnBlock();
 
                     strLog = string.Format("ATM Robot Move End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
+                    break;
+
+                case CaseATM.Door_Close_Place_LL:
+
+                    //ATM Door Close
+                    GlobalVariable.io.ATM_Door_Close();
+                    break;
+
+                case CaseATM.Check_Close_Place_LL:
+
+                    //ATM Door Close Check
+                    if (GlobalVariable.io.Check_ATM_Door_Close() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
                     break;
 
                 case CaseATM.End_TM_Place_LL:
@@ -612,18 +586,40 @@ namespace TBDB_Handler.SEQ
                         GlobalVariable.seqShared.LoadingAtmToLoadLock((int)WaferType.CARRIER, (HAND)Working_Arm);
 
                     GlobalVariable.interlock.bLLMoving = false;
-                    nextSeq((int)CaseATM.Initialze);
+
+
+                    //로드락 본드 완료 된 웨이퍼가 있을경우 언로딩 시킨다
+                    if (GlobalVariable.seqShared.IsInATM(HAND.UPPER) == false
+                        && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == true
+                        && GlobalVariable.interlock.bLLUsed_VTM == false
+                        && GlobalVariable.seqShared.IsInCP(0) == false)  //조건 확인필요
+                    {
+                        //본딩 완료 된 웨이퍼가 있을경우 픽업한다.
+
+                        Working_Arm = ARM.UPPER;
+                        GlobalVariable.interlock.bLLUsed_ATM = true; 
+                        nextSeq(CaseATM.Check_LL_Pickup);
+                        return;
+                    }
+                    else
+                    {
+                        GlobalVariable.interlock.bLLUsed_ATM = false;
+                        nextSeq(CaseATM.Initialze);
+                        return;
+                    }
                     return;
 
                 case CaseATM.Check_LL_Pickup:
                     //Loadlock이 동작 중인지 확인
                     if (GlobalVariable.interlock.bLLMoving) return;
                     GlobalVariable.interlock.bLLMoving = true;
+                    GlobalVariable.interlock.bLLUsed_ATM = true;
                     break;
 
                 case CaseATM.Move_LL_Move_Pickup:
                     //BD Pickup -> Unload CP
-                    GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos1);
+                    //GlobalSeq.autoRun.procLoadlock.Move(MotionPos.Pos1);
+                    GlobalSeq.autoRun.procLoadlock.MoveExit((int)MotionPos.Pos1);
 
                     strLog = string.Format("Loadlock ATM Pickup Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
@@ -631,12 +627,7 @@ namespace TBDB_Handler.SEQ
 
                 case CaseATM.Compl_LL_Move_Pickup:
                     //if (GlobalSeq.autoRun.procLoadlock.CheckComplete() != fn.success) return;
-                    fnRet = GlobalSeq.autoRun.procLoadlock.CheckComplete();
-                    if (fnRet == fn.busy) return;
-                    else if (fnRet == fn.err)
-                    {
-                        return;
-                    }
+                    if (GlobalSeq.autoRun.procLoadlock.CheckMoveDone((int)MotionPos.Pos1) == false) return;
 
                     strLog = string.Format("Loadlock ATM Pickup Move End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
@@ -648,8 +639,43 @@ namespace TBDB_Handler.SEQ
                 case CaseATM.Start_TM_Pickup_LL:
                     break;
 
+                case CaseATM.Set_Venting_Pickup_LL:
+
+                    GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(CTC_STATUS.CTCRunMode, ref status);
+                    if (status == (short)CTC_RunMode.ModeAtm) break;
+
+                    //Loadlock Pumping 상태로 만든다.
+                    fRet = GlobalSeq.autoRun.procLoadlock.Loadlock_Venting();
+                    if (fRet == fn.success) break;
+                    else if (fRet == fn.busy) return;
+                    else
+                    {
+                        //Error
+                        return;
+                    }
+
+                    break;
+
+                case CaseATM.Door_Open_Pickup_LL:
+
+                    //ATM Door Open
+                    GlobalVariable.io.ATM_Door_Open();
+                    break;
+
+                case CaseATM.Check_Open_Pickup_LL:
+
+                    //ATM Door Open Check
+                    if (GlobalVariable.io.Check_ATM_Door_Open() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
+                    break;
+
                 case CaseATM.Move_TM_Pickup_LL:
                     Working_Stage = AtmStage.BD;
+
+                    if (GlobalSeq.autoRun.procLoadlock.SetBlock() == false) return;
                     MoveRobot(Working_Stage, Working_Arm);
 
                     strLog = string.Format("ATM Robot Pickup Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
@@ -657,24 +683,37 @@ namespace TBDB_Handler.SEQ
                     break;
 
                 case CaseATM.Compl_TM_Pickup_LL:
-                    //if (CheckComplete() != fn.success) return;
-
-                    fnRet = CheckComplete();
-                    if (fnRet == fn.busy) return;
-                    else if (fnRet == fn.err)
-                    {
-                        return;
-                    }
+                    if (CheckComplete() != fn.success) return;
+                    GlobalSeq.autoRun.procLoadlock.UnBlock();
 
                     strLog = string.Format("ATM Robot Pickup Move End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
+                    break;
+
+                case CaseATM.Door_Close_Pickup_LL:
+
+                    //Door Close
+                    GlobalVariable.io.ATM_Door_Close();
+                    break;
+
+                case CaseATM.Check_Close_Pickup_LL:
+
+                    //Door Close Check
+                    if (GlobalVariable.io.Check_ATM_Door_Close() == false)
+                    {
+                        //타임아웃 체크
+                        return;
+                    }
                     break;
 
                 case CaseATM.End_TM_Pickup_LL:
                     //데이터 이동
                     GlobalVariable.seqShared.LoadingLoadlockToAtm((int)WaferType.BONDED, (HAND)Working_Arm);
                     GlobalVariable.interlock.bLLMoving = false;
-                    break;
+                    GlobalVariable.interlock.bLLUsed_ATM = false;
+
+                    nextSeq(CaseATM.Initialze);
+                    return;
 
                 /////////////////////////////////
                 //TM Place CP
@@ -684,6 +723,8 @@ namespace TBDB_Handler.SEQ
 
                 case CaseATM.Move_TM_Place_CP:
                     Working_Stage = AtmStage.CP1;
+
+                    if (GlobalSeq.autoRun.procLoadlock.SetBlock() == false) return;
                     MoveRobot(Working_Stage, Working_Arm);
 
                     strLog = string.Format("ATM Robot Place Move Start -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
@@ -691,13 +732,8 @@ namespace TBDB_Handler.SEQ
                     break;
 
                 case CaseATM.Compl_TM_Place_CP:
-                    //if (CheckComplete() != fn.success) return;
-                    fnRet = CheckComplete();
-                    if (fnRet == fn.busy) return;
-                    else if (fnRet == fn.err)
-                    {
-                        return;
-                    }
+                    if (CheckComplete() != fn.success) return;
+                    GlobalSeq.autoRun.procLoadlock.UnBlock();
 
                     strLog = string.Format("ATM Robot Place Move End -> {0}, {1}", Working_Stage.ToString(), Working_Arm.ToString());
                     AddMessage(strLog);
@@ -706,6 +742,7 @@ namespace TBDB_Handler.SEQ
                 case CaseATM.End_TM_Place_CP:
                     //데이터 이동
                     GlobalVariable.seqShared.LoadingAtmToCp(0, (HAND)Working_Arm);
+
                     nextSeq(CaseATM.Check_Interlock);
                     return;
             }
@@ -1131,6 +1168,23 @@ namespace TBDB_Handler.SEQ
         //    return ReqStatus;
         //}
 
+        public bool CheckAligner()
+        {
+            //웨이퍼 유무
+            if (GlobalVariable.seqShared.IsInAligner() == false)
+                return false;
+
+            //Align 완료
+            //if (GlobalVariable.seqShared.aligner.Finish_PreAlign() == false)
+                //return false;
+
+            //동작 중인지 
+            if (GlobalVariable.interlock.bAlignMoving == true)
+                return false;
+
+            return true;
+        }
+
         public ReqStatus_ATM CheckReqStatus()
         {
             ReqStatus_ATM ReqStatus = ReqStatus_ATM.NONE;
@@ -1141,119 +1195,170 @@ namespace TBDB_Handler.SEQ
                 case RUN_MODE.FULL:
 
                     //FULL 시퀀스
-
-                    if (CheckReqStatus_Lami() == ReqStatus_Lami.LOAD
-                        && GlobalVariable.seqShared.IsInAligner()
-                        && GlobalVariable.seqShared.aligner.Check_PreAlign()
+                    if (CheckAligner()
                         && GlobalVariable.seqShared.aligner.waferType == WaferType.CARRIER
                         && GlobalVariable.seqShared.IsInATM(HAND.UPPER) == false
-                        && GlobalVariable.interlock.bAlignMoving == false)
+                        && ( GlobalVariable.seqShared.IsInLami(0) == false || GlobalVariable.seqShared.IsInLami(1) == false )
+                        && (CheckReqStatus_Lami() == ReqStatus_Lami.LOAD || CheckReqStatus_Lami() == ReqStatus_Lami.EXCHANGE))
                     {
-                        //AL에서 캐리어 로드 후 라미 로딩
-                        ReqStatus = ReqStatus_ATM.LOAD_LAMI;
+                        //Load AL Carrier -> Upper Arm
+                        ReqStatus = ReqStatus_ATM.LOAD_AL_CARRIER;
+                        return ReqStatus;
                     }
-                    else if (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.CARRIER) == false
-                        && CheckReqStatus_Lami() == ReqStatus_Lami.UNLOAD
-                        && GlobalVariable.seqShared.IsInLami())
-                    {
-                        //Lami에서 캐리어 언로드 후 LL에 로딩
-                        ReqStatus = ReqStatus_ATM.UNLOAD_LAMI_LL2_CARR;
-                    }
-                    else if (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.DEVICE) == false
-                        && GlobalVariable.seqShared.IsInAligner()
-                        && GlobalVariable.seqShared.aligner.Check_PreAlign()
-                        && GlobalVariable.seqShared.aligner.waferType == WaferType.DEVICE)
-                    {
-                        //AL에서 디바이스 로드 후 LL에 로딩
-                        ReqStatus = ReqStatus_ATM.LOAD_LL1_DIV;
-                    }
-                    else if (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == true
-                        && GlobalVariable.seqShared.IsInCP(0) == false)
-                    {
-                        //LL에서 본딩 완료 웨이퍼 로드 후 CP에 언로딩
-                        ReqStatus = ReqStatus_ATM.UNLOAD_CP;
-                    }
-                    else
-                    {
-                        ReqStatus = ReqStatus_ATM.NONE;
-                    }
-
-                    break;
-
-                case RUN_MODE.ONLY_LAMI:
-
-                    //Only Lami
-
-                    if (CheckReqStatus_Lami() == ReqStatus_Lami.LOAD
-                        && GlobalVariable.seqShared.IsInAligner()
-                        && GlobalVariable.seqShared.aligner.Check_PreAlign()
-                        && GlobalVariable.seqShared.aligner.waferType == WaferType.CARRIER
+                    if (CheckAligner()
+                        && GlobalVariable.seqShared.aligner.waferType == WaferType.DEVICE
+                        && GlobalVariable.seqShared.IsInATM(HAND.LOWER) == false
                         && GlobalVariable.seqShared.IsInATM(HAND.UPPER) == false)
                     {
-                        //AL에서 캐리어 로드 후 라미 로딩
-                        ReqStatus = ReqStatus_ATM.LOAD_LAMI;
+                        //Load AL Device -> Low Arm 
+                        ReqStatus = ReqStatus_ATM.LOAD_AL_DEVICE;
+                        return ReqStatus;
                     }
-                    else if(CheckReqStatus_Lami() == ReqStatus_Lami.UNLOAD
-                        && GlobalVariable.seqShared.IsInLami()
-                        && GlobalVariable.seqShared.IsInCP(0) == false
-                        && GlobalVariable.seqShared.IsInATM(HAND.LOWER) == false)
+                    if ( GlobalVariable.seqShared.IsInATM(HAND.UPPER) == true
+                        && (CheckReqStatus_Lami() == ReqStatus_Lami.LOAD || CheckReqStatus_Lami() == ReqStatus_Lami.EXCHANGE))
                     {
-                        //Lami에서 CP언로딩
-                        ReqStatus = ReqStatus_ATM.UNLOAD_LAMI_CP;                        
-                    }
-                    else if (CheckReqStatus_Lami() == ReqStatus_Lami.EXCHANGE
-                        && GlobalVariable.seqShared.IsInLami()
-                        && GlobalVariable.seqShared.IsInCP(0) == false
-                        && GlobalVariable.seqShared.IsInATM(HAND.LOWER) == false)
-                    {
-                        if(GlobalVariable.seqShared.IsInATM(HAND.UPPER) == false)
+                        if(GlobalVariable.seqShared.robotATM[(int)HAND.UPPER].bIsPreAlign == true
+                            && GlobalVariable.seqShared.robotATM[(int)HAND.UPPER].bIsLami == false
+                            && GlobalVariable.seqShared.robotATM[(int)HAND.UPPER].waferType == WaferType.CARRIER
+                            && (GlobalVariable.seqShared.IsInLami(0) == false || GlobalVariable.seqShared.IsInLami(1) == false))
                         {
-                            //바로 CP로 언로딩 
-                            ReqStatus = ReqStatus_ATM.UNLOAD_LAMI_CP;                                                
-                        }
-                        else if (GlobalVariable.seqShared.IsInATM(HAND.UPPER) == true)
-                        {
-
+                            //Upper Arm -> Load Lami
+                            ReqStatus = ReqStatus_ATM.LOAD_LAMI;
+                            return ReqStatus;
                         }
 
+                        
                     }
-                    else
+                    if (GlobalVariable.seqShared.IsInATM(HAND.UPPER) == false
+                        && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.CARRIER) == false
+                        && (CheckReqStatus_Lami() == ReqStatus_Lami.UNLOAD || CheckReqStatus_Lami() == ReqStatus_Lami.EXCHANGE))
                     {
-                        ReqStatus = ReqStatus_ATM.NONE;
+                        //Upper Arm -> Unload Lami
+                        ReqStatus = ReqStatus_ATM.UNLOAD_LAMI;
+                        return ReqStatus;
                     }
+
+                    if (GlobalVariable.seqShared.IsInATM(HAND.LOWER) == true
+                        && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.DEVICE) == false
+                        && GlobalVariable.interlock.bLLUsed_VTM == false)
+                    {
+                        if(GlobalVariable.seqShared.robotATM[(int)HAND.LOWER].bIsPreAlign == true
+                            && GlobalVariable.seqShared.robotATM[(int)HAND.LOWER].waferType == WaferType.DEVICE)
+                        {
+                            //Low Arm -> LL Device
+                            ReqStatus = ReqStatus_ATM.LOAD_LL1_DEVICE;
+                            return ReqStatus;
+                        }
+                    }
+                    if (GlobalVariable.seqShared.IsInATM(HAND.UPPER) == true
+                        && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.CARRIER) == false
+                        && GlobalVariable.interlock.bLLUsed_VTM == false)
+                    {
+                        if(GlobalVariable.seqShared.robotATM[(int)HAND.UPPER].waferType == WaferType.CARRIER
+                            && GlobalVariable.seqShared.robotATM[(int)HAND.UPPER].bIsLami == true)
+                        {
+                            //Upper Arm -> LL Carrier
+                            ReqStatus = ReqStatus_ATM.LOAD_LL2_CARRIER;
+                            return ReqStatus;
+                        }
+
+                    }
+                    if (GlobalVariable.seqShared.IsInATM(HAND.UPPER) == false
+                        && GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == true
+                        && GlobalVariable.interlock.bLLUsed_VTM == false //조건 확인필요
+                        && GlobalVariable.seqShared.IsInCP(0) == false)  
+                    {
+                        //LL Bonded -> Upper Arm
+                        ReqStatus = ReqStatus_ATM.UNLOAD_LL_BONDED;
+                        return ReqStatus;
+                    }
+                    if (GlobalVariable.seqShared.IsInATM(HAND.UPPER) == true
+                        && GlobalVariable.seqShared.IsInCP(0) == false) 
+                    {
+                        if(GlobalVariable.seqShared.robotATM[(int)HAND.UPPER].bIsBond == true)
+                        {
+                            //LL Bonded -> Upper Arm
+                            ReqStatus = ReqStatus_ATM.UNLOAD_CP;
+                            return ReqStatus;
+                        }
+                    }
+
                     break;
 
-                case RUN_MODE.ONLY_BOND:
-
-                    //Only Bond
-
-                    if (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.DEVICE) == false
-                        && GlobalVariable.seqShared.IsInAligner()
-                        && GlobalVariable.seqShared.aligner.Check_PreAlign()
-                        && GlobalVariable.seqShared.aligner.waferType == WaferType.DEVICE)
-                    {
-                        //AL에서 디바이스 로드 후 LL에 로딩 Device
-                        ReqStatus = ReqStatus_ATM.LOAD_LL1_DIV;
-                    }
-                    else if(GlobalVariable.seqShared.IsInLoadLock((int)WaferType.CARRIER) == false
-                        && GlobalVariable.seqShared.IsInAligner()
-                        && GlobalVariable.seqShared.aligner.Check_PreAlign()
-                        && GlobalVariable.seqShared.aligner.waferType == WaferType.CARRIER)
-                    {
-                        //AL에서 디바이스 로드 후 LL에 로딩 Carrier
-                        ReqStatus = ReqStatus_ATM.LOAD_LL2_CARR;
-                    }
-                    else if (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == true
-                        && GlobalVariable.seqShared.IsInCP(0) == false)
-                    {
-                        //LL에서 본딩 완료 웨이퍼 로드 후 CP에 언로딩
-                        ReqStatus = ReqStatus_ATM.UNLOAD_CP;
-                    }
-                    else
-                    {
-                        ReqStatus = ReqStatus_ATM.NONE;
-                    }
-                    break;
+//                 case RUN_MODE.ONLY_LAMI:
+// 
+//                     //Only Lami
+// 
+//                     if (CheckReqStatus_Lami() == ReqStatus_Lami.LOAD
+//                         && GlobalVariable.seqShared.IsInAligner()
+//                         && GlobalVariable.seqShared.aligner.Finish_PreAlign()
+//                         && GlobalVariable.seqShared.aligner.waferType == WaferType.CARRIER
+//                         && GlobalVariable.seqShared.IsInATM(HAND.UPPER) == false)
+//                     {
+//                         //AL에서 캐리어 로드 후 라미 로딩
+//                         ReqStatus = ReqStatus_ATM.LOAD_LAMI;
+//                     }
+//                     else if(CheckReqStatus_Lami() == ReqStatus_Lami.UNLOAD
+//                         && GlobalVariable.seqShared.IsInLami()
+//                         && GlobalVariable.seqShared.IsInCP(0) == false
+//                         && GlobalVariable.seqShared.IsInATM(HAND.LOWER) == false)
+//                     {
+//                         //Lami에서 CP언로딩
+//                         ReqStatus = ReqStatus_ATM.UNLOAD_LAMI_CP;                        
+//                     }
+//                     else if (CheckReqStatus_Lami() == ReqStatus_Lami.EXCHANGE
+//                         && GlobalVariable.seqShared.IsInLami()
+//                         && GlobalVariable.seqShared.IsInCP(0) == false
+//                         && GlobalVariable.seqShared.IsInATM(HAND.LOWER) == false)
+//                     {
+//                         if(GlobalVariable.seqShared.IsInATM(HAND.UPPER) == false)
+//                         {
+//                             //바로 CP로 언로딩 
+//                             ReqStatus = ReqStatus_ATM.UNLOAD_LAMI_CP;                                                
+//                         }
+//                         else if (GlobalVariable.seqShared.IsInATM(HAND.UPPER) == true)
+//                         {
+// 
+//                         }
+// 
+//                     }
+//                     else
+//                     {
+//                         ReqStatus = ReqStatus_ATM.NONE;
+//                     }
+//                     break;
+// 
+//                 case RUN_MODE.ONLY_BOND:
+// 
+//                     //Only Bond
+// 
+//                     if (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.DEVICE) == false
+//                         && GlobalVariable.seqShared.IsInAligner()
+//                         && GlobalVariable.seqShared.aligner.Finish_PreAlign()
+//                         && GlobalVariable.seqShared.aligner.waferType == WaferType.DEVICE)
+//                     {
+//                         //AL에서 디바이스 로드 후 LL에 로딩 Device
+//                         ReqStatus = ReqStatus_ATM.LOAD_LL1_DIV;
+//                     }
+//                     else if(GlobalVariable.seqShared.IsInLoadLock((int)WaferType.CARRIER) == false
+//                         && GlobalVariable.seqShared.IsInAligner()
+//                         && GlobalVariable.seqShared.aligner.Finish_PreAlign()
+//                         && GlobalVariable.seqShared.aligner.waferType == WaferType.CARRIER)
+//                     {
+//                         //AL에서 디바이스 로드 후 LL에 로딩 Carrier
+//                         ReqStatus = ReqStatus_ATM.LOAD_LL2_CARR;
+//                     }
+//                     else if (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == true
+//                         && GlobalVariable.seqShared.IsInCP(0) == false)
+//                     {
+//                         //LL에서 본딩 완료 웨이퍼 로드 후 CP에 언로딩
+//                         ReqStatus = ReqStatus_ATM.UNLOAD_CP;
+//                     }
+//                     else
+//                     {
+//                         ReqStatus = ReqStatus_ATM.NONE;
+//                     }
+//                     break;
 
                 default:
                     //에러
@@ -1376,18 +1481,12 @@ namespace TBDB_Handler.SEQ
                     break;
 
                 case 20:
-                    //FM로봇 웨이퍼 로드 동작
-                    MoveRobot(AtmStage.LAMI_LD, ARM.UPPER);
+                    // ATM 로봇 웨이퍼 로드 동작
+                    MoveRobot(AtmStage.LAMI_LD, arm);
                     break;
 
                 case 30:
-                    //if (CheckComplete() != fn.success) return fn.busy;    
-                    fnRet = CheckComplete();
-                    if (fnRet == fn.busy) return fnRet;
-                    else if (fnRet == fn.err)
-                    {
-                        return fnRet;
-                    }
+                    if (CheckComplete() != fn.success) return fn.busy;                 
                     //웨이퍼 상태 확인필요!
                     break;
 
@@ -1398,12 +1497,6 @@ namespace TBDB_Handler.SEQ
 
                 case 50:
                     //if (CheckComplete() != fn.success) return fn.busy;
-                    fnRet = CheckComplete();
-                    if (fnRet == fn.busy) return fnRet;
-                    else if (fnRet == fn.err)
-                    {
-                        return fnRet;
-                    }
                     break;
 
                 case 60:
@@ -1457,18 +1550,12 @@ namespace TBDB_Handler.SEQ
                     return fn.busy;
 
                 case 20:
-                    //FM로봇 웨이퍼 언로드 동작
+                    //ATM 로봇 웨이퍼 언로드 동작
                     MoveRobot(AtmStage.LAMI_ULD, arm);
                     break;
 
                 case 30:
-                    //if (CheckComplete() != fn.success) return fn.busy;    
-                    fnRet = CheckComplete();
-                    if (fnRet == fn.busy) return fnRet;
-                    else if (fnRet == fn.err)
-                    {
-                        return fnRet;
-                    }
+                    if (CheckComplete() != fn.success) return fn.busy;                 
                     //웨이퍼 상태 확인필요!
                     break;
 

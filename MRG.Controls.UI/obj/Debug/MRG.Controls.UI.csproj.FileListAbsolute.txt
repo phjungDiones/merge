@@ -204,3 +204,14 @@ D:\LJH\9.AP System\CTC Suorce\Merge\K Merge\TBDB_CTC_171003 (1)\MRG.Controls.UI\
 D:\LJH\9.AP System\CTC Suorce\Merge\K Merge\TBDB_CTC_171003 (1)\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.csproj.CoreCompileInputs.cache
 D:\LJH\9.AP System\CTC Suorce\Merge\K Merge\TBDB_CTC_171003 (1)\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.dll
 D:\LJH\9.AP System\CTC Suorce\Merge\K Merge\TBDB_CTC_171003 (1)\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\MRG.Controls.UI\bin\Debug\MRG.Controls.UI.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\MRG.Controls.UI\bin\Debug\MRG.Controls.UI.pdb
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.csprojResolveAssemblyReference.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.csproj.CoreCompileInputs.cache
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.dll
+D:\LJH\9.AP System\CTC Suorce\TBDB_CTC_171013_1650\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.pdb
+D:\LJH\Source\TBDB_CTC_171013_1920\MRG.Controls.UI\bin\Debug\MRG.Controls.UI.dll
+D:\LJH\Source\TBDB_CTC_171013_1920\MRG.Controls.UI\bin\Debug\MRG.Controls.UI.pdb
+D:\LJH\Source\TBDB_CTC_171013_1920\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.csprojResolveAssemblyReference.cache
+D:\LJH\Source\TBDB_CTC_171013_1920\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.dll
+D:\LJH\Source\TBDB_CTC_171013_1920\MRG.Controls.UI\obj\Debug\MRG.Controls.UI.pdb

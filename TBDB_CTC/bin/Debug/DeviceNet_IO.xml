@@ -826,7 +826,7 @@
           <DeviceNetIO>
             <IO_Type>D_INPUT</IO_Type>
             <Address>11</Address>
-            <IO_Name>Main Door #1 Open </IO_Name>
+            <IO_Name>Main Door #1 Open</IO_Name>
             <Cable />
             <SubAddr>1024</SubAddr>
             <Description />
@@ -879,7 +879,7 @@
           <DeviceNetIO>
             <IO_Type>D_INPUT</IO_Type>
             <Address>12</Address>
-            <IO_Name>CP#1 TM ARM Detect Sensor </IO_Name>
+            <IO_Name>CP#1 TM ARM Detect Sensor</IO_Name>
             <Cable />
             <SubAddr>1</SubAddr>
             <Description />
@@ -911,7 +911,7 @@
           <DeviceNetIO>
             <IO_Type>D_INPUT</IO_Type>
             <Address>12</Address>
-            <IO_Name>CP#1 FM ARM Detect Sensor </IO_Name>
+            <IO_Name>CP#1 FM ARM Detect Sensor</IO_Name>
             <Cable />
             <SubAddr>16</SubAddr>
             <Description />
@@ -1098,7 +1098,7 @@
           <DeviceNetIO>
             <IO_Type>D_OUTPUT</IO_Type>
             <Address>2</Address>
-            <IO_Name>LAMP Reset Swtich </IO_Name>
+            <IO_Name>LAMP Reset Swtich</IO_Name>
             <Cable />
             <SubAddr>2</SubAddr>
             <Description />
@@ -1130,7 +1130,7 @@
           <DeviceNetIO>
             <IO_Type>D_OUTPUT</IO_Type>
             <Address>2</Address>
-            <IO_Name>HP Slot Valve Close </IO_Name>
+            <IO_Name>HP Slot Valve Close</IO_Name>
             <Cable />
             <SubAddr>32</SubAddr>
             <Description />
@@ -1159,7 +1159,7 @@
           <DeviceNetIO>
             <IO_Type>D_OUTPUT</IO_Type>
             <Address>3</Address>
-            <IO_Name>L/L Gate Slot Valve Open </IO_Name>
+            <IO_Name>L/L Gate Slot Valve Open</IO_Name>
             <Cable />
             <SubAddr>1</SubAddr>
             <Description />
@@ -1167,7 +1167,7 @@
           <DeviceNetIO>
             <IO_Type>D_OUTPUT</IO_Type>
             <Address>3</Address>
-            <IO_Name>L/L Gate Slot Valve Close </IO_Name>
+            <IO_Name>L/L Gate Slot Valve Close</IO_Name>
             <Cable />
             <SubAddr>2</SubAddr>
             <Description />
@@ -2062,7 +2062,7 @@
           <DeviceNetIO>
             <IO_Type>D_OUTPUT</IO_Type>
             <Address>8</Address>
-            <IO_Name>Signal Tower RED  On</IO_Name>
+            <IO_Name>Signal Tower RED On</IO_Name>
             <Cable />
             <SubAddr>16</SubAddr>
             <Description />
@@ -2070,7 +2070,7 @@
           <DeviceNetIO>
             <IO_Type>D_OUTPUT</IO_Type>
             <Address>8</Address>
-            <IO_Name>Signal Tower Yellow  On</IO_Name>
+            <IO_Name>Signal Tower Yellow On</IO_Name>
             <Cable />
             <SubAddr>32</SubAddr>
             <Description />
@@ -2078,7 +2078,7 @@
           <DeviceNetIO>
             <IO_Type>D_OUTPUT</IO_Type>
             <Address>8</Address>
-            <IO_Name>Signal Tower Green  On</IO_Name>
+            <IO_Name>Signal Tower Green On</IO_Name>
             <Cable />
             <SubAddr>64</SubAddr>
             <Description />
@@ -5001,7 +5001,7 @@
           <DeviceNetIO>
             <IO_Type>D_INPUT</IO_Type>
             <Address>52</Address>
-            <IO_Name>Bonder  Gate Open Status</IO_Name>
+            <IO_Name>Bonder Gate Open Status</IO_Name>
             <Cable />
             <SubAddr>1</SubAddr>
             <Description />
@@ -5017,7 +5017,7 @@
           <DeviceNetIO>
             <IO_Type>D_INPUT</IO_Type>
             <Address>52</Address>
-            <IO_Name>Load lock TM  Gate Open Status</IO_Name>
+            <IO_Name>Load lock TM Gate Open Status</IO_Name>
             <Cable />
             <SubAddr>4</SubAddr>
             <Description />
@@ -5025,7 +5025,7 @@
           <DeviceNetIO>
             <IO_Type>D_INPUT</IO_Type>
             <Address>52</Address>
-            <IO_Name>Load lock TM  Gate Close Status</IO_Name>
+            <IO_Name>Load lock TM Gate Close Status</IO_Name>
             <Cable />
             <SubAddr>8</SubAddr>
             <Description />
@@ -5307,7 +5307,7 @@
           <DeviceNetIO>
             <IO_Type>D_INPUT</IO_Type>
             <Address>56</Address>
-            <IO_Name>ARM B Retract </IO_Name>
+            <IO_Name>ARM B Retract</IO_Name>
             <Cable />
             <SubAddr>32</SubAddr>
             <Description />
@@ -5803,7 +5803,7 @@
           <DeviceNetIO>
             <IO_Type>D_OUTPUT</IO_Type>
             <Address>34</Address>
-            <IO_Name>BD측 Gate  Valve Open</IO_Name>
+            <IO_Name>BD측 Gate Valve Open</IO_Name>
             <Cable />
             <SubAddr>1</SubAddr>
             <Description />
@@ -5811,7 +5811,7 @@
           <DeviceNetIO>
             <IO_Type>D_OUTPUT</IO_Type>
             <Address>34</Address>
-            <IO_Name>BD측 Gate  Valve Close</IO_Name>
+            <IO_Name>BD측 Gate Valve Close</IO_Name>
             <Cable />
             <SubAddr>2</SubAddr>
             <Description />

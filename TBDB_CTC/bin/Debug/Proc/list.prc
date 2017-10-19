@@ -31,7 +31,7 @@
     </ProcInfoAlign>
     <ProcInfoAlign>
       <strProcName>Device</strProcName>
-      <dAngle>100.5</dAngle>
+      <dAngle>100</dAngle>
     </ProcInfoAlign>
   </listProcAlign>
   <listProcLami>
@@ -65,14 +65,14 @@
       <strProcName>Bonder</strProcName>
       <dTotalTimeSec>1</dTotalTimeSec>
       <bVisionUse>true</bVisionUse>
-      <dPressure>2</dPressure>
-      <dPressTimeSec>3</dPressTimeSec>
-      <dUpperTemp>4</dUpperTemp>
-      <dLowerTemp>5</dLowerTemp>
-      <dAPCPos>6</dAPCPos>
-      <dBacklightCH1>7</dBacklightCH1>
-      <dBacklightCH2>0</dBacklightCH2>
-      <dBacklightCH3>9</dBacklightCH3>
+      <dPressure>0.2</dPressure>
+      <dPressTimeSec>120</dPressTimeSec>
+      <dUpperTemp>20</dUpperTemp>
+      <dLowerTemp>20</dLowerTemp>
+      <dAPCPos>50</dAPCPos>
+      <dBacklightCH1>80</dBacklightCH1>
+      <dBacklightCH2>96</dBacklightCH2>
+      <dBacklightCH3>96</dBacklightCH3>
     </ProcInfoBond>
   </listProcBond>
 </ProcessInfo>

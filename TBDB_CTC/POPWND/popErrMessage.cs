@@ -6,8 +6,8 @@ namespace TBDB_CTC.POPWND
 {
     public partial class popErrMessage : Form
     {
-        TBDB_CTC.POPWND.Error.Global.ErrorPopUpmaMassage a = TBDB_CTC.POPWND.Error.Global.ErrorPopUpmaMassage.Instance;
-        TBDB_CTC.POPWND.Error.Global.GlobalVariable b = TBDB_CTC.POPWND.Error.Global.GlobalVariable.Instance;
+        TBDB_CTC.POPWND.Error.Test.ErrorPopUpmaMassage a = TBDB_CTC.POPWND.Error.Test.ErrorPopUpmaMassage.Instance;
+        TBDB_CTC.POPWND.Error.Test.GlobalVariable b = TBDB_CTC.POPWND.Error.Test.GlobalVariable.Instance;
         
         
 

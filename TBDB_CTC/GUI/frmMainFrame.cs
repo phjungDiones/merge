@@ -11,8 +11,8 @@ using TBDB_CTC.Data;
 using TBDB_CTC.GLOBAL;
 using TBDB_CTC.POPWND;
 using TBDB_Handler.GLOBAL;
+using TBDB_Handler.MOTION;
 using TBDB_Handler.THREAD;
-
 namespace TBDB_CTC.GUI
 {
     public partial class frmMainFrame : Form
@@ -32,6 +32,8 @@ namespace TBDB_CTC.GUI
         frmAlarm fmAlarm;
         popKeyPad _popKeyPad;
         //frmLog fLog;
+
+        popErrMessage errWidnow;
 
         popAutoRun autoRun;
 
@@ -62,7 +64,7 @@ namespace TBDB_CTC.GUI
 
         private void LoginLevel(int index)
         {
-           if(index.Equals(MCDF.LEVEL_NOT_LOGIN))
+            if (index.Equals(MCDF.LEVEL_NOT_LOGIN))
             {//로그인안된상태
                 btnToolIO.Enabled = false;
                 btnToolMain.Enabled = false;
@@ -78,11 +80,11 @@ namespace TBDB_CTC.GUI
 
 
                 btnToolHistory.Enabled = false;
-                if(!(fmAlarm == null))
-                {   
+                if (!(fmAlarm == null))
+                {
                     ScreenChange(0);
                 }
-                
+
             }
             if (index.Equals(MCDF.LEVEL_OP))
             {//OP
@@ -132,12 +134,8 @@ namespace TBDB_CTC.GUI
                 }
 
             }
-           
-
-
-
-
         }
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             LoginLevel(MCDF.LEVEL_NOT_LOGIN);
@@ -196,9 +194,9 @@ namespace TBDB_CTC.GUI
 
                 }
             }
-            CJ_Controls.Communication.Global.GlobalEvent.GetErrorEvent += delegate { POPWND.Error.Global.GlobalVariable.Instance.SetErr((Eidentify_error)CJ_Controls.Communication.Global.GlobalDefine.Instance.robot_index, CJ_Controls.Communication.Global.GlobalDefine.Instance.sRcvData); };
+            CJ_Controls.Communication.Test.GlobalEvent.GetErrorEvent += delegate { POPWND.Error.Test.GlobalVariable.Instance.SetErr((Eidentify_error)CJ_Controls.Communication.Test.GlobalDefine.Instance.robot_index, CJ_Controls.Communication.Test.GlobalDefine.Instance.sRcvData); };
 
-            TBDB_CTC.POPWND.Error.Global.GlobalVariable.Instance.Click += ErrMessageFormShow;
+            TBDB_CTC.POPWND.Error.Test.GlobalVariable.Instance.Click += ErrMessageFormShow;
             popAppLoading popLoading = new popAppLoading();
             DialogResult result = popLoading.ShowDialog();
 
@@ -223,6 +221,7 @@ namespace TBDB_CTC.GUI
             fAlarm = GlobalForm.fAlarm;
             fHistory = GlobalForm.fHistory;
             fRcp = GlobalForm.fRcp;
+ errWidnow = new popErrMessage();//겹침
             ferr = GlobalForm.fErr;
             fmAlarm = GlobalForm.fmAlarm;
             _popKeyPad = GlobalForm._popKeyPad;
@@ -262,7 +261,10 @@ namespace TBDB_CTC.GUI
 
             fLogin.Show();
 
+
             fLogin.userLogin += LoginLevel;
+            autoRun.RunStopEvent += Autorun;
+            autoRun.ResetEvent += ResetEvent;
 
             fCfg.LoadConfig(); //ComPort Open
             CfgManager.Instance.LoadConfigFile(); //Config Data Load
@@ -271,6 +273,116 @@ namespace TBDB_CTC.GUI
             //GlobalVariable.io.StartReadIO(); //DeviceNet Open Read
 
             GlobalVariable.seqShared.Init(COUNT.MAX_PORT_SLOT);
+
+            //프로그램 로딩 후 초기 셋팅
+            InitSetting();
+
+        }
+
+        void Autorun(int nRunMode)
+        {
+            if (nRunMode == MCDF.CMD_RUN)
+            {
+                StartProcess();
+            }
+            else if (nRunMode == MCDF.CMD_STOP)
+            {
+                StopProcess();
+            }
+        }
+
+        void StartProcess()
+        {
+#if !_REAL_MC
+            //전체 홈 시퀀스 이후에 따로 연결해야 함
+            GlobalVariable.mcState.isRdy = true;
+            GlobalVariable.mcState.isRun = true;
+            return;
+#endif
+
+            short status = 0;
+            if (GlobalVariable.mcState.isErr) return;
+            //if (!GlobalVariable.mcState.isRdy) return;
+//             if (GlobalVariable.mcState.isInitializing) return;
+//             if (GlobalVariable.mcState.isWateForStop) return;
+//             if (GlobalVariable.mcState.isMovingStopPos) return;
+
+            GlobalSeq.autoRun.ResetCmd();
+
+            //통신 연결 상태 확인
+            //로봇 알람, Status 확인
+
+            //PMC Vacuum Status 확인
+            GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(PMC_STATUS.PMCVacuumStatus, ref status);
+            if (status != (short)VTM_VACUUM_STATUS_VALUE.VTM)
+            {
+                MessageBox.Show("PMC가 VTM상태가 아닙니다. 확인하세요.");
+                return;
+            }
+
+            if( GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(CTC_STATUS.CTCRunMode, ref status)
+                != GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(PMC_STATUS.PMCRunMode, ref status) )
+            {
+                MessageBox.Show("CTC와 PMC의 RunMode 상태가 다릅니다. 확인하세요.");
+                return;
+            }
+
+            //RunMode가 VTM일경우, VTM Pumping상태가 아닐경우 한번 실행
+            if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_1) == false
+                || GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_2) == false )
+            {
+                //VTM 상태가 아닐경우 VTM Pumping
+
+//                 fn fRet = GlobalSeq.autoRun.procLoadlock.VTM_Pumping();
+//                 if (fRet == fn.success) break;
+//                 else if (fRet == fn.busy) return;
+//                 else
+//                 {
+//                     //Error
+//                     return;
+//                 }
+
+            }
+
+            //전체 홈 시퀀스 이후에 따로 연결해야 함
+                GlobalVariable.mcState.isRdy = true; 
+            GlobalVariable.mcState.isRun = true;
+
+            GlobalSeq.autoRun.prcVTM.Pmc.SetStatus(CTC_STATUS.CTCStatus, (short)CTC_STATUS_VALUE.RUN);
+        }
+
+        void StopProcess()
+        {
+            GlobalVariable.mcState.isRun = false;
+            GlobalVariable.mcState.isManualRun = false;
+
+            //정지될때 까지 기다린다.
+            WaitStop();
+            GlobalVariable.mcState.isCheckStopPos = true;
+
+            GlobalSeq.autoRun.prcVTM.Pmc.SetStatus(CTC_STATUS.CTCStatus, (short)CTC_STATUS_VALUE.STOP);
+        }
+
+        void ResetEvent()
+        {
+            if (!GlobalVariable.mcState.isErr) return;
+            //errWidnow.resetError();
+        }
+
+        public void WaitStop()
+        {
+
+        }
+
+        void InitSetting()
+        {
+            //VTM Robot Extend 동작 IO on
+            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VtmArmExt_1, true);
+            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VtmArmExt_2, true);
+            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VtmArmExt_4, true);
+            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VtmArmExt_5, true);
+
+
         }
 
         void ShowSafetyAlarm(int nSafetyErrNo)
@@ -285,21 +397,23 @@ namespace TBDB_CTC.GUI
             if (GlobalVariable.mcState.isErr) return;
             GlobalVariable.mcState.isErr = true;
             GlobalVariable.mcState.nLastErrNo = nSafetyErrNo;
-            //if (nErrNo != ERDF.LOTEND)
-            //{
-            //    GVAR.mcState.isErr = true;
-            //}
-            //isErrStop = true;
 
             if (this.InvokeRequired)
             {
-                //this.Invoke(new MethodInvoker(ShowErrorWin));
+                this.Invoke(new MethodInvoker(ShowErrorWin));
             }
             else
             {
-                //ShowErrorWin();
+                ShowErrorWin();
             }
 
+        }
+
+        void ShowErrorWin()
+        {
+         //  errWidnow.setErrorText();
+           errWidnow.TopMost = true;
+           errWidnow.Show();
         }
 
         private void ResetToolButton()
@@ -403,21 +517,13 @@ namespace TBDB_CTC.GUI
                     btnToolIO.ForeColor = Color.Orange;
                     //GlobalVariable.nActiveScreen = MCDF.SCREEN_ERROR;
                     break;
-                //case 7://DF.SCREEN_REPORT:
-                //    fAlarm.Show();
-                //    fAlarm.BringToFront();
-                //    btnToolAlarm.BackColor = Color.FromArgb(64, 64, 64);
-                //    btnToolAlarm.ForeColor = Color.Orange;
-                //    //GlobalVariable.nActiveScreen = MCDF.SCREEN_ERROR;
-                //    break;
-                case 7:
-                    fmAlarm.Show();
-                    fmAlarm.BringToFront();
+                case 7://DF.SCREEN_REPORT:
+                    fAlarm.Show();
+                    fAlarm.BringToFront();
                     btnToolAlarm.BackColor = Color.FromArgb(64, 64, 64);
                     btnToolAlarm.ForeColor = Color.Orange;
                     //GlobalVariable.nActiveScreen = MCDF.SCREEN_ERROR;
                     break;
-
                 case 8://DF.SCREEN_REPORT:
                     fHistory.Show();
                     fHistory.BringToFront();
@@ -428,7 +534,6 @@ namespace TBDB_CTC.GUI
 
                 default: break;
             }
-            
         }
 
         void fLogin_userLogin(int nScrNo)
@@ -457,17 +562,17 @@ namespace TBDB_CTC.GUI
         {
             Button btn = sender as Button;
             ScreenChange(Convert.ToInt16(btn.Tag));
-            fmAlarm.resetindex();
+          //  fmAlarm.resetindex();
 
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(this, "Are you sure you want to quit", "Confirm!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-            if (result == DialogResult.Yes)
+            if (result == DialogResult.Yes) 
             {
                 tmrRefresh.Enabled = false;
-                this.Close(); /*Application.Exit();*/
+                this.Close(); /*Application.Exit();*/ 
             }
         }
 
@@ -482,11 +587,6 @@ namespace TBDB_CTC.GUI
         {
             dtxDay.DigitText = DateTime.Now.ToString("yyyy-MM-dd");
             dtxTime.DigitText = DateTime.Now.ToString("HH:mm:ss tt");
-
-            ledBulb1.Color = _Main.GetAtmTmData().Robot.IsOpen() ? Color.Green : Color.Red;
-            ledBulb2.Color = _Main.GetLoaderData().GetPortData(3).GetNano300().IsOpen() ? Color.Green : Color.Red;
-            ledBulb3.Color = _Main.GetLoaderData().Aligner.IsOpen() ? Color.Green : Color.Red;
-            ledBulb4.Color = _Main.GetVaccumTmData().Robot.IsOpen() ? Color.Green : Color.Red;
         }
 
         private void btnAutoRun_Click(object sender, EventArgs e)

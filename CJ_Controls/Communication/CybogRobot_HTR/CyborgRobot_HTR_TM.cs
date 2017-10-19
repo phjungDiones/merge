@@ -155,7 +155,7 @@ namespace CJ_Controls.Communication.CybogRobot_HTR
                     Flush();
                     _WorkStatus = WORK_STATUS.ERROR;
                     _ErrMsg = sRcvData;
-                    Global.GlobalFunction.Instance.SetErr(sRcvData, Global.GlobalDefine.Eidentify_error.CyborgRobot_HTR);
+                    Test.GlobalFunction.Instance.SetErr(sRcvData, Test.GlobalDefine.Eidentify_error.CyborgRobot_HTR);
                     _AckMode = ACK_MODE.ERROR;
                 }
                 else if (sRcvData.Contains("WAR") == true)
@@ -163,7 +163,7 @@ namespace CJ_Controls.Communication.CybogRobot_HTR
                     Flush();
                     _WorkStatus = WORK_STATUS.WARING;
                     _WarMsg = sRcvData;
-                    Global.GlobalFunction.Instance.SetErr(sRcvData, Global.GlobalDefine.Eidentify_error.CyborgRobot_HTR);
+                    Test.GlobalFunction.Instance.SetErr(sRcvData, Test.GlobalDefine.Eidentify_error.CyborgRobot_HTR);
                     _AckMode = ACK_MODE.WARNING;
                 }
             }

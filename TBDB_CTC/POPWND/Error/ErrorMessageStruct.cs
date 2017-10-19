@@ -40,20 +40,20 @@ namespace TBDB_CTC.POPWND.Error
             {
                 mErrorTarget = e.ToString();
                 mbClearError = false;
-                mErrorCount = Global.GlobalVariable.Instance.ErrorCount;
+                mErrorCount = Test.GlobalVariable.Instance.ErrorCount;
                 
                 mErrorCauseTime = DateTime.Now.ToString("yyyy-MM-dd")+ " "+DateTime.Now.ToString("HH:mm:ss");
                 mErrorNumber = ErrorNumber;
 
-                Global.ErrorPopUpmaMassage.Instance.mErrorNumber = ErrorNumber;
-                Global.ErrorPopUpmaMassage.Instance.mbClearError = mbClearError;
-                Global.ErrorPopUpmaMassage.Instance.mErrorAction = "알수없는 에러";
-                Global.ErrorPopUpmaMassage.Instance.mErrorCause = "알수없는 에러";
-                Global.ErrorPopUpmaMassage.Instance.mErrorCauseTime = mErrorCauseTime;
-                Global.ErrorPopUpmaMassage.Instance.mErrorCount = mErrorCount;
-                Global.ErrorPopUpmaMassage.Instance.mErrorEndTime = mErrorEndTime;
-                Global.ErrorPopUpmaMassage.Instance.mErrorMessage = "알수없는 에러";
-                Global.ErrorPopUpmaMassage.Instance.mErrorTarget = mErrorTarget;
+                Test.ErrorPopUpmaMassage.Instance.mErrorNumber = ErrorNumber;
+                Test.ErrorPopUpmaMassage.Instance.mbClearError = mbClearError;
+                Test.ErrorPopUpmaMassage.Instance.mErrorAction = "알수없는 에러";
+                Test.ErrorPopUpmaMassage.Instance.mErrorCause = "알수없는 에러";
+                Test.ErrorPopUpmaMassage.Instance.mErrorCauseTime = mErrorCauseTime;
+                Test.ErrorPopUpmaMassage.Instance.mErrorCount = mErrorCount;
+                Test.ErrorPopUpmaMassage.Instance.mErrorEndTime = mErrorEndTime;
+                Test.ErrorPopUpmaMassage.Instance.mErrorMessage = "알수없는 에러";
+                Test.ErrorPopUpmaMassage.Instance.mErrorTarget = mErrorTarget;
                 return;
                 //숫자변경못햇을시
                 //에러남기거나 무언가해야함
@@ -167,7 +167,7 @@ namespace TBDB_CTC.POPWND.Error
             mErrorTarget = e.ToString();
             mbClearError = false;
             mErrorNumber = errorNumber;
-            mErrorCount = Global.GlobalVariable.Instance.ErrorCount;
+            mErrorCount = Test.GlobalVariable.Instance.ErrorCount;
             mErrorCauseTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
 
@@ -178,15 +178,15 @@ namespace TBDB_CTC.POPWND.Error
             mErrorAction = action;
 
 
-            Global.ErrorPopUpmaMassage.Instance.mbClearError = mbClearError;
-            Global.ErrorPopUpmaMassage.Instance.mErrorAction = mErrorAction;
-            Global.ErrorPopUpmaMassage.Instance.mErrorCause = mErrorCause;
-            Global.ErrorPopUpmaMassage.Instance.mErrorCauseTime = mErrorCauseTime;
-            Global.ErrorPopUpmaMassage.Instance.mErrorCount = mErrorCount;
-            Global.ErrorPopUpmaMassage.Instance.mErrorEndTime = mErrorEndTime;
-            Global.ErrorPopUpmaMassage.Instance.mErrorMessage = mErrorMessage;
-            Global.ErrorPopUpmaMassage.Instance.mErrorNumber = mErrorNumber;
-            Global.ErrorPopUpmaMassage.Instance.mErrorTarget = mErrorTarget;
+            Test.ErrorPopUpmaMassage.Instance.mbClearError = mbClearError;
+            Test.ErrorPopUpmaMassage.Instance.mErrorAction = mErrorAction;
+            Test.ErrorPopUpmaMassage.Instance.mErrorCause = mErrorCause;
+            Test.ErrorPopUpmaMassage.Instance.mErrorCauseTime = mErrorCauseTime;
+            Test.ErrorPopUpmaMassage.Instance.mErrorCount = mErrorCount;
+            Test.ErrorPopUpmaMassage.Instance.mErrorEndTime = mErrorEndTime;
+            Test.ErrorPopUpmaMassage.Instance.mErrorMessage = mErrorMessage;
+            Test.ErrorPopUpmaMassage.Instance.mErrorNumber = mErrorNumber;
+            Test.ErrorPopUpmaMassage.Instance.mErrorTarget = mErrorTarget;
 
         }
 

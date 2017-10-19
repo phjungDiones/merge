@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO;
+
 
 namespace CJ_Controls.Communication.PA300C
 {
@@ -68,6 +70,7 @@ namespace CJ_Controls.Communication.PA300C
 	}
 	public class Aligner_PA300C
 	{
+        private bool bError = false;
         public delegate void procAddMsgEvent(string strAddMsg);
         public event procAddMsgEvent procMsgEvent;
 
@@ -185,7 +188,8 @@ namespace CJ_Controls.Communication.PA300C
 		}
 		private ACK_MODE RcvCheck(ref string sRcvData)
 		{
-            sRcvData = GetReceiveDataEx_EndCut();
+            
+            
 			ACK_MODE _AckMode = ACK_MODE.NONE;
 			if (IsReceived("\n>") == true)
 			{
@@ -216,27 +220,31 @@ namespace CJ_Controls.Communication.PA300C
 				}
 				else if (sRcvData.Contains("#ER") == true)
 				{
-
+                    
+                    SendData("#ERST" + "\r");
+                    bError = true;
 					FlushEx_EndCheckCut();
 					_WorkStatus = WORK_STATUS.ERROR;
-
 					_ErrMsg = sRcvData;
-                    Global.GlobalFunction.Instance.SetErr(_ErrMsg, Global.GlobalDefine.Eidentify_error.Aligner_PA300C);
-                    _AckMode = ACK_MODE.ERROR;
+                    
+					_AckMode = ACK_MODE.ERROR;
 
-                //}else if (Global.GlobalDefine.Instance.Status_Aligner_PA300C_b)
-                //{
-                //    Global.GlobalFunction.Instance.GetErrNumber_2(sRcvData, Global.GlobalDefine.Eidentify_error.Aligner_PA300C);
-                //    Global.GlobalDefine.Instance.Status_Aligner_PA300C_b = false;
-                }
+                
+                }else if (bError)
+                {
+                    string[] temp = sRcvData.Split('#');
+                    if (!(temp[1] == null))
+                    {
+                        bError = false;
+                        Test.GlobalFunction.Instance.SetErr(temp[1], Test.GlobalDefine.Eidentify_error.Aligner_PA300C);
+                    }
+				}
 				else
 				{//위의것이 아니면, 거의 체크 데이터로 본다. 그냥..
 					FlushEx_EndCheckCut();
 					_AckMode = ACK_MODE.DATA;
 				}
 			}
-            
-
 
             //수정
             BeforeAck = _AckMode;
@@ -341,7 +349,7 @@ namespace CJ_Controls.Communication.PA300C
 
             return true;
         }
-        private long GetElapseTime(DateTime dateTime)
+		private long GetElapseTime(DateTime dateTime)
 		{
 			return ((DateTime.Now.Ticks - dateTime.Ticks) / 10000);
 		}
@@ -696,7 +704,7 @@ namespace CJ_Controls.Communication.PA300C
             return nRet;
         }
 
-        public string Replace_Char(string str)
+		public string Replace_Char(string str)
 		{
 			str = str.Replace("#","");
 			str = str.Replace("\r","");
@@ -799,7 +807,7 @@ namespace CJ_Controls.Communication.PA300C
 			str = Replace_Char(str);
 			int nVal = 0;
 			int.TryParse(str, out nVal);
-			Pa300C_Data.ErrorCode  = nVal;
+			Pa300C_Data.ErrorCode = nVal;
 		}
 		public async void Cmd_Read_STAT()
 		{//This command returns current system state.

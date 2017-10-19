@@ -107,6 +107,7 @@ namespace TBDB_CTC.GUI
 
             DataTableChanged += new MyEventHandler(SaveXml); // 데이터 변동되면 저장메소드 실행
             InitializeComponent();
+
             wndHistorySubMenu[0] = new subLogEvent();
             wndHistorySubMenu[1] = new subLogLogging();
             wndHistorySubMenu[2] = new subHistoryLotRun();
@@ -180,10 +181,6 @@ namespace TBDB_CTC.GUI
             panHistorySubClient.Controls.Add(wndHistorySubMenu[5]);
             panHistorySubClient.Controls.Add(wndHistorySubMenu[6]);
         }
-
-
-
-
 
         private void frmHistory_Load(object sender, EventArgs e)
         {
@@ -365,7 +362,7 @@ namespace TBDB_CTC.GUI
             {
                 MessageBox.Show("파일존재하지않음");
                 clearAllDGVData();
-            }
+    }
         } // 폼로드시 오늘 로그 데이터를 dataset에 대입 폼 로드시 한번만 실행해야됨
 
 
@@ -414,8 +411,8 @@ namespace TBDB_CTC.GUI
 
         private void button7_Click(object sender, EventArgs e)
         {
-            frmTestForm f = new frmTestForm();
-            f.Show();
+         //   frmTestForm f = new frmTestForm();
+          //  f.Show();
         }
     }
 

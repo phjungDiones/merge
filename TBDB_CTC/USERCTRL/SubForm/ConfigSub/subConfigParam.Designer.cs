@@ -39,62 +39,10 @@
             this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.toggleSwitch29 = new JCS.ToggleSwitch();
             this.panel40 = new System.Windows.Forms.Panel();
-            this.toggleSwitch28 = new JCS.ToggleSwitch();
             this.panel39 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.panel38 = new System.Windows.Forms.Panel();
-            this.toggleSwitch27 = new JCS.ToggleSwitch();
             this.panel37 = new System.Windows.Forms.Panel();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.toggleSwitch26 = new JCS.ToggleSwitch();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.toggleSwitch25 = new JCS.ToggleSwitch();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.toggleSwitch24 = new JCS.ToggleSwitch();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.toggleSwitch23 = new JCS.ToggleSwitch();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.toggleSwitch22 = new JCS.ToggleSwitch();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.toggleSwitch21 = new JCS.ToggleSwitch();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.toggleSwitch20 = new JCS.ToggleSwitch();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.toggleSwitch19 = new JCS.ToggleSwitch();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
-            this.panel41 = new System.Windows.Forms.Panel();
             this.label58 = new System.Windows.Forms.Label();
             this.panel47 = new System.Windows.Forms.Panel();
             this.label57 = new System.Windows.Forms.Label();
@@ -233,22 +181,63 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.toggleSwitch29 = new JCS.ToggleSwitch();
+            this.toggleSwitch27 = new JCS.ToggleSwitch();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.toggleSwitch28 = new JCS.ToggleSwitch();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.toggleSwitch19 = new JCS.ToggleSwitch();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.toggleSwitch23 = new JCS.ToggleSwitch();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.toggleSwitch22 = new JCS.ToggleSwitch();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.toggleSwitch21 = new JCS.ToggleSwitch();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.toggleSwitch20 = new JCS.ToggleSwitch();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.toggleSwitch26 = new JCS.ToggleSwitch();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.toggleSwitch25 = new JCS.ToggleSwitch();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.toggleSwitch24 = new JCS.ToggleSwitch();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel40.SuspendLayout();
             this.panel39.SuspendLayout();
             this.panel38.SuspendLayout();
             this.panel37.SuspendLayout();
-            this.panel36.SuspendLayout();
-            this.panel35.SuspendLayout();
-            this.panel34.SuspendLayout();
-            this.panel33.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel26.SuspendLayout();
             this.panel62.SuspendLayout();
             this.panel61.SuspendLayout();
             this.panel60.SuspendLayout();
@@ -288,6 +277,17 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.panel31.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel36.SuspendLayout();
+            this.panel35.SuspendLayout();
+            this.panel34.SuspendLayout();
+            this.panel33.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -433,21 +433,6 @@
             this.label49.Text = "label49";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // toggleSwitch29
-            // 
-            this.toggleSwitch29.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch29.Name = "toggleSwitch29";
-            this.toggleSwitch29.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch29.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch29.OffText = "OFF";
-            this.toggleSwitch29.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch29.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch29.OnText = "ON";
-            this.toggleSwitch29.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch29.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch29.TabIndex = 915;
-            this.toggleSwitch29.Tag = "0";
-            // 
             // panel40
             // 
             this.panel40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -456,21 +441,6 @@
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(103, 32);
             this.panel40.TabIndex = 960;
-            // 
-            // toggleSwitch28
-            // 
-            this.toggleSwitch28.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch28.Name = "toggleSwitch28";
-            this.toggleSwitch28.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch28.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch28.OffText = "OFF";
-            this.toggleSwitch28.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch28.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch28.OnText = "ON";
-            this.toggleSwitch28.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch28.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch28.TabIndex = 916;
-            this.toggleSwitch28.Tag = "0";
             // 
             // panel39
             // 
@@ -481,14 +451,6 @@
             this.panel39.Size = new System.Drawing.Size(103, 32);
             this.panel39.TabIndex = 961;
             // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox10.Location = new System.Drawing.Point(2, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(97, 25);
-            this.textBox10.TabIndex = 920;
-            // 
             // panel38
             // 
             this.panel38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -498,21 +460,6 @@
             this.panel38.Size = new System.Drawing.Size(103, 32);
             this.panel38.TabIndex = 962;
             // 
-            // toggleSwitch27
-            // 
-            this.toggleSwitch27.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch27.Name = "toggleSwitch27";
-            this.toggleSwitch27.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch27.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch27.OffText = "OFF";
-            this.toggleSwitch27.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch27.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch27.OnText = "ON";
-            this.toggleSwitch27.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch27.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch27.TabIndex = 917;
-            this.toggleSwitch27.Tag = "0";
-            // 
             // panel37
             // 
             this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -521,557 +468,6 @@
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(103, 32);
             this.panel37.TabIndex = 963;
-            // 
-            // label48
-            // 
-            this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label48.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label48.ForeColor = System.Drawing.Color.Orange;
-            this.label48.Location = new System.Drawing.Point(295, 163);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(283, 32);
-            this.label48.TabIndex = 964;
-            this.label48.Text = "LPMB";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label47
-            // 
-            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label47.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label47.ForeColor = System.Drawing.Color.White;
-            this.label47.Location = new System.Drawing.Point(295, 194);
-            this.label47.Name = "label47";
-            this.label47.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label47.Size = new System.Drawing.Size(181, 32);
-            this.label47.TabIndex = 965;
-            this.label47.Text = "label47";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label46
-            // 
-            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label46.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(295, 225);
-            this.label46.Name = "label46";
-            this.label46.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label46.Size = new System.Drawing.Size(181, 32);
-            this.label46.TabIndex = 966;
-            this.label46.Text = "label46";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label45
-            // 
-            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label45.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(295, 256);
-            this.label45.Name = "label45";
-            this.label45.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label45.Size = new System.Drawing.Size(181, 32);
-            this.label45.TabIndex = 967;
-            this.label45.Text = "label45";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label44
-            // 
-            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label44.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(295, 287);
-            this.label44.Name = "label44";
-            this.label44.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label44.Size = new System.Drawing.Size(181, 32);
-            this.label44.TabIndex = 968;
-            this.label44.Text = "label44";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toggleSwitch26
-            // 
-            this.toggleSwitch26.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch26.Name = "toggleSwitch26";
-            this.toggleSwitch26.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch26.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch26.OffText = "OFF";
-            this.toggleSwitch26.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch26.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch26.OnText = "ON";
-            this.toggleSwitch26.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch26.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch26.TabIndex = 915;
-            this.toggleSwitch26.Tag = "0";
-            // 
-            // panel36
-            // 
-            this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel36.Controls.Add(this.toggleSwitch26);
-            this.panel36.Location = new System.Drawing.Point(475, 194);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(103, 32);
-            this.panel36.TabIndex = 969;
-            // 
-            // toggleSwitch25
-            // 
-            this.toggleSwitch25.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch25.Name = "toggleSwitch25";
-            this.toggleSwitch25.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch25.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch25.OffText = "OFF";
-            this.toggleSwitch25.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch25.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch25.OnText = "ON";
-            this.toggleSwitch25.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch25.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch25.TabIndex = 916;
-            this.toggleSwitch25.Tag = "0";
-            // 
-            // panel35
-            // 
-            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel35.Controls.Add(this.toggleSwitch25);
-            this.panel35.Location = new System.Drawing.Point(475, 225);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(103, 32);
-            this.panel35.TabIndex = 970;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox9.Location = new System.Drawing.Point(2, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(97, 25);
-            this.textBox9.TabIndex = 920;
-            // 
-            // panel34
-            // 
-            this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel34.Controls.Add(this.textBox9);
-            this.panel34.Location = new System.Drawing.Point(475, 256);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(103, 32);
-            this.panel34.TabIndex = 971;
-            // 
-            // toggleSwitch24
-            // 
-            this.toggleSwitch24.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch24.Name = "toggleSwitch24";
-            this.toggleSwitch24.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch24.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch24.OffText = "OFF";
-            this.toggleSwitch24.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch24.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch24.OnText = "ON";
-            this.toggleSwitch24.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch24.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch24.TabIndex = 917;
-            this.toggleSwitch24.Tag = "0";
-            // 
-            // panel33
-            // 
-            this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel33.Controls.Add(this.toggleSwitch24);
-            this.panel33.Location = new System.Drawing.Point(475, 287);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(103, 32);
-            this.panel33.TabIndex = 972;
-            // 
-            // label43
-            // 
-            this.label43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label43.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label43.ForeColor = System.Drawing.Color.Orange;
-            this.label43.Location = new System.Drawing.Point(295, 318);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(283, 32);
-            this.label43.TabIndex = 973;
-            this.label43.Text = "LPMC";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label42.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label42.ForeColor = System.Drawing.Color.White;
-            this.label42.Location = new System.Drawing.Point(295, 349);
-            this.label42.Name = "label42";
-            this.label42.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label42.Size = new System.Drawing.Size(181, 32);
-            this.label42.TabIndex = 974;
-            this.label42.Text = "label42";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label41
-            // 
-            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label41.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(295, 380);
-            this.label41.Name = "label41";
-            this.label41.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label41.Size = new System.Drawing.Size(181, 32);
-            this.label41.TabIndex = 975;
-            this.label41.Text = "label41";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label40
-            // 
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label40.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(295, 411);
-            this.label40.Name = "label40";
-            this.label40.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label40.Size = new System.Drawing.Size(181, 32);
-            this.label40.TabIndex = 976;
-            this.label40.Text = "label40";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label39
-            // 
-            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label39.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(295, 442);
-            this.label39.Name = "label39";
-            this.label39.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label39.Size = new System.Drawing.Size(181, 32);
-            this.label39.TabIndex = 977;
-            this.label39.Text = "label39";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toggleSwitch23
-            // 
-            this.toggleSwitch23.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch23.Name = "toggleSwitch23";
-            this.toggleSwitch23.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch23.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch23.OffText = "OFF";
-            this.toggleSwitch23.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch23.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch23.OnText = "ON";
-            this.toggleSwitch23.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch23.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch23.TabIndex = 915;
-            this.toggleSwitch23.Tag = "0";
-            // 
-            // panel32
-            // 
-            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel32.Controls.Add(this.toggleSwitch23);
-            this.panel32.Location = new System.Drawing.Point(475, 349);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(103, 32);
-            this.panel32.TabIndex = 978;
-            // 
-            // toggleSwitch22
-            // 
-            this.toggleSwitch22.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch22.Name = "toggleSwitch22";
-            this.toggleSwitch22.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch22.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch22.OffText = "OFF";
-            this.toggleSwitch22.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch22.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch22.OnText = "ON";
-            this.toggleSwitch22.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch22.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch22.TabIndex = 916;
-            this.toggleSwitch22.Tag = "0";
-            // 
-            // panel31
-            // 
-            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel31.Controls.Add(this.toggleSwitch22);
-            this.panel31.Location = new System.Drawing.Point(475, 380);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(103, 32);
-            this.panel31.TabIndex = 979;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox8.Location = new System.Drawing.Point(2, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(97, 25);
-            this.textBox8.TabIndex = 920;
-            // 
-            // panel30
-            // 
-            this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel30.Controls.Add(this.textBox8);
-            this.panel30.Location = new System.Drawing.Point(475, 411);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(103, 32);
-            this.panel30.TabIndex = 980;
-            // 
-            // toggleSwitch21
-            // 
-            this.toggleSwitch21.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch21.Name = "toggleSwitch21";
-            this.toggleSwitch21.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch21.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch21.OffText = "OFF";
-            this.toggleSwitch21.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch21.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch21.OnText = "ON";
-            this.toggleSwitch21.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch21.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch21.TabIndex = 917;
-            this.toggleSwitch21.Tag = "0";
-            // 
-            // panel29
-            // 
-            this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel29.Controls.Add(this.toggleSwitch21);
-            this.panel29.Location = new System.Drawing.Point(475, 442);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(103, 32);
-            this.panel29.TabIndex = 981;
-            // 
-            // label38
-            // 
-            this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label38.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label38.ForeColor = System.Drawing.Color.Orange;
-            this.label38.Location = new System.Drawing.Point(295, 473);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(283, 32);
-            this.label38.TabIndex = 982;
-            this.label38.Text = "LPMD";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label37
-            // 
-            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label37.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(295, 504);
-            this.label37.Name = "label37";
-            this.label37.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label37.Size = new System.Drawing.Size(181, 32);
-            this.label37.TabIndex = 983;
-            this.label37.Text = "label37";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label36
-            // 
-            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label36.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(295, 535);
-            this.label36.Name = "label36";
-            this.label36.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label36.Size = new System.Drawing.Size(181, 32);
-            this.label36.TabIndex = 984;
-            this.label36.Text = "label36";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label35
-            // 
-            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label35.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(295, 566);
-            this.label35.Name = "label35";
-            this.label35.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label35.Size = new System.Drawing.Size(181, 32);
-            this.label35.TabIndex = 985;
-            this.label35.Text = "label35";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label34
-            // 
-            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label34.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(295, 597);
-            this.label34.Name = "label34";
-            this.label34.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label34.Size = new System.Drawing.Size(181, 32);
-            this.label34.TabIndex = 986;
-            this.label34.Text = "label34";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // toggleSwitch20
-            // 
-            this.toggleSwitch20.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch20.Name = "toggleSwitch20";
-            this.toggleSwitch20.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch20.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch20.OffText = "OFF";
-            this.toggleSwitch20.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch20.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch20.OnText = "ON";
-            this.toggleSwitch20.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch20.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch20.TabIndex = 915;
-            this.toggleSwitch20.Tag = "0";
-            // 
-            // panel28
-            // 
-            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel28.Controls.Add(this.toggleSwitch20);
-            this.panel28.Location = new System.Drawing.Point(475, 504);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(103, 32);
-            this.panel28.TabIndex = 987;
-            // 
-            // toggleSwitch19
-            // 
-            this.toggleSwitch19.Location = new System.Drawing.Point(2, 2);
-            this.toggleSwitch19.Name = "toggleSwitch19";
-            this.toggleSwitch19.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toggleSwitch19.OffForeColor = System.Drawing.Color.Red;
-            this.toggleSwitch19.OffText = "OFF";
-            this.toggleSwitch19.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggleSwitch19.OnForeColor = System.Drawing.Color.Lime;
-            this.toggleSwitch19.OnText = "ON";
-            this.toggleSwitch19.Size = new System.Drawing.Size(97, 25);
-            this.toggleSwitch19.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
-            this.toggleSwitch19.TabIndex = 916;
-            this.toggleSwitch19.Tag = "0";
-            // 
-            // panel27
-            // 
-            this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel27.Controls.Add(this.toggleSwitch19);
-            this.panel27.Location = new System.Drawing.Point(475, 535);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(103, 32);
-            this.panel27.TabIndex = 988;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox7.Location = new System.Drawing.Point(2, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(97, 25);
-            this.textBox7.TabIndex = 920;
-            // 
-            // panel26
-            // 
-            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Controls.Add(this.textBox7);
-            this.panel26.Location = new System.Drawing.Point(475, 566);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(103, 32);
-            this.panel26.TabIndex = 989;
-            // 
-            // panel25
-            // 
-            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel25.Location = new System.Drawing.Point(475, 597);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(103, 32);
-            this.panel25.TabIndex = 990;
-            // 
-            // label32
-            // 
-            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label32.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(295, 659);
-            this.label32.Name = "label32";
-            this.label32.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label32.Size = new System.Drawing.Size(181, 32);
-            this.label32.TabIndex = 992;
-            this.label32.Text = "label32";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label31
-            // 
-            this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label31.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(295, 690);
-            this.label31.Name = "label31";
-            this.label31.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label31.Size = new System.Drawing.Size(181, 32);
-            this.label31.TabIndex = 993;
-            this.label31.Text = "label31";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label30
-            // 
-            this.label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label30.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(295, 721);
-            this.label30.Name = "label30";
-            this.label30.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label30.Size = new System.Drawing.Size(181, 32);
-            this.label30.TabIndex = 994;
-            this.label30.Text = "label30";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label29
-            // 
-            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label29.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(295, 752);
-            this.label29.Name = "label29";
-            this.label29.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label29.Size = new System.Drawing.Size(181, 32);
-            this.label29.TabIndex = 995;
-            this.label29.Text = "label29";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel24
-            // 
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Location = new System.Drawing.Point(475, 659);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(103, 32);
-            this.panel24.TabIndex = 996;
-            // 
-            // panel23
-            // 
-            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Location = new System.Drawing.Point(475, 690);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(103, 32);
-            this.panel23.TabIndex = 997;
-            // 
-            // panel22
-            // 
-            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel22.Location = new System.Drawing.Point(475, 721);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(103, 32);
-            this.panel22.TabIndex = 998;
-            // 
-            // panel21
-            // 
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Location = new System.Drawing.Point(475, 752);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(103, 32);
-            this.panel21.TabIndex = 999;
-            // 
-            // label33
-            // 
-            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label33.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(295, 628);
-            this.label33.Name = "label33";
-            this.label33.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.label33.Size = new System.Drawing.Size(181, 32);
-            this.label33.TabIndex = 1000;
-            this.label33.Text = "label33";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel41
-            // 
-            this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel41.Location = new System.Drawing.Point(475, 628);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(103, 32);
-            this.panel41.TabIndex = 1001;
             // 
             // label58
             // 
@@ -2662,6 +2058,610 @@
             this.label6.Text = "label6";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // toggleSwitch29
+            // 
+            this.toggleSwitch29.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch29.Name = "toggleSwitch29";
+            this.toggleSwitch29.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch29.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch29.OffText = "OFF";
+            this.toggleSwitch29.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch29.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch29.OnText = "ON";
+            this.toggleSwitch29.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch29.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch29.TabIndex = 915;
+            this.toggleSwitch29.Tag = "0";
+            // 
+            // toggleSwitch27
+            // 
+            this.toggleSwitch27.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch27.Name = "toggleSwitch27";
+            this.toggleSwitch27.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch27.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch27.OffText = "OFF";
+            this.toggleSwitch27.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch27.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch27.OnText = "ON";
+            this.toggleSwitch27.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch27.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch27.TabIndex = 917;
+            this.toggleSwitch27.Tag = "0";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox10.Location = new System.Drawing.Point(2, 2);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(97, 25);
+            this.textBox10.TabIndex = 920;
+            // 
+            // toggleSwitch28
+            // 
+            this.toggleSwitch28.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch28.Name = "toggleSwitch28";
+            this.toggleSwitch28.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch28.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch28.OffText = "OFF";
+            this.toggleSwitch28.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch28.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch28.OnText = "ON";
+            this.toggleSwitch28.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch28.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch28.TabIndex = 916;
+            this.toggleSwitch28.Tag = "0";
+            // 
+            // label36
+            // 
+            this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label36.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(295, 535);
+            this.label36.Name = "label36";
+            this.label36.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label36.Size = new System.Drawing.Size(181, 32);
+            this.label36.TabIndex = 984;
+            this.label36.Text = "label36";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label35
+            // 
+            this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label35.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(295, 566);
+            this.label35.Name = "label35";
+            this.label35.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label35.Size = new System.Drawing.Size(181, 32);
+            this.label35.TabIndex = 985;
+            this.label35.Text = "label35";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label34
+            // 
+            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label34.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(295, 597);
+            this.label34.Name = "label34";
+            this.label34.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label34.Size = new System.Drawing.Size(181, 32);
+            this.label34.TabIndex = 986;
+            this.label34.Text = "label34";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toggleSwitch19
+            // 
+            this.toggleSwitch19.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch19.Name = "toggleSwitch19";
+            this.toggleSwitch19.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch19.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch19.OffText = "OFF";
+            this.toggleSwitch19.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch19.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch19.OnText = "ON";
+            this.toggleSwitch19.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch19.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch19.TabIndex = 916;
+            this.toggleSwitch19.Tag = "0";
+            // 
+            // panel27
+            // 
+            this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel27.Controls.Add(this.toggleSwitch19);
+            this.panel27.Location = new System.Drawing.Point(475, 535);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(103, 32);
+            this.panel27.TabIndex = 988;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox7.Location = new System.Drawing.Point(2, 2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(97, 25);
+            this.textBox7.TabIndex = 920;
+            // 
+            // panel26
+            // 
+            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel26.Controls.Add(this.textBox7);
+            this.panel26.Location = new System.Drawing.Point(475, 566);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(103, 32);
+            this.panel26.TabIndex = 989;
+            // 
+            // panel25
+            // 
+            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel25.Location = new System.Drawing.Point(475, 597);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(103, 32);
+            this.panel25.TabIndex = 990;
+            // 
+            // label32
+            // 
+            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label32.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(295, 659);
+            this.label32.Name = "label32";
+            this.label32.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label32.Size = new System.Drawing.Size(181, 32);
+            this.label32.TabIndex = 992;
+            this.label32.Text = "label32";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label31
+            // 
+            this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label31.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(295, 690);
+            this.label31.Name = "label31";
+            this.label31.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label31.Size = new System.Drawing.Size(181, 32);
+            this.label31.TabIndex = 993;
+            this.label31.Text = "label31";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label30
+            // 
+            this.label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label30.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(295, 721);
+            this.label30.Name = "label30";
+            this.label30.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label30.Size = new System.Drawing.Size(181, 32);
+            this.label30.TabIndex = 994;
+            this.label30.Text = "label30";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label29
+            // 
+            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label29.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(295, 752);
+            this.label29.Name = "label29";
+            this.label29.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label29.Size = new System.Drawing.Size(181, 32);
+            this.label29.TabIndex = 995;
+            this.label29.Text = "label29";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel24
+            // 
+            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel24.Location = new System.Drawing.Point(475, 659);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(103, 32);
+            this.panel24.TabIndex = 996;
+            // 
+            // panel23
+            // 
+            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel23.Location = new System.Drawing.Point(475, 690);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(103, 32);
+            this.panel23.TabIndex = 997;
+            // 
+            // panel22
+            // 
+            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel22.Location = new System.Drawing.Point(475, 721);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(103, 32);
+            this.panel22.TabIndex = 998;
+            // 
+            // panel21
+            // 
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel21.Location = new System.Drawing.Point(475, 752);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(103, 32);
+            this.panel21.TabIndex = 999;
+            // 
+            // label33
+            // 
+            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label33.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(295, 628);
+            this.label33.Name = "label33";
+            this.label33.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label33.Size = new System.Drawing.Size(181, 32);
+            this.label33.TabIndex = 1000;
+            this.label33.Text = "label33";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel41
+            // 
+            this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel41.Location = new System.Drawing.Point(475, 628);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(103, 32);
+            this.panel41.TabIndex = 1001;
+            // 
+            // label41
+            // 
+            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label41.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(295, 380);
+            this.label41.Name = "label41";
+            this.label41.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label41.Size = new System.Drawing.Size(181, 32);
+            this.label41.TabIndex = 975;
+            this.label41.Text = "label41";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label40
+            // 
+            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label40.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(295, 411);
+            this.label40.Name = "label40";
+            this.label40.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label40.Size = new System.Drawing.Size(181, 32);
+            this.label40.TabIndex = 976;
+            this.label40.Text = "label40";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label39
+            // 
+            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label39.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(295, 442);
+            this.label39.Name = "label39";
+            this.label39.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label39.Size = new System.Drawing.Size(181, 32);
+            this.label39.TabIndex = 977;
+            this.label39.Text = "label39";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toggleSwitch23
+            // 
+            this.toggleSwitch23.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch23.Name = "toggleSwitch23";
+            this.toggleSwitch23.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch23.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch23.OffText = "OFF";
+            this.toggleSwitch23.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch23.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch23.OnText = "ON";
+            this.toggleSwitch23.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch23.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch23.TabIndex = 915;
+            this.toggleSwitch23.Tag = "0";
+            // 
+            // panel32
+            // 
+            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel32.Controls.Add(this.toggleSwitch23);
+            this.panel32.Location = new System.Drawing.Point(475, 349);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(103, 32);
+            this.panel32.TabIndex = 978;
+            // 
+            // toggleSwitch22
+            // 
+            this.toggleSwitch22.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch22.Name = "toggleSwitch22";
+            this.toggleSwitch22.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch22.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch22.OffText = "OFF";
+            this.toggleSwitch22.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch22.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch22.OnText = "ON";
+            this.toggleSwitch22.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch22.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch22.TabIndex = 916;
+            this.toggleSwitch22.Tag = "0";
+            // 
+            // panel31
+            // 
+            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel31.Controls.Add(this.toggleSwitch22);
+            this.panel31.Location = new System.Drawing.Point(475, 380);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(103, 32);
+            this.panel31.TabIndex = 979;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox8.Location = new System.Drawing.Point(2, 2);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(97, 25);
+            this.textBox8.TabIndex = 920;
+            // 
+            // panel30
+            // 
+            this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel30.Controls.Add(this.textBox8);
+            this.panel30.Location = new System.Drawing.Point(475, 411);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(103, 32);
+            this.panel30.TabIndex = 980;
+            // 
+            // toggleSwitch21
+            // 
+            this.toggleSwitch21.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch21.Name = "toggleSwitch21";
+            this.toggleSwitch21.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch21.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch21.OffText = "OFF";
+            this.toggleSwitch21.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch21.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch21.OnText = "ON";
+            this.toggleSwitch21.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch21.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch21.TabIndex = 917;
+            this.toggleSwitch21.Tag = "0";
+            // 
+            // panel29
+            // 
+            this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel29.Controls.Add(this.toggleSwitch21);
+            this.panel29.Location = new System.Drawing.Point(475, 442);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(103, 32);
+            this.panel29.TabIndex = 981;
+            // 
+            // label38
+            // 
+            this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label38.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label38.ForeColor = System.Drawing.Color.Orange;
+            this.label38.Location = new System.Drawing.Point(295, 473);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(283, 32);
+            this.label38.TabIndex = 982;
+            this.label38.Text = "LPMD";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label37.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(295, 504);
+            this.label37.Name = "label37";
+            this.label37.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label37.Size = new System.Drawing.Size(181, 32);
+            this.label37.TabIndex = 983;
+            this.label37.Text = "label37";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toggleSwitch20
+            // 
+            this.toggleSwitch20.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch20.Name = "toggleSwitch20";
+            this.toggleSwitch20.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch20.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch20.OffText = "OFF";
+            this.toggleSwitch20.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch20.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch20.OnText = "ON";
+            this.toggleSwitch20.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch20.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch20.TabIndex = 915;
+            this.toggleSwitch20.Tag = "0";
+            // 
+            // panel28
+            // 
+            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel28.Controls.Add(this.toggleSwitch20);
+            this.panel28.Location = new System.Drawing.Point(475, 504);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(103, 32);
+            this.panel28.TabIndex = 987;
+            // 
+            // toggleSwitch26
+            // 
+            this.toggleSwitch26.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch26.Name = "toggleSwitch26";
+            this.toggleSwitch26.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch26.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch26.OffText = "OFF";
+            this.toggleSwitch26.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch26.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch26.OnText = "ON";
+            this.toggleSwitch26.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch26.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch26.TabIndex = 915;
+            this.toggleSwitch26.Tag = "0";
+            // 
+            // panel36
+            // 
+            this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel36.Controls.Add(this.toggleSwitch26);
+            this.panel36.Location = new System.Drawing.Point(475, 194);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(103, 32);
+            this.panel36.TabIndex = 969;
+            // 
+            // toggleSwitch25
+            // 
+            this.toggleSwitch25.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch25.Name = "toggleSwitch25";
+            this.toggleSwitch25.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch25.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch25.OffText = "OFF";
+            this.toggleSwitch25.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch25.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch25.OnText = "ON";
+            this.toggleSwitch25.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch25.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch25.TabIndex = 916;
+            this.toggleSwitch25.Tag = "0";
+            // 
+            // panel35
+            // 
+            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel35.Controls.Add(this.toggleSwitch25);
+            this.panel35.Location = new System.Drawing.Point(475, 225);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(103, 32);
+            this.panel35.TabIndex = 970;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox9.Location = new System.Drawing.Point(2, 2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(97, 25);
+            this.textBox9.TabIndex = 920;
+            // 
+            // panel34
+            // 
+            this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel34.Controls.Add(this.textBox9);
+            this.panel34.Location = new System.Drawing.Point(475, 256);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(103, 32);
+            this.panel34.TabIndex = 971;
+            // 
+            // toggleSwitch24
+            // 
+            this.toggleSwitch24.Location = new System.Drawing.Point(2, 2);
+            this.toggleSwitch24.Name = "toggleSwitch24";
+            this.toggleSwitch24.OffFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toggleSwitch24.OffForeColor = System.Drawing.Color.Red;
+            this.toggleSwitch24.OffText = "OFF";
+            this.toggleSwitch24.OnFont = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch24.OnForeColor = System.Drawing.Color.Lime;
+            this.toggleSwitch24.OnText = "ON";
+            this.toggleSwitch24.Size = new System.Drawing.Size(97, 25);
+            this.toggleSwitch24.Style = JCS.ToggleSwitch.ToggleSwitchStyle.Android;
+            this.toggleSwitch24.TabIndex = 917;
+            this.toggleSwitch24.Tag = "0";
+            // 
+            // panel33
+            // 
+            this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel33.Controls.Add(this.toggleSwitch24);
+            this.panel33.Location = new System.Drawing.Point(475, 287);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(103, 32);
+            this.panel33.TabIndex = 972;
+            // 
+            // label48
+            // 
+            this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label48.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label48.ForeColor = System.Drawing.Color.Orange;
+            this.label48.Location = new System.Drawing.Point(295, 163);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(283, 32);
+            this.label48.TabIndex = 964;
+            this.label48.Text = "LPMB";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label47
+            // 
+            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label47.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label47.ForeColor = System.Drawing.Color.White;
+            this.label47.Location = new System.Drawing.Point(295, 194);
+            this.label47.Name = "label47";
+            this.label47.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label47.Size = new System.Drawing.Size(181, 32);
+            this.label47.TabIndex = 965;
+            this.label47.Text = "label47";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label46
+            // 
+            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label46.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(295, 225);
+            this.label46.Name = "label46";
+            this.label46.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label46.Size = new System.Drawing.Size(181, 32);
+            this.label46.TabIndex = 966;
+            this.label46.Text = "label46";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label45
+            // 
+            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label45.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.Location = new System.Drawing.Point(295, 256);
+            this.label45.Name = "label45";
+            this.label45.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label45.Size = new System.Drawing.Size(181, 32);
+            this.label45.TabIndex = 967;
+            this.label45.Text = "label45";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label44
+            // 
+            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label44.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label44.ForeColor = System.Drawing.Color.White;
+            this.label44.Location = new System.Drawing.Point(295, 287);
+            this.label44.Name = "label44";
+            this.label44.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label44.Size = new System.Drawing.Size(181, 32);
+            this.label44.TabIndex = 968;
+            this.label44.Text = "label44";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label43
+            // 
+            this.label43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label43.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label43.ForeColor = System.Drawing.Color.Orange;
+            this.label43.Location = new System.Drawing.Point(295, 318);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(283, 32);
+            this.label43.TabIndex = 973;
+            this.label43.Text = "LPMC";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label42.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label42.ForeColor = System.Drawing.Color.White;
+            this.label42.Location = new System.Drawing.Point(295, 349);
+            this.label42.Name = "label42";
+            this.label42.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.label42.Size = new System.Drawing.Size(181, 32);
+            this.label42.TabIndex = 974;
+            this.label42.Text = "label42";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // subConfigParam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -2827,20 +2827,6 @@
             this.panel38.ResumeLayout(false);
             this.panel38.PerformLayout();
             this.panel37.ResumeLayout(false);
-            this.panel36.ResumeLayout(false);
-            this.panel35.ResumeLayout(false);
-            this.panel34.ResumeLayout(false);
-            this.panel34.PerformLayout();
-            this.panel33.ResumeLayout(false);
-            this.panel32.ResumeLayout(false);
-            this.panel31.ResumeLayout(false);
-            this.panel30.ResumeLayout(false);
-            this.panel30.PerformLayout();
-            this.panel29.ResumeLayout(false);
-            this.panel28.ResumeLayout(false);
-            this.panel27.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
-            this.panel26.PerformLayout();
             this.panel62.ResumeLayout(false);
             this.panel61.ResumeLayout(false);
             this.panel60.ResumeLayout(false);
@@ -2891,6 +2877,20 @@
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel27.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel31.ResumeLayout(false);
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel28.ResumeLayout(false);
+            this.panel36.ResumeLayout(false);
+            this.panel35.ResumeLayout(false);
+            this.panel34.ResumeLayout(false);
+            this.panel34.PerformLayout();
+            this.panel33.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2908,62 +2908,10 @@
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label49;
-        private JCS.ToggleSwitch toggleSwitch29;
         private System.Windows.Forms.Panel panel40;
-        private JCS.ToggleSwitch toggleSwitch28;
         private System.Windows.Forms.Panel panel39;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Panel panel38;
-        private JCS.ToggleSwitch toggleSwitch27;
         private System.Windows.Forms.Panel panel37;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label44;
-        private JCS.ToggleSwitch toggleSwitch26;
-        private System.Windows.Forms.Panel panel36;
-        private JCS.ToggleSwitch toggleSwitch25;
-        private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Panel panel34;
-        private JCS.ToggleSwitch toggleSwitch24;
-        private System.Windows.Forms.Panel panel33;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label39;
-        private JCS.ToggleSwitch toggleSwitch23;
-        private System.Windows.Forms.Panel panel32;
-        private JCS.ToggleSwitch toggleSwitch22;
-        private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Panel panel30;
-        private JCS.ToggleSwitch toggleSwitch21;
-        private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private JCS.ToggleSwitch toggleSwitch20;
-        private System.Windows.Forms.Panel panel28;
-        private JCS.ToggleSwitch toggleSwitch19;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Panel panel47;
         private System.Windows.Forms.Label label57;
@@ -3102,5 +3050,57 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
+        private JCS.ToggleSwitch toggleSwitch29;
+        private JCS.ToggleSwitch toggleSwitch28;
+        private System.Windows.Forms.TextBox textBox10;
+        private JCS.ToggleSwitch toggleSwitch27;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private JCS.ToggleSwitch toggleSwitch19;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Panel panel41;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private JCS.ToggleSwitch toggleSwitch23;
+        private System.Windows.Forms.Panel panel32;
+        private JCS.ToggleSwitch toggleSwitch22;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Panel panel30;
+        private JCS.ToggleSwitch toggleSwitch21;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private JCS.ToggleSwitch toggleSwitch20;
+        private System.Windows.Forms.Panel panel28;
+        private JCS.ToggleSwitch toggleSwitch26;
+        private System.Windows.Forms.Panel panel36;
+        private JCS.ToggleSwitch toggleSwitch25;
+        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Panel panel34;
+        private JCS.ToggleSwitch toggleSwitch24;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
     }
 }

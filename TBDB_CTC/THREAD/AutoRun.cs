@@ -16,8 +16,9 @@ namespace TBDB_Handler.THREAD
         public ProcFM prcFM = new ProcFM();
         public ProcVTM prcVTM = new ProcVTM();
         public ProcLoadlock procLoadlock = new ProcLoadlock();
-
+        public ProcPmc procPMC = new ProcPmc();
         public ProcAligner prcAL = new ProcAligner();
+        public ProcStatus procStatus = new ProcStatus();
 
         public enum Sequence
         {
@@ -29,6 +30,7 @@ namespace TBDB_Handler.THREAD
             SeqLoadlock,
             SeqPmc,
             SeqBuffer,
+            SeqReadStatus,
             SeqMax,
         }
 
@@ -54,6 +56,11 @@ namespace TBDB_Handler.THREAD
             StartStopAutoRunThread(Sequence.SeqATM, true);
             StartStopAutoRunThread(Sequence.SeqVTM, true);
             StartStopAutoRunThread(Sequence.SeqAL, true);
+            StartStopAutoRunThread(Sequence.SeqLoadlock, true); //Loadlock 
+            StartStopAutoRunThread(Sequence.SeqPmc, true);
+
+            //PMC, VTM, Loadlock Vacuum Status 확인
+            StartStopAutoRunThread(Sequence.SeqReadStatus, true);
         }
 
         ~AutoRun()
@@ -72,6 +79,10 @@ namespace TBDB_Handler.THREAD
             StartStopAutoRunThread(Sequence.SeqATM, false);
             StartStopAutoRunThread(Sequence.SeqVTM, false);
             StartStopAutoRunThread(Sequence.SeqAL, false);
+            StartStopAutoRunThread(Sequence.SeqLoadlock, false); //Loadlock 
+            StartStopAutoRunThread(Sequence.SeqPmc, false);
+
+            StartStopAutoRunThread(Sequence.SeqReadStatus, false);
         }
 
         public void ResetCmd()
@@ -127,6 +138,21 @@ namespace TBDB_Handler.THREAD
                         threadRun[nSeq].Name = "AL Run THREAD";
                         break;
 
+                    case Sequence.SeqLoadlock:
+                        threadRun[nSeq] = new Thread(new ParameterizedThreadStart(ThreadRun_Loadlock));
+                        threadRun[nSeq].Name = "AL Run THREAD";
+                        break;
+
+                    case Sequence.SeqPmc:
+                        threadRun[nSeq] = new Thread(new ParameterizedThreadStart(ThreadRun_PMC));
+                        threadRun[nSeq].Name = "Pmc Run THREAD";
+                        break;
+
+                    case Sequence.SeqReadStatus:
+                        threadRun[nSeq] = new Thread(new ParameterizedThreadStart(ThreadRun_Vacuum));
+                        threadRun[nSeq].Name = "Vacuum Status THREAD";
+                        break;
+
                     default:
                         break;
                 }
@@ -134,6 +160,44 @@ namespace TBDB_Handler.THREAD
                 if (threadRun[nSeq].IsAlive == false)
                     threadRun[nSeq].Start(this);
             }
+        }
+
+        void ThreadRun_Vacuum(object obj)
+        {
+            AutoRun autoRun = obj as AutoRun;
+            while (autoRun.flagThreadAlive[(int)Sequence.SeqPmc])
+            {
+                Thread.Sleep(10);
+                //if (!GlobalVariable.mcState.isRdy) continue;
+
+                autoRun.procStatus.CheckStatus_VtmVacuum();
+            }
+            autoRun.flagThreadAlive[(int)Sequence.SeqPmc] = false;
+        }
+
+        void ThreadRun_PMC(object obj)
+        {
+            AutoRun autoRun = obj as AutoRun;
+            while (autoRun.flagThreadAlive[(int)Sequence.SeqPmc])
+            {
+                Thread.Sleep(10);
+                if (!GlobalVariable.mcState.isRdy) continue;
+
+                autoRun.procPMC.Run();
+            }
+            autoRun.flagThreadAlive[(int)Sequence.SeqPmc] = false;
+        }
+
+        void ThreadRun_Loadlock(object obj)
+        {
+            AutoRun autoRun = obj as AutoRun;
+            while (autoRun.flagThreadAlive[(int)Sequence.SeqLoadlock])
+            {
+                Thread.Sleep(10);
+
+                autoRun.procLoadlock.Run();
+            }
+            autoRun.flagThreadAlive[(int)Sequence.SeqLoadlock] = false;
         }
 
         void ThreadRun_AL(object obj)
@@ -187,7 +251,7 @@ namespace TBDB_Handler.THREAD
                 if (!GlobalVariable.mcState.isRdy) continue;
 
                 //Thread.Sleep(50);
-                //autoRun.prcVTM.Run();
+                autoRun.prcVTM.Run();
             }
             autoRun.flagThreadAlive[(int)Sequence.SeqVTM] = false;
         }

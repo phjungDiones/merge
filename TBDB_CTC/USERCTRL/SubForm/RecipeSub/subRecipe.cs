@@ -217,6 +217,11 @@ namespace TBDB_CTC.UserCtrl.SubForm.RecipeSub
             RecipeMgr.Inst.TempRcp.dHpTime = dTemp;
         }
 
+        private void listRecipe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnModelNew_Click(object sender, EventArgs e)
         {
             string target = tbxRcpTarget.Text;

@@ -52,11 +52,16 @@ namespace TBDB_Handler.MOTION
         int m_nSpeed = 0;
         int m_nAcc = 0;
 
-        EMCL.MotorStatus moStatus = new EMCL.MotorStatus();
+
+        public EMCL.MotorStatus moStatus = new EMCL.MotorStatus();
+
+        private object Write = new object();
 
         public MotionLoadlock()
         {
             _Main = MainData.Instance;
+
+
         }
 
         #region Protocol Cmd
@@ -104,20 +109,22 @@ namespace TBDB_Handler.MOTION
         #endregion
 
 
+
+
         #region Move Func
 
         public void GetConfigData()
         {
-           m_nModuleID = GlobalVariable.Loadlock.nModule;
-           m_nSpeed = GlobalVariable.Loadlock.nSpeed;
-           m_nAcc = GlobalVariable.Loadlock.nAcc;
+           m_nModuleID = GlobalVariable.LoadlockMotor.nModule;
+           m_nSpeed = GlobalVariable.LoadlockMotor.nSpeed;
+           m_nAcc = GlobalVariable.LoadlockMotor.nAcc;
         }
 
         public void SetConfigData()
         {
-            GlobalVariable.Loadlock.nModule = m_nModuleID;
-            GlobalVariable.Loadlock.nSpeed = m_nSpeed;
-            GlobalVariable.Loadlock.nAcc = m_nAcc;
+            GlobalVariable.LoadlockMotor.nModule = m_nModuleID;
+            GlobalVariable.LoadlockMotor.nSpeed = m_nSpeed;
+            GlobalVariable.LoadlockMotor.nAcc = m_nAcc;
         }
 
 
@@ -130,6 +137,11 @@ namespace TBDB_Handler.MOTION
             return EMCL.ERAETech_EMCL_IsPortOpen(m_nPort);
         }
 
+        public bool IsComPortCheck()
+        {
+            return EMCL.ERAETech_EMCL_IsPortOpen(m_nPort);
+        }
+
         public bool ComClose(string strCom)
         {
             EMCL.ERAETech_EMCL_CloseComm(-1);
@@ -139,7 +151,7 @@ namespace TBDB_Handler.MOTION
         public void SetZero()
         {
             // send command and read recv buffer
-            EMCL.ERAETech_EMCL_SetZeroPosition(m_nPort, Convert.ToByte(GlobalVariable.Loadlock.nModule));
+            EMCL.ERAETech_EMCL_SetZeroPosition(m_nPort, Convert.ToByte(GlobalVariable.LoadlockMotor.nModule));
             EMCL.ERAETech_EMCL_WaitAndGetReply(m_nPort, ref m_nRetValue);
 
             // send command and read recv buffer
@@ -183,13 +195,14 @@ namespace TBDB_Handler.MOTION
 
         public void MoveStart(int nTargetPos, int nAcc, MoveMode mode)
         {
-            // send command and read recv buffer
-            EMCL.ERAETech_EMCL_SetMaxPositionSpeed(m_nPort, Convert.ToByte(m_nModuleID), Convert.ToInt32(nAcc));
-            EMCL.ERAETech_EMCL_WaitAndGetReply(m_nPort, ref m_nRetValue);
-
-            // send command and read recv buffer
-            EMCL.ERAETech_EMCL_MoveToPosition(m_nPort, Convert.ToByte(m_nModuleID), (byte)mode, Convert.ToInt32(nTargetPos));
-            EMCL.ERAETech_EMCL_WaitAndGetReply(m_nPort, ref m_nRetValue);
+                // send command and read recv buffer
+                EMCL.ERAETech_EMCL_SetMaxPositionSpeed(m_nPort, Convert.ToByte(m_nModuleID), Convert.ToInt32(nAcc));
+                EMCL.ERAETech_EMCL_WaitAndGetReply(m_nPort, ref m_nRetValue);
+                Thread.Sleep(10);
+                // send command and read recv buffer
+                EMCL.ERAETech_EMCL_MoveToPosition(m_nPort, Convert.ToByte(m_nModuleID), (byte)mode, Convert.ToInt32(nTargetPos));
+                EMCL.ERAETech_EMCL_WaitAndGetReply(m_nPort, ref m_nRetValue);
+                Thread.Sleep(10);
         }
 
         public void SetHomeRef(HomeRefMode RefMode)
@@ -234,7 +247,7 @@ namespace TBDB_Handler.MOTION
             EMCL.ERAETech_EMCL_WaitAndGetReply(m_nPort, ref m_nRetValue);
         }
 
-        public void HomeStop(int m_nModuleID)
+        public void HomeStop()
         {
             // send command and read recv buffer
             EMCL.ERAETech_EMCL_StopRefSearch(m_nPort, Convert.ToByte(m_nModuleID));
@@ -288,7 +301,7 @@ namespace TBDB_Handler.MOTION
         {
             // send command and read recv buffer
             EMCL.ERAETech_EMCL_GetRefSearchStatus(m_nPort, Convert.ToByte(m_nModuleID));
-            EMCL.ERAETech_EMCL_WaitAndGetReply(m_nPort, ref m_nRetValue);
+            EMCL.ERAETech_EMCL_WaitAndGetReply(m_nPort,  ref m_nRetValue);
             return (m_nRetValue);
         }
 

@@ -48,7 +48,7 @@ namespace TBDB_CTC.POPWND
             prgLoading.Value = 90;
             GlobalForm.fErr = new popErrMessage();
             prgLoading.Value = 95;
-            GlobalForm.fTest = new frmTestForm();
+           // GlobalForm.fTest = new frmTestForm();
             prgLoading.Value = 96;
             GlobalForm.fmAlarm = new frmAlarm();
             prgLoading.Value = 97;

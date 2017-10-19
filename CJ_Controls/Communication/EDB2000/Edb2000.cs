@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace CJ_Controls.Communication.EDB2000
 {
-    
+
     //----- RS232serial -------------------------------------------------------------------------------
     public enum MotorCmd
     {

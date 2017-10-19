@@ -86,14 +86,14 @@ namespace CJ_Controls.Communication.CybogRobot_HTR
         public CyborgRobot_Data RobotData = new CyborgRobot_Data();
         public CyborgRobot_HTR()
 		{
+			//Cjinnn: 연속 데이터 DataParsing 테스트 용.
+			//string strText = string.Format("{0}GETSPEED\r\n", (char)RCV_CHAR.ACK);
+			//strText += string.Format("*100\r\n");
+			//strText += string.Format(">GETSPEED\r\n");
+			//Array.Copy(Encoding.Default.GetBytes(strText), 0, m_ReceiveBuffer, 0, strText.Length);
+			//m_ReadCount = strText.Length;
 
-            //Cjinnn: 연속 데이터 DataParsing 테스트 용.
-            //string strText = string.Format("{0}GETSPEED\r\n", (char)RCV_CHAR.ACK);
-            //strText += string.Format("*100\r\n");
-            //strText += string.Format(">GETSPEED\r\n");
-            //Array.Copy(Encoding.Default.GetBytes(strText), 0, m_ReceiveBuffer, 0, strText.Length);
-            //m_ReadCount = strText.Length;
-            m_Thread_Read = new Thread(new ThreadStart(SerialPort_DataReceived));
+			m_Thread_Read = new Thread(new ThreadStart(SerialPort_DataReceived));
 			m_Thread_Read.IsBackground = true;
 			m_Thread_Read.Start();
 		}
@@ -172,7 +172,7 @@ namespace CJ_Controls.Communication.CybogRobot_HTR
 					}
                     if (m_nSeqNo == 0 || m_nReadSeqNo == 0)
 					{
-						string strRcv = ""; 
+						string strRcv = "";
 						RcvCheck(ref strRcv);
 					}
 				}
@@ -213,26 +213,25 @@ namespace CJ_Controls.Communication.CybogRobot_HTR
 					Flush();
 					_WorkStatus = WORK_STATUS.ERROR;
                     //ERR:201[CR][LF]
-                    Global.GlobalFunction.Instance.SetErr(sRcvData, Global.GlobalDefine.Eidentify_error.CyborgRobot_HTR);
+                    Test.GlobalFunction.Instance.SetErr(sRcvData, Test.GlobalDefine.Eidentify_error.CyborgRobot_HTR);
                     //이벤트연결됨 -> 이벤트발생시 -> TBDB_CTC 프로젝트에서 참조후 에러메시지 띄움
 
-                    _ErrMsg = sRcvData;
+					_ErrMsg = sRcvData;
 					_AckMode = ACK_MODE.ERROR;
 				}
 				else if (sRcvData.Contains("WAR") == true)
 				{
                     //WAR:1001[CR][LF]
-                    Flush();
+					Flush();
 					_WorkStatus = WORK_STATUS.WARING;
-                    Global.GlobalFunction.Instance.SetErr(sRcvData, Global.GlobalDefine.Eidentify_error.CyborgRobot_HTR);
-                    _WarMsg = sRcvData;
+                    Test.GlobalFunction.Instance.SetErr(sRcvData, Test.GlobalDefine.Eidentify_error.CyborgRobot_HTR);
+					_WarMsg = sRcvData;
 					_AckMode = ACK_MODE.WARNING;
 				}
 			}
 			return _AckMode;
 		}
-
-        private void Flush()
+		private void Flush()
 		{
 			if (IsOpen() == false)
 				return;

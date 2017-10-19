@@ -23,7 +23,44 @@ namespace TBDB_CTC.UserCtrl.SubForm
         private void subMainScreen_Load(object sender, EventArgs e)
         {
             tmrStatus.Start();
-            
+            tmrUnitStatus.Start();       
+        }
+
+        private void tmrUnitStatus_Tick(object sender, EventArgs e)
+        {
+            if (!this.Visible) return;
+
+            uctrlBonder.Name = "Bonder";
+            if (GlobalVariable.seqShared.bonder != null)
+            {
+                uctrlBonder.StepTime = GlobalVariable.seqShared.stopWatch[(int)UNIT.PMC].Elapsed.ToString(@"hh\:mm\:ss");
+            }
+            else
+            {
+            }
+
+            uctrlLaminate.Name = "Laminate";
+            if (GlobalVariable.seqShared.lami[0] != null)
+            {
+            }
+
+            if (GlobalVariable.seqShared.lami[1] != null)
+            {
+            }
+
+            uctrlHP.Name = "H.P";
+            if (GlobalVariable.seqShared.hp != null)
+            {
+            }
+
+            uctrlAligner.Name = "Aligner";
+            if(GlobalVariable.seqShared.aligner != null)
+            {
+                uctrlAligner.StepTime = GlobalVariable.seqShared.stopWatch[(int)UNIT.ALINGER].Elapsed.ToString(@"hh\:mm\:ss");             
+            }
+            else
+            {
+            }
         }
 
         private void tmrStatus_Tick(object sender, EventArgs e)
@@ -55,7 +92,8 @@ namespace TBDB_CTC.UserCtrl.SubForm
             lbWaferBD.BackColor = (GlobalVariable.seqShared.IsInLoadLock((int)WaferType.BONDED) == true) ? Color.Blue : Color.Black;
             lbWaferAL.BackColor = (GlobalVariable.seqShared.IsInAligner() == true) ? Color.Blue : Color.Black;
             lbWaferCP.BackColor = (GlobalVariable.seqShared.IsInCP(0) == true) ? Color.Blue : Color.Black;
-            lbWaferLami.BackColor = (GlobalVariable.seqShared.IsInLami() == true) ? Color.Blue : Color.Black;
+            lbWaferLami.BackColor = (GlobalVariable.seqShared.IsInLami(0) == true) ? Color.Blue : Color.Black;
+            lbWaferLami2.BackColor = (GlobalVariable.seqShared.IsInLami(1) == true) ? Color.Blue : Color.Black;
             lbWaferPMC.BackColor = (GlobalVariable.seqShared.IsInBonder() == true) ? Color.Blue : Color.Black;
 
             //Robot
@@ -69,6 +107,106 @@ namespace TBDB_CTC.UserCtrl.SubForm
             lbVtmLow.BackColor = (GlobalVariable.seqShared.IsInVTM(HAND.LOWER) == true) ? Color.LightGreen : Color.Gray;
 
 
+            //Door Status
+            lb_BD_DOOR.BackColor = (GlobalVariable.io.Check_BD_Door_Open() == true) ? Color.LightGreen : Color.Maroon;
+            lb_VTM_DOOR.BackColor = (GlobalVariable.io.Check_VTM_Door_Open() == true) ? Color.LightGreen : Color.Maroon;
+            lb_ATM_DOOR.BackColor = (GlobalVariable.io.Check_ATM_Door_Open() == true) ? Color.LightGreen : Color.Maroon;
+
+
+            if (GlobalVariable.seqShared.aligner != null)
+            {
+                if (GlobalVariable.seqShared.aligner.waferType == WaferType.CARRIER) lbWaferAL.Text = "CARRIER";
+                else if (GlobalVariable.seqShared.aligner.waferType == WaferType.DEVICE) lbWaferAL.Text = "DEVICE";
+            }
+
+            if (GlobalVariable.seqShared.robotFM[(int)HAND.UPPER] != null)
+            {
+                if (GlobalVariable.seqShared.robotFM[(int)HAND.UPPER].waferType == WaferType.CARRIER) lbFmUp.Text = "CARRIER";
+                if (GlobalVariable.seqShared.robotFM[(int)HAND.UPPER].waferType == WaferType.DEVICE) lbFmUp.Text = "DEVICE";
+            }
+            else
+            {
+                lbFmUp.Text = "NONE";
+            }
+
+            if (GlobalVariable.seqShared.robotFM[(int)HAND.LOWER] != null)
+            {
+                if (GlobalVariable.seqShared.robotFM[(int)HAND.LOWER].waferType == WaferType.CARRIER) lbFmLow.Text = "CARRIER";
+                if (GlobalVariable.seqShared.robotFM[(int)HAND.LOWER].waferType == WaferType.DEVICE) lbFmLow.Text = "DEVICE";
+            }
+            else
+            {
+                lbFmLow.Text = "NONE";
+            }
+
+
+            if (GlobalVariable.seqShared.robotATM[(int)HAND.UPPER] != null)
+            {
+                if (GlobalVariable.seqShared.robotATM[(int)HAND.UPPER].waferType == WaferType.CARRIER) lbAtmUp.Text = "CARRIER";
+                if (GlobalVariable.seqShared.robotATM[(int)HAND.UPPER].waferType == WaferType.DEVICE) lbAtmUp.Text = "DEVICE";
+            }
+            else
+            {
+                lbAtmUp.Text = "NONE";
+            }
+
+            if (GlobalVariable.seqShared.robotATM[(int)HAND.LOWER] != null)
+            {
+                if (GlobalVariable.seqShared.robotATM[(int)HAND.LOWER].waferType == WaferType.CARRIER) lbAtmLow.Text = "CARRIER";
+                if (GlobalVariable.seqShared.robotATM[(int)HAND.LOWER].waferType == WaferType.DEVICE) lbAtmLow.Text = "DEVICE";
+            }
+            else
+            {
+                lbAtmLow.Text = "NONE";
+            }
+
+            if (GlobalVariable.seqShared.robotVTM[(int)HAND.UPPER] != null)
+            {
+                if (GlobalVariable.seqShared.robotVTM[(int)HAND.UPPER].waferType == WaferType.CARRIER) lbVtmUp.Text = "CARRIER";
+                if (GlobalVariable.seqShared.robotVTM[(int)HAND.UPPER].waferType == WaferType.DEVICE) lbVtmUp.Text = "DEVICE";
+            }
+            else
+            {
+                lbVtmUp.Text = "NONE";
+            }
+
+            if (GlobalVariable.seqShared.robotVTM[(int)HAND.LOWER] != null)
+            {
+                if (GlobalVariable.seqShared.robotVTM[(int)HAND.LOWER].waferType == WaferType.CARRIER) lbVtmLow.Text = "CARRIER";
+                if (GlobalVariable.seqShared.robotVTM[(int)HAND.LOWER].waferType == WaferType.DEVICE) lbVtmLow.Text = "DEVICE";
+            }
+            else
+            {
+                lbVtmLow.Text = "NONE";
+            }
+
+            if (GlobalVariable.seqShared.loadlock[(int)WaferType.CARRIER] != null)
+            {
+                if (GlobalVariable.seqShared.loadlock[(int)WaferType.CARRIER].waferType == WaferType.CARRIER) lbWaferLL2.Text = "CARRIER";
+                else
+                {
+                    lbWaferLL2.Text = "Error";
+                }
+            }
+
+            if (GlobalVariable.seqShared.loadlock[(int)WaferType.DEVICE] != null)
+            {
+                if (GlobalVariable.seqShared.loadlock[(int)WaferType.DEVICE].waferType == WaferType.DEVICE) lbWaferLL1.Text = "DEVICE";
+                else
+                {
+                    lbWaferLL1.Text = "Error";
+                }
+            }
+
+            if (GlobalVariable.seqShared.loadlock[(int)WaferType.BONDED] != null)
+            {
+                if (GlobalVariable.seqShared.loadlock[(int)WaferType.BONDED].waferType == WaferType.BONDED) lbWaferBD.Text = "DEVICE";
+                else
+                {
+                    lbWaferBD.Text = "Error";
+                }
+            }
+
             DispWaferInfo(); //Wafer Mapping Data
 
 
@@ -80,7 +218,7 @@ namespace TBDB_CTC.UserCtrl.SubForm
 
         public void DispWaferInfo()
         {
-            uctrlPortSlot1.strName= "LPM A";
+            uctrlPortSlot1.strName = "LPM A";
             uctrlPortSlot2.strName = "LPM B";
             uctrlPortSlot3.strName = "LPM C";
             uctrlPortSlot4.strName = "LPM D";
@@ -122,31 +260,32 @@ namespace TBDB_CTC.UserCtrl.SubForm
         private void btnMapping_Click(object sender, EventArgs e)
         {
             int nMaxLpm = 4;
-            int nMaxCount = 25;
+            int nMaxCount = 5;
             bool bWafer = false;
 
-            //테스트
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMA, 0, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMA, 4, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMA, 9, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMA, 19, true);
-// 
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMB, 1, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMB, 6, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMB, 11, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMB, 21, true);
-// 
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMC, 3, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMC, 7, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMC, 13, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMC, 23, true);
-// 
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMD, 8, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMD, 9, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMD, 17, true);
-//             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMD, 18, true);
 
-            for (int lpm = 0; lpm < nMaxLpm; lpm++) 
+            //테스트
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMA, 0, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMA, 4, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMA, 9, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMA, 19, true);
+            // 
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMB, 1, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMB, 6, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMB, 11, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMB, 21, true);
+            // 
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMC, 3, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMC, 7, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMC, 13, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMC, 23, true);
+            // 
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMD, 8, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMD, 9, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMD, 17, true);
+            //             GlobalSeq.autoRun.prcFM.LpmRoot.SetWaferInfo(EFEM.LPMD, 18, true);
+
+            for (int lpm = 0; lpm < nMaxLpm; lpm++)
             {
                 for (int i = 0; i < nMaxCount; i++)
                 {
@@ -164,7 +303,6 @@ namespace TBDB_CTC.UserCtrl.SubForm
             GlobalVariable.WaferInfo.bLamiLoad = true;
 
             Thread.Sleep(500);
-
             GlobalVariable.WaferInfo.bLamiLoad = false;
         }
 
@@ -203,5 +341,7 @@ namespace TBDB_CTC.UserCtrl.SubForm
             GlobalVariable.WaferInfo.bPmcLoad = false;
             GlobalVariable.WaferInfo.bPmcUnload = false;
         }
+
+
     }
 }

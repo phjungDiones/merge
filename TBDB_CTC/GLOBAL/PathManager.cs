@@ -158,5 +158,10 @@ namespace TBDB_Handler.GLOBAL
         {
             get { return string.Format("{0}{1}", pathRefName[(int)ePathInfo.eWorkFile], filenameLastModel); }
         }
+
+        public string FILE_LAST_ERROR_DEF
+        {
+            get { return string.Format("{0}{1}", pathRefName[(int)ePathInfo.eWorkFile], filenameErrDefined); }
+        }
     }
 }

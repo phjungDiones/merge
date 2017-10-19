@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TBDB_CTC.UserCtrl.SubForm.ConfigSub
 {
-    public partial class SubAlarm : UserControl
+    public partial class subConfigCTC : UserControl
     {
-        public SubAlarm()
+        public subConfigCTC()
         {
             InitializeComponent();
         }

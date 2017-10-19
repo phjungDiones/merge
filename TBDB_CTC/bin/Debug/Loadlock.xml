@@ -7,6 +7,6 @@
     <int>0</int>
     <int>0</int>
   </nLoadlockPos>
-  <nSpeed>51200</nSpeed>
-  <nAcc>51200</nAcc>
+  <nLLSpeed>51200</nLLSpeed>
+  <nLLAcc>51200</nLLAcc>
 </WorkModel>

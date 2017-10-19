@@ -235,22 +235,22 @@ namespace CJ_Controls.Communication.Nano300
 				{//정상적인 커맨드가 아님.
 					FlushEx_EndCheckCut();
 					_ErrMsg = "NAK.";
-                    Global.GlobalFunction.Instance.SetErr(_ErrMsg, Global.GlobalDefine.Eidentify_error.Nano300);
-                    _AckMode = ACK_MODE.NAK;
+                    Test.GlobalFunction.Instance.SetErr(_ErrMsg, Test.GlobalDefine.Eidentify_error.Nano300);
+					_AckMode = ACK_MODE.NAK;
 				}
 				else if (byRcv[0] == 'B')
 				{//이미 명령 수행 중.
 					FlushEx_EndCheckCut();
 					_ErrMsg = "Before Comand Processing.";
-                    Global.GlobalFunction.Instance.SetErr(_ErrMsg, Global.GlobalDefine.Eidentify_error.Nano300);
+                    Test.GlobalFunction.Instance.SetErr(_ErrMsg, Test.GlobalDefine.Eidentify_error.Nano300);
 					_AckMode = ACK_MODE.BEFORE_CMD_PROC;
 				}
 				else if (byRcv[0] == 'E')
 				{//Alarm이 발생하여 Error Code 전송.
 					FlushEx_EndCheckCut();
 					_ErrMsg = Encoding.ASCII.GetString(byRcv, 0, byRcv.Length);
-                    Global.GlobalFunction.Instance.SetErr(_ErrMsg, Global.GlobalDefine.Eidentify_error.Nano300);
-                    _AckMode = ACK_MODE.ERROR;
+                    Test.GlobalFunction.Instance.SetErr(_ErrMsg, Test.GlobalDefine.Eidentify_error.Nano300);
+					_AckMode = ACK_MODE.ERROR;
 				}
 				else if (byRcv[0] == 'C')
 				{//EVENT 정보 전송.
@@ -452,7 +452,7 @@ namespace CJ_Controls.Communication.Nano300
 
             return true;
         }
-        private long GetElapseTime(DateTime dateTime)
+		private long GetElapseTime(DateTime dateTime)
 		{
 			return ((DateTime.Now.Ticks - dateTime.Ticks) / 10000);
 		}
@@ -983,8 +983,8 @@ namespace CJ_Controls.Communication.Nano300
             return nRet;
         }
 
-        #region 명령어
-        public async void Cmd_ReadVersion()
+		#region 명령어
+		public async void Cmd_ReadVersion()
 		{//버전 읽기
 			string str = "";
 			while (Seq_CurVal_Command("GETVER", ref str) == 0)

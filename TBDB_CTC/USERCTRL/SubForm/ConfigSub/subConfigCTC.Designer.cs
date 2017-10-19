@@ -1,6 +1,6 @@
 ﻿namespace TBDB_CTC.UserCtrl.SubForm.ConfigSub
 {
-    partial class SubAlarm
+    partial class subConfigCTC
     {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // SubAlarm
+            // subConfigCTC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "SubAlarm";
-            this.Size = new System.Drawing.Size(1449, 992);
+            this.Name = "subConfigCTC";
+            this.Size = new System.Drawing.Size(1159, 794);
             this.ResumeLayout(false);
 
         }

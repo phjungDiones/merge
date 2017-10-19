@@ -1,4 +1,5 @@
 ﻿using CJ_Controls;
+using EraeMotionApi;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -28,6 +29,14 @@ namespace TBDB_CTC.Sequence
         max,
     }
 
+    public enum LoadlockCmd
+    {
+        GetStatus = 0,
+        Move,
+        CheckMoveDone,
+        AlarmReset,
+    }
+
     public class ProcLoadlock
     {
         public MotionLoadlock Loadlock = new MotionLoadlock();
@@ -45,6 +54,8 @@ namespace TBDB_CTC.Sequence
         int nSeq = (int)UNIT.LOADLOCK;
         int[] nSeqVacuum = new int[(int)Vacuum_Seq.max];
         public bool bMoving = false;
+
+        EMCL.MotorStatus moStatus = new EMCL.MotorStatus();
 
 
         //TimeOut 및 Delay Parameter
@@ -135,24 +146,340 @@ namespace TBDB_CTC.Sequence
         #endregion Safety Check
 
 
+
+        private int m_nCmd = 0;
+        private object m_objLock = new object();
+        private int m_nPosi = 0;
+        private int m_nAcc = 0;
+
+
+//         GlobalVariable.model.nLoadlockPos[0]
+//         GlobalVariable.model.nLoadlockPos[1]
+//         GlobalVariable.model.nLoadlockPos[2]  
+//         GlobalVariable.model.nLLSpeed
+//         GlobalVariable.model.nLLAcc 
+
+        MoveMode Mode = MoveMode.ABS_MODE;
+
+        public int m_nEncpos = 0;
+        public int m_nCmdpos = 0;
+
         public void Run()
         {
-            if (!isAcceptRun()) { return; }
-            if (nSeqNo != nPreSeqNo) { resetCmd(); }
-            nPreSeqNo = nSeqNo;
+            if (GlobalVariable.LoadlockMotor.bIsOpen == false)
+            {
+                //
+                return;
+            }
 
-            //CaseATM seqCase = (CaseATM)nSeqNo;
-            //alwaysCheck();
-            //switch (seqCase)
-            //{
-            //    case 0:
-            //        break;
-            //
-            //    default:
-            //        break;
-            //}
-            nSeqNo++;
+            switch (m_nCmd)
+            {
+                case 0: //idle - No Move
+                    Loadlock.GetAllStatus(ref moStatus);
+                    GlobalVariable.LoadlockMotor.nActPos = moStatus.nActualPos;
+                    GlobalVariable.LoadlockMotor.nEncPos = moStatus.nPosError;
+                    GlobalVariable.LoadlockMotor.bMoving = Convert.ToBoolean(moStatus.nIsBusy);
+                    GlobalVariable.LoadlockMotor.bInpos = Convert.ToBoolean(moStatus.nInPosition);
+                    GlobalVariable.LoadlockMotor.bLimitP = Convert.ToBoolean(moStatus.nRightLimitStatus);
+                    GlobalVariable.LoadlockMotor.bLmitN = Convert.ToBoolean(moStatus.nLeftLimitStatus);
+                    GlobalVariable.LoadlockMotor.bHome = Convert.ToBoolean(moStatus.nHomeStatus);
+                    GlobalVariable.LoadlockMotor.bServo = Convert.ToBoolean(moStatus.nIsServoOn);
+                    GlobalVariable.LoadlockMotor.nHomeStatus = Convert.ToInt32(moStatus.nHomeStatus);
+
+                    break;
+
+                case 10: //Move -NonBlock
+                    Loadlock.MoveStart(m_nPosi, GlobalVariable.model.nLLAcc, MoveMode.ABS_MODE);
+                    m_nCmd = 0;
+                    break;
+
+                case 11: //Move -Block
+                    Loadlock.MoveStart(m_nPosi, GlobalVariable.model.nLLAcc, MoveMode.ABS_MODE);
+                    if (Loadlock.GetActPos() == m_nPosi)
+                    {
+                        m_nCmd = 0;
+                        break;
+                    }
+                    while (Loadlock.GetActPos() != m_nPosi)
+                    {
+                        // timeout check
+
+//                         if (timeover)
+//                         {
+//                             Loadlock.MoveStop();
+// 
+//                             //setError
+//                             m_nCmd = 0;
+//                             break;
+//                         }
+                    }
+
+                    m_nCmd = 0;
+                    break;
+
+
+                case 20: //Reset alarm
+                    Loadlock.AlarmReset();
+                    m_nCmd = 0;
+                    break;
+
+                case 30: // Homming
+                    Loadlock.SetHomeRef(HomeRefMode.HomeRef_8);
+                    Thread.Sleep(100);
+                    Loadlock.MoveHome(GlobalVariable.model.nLLSpeed);
+
+                    while (true)
+                    {
+                        Loadlock.GetAllStatus(ref moStatus);
+                        if (moStatus.nHomeStatus == 1)
+                        {
+                            break;
+                        }
+
+                        Thread.Sleep(100);
+                        // timeout check
+
+                            //                         if (timeover)
+                            //                         {
+                            //                             Loadlock.MoveStop();
+                            // 
+                            //                             //setError
+                            //                             m_nCmd = 0;
+                            //                             break;
+                            //                         }
+                    }
+                    m_nCmd = 0;
+                    break;
+
+                case 40:
+
+                    Loadlock.MoveStart(m_nPosi, m_nAcc, Mode);
+                    m_nCmd = 0;
+                    break;
+
+                case 50:
+                    //JogMove -
+                    Loadlock.JogMove_P(GlobalVariable.model.nLLSpeed, GlobalVariable.model.nLLAcc);
+                    m_nCmd = 0;
+                    break;
+
+                case 51:
+                    //Move Stop
+                    //Loadlock.MoveStop(GlobalVariable.model.nLLAcc);
+                    //m_nCmd = 0;
+                    break;
+
+                case 60:
+                    //JogMove +
+                    Loadlock.JogMove_N(GlobalVariable.model.nLLSpeed, GlobalVariable.model.nLLAcc);
+                    m_nCmd = 0;
+                    break;
+
+                case 61:
+                    //Move Stop
+                    //Loadlock.MoveStop(GlobalVariable.model.nLLAcc);
+                    //m_nCmd = 0;
+                    break;
+
+                case 70:
+                    //Move Stop
+                    Loadlock.MoveStop(GlobalVariable.model.nLLAcc);
+                    m_nCmd = 0;
+                    break;
+
+                case 80:
+                    //Home Stop
+                    Loadlock.HomeStop();
+                    m_nCmd = 0;
+                    break;
+
+
+
+                case 100: //block
+                    break;
+
+                default:
+                    m_nCmd = 0;
+                    break;
+            }
         }
+
+
+        /// <summary>
+        /// Motor 고정 - 사용예약
+        /// </summary>
+        /// <returns></returns>
+        public bool SetBlock()
+        {
+            lock (m_objLock)
+            {
+                if (m_nCmd != 0) { return false; }
+                m_nCmd = 100; // Move
+                return true;
+            }
+        }
+
+        /// <summary>
+        ///  Motor 사용가능토록
+        /// </summary>
+        /// <returns></returns>
+        public bool UnBlock()
+        {
+            lock (m_objLock)
+            {
+                if (m_nCmd != 100) { return false; }
+                m_nCmd = 0;
+                return true;
+            }
+        }
+
+        /// <summary>
+        /// return 0 : ok, -value : fail, +value : working
+        /// </summary>
+        /// <param name="nPos"></param>
+        /// <returns></returns>
+        public int MoveExit(int nPos)
+        {
+#if !_REAL_MC
+            return 0;
+#endif
+            lock (m_objLock)
+            {
+                if (m_nCmd != 0) { return m_nCmd; }
+
+                //인터락 체크
+                //if (CheckATMStatus() == false) { return -1; }
+                //if (CheckVTMStatus() == false) { return -1; }
+
+                m_nAcc = GlobalVariable.model.nLLAcc;
+                m_nPosi = GlobalVariable.model.nLoadlockPos[nPos];
+
+                m_nCmd = 10; // Move
+            }
+
+            while (m_nCmd != 0) { Thread.Sleep(10); }
+            return 0;
+        }
+
+        public int MoveExit_Target(int nPos, MoveMode moveMode)
+        {
+            lock (m_objLock)
+            {
+                if (m_nCmd != 0) { return m_nCmd; }
+
+                //인터락 체크
+                //if (CheckATMStatus() == false) { return -1; }
+                //if (CheckVTMStatus() == false) { return -1; }
+
+                m_nAcc = GlobalVariable.model.nLLAcc;
+                m_nPosi = nPos;
+                Mode = moveMode;
+                m_nCmd = 40; // Move
+            }
+
+            while (m_nCmd != 0) { Thread.Sleep(10); }
+            return 0;
+        }
+
+        public int JogMoveP()
+        {
+            lock (m_objLock)
+            {
+                if (m_nCmd != 0) { return m_nCmd; }
+
+                //인터락 체크
+                //if (CheckATMStatus() == false) { return -1; }
+                //if (CheckVTMStatus() == false) { return -1; }
+
+                m_nCmd = 50; // Move
+            }
+            return 0;
+        }
+
+        public int JogMoveN()
+        {
+            lock (m_objLock)
+            {
+                if (m_nCmd != 0) { return m_nCmd; }
+
+                //인터락 체크
+                //if (CheckATMStatus() == false) { return -1; }
+                //if (CheckVTMStatus() == false) { return -1; }
+
+                m_nCmd = 60; // Move
+            }
+            return 0;
+        }
+
+        public int MoveStop()
+        {
+
+            lock (m_objLock)
+            {
+                //if (m_nCmd == 51 || m_nCmd == 61 /* || m_nCmd = 50 || m_nCmd = 60*/)
+                //{
+                //    m_nCmd = 70; //Stop
+                //    return 0;
+                //}
+                if (m_nCmd != 0) { return m_nCmd; }
+                m_nCmd = 70; //Stop
+            }
+            return 0;
+        }
+
+        public int HomStop()
+        {
+            lock (m_objLock)
+            {
+                if (m_nCmd != 0) { return m_nCmd; }
+
+                m_nCmd = 80;
+            }
+            return 0;
+        }
+
+        public int HomeMove()
+        {
+            lock (m_objLock)
+            {
+                if (m_nCmd != 0) { return m_nCmd; }
+
+                //인터락 체크
+                //if (CheckATMStatus() == false) { return -1; }
+                //if (CheckVTMStatus() == false) { return -1; }
+
+                m_nCmd = 30; 
+            }
+            return 0;
+        }
+
+        public bool CheckMoveDone(int nTargetPos)
+        {
+#if !_REAL_MC
+            return true;
+#endif
+            lock (m_objLock)
+            {
+                if (m_nCmd != 0) { return false; }
+
+                if (GlobalVariable.LoadlockMotor.nActPos != GlobalVariable.model.nLoadlockPos[nTargetPos])
+                {
+                    return false;
+                }
+
+                if(GlobalVariable.LoadlockMotor.bMoving == true )
+                {
+                    return false;
+                }
+
+                if (GlobalVariable.LoadlockMotor.bInpos == false)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
 
         public void Move(MotionPos Pos)
         {
@@ -185,9 +512,12 @@ namespace TBDB_CTC.Sequence
             return fn.busy;
         }
 
-
         public fn VTM_Pumping()
         {
+#if !_REAL_MC
+            return fn.success;
+#endif
+
             int nSeq = (int)Vacuum_Seq.VTM_Pumping;
             short nStatus = 0;
 
@@ -200,8 +530,8 @@ namespace TBDB_CTC.Sequence
                     //Convectron Sensor On Check
                     if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_1) == true
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_2) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueOpen) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueClose) == false)
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueOpen) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueClose) == false)
                     {
                         //위 조건 맞으면 진행하지 않는다
                         return fn.success;
@@ -215,26 +545,34 @@ namespace TBDB_CTC.Sequence
                     //Interlock Check
                     if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_BonderGate_OpenStatus) == false
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_BonderGate_CloseStatus) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadlockTmGate_OpenStatus) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadlockTmGate_CloseStatus) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_Loadlock_VtmGate_OpenStatus) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_Loadlock_VtmGate_CloseStatus) == true
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_ChamberTopLID_OpenStatus) == true
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTM_ATMSwtich1) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueOpen) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueClose) == true) //체크
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueOpen) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueClose) == true) //체크
                     {
-                        break;
+                        if(GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(PMC_STATUS.PMCVacuumStatus, ref nStatus) != 3) // PMC Vacuum Status가 Pumping이 아닐 경우만 동작.
+                        {
+                            break;
+                        }
                     }
                     else
                     {
                         return fn.err;
                     }
+                    return fn.busy;
 
                 case 10:
                     //All Valve Close
                     //EQUAL_VV Close
 
+                    //VTM Vacuum 상태를 Pumping으로 변경 후 Write
+                    GlobalVariable.Status_Inter.VacuumVtmStatus = VTM_VACUUM_STATUS_VALUE.PUMPING;
+                    GlobalSeq.autoRun.prcVTM.Pmc.SetStatus(CTC_STATUS.VTMStatus, (short)GlobalVariable.Status_Inter.VacuumVtmStatus);
+
                     GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTmVent_VV, false);
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_ChamberEqualPressure_VV, false);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_Chamber_EqualPressure_VV, false);
                     break;
 
                 case 12:
@@ -246,7 +584,7 @@ namespace TBDB_CTC.Sequence
                     break;
 
                 case 13:
-                    if(GlobalSeq.autoRun.prcVTM.Pmc.GetStatusSig(PMC_StatusSig.DryPumpOnOffStatus) == 1)
+                    if (GlobalSeq.autoRun.prcVTM.Pmc.GetStatusSig(PMC_StatusSig.DryPumpOnOffStatus) == 1)
                     {
 
                         GlobalSeq.autoRun.prcVTM.Pmc.SetInterlock(CTC_INTERLOCK.DryPumpOnReq, false);
@@ -266,7 +604,7 @@ namespace TBDB_CTC.Sequence
                     //Set FastPump Close
                     //Fast Pump변경 전 ChangeReq Bit 변경
                     nStatus = 0;
-                    if(GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(PMC_STATUS.PMCVacuumStatus, ref nStatus) == 2 
+                    if (GlobalSeq.autoRun.prcVTM.Pmc.GetStatus(PMC_STATUS.PMCVacuumStatus, ref nStatus) == 2
                         || GlobalSeq.autoRun.prcVTM.Pmc.GetStatusSig(PMC_StatusSig.FastPumpStatus) == 1)
                     {
                         GlobalSeq.autoRun.prcVTM.Pmc.SetInterlock(CTC_INTERLOCK.FastPumpOpenClose, false);
@@ -281,10 +619,15 @@ namespace TBDB_CTC.Sequence
                         //Fast Pump상태 확인 후 Change Req Bit 꺼준다
                         GlobalSeq.autoRun.prcVTM.Pmc.SetInterlock(CTC_INTERLOCK.FastPumpChangeReq, false);
 
-                        //Slow Pump VV Open
-                        GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTMSlowPump_VV, true);
-                        timeVtmPump.Restart();
-                        break;
+                        //Fore Line Convectron SW가 모두 On이어야지만 Slow Pump VV Open한다.
+                        if(GlobalSeq.autoRun.prcVTM.Pmc.GetStatusSig(PMC_StatusSig.ForeLineConvecSW1Status) == 1
+                            &&GlobalSeq.autoRun.prcVTM.Pmc.GetStatusSig(PMC_StatusSig.ForeLineConvecSW2Status) == 1)
+                        {
+                            //Slow Pump VV Open
+                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTM_SlowPump_VV, true);
+                            timeVtmPump.Restart();
+                            break;
+                        }
                     }
                     else
                     {
@@ -293,8 +636,8 @@ namespace TBDB_CTC.Sequence
                         {
                             return fn.err;
                         }
-                   }
-                   return fn.busy;
+                    }
+                    return fn.busy;
 
                 case 20:
                     //Low Pump Check
@@ -316,7 +659,7 @@ namespace TBDB_CTC.Sequence
 
                 case 25:
                     //Fast Pum VV Open
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTmmainPump_VV, true);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTM_MainPump_VV, true);
 
                     Thread.Sleep(500);
 
@@ -325,8 +668,8 @@ namespace TBDB_CTC.Sequence
 
                 case 30:
                     //Pumping VV Open Check
-                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueOpen) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueClose) == false)
+                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueOpen) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueClose) == false)
                     {
                         break;
                     }
@@ -341,7 +684,7 @@ namespace TBDB_CTC.Sequence
                     return fn.busy;
                 case 35:
                     //Slow Pump VV Close
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTMSlowPump_VV, false);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTM_SlowPump_VV, false);
                     timeVtmPump.Restart();
                     break;
 
@@ -358,7 +701,7 @@ namespace TBDB_CTC.Sequence
                         if (timeVtmPump.ElapsedMilliseconds > lTime_VTM_PumpConRy2)
                         {
                             return fn.err;
-                        }                     
+                        }
                     }
                     return fn.busy;
 
@@ -388,11 +731,11 @@ namespace TBDB_CTC.Sequence
                             //타임아웃 체크
                             if (timeVtmPump.ElapsedMilliseconds > lTimeOut)
                             {
-                                GlobalSeq.autoRun.prcVTM.Pmc.SetInterlock(CTC_INTERLOCK.FastPumpChangeReq, true);
-
-                                GlobalSeq.autoRun.prcVTM.Pmc.SetInterlock(CTC_INTERLOCK.FastPumpOpenClose, false);
-                                Thread.Sleep(500);
-                                GlobalSeq.autoRun.prcVTM.Pmc.SetInterlock(CTC_INTERLOCK.FastPumpChangeReq, false);
+                                //필요 없는 동작 임.
+                                //GlobalSeq.autoRun.prcVTM.Pmc.SetInterlock(CTC_INTERLOCK.FastPumpChangeReq, true);
+                                //GlobalSeq.autoRun.prcVTM.Pmc.SetInterlock(CTC_INTERLOCK.FastPumpOpenClose, false);
+                                //Thread.Sleep(500);
+                                //GlobalSeq.autoRun.prcVTM.Pmc.SetInterlock(CTC_INTERLOCK.FastPumpChangeReq, false);
                                 return fn.err;
                             }
                         }
@@ -402,11 +745,15 @@ namespace TBDB_CTC.Sequence
                     {
                         break;
                     }
-                    
+
                     return fn.busy;
 
                 case 60:
                     //동작 완료
+
+                    //VTM Vacuum 상태를 VTM으로 변경
+                    GlobalVariable.Status_Inter.VacuumVtmStatus = VTM_VACUUM_STATUS_VALUE.VTM;
+
                     nSeqVacuum[nSeq] = 0;
                     return fn.success;
             }
@@ -425,8 +772,8 @@ namespace TBDB_CTC.Sequence
                     if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTM_ATMSwtich1) == true
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_1) == false
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_2) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueOpen) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueClose) == true)
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueOpen) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueClose) == true)
                     {
                         return fn.success;
                     }
@@ -440,8 +787,8 @@ namespace TBDB_CTC.Sequence
                     if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_SlowVentGN2_PressureSwitch_1) == true
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_BonderGate_OpenStatus) == false
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_BonderGate_CloseStatus) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadlockTmGate_OpenStatus) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadlockTmGate_CloseStatus) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_Loadlock_VtmGate_OpenStatus) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_Loadlock_VtmGate_CloseStatus) == true
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_ChamberTopLID_OpenStatus) == true)
                     {
                         break;
@@ -454,15 +801,20 @@ namespace TBDB_CTC.Sequence
 
                 case 10:
                     //All Valve Close
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTMSlowPump_VV, false);
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTmmainPump_VV, false);
+
+                    //VTM Vacuum 상태를 Pumping으로 변경 후 Write
+                    GlobalVariable.Status_Inter.VacuumVtmStatus = VTM_VACUUM_STATUS_VALUE.VENTING;
+                    GlobalSeq.autoRun.prcVTM.Pmc.SetStatus(CTC_STATUS.VTMStatus, (short)GlobalVariable.Status_Inter.VacuumVtmStatus);
+
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTM_SlowPump_VV, false);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_VacuumTM_MainPump_VV, false);
                     timeVtmVent.Restart();
                     break;
 
                 case 15:
                     //Pumping V/v Close Check
-                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueOpen) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TmMainPump_ValueClose) == true)
+                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueOpen) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_TM_MainPump_ValueClose) == true)
                     {
                         break;
                     }
@@ -491,7 +843,7 @@ namespace TBDB_CTC.Sequence
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTM_ATMSwtich1) == true)
                     {
                         break;
-                    } 
+                    }
                     else
                     {
                         //타임아웃 체크
@@ -537,6 +889,10 @@ namespace TBDB_CTC.Sequence
 
                 case 50:
                     //동작 완료
+
+                    //VTM Vacuum 상태를 ATM 상태로 변경
+                    GlobalVariable.Status_Inter.VacuumVtmStatus = VTM_VACUUM_STATUS_VALUE.ATM;
+
                     nSeqVacuum[nSeq] = 0;
                     return fn.success;
             }
@@ -546,6 +902,10 @@ namespace TBDB_CTC.Sequence
 
         public fn Loadlock_Pumping()
         {
+#if !_REAL_MC
+            return fn.success;
+#endif
+
             int nSeq = (int)Vacuum_Seq.Loadlock_Pumping;
 
             switch (nSeqVacuum[nSeq])
@@ -556,8 +916,8 @@ namespace TBDB_CTC.Sequence
                     //Convectron Sensor On Check
                     if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_1) == true
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_VacuumTm_ConvectronRy_2) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveOpen) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveClose) == false)
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveOpen) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveClose) == false)
                     {
                         //위 조건 만족시 마지막 스탭으로 이동
                         return fn.success;
@@ -576,15 +936,15 @@ namespace TBDB_CTC.Sequence
                     //L/L 진공 V/v 상태
                     //L/L Dry Pump Alarm 상태 Check
 
-                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockSlotValve_OpenStatus) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockSlotValve_CloseStatus) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadlockTmGate_OpenStatus) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadlockTmGate_CloseStatus) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockTopLID_OpenStatus) == true
+                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_AtmGate_OpenStatus) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_AtmGate_CloseStatus) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_Loadlock_VtmGate_OpenStatus) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_Loadlock_VtmGate_CloseStatus) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_TopLID_OpenStatus) == true
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ATMSwtich_1) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveOpen) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveClose) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockDryPump_AlarmStatus) == false)
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveOpen) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveClose) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_DryPump_AlarmStatus) == false)
                     {
                         break;
                     }
@@ -597,18 +957,18 @@ namespace TBDB_CTC.Sequence
                 case 10:
 
                     //Loadlok Vent V/V Close
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockVent_VV, false);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_Vent_VV, false);
                     break;
 
                 case 15:
                     //L/L Dry Pump On
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockDry_pumpOn, true);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_DryPump_On, true);
                     Thread.Sleep(1000);
                     timeLLPump.Restart();
                     break;
 
                 case 20:
-                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockDryPump_RunStatus) == true)
+                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_DryPump_RunStatus) == true)
                     {
                         break;
                     }
@@ -617,16 +977,16 @@ namespace TBDB_CTC.Sequence
                         //타임아웃 체크
                         if (timeLLPump.ElapsedMilliseconds > lTimeOut)
                         {
-                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockDry_pumpOn, false);
+                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_DryPump_On, false);
                             //Loadlock DryPump RunStatus On TimeOut Error
                             return fn.err;
                         }
                     }
                     return fn.busy;
 
-                case 25:              
+                case 25:
                     //L/L Slow Pump VV Open
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockSlowPumping_VV, true);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_SlowPumping_VV, true);
                     Thread.Sleep(500);
                     timeLLPump.Restart();
                     break;
@@ -639,7 +999,7 @@ namespace TBDB_CTC.Sequence
                     //ATM Switch Sensor OFF Check
                     //Convectron Sensor 1 On Check
                     if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ATMSwtich_1) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockConvectronRy_1) == true)
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ConvectronRy_1) == true)
                     {
                         break;
                     }
@@ -649,8 +1009,8 @@ namespace TBDB_CTC.Sequence
                         if (timeLLPump.ElapsedMilliseconds > lTime_LL_PumpConRy1)
                         {
                             //Output Off
-                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockDry_pumpOn, false);
-                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockSlowPumping_VV, false);
+                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_DryPump_On, false);
+                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_SlowPumping_VV, false);
 
                             //lTime_LL_PumpConRy1 TimeOut
                             return fn.err;
@@ -660,15 +1020,15 @@ namespace TBDB_CTC.Sequence
 
                 case 40:
                     //L/L Slow Pump VV Open
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockFastPumping_VV, true);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_FastPumping_VV, true);
                     Thread.Sleep(500);
                     timeLLPump.Restart();
                     break;
 
                 case 45:
                     //Pumping VV Open Check
-                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveOpen) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveClose) == false)
+                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveOpen) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveClose) == false)
                     {
                         break;
                     }
@@ -678,9 +1038,9 @@ namespace TBDB_CTC.Sequence
                         if (timeLLPump.ElapsedMilliseconds > lTimeOut)
                         {
                             //Output Off
-                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockDry_pumpOn, false);
-                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockSlowPumping_VV, false);
-                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockFastPumping_VV, false);
+                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_DryPump_On, false);
+                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_SlowPumping_VV, false);
+                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_FastPumping_VV, false);
 
                             //timeLLPump TimeOut
                             return fn.err;
@@ -690,16 +1050,16 @@ namespace TBDB_CTC.Sequence
 
                 case 50:
                     //Slow Pump VV Close
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockSlowPumping_VV, false);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_SlowPumping_VV, false);
                     timeLLPump.Restart();
                     break;
 
-                case 55:                   
+                case 55:
                     break;
 
                 case 60:
                     //High Pump Check
-                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockConvectrionRy_2) == true)
+                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ConvectronRy_2) == true)
                     {
                         break;
                     }
@@ -730,6 +1090,9 @@ namespace TBDB_CTC.Sequence
 
         public fn Loadlock_Venting()
         {
+#if !_REAL_MC
+            return fn.success;
+#endif
             int nSeq = (int)Vacuum_Seq.Loadlock_Venting;
 
             switch (nSeqVacuum[nSeq])
@@ -739,8 +1102,8 @@ namespace TBDB_CTC.Sequence
 
                     //Convectron Sensor On Check
                     //L/L ATM S/W 상태
-                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockConvectronRy_1) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockConvectronRy_1) == false
+                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ConvectronRy_1) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ConvectronRy_1) == false
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ATMSwtich_1) == true)
                     {
                         //위 조건 만족시 마지막 스탭으로 이동
@@ -750,7 +1113,7 @@ namespace TBDB_CTC.Sequence
                     {
                         break;
                     }
-                   
+
                 case 5:
 
                     //Interlock Check
@@ -762,14 +1125,14 @@ namespace TBDB_CTC.Sequence
                     //L/L 진공 V/v 상태
                     //GN2 Pressure On Check
 
-                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockSlotValve_OpenStatus) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockSlotValve_CloseStatus) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadlockTmGate_OpenStatus) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadlockTmGate_CloseStatus) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockTopLID_OpenStatus) == true
+                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_AtmGate_OpenStatus) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_AtmGate_CloseStatus) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_Loadlock_VtmGate_OpenStatus) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_Loadlock_VtmGate_CloseStatus) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_TopLID_OpenStatus) == true
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ATMSwtich_1) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveOpen) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveClose) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveOpen) == true
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveClose) == false
                         && GlobalVariable.io.ReadInput(GlobalVariable.io.I_SlowVentGN2_PressureSwitch_1) == false)
                     {
                         break;
@@ -782,15 +1145,15 @@ namespace TBDB_CTC.Sequence
 
                 case 10:
                     //Loadlok Pump V/V Close
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockSlowPumping_VV, false);
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockFastPumping_VV, false);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_SlowPumping_VV, false);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_FastPumping_VV, false);
                     timeLLVent.Restart();
                     break;
 
                 case 15:
                     //Pumping V/ v Close Check
-                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveOpen) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockMainPUMP_ValveClose) == false)
+                    if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveOpen) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_MainPump_ValveClose) == false)
                     {
                         break;
                     }
@@ -807,15 +1170,15 @@ namespace TBDB_CTC.Sequence
 
                 case 20:
                     //L/L Vent VV Open
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockVent_VV, true);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_Vent_VV, true);
                     timeLLVent.Restart();
                     break;
 
                 case 25:
                     //Vent Check
                     if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ATMSwtich_1) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockConvectronRy_1) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockConvectrionRy_2) == false)
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ConvectronRy_1) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ConvectronRy_2) == false)
                     {
                         break;
                     }
@@ -825,7 +1188,7 @@ namespace TBDB_CTC.Sequence
                         if (timeLLVent.ElapsedMilliseconds > lTime_LL_VentOpen)
                         {
                             //Output Off
-                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockVent_VV, false);
+                            GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_Vent_VV, false);
 
                             //Loadlock Vent Open TimeOut
                             return fn.err;
@@ -836,7 +1199,7 @@ namespace TBDB_CTC.Sequence
                 case 30:
 
                     //L/L Vent VV Close
-                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLockVent_VV, false);
+                    GlobalVariable.io.WriteOutput(GlobalVariable.io.O_LoadLock_Vent_VV, false);
                     timeLLVent.Restart();
                     break;
 
@@ -844,8 +1207,8 @@ namespace TBDB_CTC.Sequence
 
                     //Vent VV Close & Vent Check
                     if (GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ATMSwtich_1) == true
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockConvectronRy_1) == false
-                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLockConvectrionRy_2) == false)
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ConvectronRy_1) == false
+                        && GlobalVariable.io.ReadInput(GlobalVariable.io.I_LoadLock_ConvectronRy_2) == false)
                     {
                         break;
                     }
@@ -876,5 +1239,6 @@ namespace TBDB_CTC.Sequence
             nSeqVacuum[nSeq]++;
             return fn.busy;
         }
+
     }
 }
